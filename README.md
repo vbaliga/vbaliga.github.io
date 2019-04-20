@@ -1,4 +1,4 @@
-# posts by vikram
+# posts by vikram: https://vbaliga.github.io/
 
 Very occasionally updated, (somewhat) useful stuff.
 
