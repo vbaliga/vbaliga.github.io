@@ -1,6 +1,5 @@
 # posts by vikram
-### https://vbaliga.github.io/
-Very occasionally updated, (somewhat) useful stuff.
+### Very occasionally updated, (somewhat) useful stuff: https://vbaliga.github.io/
 
 Although I like using squarespace for my main site, I'm not a fan of the way squarespace formats code. All posts here will be made via the magic of [R Markdown](https://rmarkdown.rstudio.com/). 
 
