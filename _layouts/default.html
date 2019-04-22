@@ -22,20 +22,21 @@
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
         
-        <p> Although I like using squarespace for my main site, I'm not a fan of the way squarespace formats code. I'll use this site for posts with code, made via the magic of <a href="https://rmarkdown.rstudio.com/">R Markdown</a>. </p>
+        <p> Although I like using squarespace for my main site, I'm not a fan of how squarespace formats code. Posts with code, made via the magic of <a href="https://rmarkdown.rstudio.com/">R Markdown</a>, will live here. </p>
+        
+        {% include alltags.html %}
+        
+        <form method="get" action="http://www.google.com/search" target="_blank">
+          <input type="hidden" name="sitesearch" value="vbaliga.github.io" />
+          <input type="text" name="q" maxlength="255" placeholder="Search these posts" />
+        </form>
+        
         <br>
+        
         <p class="view"><a href="https://www.vikram-baliga.com/"><img src="/images/vb32.png" style="width:20px; height:20px" title="vikram-baliga.com" alt="vikram-baliga.com"></a><a href="https://www.vikram-baliga.com/">&nbsp;back to vikram-baliga.com</a></p>
+        
         <p class="view"><a href="https://github.com/vbaliga"><img src="/images/GitHub-Mark-64px.png" style="width:20px; height:20px" title="github.com/vbaliga" alt="github.com/vbaliga"><a href="{{ site.github.owner_url }}">&nbsp;my GitHub profile</a></p>
 
-        {% include alltags.html %}
-          
-        {% if site.show_downloads %}
-        <ul class="downloads">
-          <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
-          <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
-        </ul>
-        {% endif %}
       </header>
       <section>
 
@@ -43,9 +44,6 @@
 
       </section>
       <footer>
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
         <p><small>Hosted on GitHub Pages &mdash; Theme modified from "Minimal" by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
         <p><small>Content: Copyright © 2019 Vikram B. Baliga</small></p>
         <p><small>All images by V.B.B. unless otherwise noted.</small></p>
