@@ -1,1 +1,4 @@
-{% include archive.html %}
+---
+layout: archive
+title: "Archive"
+---
