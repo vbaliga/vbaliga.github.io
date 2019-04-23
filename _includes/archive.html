@@ -1,5 +1,4 @@
-
 {% for post in site.posts %}	
-    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    <p><small>{{ post.date | date: "%B %e, %Y" }}<a href="http://vbaliga.github.io{{ post.url }}></a></small></p>			
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <p><small>{{ post.date | date: "%B %e, %Y" }}</small></p>			
 {% endfor %} 
