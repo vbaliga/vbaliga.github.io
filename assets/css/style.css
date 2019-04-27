@@ -312,6 +312,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #222;
+  font: Arial, sans-serif;
   margin: 0 0 20px;
 }
 
@@ -336,7 +337,7 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color: #267CB9;
+  color: #5D3BE9;
   text-decoration: none;
 }
 
@@ -371,6 +372,10 @@ blockquote {
 code, pre {
   font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
   color: #333;
+  background-color:#f1f1f1;
+  padding-left:4px;
+  padding-right:4px;
+  font-size:110%
 }
 
 pre {
