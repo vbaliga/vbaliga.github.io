@@ -1,12 +1,12 @@
 ---
 layout: post
 tags: ["R","packages","package-installation","package-loading"]
-title: Check if a package is installed and install if not in R
+title: Check if packages are installed (and install if not) in R
 ---
 
 Say you have an R script that you share with others. You may not be sure that each user has installed all the packages the script will require. Using `install.packages()` would be unnessary for users who already have the packages and simply need to load them.
 
-Here’s some code that provides an easy way to check whether specific packages are in the default Library. If they are, they’re simply loaded. If any packages are missing, they’re installed (with dependencies) into the default Library and are then loaded.
+Here’s some code that provides an easy way to check whether specific packages are in the default Library. If they are, they’re simply loaded via `library()`. If any packages are missing, they’re installed (with dependencies) into the default Library and are then loaded.
 
 (This is a re-post of an entry that appeared on my old blog - see [here](https://www.vikram-baliga.com/blog/2015/7/19/a-hassle-free-way-to-verify-that-r-packages-are-installed-and-loaded)).
 <!---more--->
