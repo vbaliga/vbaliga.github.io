@@ -371,7 +371,7 @@ blockquote {
 
 code, pre {
   font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
-  font-size: 14px/1.5;
+  font-size: 12px;
   color: #333;
   background-color:#f1f1f1;
   padding-left:4px;
