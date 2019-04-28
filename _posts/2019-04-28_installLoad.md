@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: ["R","packages","package installation","package loading"]
+tags: ["R","packages","package-installation","package-loading"]
 title: Check if a package is installed (and install if not) in R
 ---
 
