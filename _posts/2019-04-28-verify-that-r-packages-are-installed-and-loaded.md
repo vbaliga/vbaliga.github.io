@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: ["R","packages","package-installation","package-loading"]
-title: Check if a package is installed [and install if not] in R
+title: Check if a package is installed (and install if not\) in R
 ---
 
 Say you have an R script that you share with others. You may not be sure that each user has installed all the packages the script will require. Using `install.packages()` would be unnessary for users who already have the packages and simply need to load them.
