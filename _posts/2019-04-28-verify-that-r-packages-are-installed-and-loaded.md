@@ -96,4 +96,5 @@ search()
     ## [25] "Autoloads"           "package:base"
 
 
-That’s all\! 🐢
+That’s all!  
+🐢
