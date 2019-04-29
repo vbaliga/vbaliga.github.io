@@ -34,6 +34,10 @@ package.check <- lapply(
 )
 ```
 
+The logic of the `package.check()` function basically goes: 
+* Using `lapply()` to the list of `packages`  
+* If a package is not installed, install it  
+* Otherwise, load it  
 
 Since I already have all these packages installed, I see the following messages:
 
@@ -72,11 +76,6 @@ Since I already have all these packages installed, I see the following messages:
     ## Loading required package: viridis
 
     ## Loading required package: viridisLite
-
-The logic of the `package.check()` function basically goes: 
-* Using `lapply()` to the list of `packages`  
-* If a package is not installed, install it  
-* Otherwise, load it  
 
 You can then use `search()` to determine whether all the packages have
 loaded.
