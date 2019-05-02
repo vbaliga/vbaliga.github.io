@@ -337,24 +337,24 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color: #5D3BE9;
+  color: #000000;
   text-decoration: none;
 }
 
 a:hover, a:focus {
-  color: #069;
+  color: #5D3BE9;
   font-weight: bold;
 }
 
 a small {
   font-size: 11px;
-  color: #777;
+  color: #000000;
   margin-top: -0.3em;
   display: block;
 }
 
 a:hover small {
-  color: #777;
+  color: #5D3BE9;
 }
 
 .wrapper {
