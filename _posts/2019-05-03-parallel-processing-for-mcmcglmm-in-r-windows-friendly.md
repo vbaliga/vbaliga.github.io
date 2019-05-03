@@ -5,9 +5,9 @@ title: Parallel processing for MCMCglmm in R (Windows-friendly)
 ---
 
 Lately, I have been using the [MCMCglmm](https://cran.r-project.org/web/packages/MCMCglmm/index.html) package to run linear
-mixed-models in a Bayesian framework. The documentation is generally very good and there are lots of great tips on StackExchange and r-sig-phylo & r-sig-mixed-models…etc. But, there seems to be relatively little support for using parallel processing (here: using multiple cores on your machine) to speed up how long it takes to finish large volumes of mcmc runs. This is especially true for Windows users, who cannot use functions like mclapply().
+mixed-models in a Bayesian framework. The documentation is generally very good and there are lots of great tips on StackExchange and r-sig-phylo & r-sig-mixed-models…etc. But, there seems to be relatively little support for using parallel processing (here: using multiple cores on your machine) to speed up how long it takes to finish large volumes of mcmc runs. This is especially true for Windows users, who cannot use functions like `mclapply()`.
 
-I’m happy to share that I have worked out a solution using the [parallel](https://www.rdocumentation.org/packages/parallel/versions/3.5.1) package. Basically, I set up a virtual cluster and then use the [parLapply()](https://stat.ethz.ch/R-manual/R-patched/library/parallel/html/clusterApply.html) function to run iterations of MCMCglmm() in parallel.
+I’m happy to share that I have worked out a solution using the [parallel](https://www.rdocumentation.org/packages/parallel/versions/3.5.1) package. Basically, I set up a virtual cluster and then use the [parLapply()](https://stat.ethz.ch/R-manual/R-patched/library/parallel/html/clusterApply.html) function to run iterations of `MCMCglmm()` in parallel.
 
 (This is a re-post of an entry that appeared on my old blog - see see [here](https://www.vikram-baliga.com/blog/2018/9/30/parallel-processing-for-mcmcglmm-in-r-windows-friendly)).
 <!---more--->
@@ -43,7 +43,7 @@ package.check <- lapply(
 
     ## Loading required package: parallel
 
-With the packages loaded, we’ll prep our data set. Lifting this directly from the MCMCglmm() help page:
+With the packages loaded, we’ll prep our data set. Lifting this directly from the `MCMCglmm()` help page:
 
 ``` r
 data(bird.families)
@@ -96,6 +96,10 @@ summary(model2)
     ##             post.mean l-95% CI u-95% CI eff.samp pMCMC
     ## (Intercept)   -0.1574  -0.6576   0.3099      812 0.488
 
+Of course, the example provided sets nitt to only 130, yielding an ESS of only ~460 for the fixed effect. I am guessing this is intended to make sure the example is quick to execute.
+
+Boosting this to nitt=100000, burnin=10000, and thin=10 gives a more healthy ESS of ~8321. But please note that this will take a lot longer to finish (I’ll leave it up to you to use the `Sys.time()` function to time it yourself).
+
 ## Run MCMC chains in parallel
 
 Whenever conducting MCMC-based analyses, it’s advisable to conduct multiple runs (different chains) and then assess convergence. I’ll leave the convergence assessments for another day (but here’s [a good StackExchange post](https://stats.stackexchange.com/questions/507/what-is-the-best-method-for-checking-convergence-in-mcmc)). For now we’ll just conduct 10 runs of this model, each using nitt=100000, using parallel processing. 
@@ -138,9 +142,10 @@ model2_10runs <- parLapply(cl = cl, 1:10, function(i) {
 stopCluster(cl)
 ```
 
-Of course, the example provided sets nitt to only 130, yielding an ESS of only ~460 for the fixed effect. I am guessing this is intended to make sure the example is quick to execute.
+The `model2_10runs` object is a list that contains each of the 10 mcmc models. You can perform all the usual summarization, plotting…etc, but just be sure to specify models within the list, e.g.:
+`summary(model2_10runs[[3]])` # summarize the third model out of the 10
 
-Boosting this to nitt=100000, burnin=10000, and thin=10 gives a more healthy ESS of ~8321. But please note that this will take a lot longer to finish (I’ll leave it up to you to use the Sys.time() function to time it yourself).
+As I mentioned above, we’ll leave convergence and other fun topics like autocorrelation for another day.
 
 That’s all!
 🐢
