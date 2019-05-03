@@ -104,7 +104,7 @@ Boosting this to nitt=100000, burnin=10000, and thin=10 gives a more healthy ESS
 
 Whenever conducting MCMC-based analyses, it’s advisable to conduct multiple runs (different chains) and then assess convergence. I’ll leave the convergence assessments for another day (but here’s [a good StackExchange post](https://stats.stackexchange.com/questions/507/what-is-the-best-method-for-checking-convergence-in-mcmc)). For now we’ll just conduct 10 runs of this model, each using nitt=100000, using parallel processing. 
 
-**PLEASE NOTE**: I am setting this up to use only 80% of your machine’s total logical processors. You can certainly harness all of your CPUs if you’d like, although I advise against doing so if any of your MCMC runs take more than afew minutes. It also doesn’t make sense to set the number of logical processors to be greater than the number of runs (chains), but more on that later. Anyway, treat your silicon well!
+**PLEASE NOTE**: I am setting this up to use only 80% of your machine’s total logical processors. You can certainly harness all of your CPUs if you’d like, although I advise against doing so if any of your MCMC runs take more than a few minutes. It also doesn’t make sense to set the number of logical processors to be greater than the number of runs (chains), but more on that later. Anyway, treat your silicon well!
 
 ``` r
 # use detectCores() by itself if you want all CPUs
@@ -148,4 +148,5 @@ The `model2_10runs` object is a list that contains each of the 10 mcmc models. Y
 As I mentioned above, we’ll leave convergence and other fun topics like autocorrelation for another day.
 
 That’s all!
+
 🐢
