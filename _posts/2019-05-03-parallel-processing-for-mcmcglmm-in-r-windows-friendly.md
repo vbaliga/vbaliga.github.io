@@ -96,15 +96,15 @@ summary(model2)
     ##             post.mean l-95% CI u-95% CI eff.samp pMCMC
     ## (Intercept)   -0.1574  -0.6576   0.3099      812 0.488
 
-Of course, the example provided sets nitt to only 130, yielding an ESS of only ~460 for the fixed effect. I am guessing this is intended to make sure the example is quick to execute.
+Of course, the example provided sets nitt to only 1300, yielding an ESS of only ~800 for the fixed effect. I am guessing this is intended to make sure the example is quick to execute.
 
-Boosting this to nitt=100000, burnin=10000, and thin=10 gives a more healthy ESS of ~8321. But please note that this will take a lot longer to finish (I’ll leave it up to you to use the `Sys.time()` function to time it yourself).
+Boosting this to nitt=100000, burnin=10000, and thin=10 gives a more healthy ESS of >8000. But please note that this will take a lot longer to finish (I’ll leave it up to you to use the `Sys.time()` function to time it yourself).
 
 ## Run MCMC chains in parallel
 
 Whenever conducting MCMC-based analyses, it’s advisable to conduct multiple runs (different chains) and then assess convergence. I’ll leave the convergence assessments for another day (but here’s [a good StackExchange post](https://stats.stackexchange.com/questions/507/what-is-the-best-method-for-checking-convergence-in-mcmc)). For now we’ll just conduct 10 runs of this model, each using nitt=100000, using parallel processing. 
 
-*PLEASE NOTE*: I am setting this up to use only 80% of your machine’s total logical processors. You can certainly harness all of your CPUs if you’d like, although I advise against doing so if any of your MCMC runs take more than afew minutes. It also doesn’t make sense to set the number of logical processors to be greater than the number of runs (chains), but more on that later. Anyway, treat your silicon well!
+**PLEASE NOTE**: I am setting this up to use only 80% of your machine’s total logical processors. You can certainly harness all of your CPUs if you’d like, although I advise against doing so if any of your MCMC runs take more than afew minutes. It also doesn’t make sense to set the number of logical processors to be greater than the number of runs (chains), but more on that later. Anyway, treat your silicon well!
 
 ``` r
 # use detectCores() by itself if you want all CPUs
