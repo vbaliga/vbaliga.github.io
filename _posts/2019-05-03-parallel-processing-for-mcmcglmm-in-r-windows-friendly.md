@@ -5,7 +5,7 @@ title: Parallel processing for MCMCglmm in R (Windows-friendly)
 ---
 
 Lately, I have been using the [MCMCglmm](https://cran.r-project.org/web/packages/MCMCglmm/index.html) package to run linear
-mixed-models in a Bayesian framework. The documentation is generally very good and there are lots of great tips on StackExchange and r-sig-phylo & r-sig-mixed-models…etc. But, there seems to be relatively little support for using parallel processing (here: using multiple cores on your machine) to speed up how long it takes to finish large volumes of mcmc runs. This is especially true for Windows users, who cannot use functions like `parallel::mclapply()`.
+mixed-models in a Bayesian framework. The documentation is generally very good but there seems to be relatively little support for using parallel processing (here: using multiple cores on your machine) to efficiently run large volumes of mcmc runs. This is especially true for Windows users, who cannot use functions like `parallel::mclapply()`.
 
 I’m happy to share that I have worked out a solution using the [parallel](https://www.rdocumentation.org/packages/parallel/versions/3.5.1) package. Basically, I set up a virtual cluster and then use the [`parallel::parLapply()`](https://stat.ethz.ch/R-manual/R-patched/library/parallel/html/clusterApply.html) function to run iterations of `MCMCglmm()` in parallel.
 
@@ -14,7 +14,7 @@ I’m happy to share that I have worked out a solution using the [parallel](http
 
 ## Data
 
-I’ll use “Example 2” from the [MCMCglmm() function help](https://www.rdocumentation.org/packages/MCMCglmm/versions/2.26/topics/MCMCglmm). So, first I’ll load everything up and take care of a few preliminaries. You can skip ahead to the next section if instead you’d like to tailor this to your own data & analysis.
+I’ll use “Example 2” from the [MCMCglmm() function help](https://www.rdocumentation.org/packages/MCMCglmm/versions/2.26/topics/MCMCglmm). You can skip ahead to the next section if instead you’d like to tailor this to your own data & analysis.
 
 First load (or install\&load) the `MCMCglmm` and `parallel` packages:
 
@@ -96,7 +96,7 @@ summary(model2)
     ##             post.mean l-95% CI u-95% CI eff.samp pMCMC
     ## (Intercept)   -0.1574  -0.6576   0.3099      812 0.488
 
-Of course, the example provided sets nitt to only 1300, yielding an ESS of only ~800 for the fixed effect. I am guessing this is intended to make sure the example is quick to execute.
+Of course, the example provided sets nitt to only 1300, yielding an ESS of only ~800 for the fixed effect. I am guessing this is intended to make sure the example is quick to run.
 
 Boosting this to nitt=100000, burnin=10000, and thin=10 gives a more healthy ESS of >8000. But please note that this will take a lot longer to finish (I’ll leave it up to you to use the `Sys.time()` function to time it yourself).
 
