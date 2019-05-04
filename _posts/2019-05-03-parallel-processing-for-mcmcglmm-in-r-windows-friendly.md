@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: ["R","MCMCglmm","parallel","parallel-processing"]
+tags: ["R","MCMCglmm","parallel","parallel-processing","Windows"]
 title: Parallel processing for MCMCglmm in R (Windows-friendly)
 ---
 
