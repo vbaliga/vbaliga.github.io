@@ -411,7 +411,7 @@ img {
 }
 
 header {
-  width: 230px;
+  max-width: 230px;
   float: left;
   position: fixed;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -478,7 +478,7 @@ header ul a strong {
 }
 
 section {
-  width: 670px;
+  max-width: 670px;
   float: right;
   padding-bottom: 50px;
 }
@@ -495,7 +495,7 @@ hr {
 }
 
 footer {
-  width: 230px;
+  max-width: 230px;
   float: left;
   position: fixed;
   bottom: 50px;
