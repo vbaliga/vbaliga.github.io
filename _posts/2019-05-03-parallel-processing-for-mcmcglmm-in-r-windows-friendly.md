@@ -5,9 +5,9 @@ title: Parallel processing for MCMCglmm in R (Windows-friendly)
 ---
 
 Lately, I have been using the [MCMCglmm](https://cran.r-project.org/web/packages/MCMCglmm/index.html) package to run linear
-mixed-models in a Bayesian framework. The documentation is generally very good and there are lots of great tips on StackExchange and r-sig-phylo & r-sig-mixed-models…etc. But, there seems to be relatively little support for using parallel processing (here: using multiple cores on your machine) to speed up how long it takes to finish large volumes of mcmc runs. This is especially true for Windows users, who cannot use functions like `mclapply()`.
+mixed-models in a Bayesian framework. The documentation is generally very good and there are lots of great tips on StackExchange and r-sig-phylo & r-sig-mixed-models…etc. But, there seems to be relatively little support for using parallel processing (here: using multiple cores on your machine) to speed up how long it takes to finish large volumes of mcmc runs. This is especially true for Windows users, who cannot use functions like `parallel::mclapply()`.
 
-I’m happy to share that I have worked out a solution using the [parallel](https://www.rdocumentation.org/packages/parallel/versions/3.5.1) package. Basically, I set up a virtual cluster and then use the [`parLapply()`](https://stat.ethz.ch/R-manual/R-patched/library/parallel/html/clusterApply.html) function to run iterations of `MCMCglmm()` in parallel.
+I’m happy to share that I have worked out a solution using the [parallel](https://www.rdocumentation.org/packages/parallel/versions/3.5.1) package. Basically, I set up a virtual cluster and then use the [`parallel::parLapply()`](https://stat.ethz.ch/R-manual/R-patched/library/parallel/html/clusterApply.html) function to run iterations of `MCMCglmm()` in parallel.
 
 (This is a re-post of an entry that appeared on my old blog - see see [here](https://www.vikram-baliga.com/blog/2018/9/30/parallel-processing-for-mcmcglmm-in-r-windows-friendly)).
 <!---more--->
