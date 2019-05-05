@@ -364,7 +364,7 @@ a:hover small {
 }
 
 .wrapper {
-  max-width: 990px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -417,7 +417,7 @@ img {
 }
 
 header {
-  max-width: 230px;
+  max-width: 200px;
   float: left;
   position: fixed;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -501,14 +501,14 @@ hr {
 }
 
 footer {
-  max-width: 230px;
+  max-width: 200px;
   float: left;
   position: fixed;
   bottom: 50px;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
-@media print, screen and (max-width: 1030px) {
+@media print, screen and (max-width: 1000px) {
   div.wrapper {
     width: auto;
     margin: 0;
