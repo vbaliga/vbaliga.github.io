@@ -314,7 +314,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #222;
   font: Helvetica, Arial, sans-serif;
   margin: 0 0 20px;
-  max-width: 656.5px;
   overflow-wrap: break-word;
 }
 
@@ -344,8 +343,7 @@ h3, h4, h5, h6 {
 
 a {
   color: #000000;
-  text-decoration: none;
-  max-width: 656.5px;
+  text-decoration: underline;
   overflow-wrap: break-word;
 }
 
