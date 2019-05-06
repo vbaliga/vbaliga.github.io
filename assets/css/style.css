@@ -503,7 +503,7 @@ hr {
 footer {
   max-width: 200px;
   float: left;
-  position: relative;
+  position: static;
   bottom: 50px;
   -webkit-font-smoothing: subpixel-antialiased;
 }
