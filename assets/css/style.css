@@ -504,7 +504,6 @@ hr {
 footer {
   max-width: 670px;
   float: right;
-  position: fixed;
   bottom: 50px;
   -webkit-font-smoothing: subpixel-antialiased;
 }
