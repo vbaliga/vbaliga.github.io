@@ -419,6 +419,7 @@ img {
 header {
   max-width: 200px;
   float: left;
+  padding-bottom: 20px;
   position: fixed;
   -webkit-font-smoothing: subpixel-antialiased;
 }
