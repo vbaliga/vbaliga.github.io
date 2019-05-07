@@ -4,7 +4,7 @@ tags: ["R","sample-variance","sample-size","variance"]
 title: Dangers of sample variance at small sample size
 ---
 <p>
-<img src="https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-07/sample_variance_vs_sample_size.png" alt="variance" style="float:right;width:150px;height:150px;">
+<img src="https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-07/sample_variance_vs_sample_size.png" alt="variance" style="float:right;width:200px;height:200px;">
 Sample variance gives an unbiased estimate of the true population variance, but that doesn’t mean it’s necessarily a reliable estimate of population variance. Here, I show that sample variance itself has high variance at low sample sizes. 
 </p>
 <!---more--->
@@ -241,8 +241,8 @@ for (i in 1:nrow(params)) {
 
 ![](https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-07/mean_of_sample_variance_vs_pop_variance.png)<!-- -->
 
-Pretty interesting\! 
-> **Although the standard deviation varies widely across these data sets (from 0.1 to 100), taking samples of size 1 through \~ 20 severely underestimates the true population variance. So we’re seeing that samples of \< 2% of the true population size are relatively unreliable.**
+Pretty interesting\! We’re seeing that samples of \< 2% of the true population size are relatively unreliable. 
+> **Although the standard deviation varies widely across these data sets (from 0.1 to 100), taking samples of size 1 through \~ 20 severely underestimates the true population variance. **
 
 # Does population size matter?
 
@@ -278,3 +278,4 @@ So it seems that no matter the population size, sample variance hits 95% of popu
 
 I don’t think I would have predicted that sample size should be greater than a particular number rather than as a proportion of population size. I’m sure this is covered by theory - something for me to look in to\!
 
+🐢
