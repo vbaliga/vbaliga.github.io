@@ -113,7 +113,7 @@ legend(500, 1500,
        lty=1, lwd=3, box.lty=0)
 ```
 
-![](images/2019-05-07/sample%20variance%20vs.%20sample%20size-1.png)<!-- -->
+![](https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-07/sample_variance_vs_sample_size.png)<!-- -->
 
 We can see some pretty crazy trends. 
 * **The variation in sample variance is tremendous at small sample sizes**
