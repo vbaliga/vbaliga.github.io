@@ -241,7 +241,7 @@ for (i in 1:nrow(params)) {
 ![](images/2019-05-07/mean%20of%20sample%20variance%20vs%20pop%20variance-1.png)<!-- -->
 
 Pretty interesting\! 
-## Although the standard deviation varies widely across these data sets (from 0.1 to 100), taking samples of size 1 through \~ 20 severely underestimates the true population variance. So we’re seeing that samples of \< 2% of the true population size are relatively unreliable.
+> **Although the standard deviation varies widely across these data sets (from 0.1 to 100), taking samples of size 1 through \~ 20 severely underestimates the true population variance. So we’re seeing that samples of \< 2% of the true population size are relatively unreliable.**
 
 # Does population size matter?
 
@@ -272,5 +272,7 @@ for (i in 1:nrow(params)) {
 
 ![](images/2019-05-07/sample%20variance%20vs%20pop%20size-1.png)<!-- -->
 
-So it seems that no matter the population size, sample variance hits 95% of population variance after sample sizes \> 20. To put it another way, **if we want to get trustworthy estimates of population variance, our sample sizes should generally be \> 20**. I don’t think I would have predicted that sample size should be greater than a particular number rather than as a proportion of population size. I’m sure this is covered by theory - something for me to look in to\!
+So it seems that no matter the population size, sample variance hits 95% of population variance after sample sizes \> 20. To put it another way, 
+> **if we want to get trustworthy estimates of population variance, our sample sizes should generally be \> 20**. 
+I don’t think I would have predicted that sample size should be greater than a particular number rather than as a proportion of population size. I’m sure this is covered by theory - something for me to look in to\!
 
