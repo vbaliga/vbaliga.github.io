@@ -160,7 +160,7 @@ text(
 )
 ```
 
-![](https://github.com/vbaliga/vbaliga.github.io/blob/master/images/2019-05-07/mean_of_sample_variance.png)<!-- -->
+![](https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-07/mean_of_sample_variance.png)<!-- -->
 
 The vertical red line shows the minimum sample size after which 95% of true variance is achieved.
 
@@ -237,7 +237,7 @@ for (i in 1:nrow(params)) {
 }
 ```
 
-![](https://github.com/vbaliga/vbaliga.github.io/blob/master/images/2019-05-07/mean_of_sample_variance_vs_pop_variance.png)<!-- -->
+![](https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-07/mean_of_sample_variance_vs_pop_variance.png)<!-- -->
 
 Pretty interesting\! 
 > **Although the standard deviation varies widely across these data sets (from 0.1 to 100), taking samples of size 1 through \~ 20 severely underestimates the true population variance. So we’re seeing that samples of \< 2% of the true population size are relatively unreliable.**
@@ -269,7 +269,7 @@ for (i in 1:nrow(params)) {
 }
 ```
 
-![](https://github.com/vbaliga/vbaliga.github.io/blob/master/images/2019-05-07/sample_variance_vs_pop_size.png)<!-- -->
+![](https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-07/sample_variance_vs_pop_size.png)<!-- -->
 
 So it seems that no matter the population size, sample variance hits 95% of population variance after sample sizes \> 20. To put it another way, 
 > **if we want to get trustworthy estimates of population variance, our sample sizes should generally be \> 20**. 
