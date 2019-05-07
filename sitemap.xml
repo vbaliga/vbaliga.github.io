@@ -9,22 +9,32 @@
 
 <url>
   <loc>https://vbaliga.github.io/</loc>
-  <lastmod>2019-04-28T20:40:21+00:00</lastmod>
+  <lastmod>2019-05-07T22:29:13+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://vbaliga.github.io/dangers-sample-variance-small-sample-size/</loc>
+  <lastmod>2019-05-07T22:29:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vbaliga.github.io/parallel-processing-for-mcmcglmm-in-r-windows-friendly/</loc>
+  <lastmod>2019-05-07T22:29:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://vbaliga.github.io/verify-that-r-packages-are-installed-and-loaded/</loc>
-  <lastmod>2019-04-28T20:40:21+00:00</lastmod>
+  <lastmod>2019-05-07T22:29:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/setDLLs/</loc>
-  <lastmod>2019-04-28T20:40:21+00:00</lastmod>
+  <lastmod>2019-05-07T22:29:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/Test-post/</loc>
-  <lastmod>2019-04-28T20:40:21+00:00</lastmod>
+  <lastmod>2019-05-07T22:29:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
