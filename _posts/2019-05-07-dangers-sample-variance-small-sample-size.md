@@ -46,7 +46,7 @@ var.p <- function(x) {
 }
 ```
 
-## How does sample variance ‘behave’?
+# How does sample variance ‘behave’?
 
 Using our sequence of increasing sample size (`Ns`), we’ll now create a matrix of variances. Each row number will correspond to its sample size. E.g. all values in row \[50,\] are variances from random samples of n = 50 taken from the parent population. Therefore, samples in row \[1000,\] should be identical and equal to the parent population’s variance, since we are drawing all 1000 samples from the parent population.
 
@@ -165,7 +165,7 @@ text(
 
 The vertical red line shows the minimum sample size after which 95% of true variance is achieved.
 
-## Can we find general patterns?
+# Can we find general patterns?
 
 At what point is sample size large enough to trust its estimation of the true variance? The answer, of course, likely depends on the parent
 population’s actual variance.
@@ -240,11 +240,10 @@ for (i in 1:nrow(params)) {
 
 ![](images/2019-05-07/mean%20of%20sample%20variance%20vs%20pop%20variance-1.png)<!-- -->
 
-Pretty interesting\! **Although the standard deviation varies widely across these data sets (from 0.1 to 100), taking samples of size 1
-through \~ 20 severely underestimates the true population variance. So we’re seeing that samples of \< 2% of the true population size are
-relatively unreliable.**
+Pretty interesting\! 
+## Although the standard deviation varies widely across these data sets (from 0.1 to 100), taking samples of size 1 through \~ 20 severely underestimates the true population variance. So we’re seeing that samples of \< 2% of the true population size are relatively unreliable.
 
-## Does population size matter?
+# Does population size matter?
 
 One more thing I’d like to determine is if this is a consequence of
 fixing the population size at 1000. So, we’ll repeat this but instead of
