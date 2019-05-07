@@ -9,8 +9,7 @@ Sample variance gives an unbiased estimate of the true population variance, but 
 </p>
 <!---more--->
 
-First, we’ll create a normally-distributed parent population with a known mean, variance, and sample size. This represents a natural
-population of something we’d like to study but for sake of time, money, or feasibility, we cannot measure everything. Our goal is to figure out how reliable smaller samples are with respect to estimates of variance. We’ll take increasingly larger samples from this population and see how sample variance fares.
+First, we’ll create a normally-distributed parent population with a known mean, variance, and sample size. This represents a natural population of something we’d like to study but for sake of time, money, or feasibility, we cannot measure everything. Our goal is to figure out how reliable smaller samples are with respect to estimates of variance. We’ll take increasingly larger samples from this population and see how sample variance fares.
 
 ``` r
 mean = 0
@@ -166,11 +165,9 @@ The vertical red line shows the minimum sample size after which 95% of true vari
 
 # Can we find general patterns?
 
-At what point is sample size large enough to trust its estimation of the true variance? The answer, of course, likely depends on the parent
-population’s actual variance.
+At what point is sample size large enough to trust its estimation of the true variance? Let's first see if it depends on the parent population’s actual variance.
 
-Let’s create a few other examples and see if we can find common patterns. We’ll fix population means at 0, population sizes to be 1000
-but vary standard deviations (and therefore variance) widely.
+Let’s create a few other examples and see if we can find common patterns. We’ll fix population means at 0, population sizes to be 1000 but vary standard deviations (and therefore variance) widely.
 
 ``` r
 mean = 0
