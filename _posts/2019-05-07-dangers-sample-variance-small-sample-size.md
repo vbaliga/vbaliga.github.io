@@ -4,19 +4,12 @@ tags: ["R","sample-variance","sample-size","variance"]
 title: Dangers of sample variance at small sample size
 ---
 
-Sample variance gives an unbiased estimate of the true population
-variance, but that doesn’t mean it’s necessarily a reliable estimate of
-population variance. Here, I show that sample variance itself has high
-variance at low sample sizes.
+Sample variance gives an unbiased estimate of the true population variance, but that doesn’t mean it’s necessarily a reliable estimate of
+population variance. Here, I show that sample variance itself has high variance at low sample sizes.
 <!---more--->
 
-First, we’ll create a normally-distributed parent population with a
-known mean, variance, and sample size. This represents a natural
-population of something we’d like to study but for sake of time, money,
-or feasibility, we cannot measure everything. Our goal is to figure out
-how reliable smaller samples are with respect to estimates of variance.
-We’ll take increasingly larger samples from this population and see how
-sample variance fares.
+First, we’ll create a normally-distributed parent population with a known mean, variance, and sample size. This represents a natural
+population of something we’d like to study but for sake of time, money, or feasibility, we cannot measure everything. Our goal is to figure out how reliable smaller samples are with respect to estimates of variance. We’ll take increasingly larger samples from this population and see how sample variance fares.
 
 ``` r
 mean = 0
@@ -55,12 +48,7 @@ var.p <- function(x) {
 
 ## How does sample variance ‘behave’?
 
-Using our sequence of increasing sample size (`Ns`), we’ll now create a
-matrix of variances. Each row number will correspond to its sample size.
-E.g. all values in row \[50,\] are variances from random samples of n =
-50 taken from the parent population. Therefore, samples in row \[500,\]
-should be identical and equal to the parent population’s variance, since
-we are drawing all 500 samples from the parent population.
+Using our sequence of increasing sample size (`Ns`), we’ll now create a matrix of variances. Each row number will correspond to its sample size. E.g. all values in row \[50,\] are variances from random samples of n = 50 taken from the parent population. Therefore, samples in row \[1000,\] should be identical and equal to the parent population’s variance, since we are drawing all 1000 samples from the parent population.
 
 This process is repeated 1000 (`reps`) times for each sample size.
 
@@ -82,8 +70,7 @@ rownames(mymat) <- seq(1, length(Ns))
 mymat[-1, ] -> varmat 
 ```
 
-It’s always good to visualize data. We’ll first plot these raw
-estimtates of variance.
+It’s always good to visualize data. We’ll first plot these raw estimtates of variance.
 
 ``` r
 # Sample size will be on the x-axis
@@ -128,15 +115,12 @@ legend(500, 1500,
 
 ![](images/2019-05-07/sample%20variance%20vs.%20sample%20size-1.png)<!-- -->
 
-We can see some pretty crazy trends. \* The variation in sample variance
-is tremendous at small sample sizes \* The mean of sample variance
-(orange line) deviates strongly at small sample sizes but otherwise
-generally captures the true population variance (blue).
+We can see some pretty crazy trends. 
+* **The variation in sample variance is tremendous at small sample sizes**
+* **The mean of sample variance (orange line) deviates strongly at small sample sizes but otherwise generally captures the true population variance (blue).**
 
-Let’s figure out at what point the means of sample variances seem to
-become unreliable. Since we know this happens at small sample sizes,
-we’ll just plot cases where sample size varies from 1 to 250 to get a
-more refined view of the data.
+Let’s figure out at what point the means of sample variances seem to become unreliable. Since we know this happens at small sample sizes,
+we’ll just plot cases where sample size varies from 1 to 250 to get a more refined view of the data.
 
 ``` r
 # Mean variance of each sample size
@@ -179,17 +163,14 @@ text(
 
 ![](images/2019-05-07/mean%20of%20sample%20variance-1.png)<!-- -->
 
-The vertical red line shows the minimum sample size after which 95% of
-true variance is achieved.
+The vertical red line shows the minimum sample size after which 95% of true variance is achieved.
 
 ## Can we find general patterns?
 
-At what point is sample size large enough to trust its estimation of the
-true variance? The answer, of course, likely depends on the parent
+At what point is sample size large enough to trust its estimation of the true variance? The answer, of course, likely depends on the parent
 population’s actual variance.
 
-Let’s create a few other examples and see if we can find common
-patterns. We’ll fix population means at 0, population sizes to be 1000
+Let’s create a few other examples and see if we can find common patterns. We’ll fix population means at 0, population sizes to be 1000
 but vary standard deviations (and therefore variance) widely.
 
 ``` r
@@ -257,29 +238,11 @@ for (i in 1:nrow(params)) {
 }
 ```
 
-    ## [1] 1
-
-    ## [1] 2
-
-    ## [1] 3
-
-    ## [1] 4
-
-    ## [1] 5
-
-    ## [1] 6
-
-    ## [1] 7
-
-    ## [1] 8
-
 ![](images/2019-05-07/mean%20of%20sample%20variance%20vs%20pop%20variance-1.png)<!-- -->
 
-Pretty interesting\! Although the standard deviation varies widely
-across these data sets (from 0.1 to 100), taking samples of size 1
-through \~ 20 severely underestimates the true population variance. So
-we’re seeing that samples of \< 2% of the true population size are
-relatively unreliable.
+Pretty interesting\! **Although the standard deviation varies widely across these data sets (from 0.1 to 100), taking samples of size 1
+through \~ 20 severely underestimates the true population variance. So we’re seeing that samples of \< 2% of the true population size are
+relatively unreliable.**
 
 ## Does population size matter?
 
@@ -308,28 +271,7 @@ for (i in 1:nrow(params)) {
 }
 ```
 
-    ## [1] 1
-
-    ## [1] 2
-
-    ## [1] 3
-
-    ## [1] 4
-
-    ## [1] 5
-
-    ## [1] 6
-
-    ## [1] 7
-
-    ## [1] 8
-
 ![](images/2019-05-07/sample%20variance%20vs%20pop%20size-1.png)<!-- -->
 
-So it seems that no matter the population size, sample variance hits 95%
-of population variance after sample sizes \> 20. To put it another way,
-if we want to get trustworthy estimates of population variance, our
-sample sizes should generally be \> 20. I don’t think I would have
-predicted that sample size should be greater than a particular number
-rather than as a proportion of population size. I’m sure this is covered
-by theory - something for me to look in to\!
+So it seems that no matter the population size, sample variance hits 95% of population variance after sample sizes \> 20. To put it another way, **if we want to get trustworthy estimates of population variance, our sample sizes should generally be \> 20**. I don’t think I would have predicted that sample size should be greater than a particular number rather than as a proportion of population size. I’m sure this is covered by theory - something for me to look in to\!
+
