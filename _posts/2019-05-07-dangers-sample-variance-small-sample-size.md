@@ -274,5 +274,6 @@ for (i in 1:nrow(params)) {
 
 So it seems that no matter the population size, sample variance hits 95% of population variance after sample sizes \> 20. To put it another way, 
 > **if we want to get trustworthy estimates of population variance, our sample sizes should generally be \> 20**. 
+
 I don’t think I would have predicted that sample size should be greater than a particular number rather than as a proportion of population size. I’m sure this is covered by theory - something for me to look in to\!
 
