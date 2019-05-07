@@ -3,7 +3,7 @@ layout: post
 tags: ["R","sample-variance","sample-size","variance"]
 title: Dangers of sample variance at small sample size
 ---
-<img style="float: right;" src="https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-07/sample_variance_vs_sample_size.png" style="width:250px; height:250px"> Sample variance gives an unbiased estimate of the true population variance, but that doesn’t mean it’s necessarily a reliable estimate of population variance. Here, I show that sample variance itself has high variance at low sample sizes.
+Sample variance gives an unbiased estimate of the true population variance, but that doesn’t mean it’s necessarily a reliable estimate of population variance. Here, I show that sample variance itself has high variance at low sample sizes. <img style="float: left;" src="https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-07/sample_variance_vs_sample_size.png" style="width:250px; height:250px">
 <!---more--->
 
 First, we’ll create a normally-distributed parent population with a known mean, variance, and sample size. This represents a natural
