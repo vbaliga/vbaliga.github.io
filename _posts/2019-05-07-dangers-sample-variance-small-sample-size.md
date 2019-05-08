@@ -300,4 +300,4 @@ Indeed it seems there is a direct (log-linear?) relationship. I’m sure this is
 In any case, the shape of the curve is pretty consistent across all these empirical trials. **We can confidently conclude that we should not
 trust sample variance at low sample sizes.** What remains to be seen is how “small” is too small...
 
-
+🐢
