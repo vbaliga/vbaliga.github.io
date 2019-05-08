@@ -4,7 +4,7 @@ tags: ["R","sample-variance","sample-size","variance"]
 title: Dangers of sample variance at small sample size
 ---
 <p>
-<img src="https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-07/sample_variance_vs_sample%20size.png" alt="variance" style="float:right;width:150px;height:150px;">
+<img src="https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-07/sample_variance_vs_sample_size.png" alt="variance" style="float:right;width:150px;height:150px;">
 Sample variance generally gives an unbiased estimate of the true population variance, but that does not mean it provides a reliable estimate of population variance. Here, I show that sample variance itself has high variance at low sample sizes. I run through a variety of empirical simulations that vary population size and population variance to see what general patterns emerge.
 </p>
 <!---more--->
@@ -114,7 +114,7 @@ legend(400, 1500,
        lty=1, lwd=3, box.lty=0)
 ```
 
-![](https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-07/sample_variance_vs_sample size.png)<!-- -->
+![](https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-07/sample_variance_vs_sample_size.png)<!-- -->
 
 Pretty crazy\! The variation in sample variance is tremendous at small sample sizes. But the mean of this variation (orange) is basically
 identical to the true population variance (blue).
