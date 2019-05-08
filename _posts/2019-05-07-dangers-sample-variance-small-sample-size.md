@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: ["R","sample-variance","sample-size","variance"]
+tags: ["R","sample-variance","sample-size","variance","changepoint"]
 title: Dangers of sample variance at small sample size
 ---
 <p>
