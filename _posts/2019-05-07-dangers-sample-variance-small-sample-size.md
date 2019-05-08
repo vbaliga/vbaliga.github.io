@@ -293,7 +293,7 @@ Let’s plot this more explicitly:
 
 ![](https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-07/changepoint_vs_pop_size.png)<!-- -->
 
-Indeed it seems there is a direct (log-linear?) relationship. I’m sure this is covered by theory - perhaps somehow by the law of large numbers or the CTL. One hunch: as population size increases, our distributions get closer to an ideal, infinitely-sized population and we need higher and higher sample sizes to accurately approximate sample variance.
+Indeed it seems there is a direct (log-linear?) relationship. I’m sure this is covered by theory - perhaps somehow by the law of large numbers or the CLT. One hunch: as pop size increases, our distributions get closer to an ideal, infinitely-sized population and we need higher and higher sample sizes to accurately approximate true population variance.
 
 In any case, the shape of the curve is pretty consistent across all these empirical trials. **We can confidently conclude that we should not
 trust sample variance at low sample sizes.** What remains to be seen is how “low” is too low...
