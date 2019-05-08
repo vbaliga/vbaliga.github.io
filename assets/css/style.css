@@ -345,7 +345,7 @@ a {
   color: #292929;
   text-decoration: none;
   overflow-wrap: break-word;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 a:hover, a:focus {
