@@ -345,7 +345,7 @@ a {
   color: #292929;
   text-decoration: none;
   overflow-wrap: break-word;
-  border-bottom:1px dashed #000;
+  font-weight: bold;
 }
 
 a:hover, a:focus {
