@@ -4,17 +4,17 @@ tags: ["R","MCMCglmm","parallel","parallel-processing","Windows"]
 title: Parallel processing for MCMCglmm in R (Windows-friendly)
 ---
 
-Lately, I have been using the [MCMCglmm](https://cran.r-project.org/web/packages/MCMCglmm/index.html) package to run linear
+Lately, I have been using the **[MCMCglmm](https://cran.r-project.org/web/packages/MCMCglmm/index.html)** package to run linear
 mixed-models in a Bayesian framework. The documentation is generally very good but there seems to be relatively little support for using parallel processing (here: using multiple cores on your machine) to efficiently run large volumes of mcmc runs. This is especially true for Windows users, who cannot use functions like `parallel::mclapply()`.
 
-I’m happy to share that I have worked out a solution using the [parallel](https://www.rdocumentation.org/packages/parallel/versions/3.5.1) package. Basically, I set up a virtual cluster and then use the [`parallel::parLapply()`](https://stat.ethz.ch/R-manual/R-patched/library/parallel/html/clusterApply.html) function to run iterations of `MCMCglmm()` in parallel.
+I’m happy to share that I have worked out a solution using the **[parallel](https://www.rdocumentation.org/packages/parallel/versions/3.5.1) package**. Basically, I set up a virtual cluster and then use the [`parallel::parLapply()`](https://stat.ethz.ch/R-manual/R-patched/library/parallel/html/clusterApply.html) function to run iterations of `MCMCglmm()` in parallel.
 
-(This is a re-post of an entry that appeared on my old blog - see see [here](https://www.vikram-baliga.com/blog/2018/9/30/parallel-processing-for-mcmcglmm-in-r-windows-friendly)).
+(This is a re-post of an entry that appeared on my old blog - see see **[here](https://www.vikram-baliga.com/blog/2018/9/30/parallel-processing-for-mcmcglmm-in-r-windows-friendly))**.
 <!---more--->
 
 ## Data
 
-I’ll use “Example 2” from the [MCMCglmm() function help](https://www.rdocumentation.org/packages/MCMCglmm/versions/2.26/topics/MCMCglmm). You can skip ahead to the next section if instead you’d like to tailor this to your own data & analysis.
+I’ll use “Example 2” from the **[MCMCglmm() function help](https://www.rdocumentation.org/packages/MCMCglmm/versions/2.26/topics/MCMCglmm)**. You can skip ahead to the next section if instead you’d like to tailor this to your own data & analysis.
 
 First load (or install\&load) the `MCMCglmm` and `parallel` packages:
 
@@ -96,13 +96,13 @@ summary(model2)
     ##             post.mean l-95% CI u-95% CI eff.samp pMCMC
     ## (Intercept)   -0.1574  -0.6576   0.3099      812 0.488
 
-Of course, the example provided sets nitt to only 1300, yielding an ESS of only ~800 for the fixed effect. I am guessing this is intended to make sure the example is quick to run.
+Of course, the example provided sets `nitt` to only 1300, yielding an ESS of only ~800 for the fixed effect. I am guessing this is intended to make sure the example is quick to run.
 
-Boosting this to nitt=100000, burnin=10000, and thin=10 gives a more healthy ESS of >8000. But please note that this will take a lot longer to finish (I’ll leave it up to you to use the `Sys.time()` function to time it yourself).
+Boosting this to `nitt = 100000`, `burnin = 10000`, and `thin = 10` gives a more healthy ESS > 8000. But please note that this will take a lot longer to finish (I’ll leave it up to you to use the `Sys.time()` function to time it yourself).
 
 ## Run MCMC chains in parallel
 
-Whenever conducting MCMC-based analyses, it’s advisable to conduct multiple runs (different chains) and then assess convergence. I’ll leave the convergence assessments for another day (but here’s [a good StackExchange post](https://stats.stackexchange.com/questions/507/what-is-the-best-method-for-checking-convergence-in-mcmc)). For now we’ll just conduct 10 runs of this model, each using `nitt=100000`, using parallel processing. 
+Whenever conducting MCMC-based analyses, it’s advisable to conduct multiple runs (different chains) and then assess convergence. I’ll leave the convergence assessments for another day (but here’s [a good StackExchange post](https://stats.stackexchange.com/questions/507/what-is-the-best-method-for-checking-convergence-in-mcmc)). For now we’ll just conduct 10 runs of this model, each using `nitt = 100000`, using parallel processing. 
 
 **PLEASE NOTE**: I am setting this up to use only 80% of your machine’s total logical processors. You can certainly harness all of your CPUs if you’d like, although I advise against doing so if any of your MCMC runs take more than a few minutes. It also doesn’t make sense to set the number of logical processors to be greater than the number of runs (chains), but more on that later. Anyway, treat your silicon well!
 
