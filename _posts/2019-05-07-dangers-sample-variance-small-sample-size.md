@@ -9,7 +9,7 @@ Sample variance generally gives an unbiased estimate of the true population vari
 </p>
 <!---more--->
 
-First, we’ll create a normally-distributed parent population with a known mean, variance, and sample size. This represents a natural population of something we’d like to study but for sake of time, money, or feasibility, we cannot measure everything. Our goal is to figure out how reliable smaller samples are with respect to estimates of variance. We’ll take increasingly larger samples from this population and see how sample variance fares.
+First, we’ll create a normally-distributed parent population with a known mean, variance, and sample size. This represents a natural population of something we’d like to study but for sake of time, money, or feasibility, we cannot measure everything. **Our goal is to figure out how reliable smaller samples are with respect to estimates of variance.** We’ll take increasingly larger samples from this population and see how sample variance fares.
 
 ``` r
 mean = 0
@@ -116,8 +116,8 @@ legend(400, 1500,
 
 ![](https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-07/sample_variance_vs_sample_size.png)<!-- -->
 
-Pretty crazy\! The variation in sample variance is tremendous at small sample sizes. But the mean of this variation (orange) is basically
-identical to the true population variance (blue).
+Pretty crazy\! **The variation in sample variance is tremendous at small sample sizes. But the mean of this variation (orange) is basically
+identical to the true population variance (blue).**
 
 Let’s figure out at what point the variance of sample variances seem to become reliable. Since we know this happens at small sample sizes, we’ll just plot cases where sample size varies from 1 to 100 to get a more refined view of the data.
 
@@ -296,6 +296,6 @@ Let’s plot this more explicitly:
 Indeed it seems there is a direct (log-linear?) relationship. I’m sure this is covered by theory - perhaps somehow by the law of large numbers or the CTL. One hunch: as population size increases, our distributions get closer to an ideal, infinitely-sized population and we need higher and higher sample sizes to accurately approximate sample variance.
 
 In any case, the shape of the curve is pretty consistent across all these empirical trials. **We can confidently conclude that we should not
-trust sample variance at low sample sizes.** What remains to be seen is how “small” is too small...
+trust sample variance at low sample sizes.** What remains to be seen is how “low” is too low...
 
 🐢
