@@ -5,11 +5,9 @@ title: Dangers of sample variance at small sample size
 ---
 <p>
 <img src="https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-07/sample_variance_vs_sample%20size.png" alt="variance" style="float:right;width:150px;height:150px;">
-Sample variance generally gives an unbiased estimate of the true population variance, but that does not mean it is a reliable estimate of population variance. Here, I show that sample variance itself has high variance at low sample sizes. Across a few empirical simulations, it looks like <b>sample sizes below 20 are relatively untrustworthy regardless of the parent population's size or variance.</b>
+Sample variance generally gives an unbiased estimate of the true population variance, but that does not mean it provides a reliable estimate of population variance. Here, I show that sample variance itself has high variance at low sample sizes. I run through a variety of empirical simulations that vary population size and population variance to see what general patterns emerge.
 </p>
 <!---more--->
-
-Sample variance generally gives an unbiased estimate of the true population variance, but that does not mean it is a reliable estimate of population variance. Here, I show that sample variance itself has high variance at low sample sizes.
 
 First, we’ll create a normally-distributed parent population with a known mean, variance, and sample size. This represents a natural population of something we’d like to study but for sake of time, money, or feasibility, we cannot measure everything. Our goal is to figure out how reliable smaller samples are with respect to estimates of variance. We’ll take increasingly larger samples from this population and see how sample variance fares.
 
