@@ -306,7 +306,7 @@ body {
   background-color: #fff;
   padding: 50px;
   font: 15px/1.5 Helvetica, Arial, sans-serif;
-  color: #5b5b5b;
+  color: #666666;
   font-weight: 400;
 }
 
@@ -469,7 +469,7 @@ header ul a:active {
 }
 
 strong {
-  color: #000000;
+  color: #121212;
   font-weight: 700;
 }
 
