@@ -5,7 +5,7 @@ Although I like using squarespace for my main site, I'm not a fan of the way squ
 
 My main website can be found [here](https://www.vikram-baliga.com/).  
   
-### other info
+### Other info
 <details>
   <summary>Click here for more</summary>
 
