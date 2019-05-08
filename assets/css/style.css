@@ -311,7 +311,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #222;
+  color: #292929;
   font: Helvetica, Arial, sans-serif;
   margin: 0 0 20px;
   overflow-wrap: break-word;
@@ -342,7 +342,7 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color: #000000;
+  color: #292929;
   text-decoration: none;
   overflow-wrap: break-word;
 }
@@ -354,7 +354,7 @@ a:hover, a:focus {
 
 a small {
   font-size: 11px;
-  color: #000000;
+  color: #292929;
   margin-top: -0.3em;
   display: block;
 }
