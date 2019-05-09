@@ -345,7 +345,7 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color: #292929;
+  color: #000000;
   text-decoration: none;
   overflow-wrap: break-word;
 }
@@ -357,7 +357,7 @@ a:hover, a:focus {
 
 a small {
   font-size: 11px;
-  color: #292929;
+  color: #000000;
   margin-top: -0.3em;
   display: block;
 }
