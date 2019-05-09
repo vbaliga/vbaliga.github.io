@@ -420,6 +420,12 @@ a:hover small {
   font-weight: 600;
 }
 
+.tagzz a {
+  color: #292929;
+  overflow-wrap: break-word;
+  font-weight: 400;
+}
+
 .highligher-rouge a {
   color: #292929;
   text-decoration: none;
