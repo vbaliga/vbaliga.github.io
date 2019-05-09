@@ -48,6 +48,7 @@ var.p <- function(x) {
 ```
 
 ## How does sample variance ‘behave’?
+--------------
 
 Using our sequence of increasing sample size (`Ns`), we’ll now create a matrix of sample variances. 
 
@@ -120,8 +121,8 @@ legend(400, 1500,
 
 Pretty crazy\! 
 
-**The variation in sample variance is tremendous at small sample sizes. But the mean of this variation (orange) is basically
-identical to the true population variance (blue).**
+***The variation in sample variance is tremendous at small sample sizes. But the mean of this variation (orange) is basically
+identical to the true population variance (blue).***
 
 Let’s figure out at what point the variance of sample variances seem to become reliable. Since we know this happens at small sample sizes, we’ll just plot cases where sample size varies from 1 to 100 to get a more refined view of the data.
 
@@ -190,6 +191,7 @@ text(
 The vertical red line shows the sample size after which the variance of sample variance tends to be relatively low.
 
 ## Can we find general patterns?
+--------------
 
 At what point is sample size large enough to trust its estimation of the true variance? Let’s first see if it depends on the parent population’s actual variance.
 
@@ -268,6 +270,7 @@ through \~ 46 leaves us vulnerable to the dangers of the left side of the curve.
 Of course, the `changepoint` metric does also seem a little conservative. It might be worthwhile thinking of another way to find the point of relative stability.
 
 ## Does population size matter?
+--------------
 
 One more thing I’d like to determine is if our results so far stem from fixing the population size at 1000. So, we’ll repeat this but instead of varying standard deviation, we’ll vary population size.
 
@@ -292,14 +295,13 @@ for (i in 1:nrow(params)) {
 ```
 ![](https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-07/sample_variance_vs_pop_size.png)<!-- -->
 
-**So it seems that as true population size increases, so too does the location of the changepoint.**
+***So it seems that as true population size increases, so too does the location of the changepoint.***
 Let’s plot this more explicitly:
 
 ![](https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-07/changepoint_vs_pop_size.png)<!-- -->
 
 Indeed it seems there is a direct (log-linear?) relationship. I’m sure this is covered by theory - perhaps somehow by the law of large numbers or the CLT. One hunch: as pop size increases, our distributions get closer to an ideal, infinitely-sized population and we need higher and higher sample sizes to accurately approximate true population variance.
 
-In any case, the shape of the curve is pretty consistent across all these empirical trials. **We can confidently conclude that we should not
-trust sample variance at very low sample sizes.** What remains to be seen is how “low” is too low...
+In any case, the shape of the curve is pretty consistent across all these empirical trials. ***We can confidently conclude that we should not trust sample variance at very low sample sizes.*** What remains to be seen is how “low” is too low...
 
 🐢
