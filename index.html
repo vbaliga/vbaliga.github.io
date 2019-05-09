@@ -9,12 +9,12 @@ layout: default
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <div class="entry">
-        <span font-weight=400>#tags: 
+        <div class="tagzz">#tags: 
           {% for tag in post.tags %}
             {% capture tag_name %}{{ tag }}{% endcapture %}
             <a href="/tag/{{ tag_name }}"><code class="highligher-rouge font-weight=400"><nobr>#{{ tag_name }}</nobr></code>&nbsp;</a>
           {% endfor %}
-        </span>  
+        </div>  
         <br>
         <br>
         {{ post.excerpt }}
