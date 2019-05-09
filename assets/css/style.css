@@ -344,10 +344,66 @@ h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
+.section h1{
+  font-size: 1.8em;
+  color: #292929;
+  font: "Segoe UI", Helvetica, Arial, sans-serif;
+  margin: 0 0 20px;
+  line-height: 1.1;
+  overflow-wrap: break-word;
+  font-weight: 700;
+  border-bottom:none;
+}
+
+.section h2{
+  color: #393939;
+  font: "Segoe UI", Helvetica, Arial, sans-serif;
+  margin: 0 0 20px;
+  line-height: 1.1;
+  overflow-wrap: break-word;
+  font-weight: 700;
+  border-bottom:none;
+}
+
+.section h3, h4, h5, h6 {
+  color: #494949;
+  font: "Segoe UI", Helvetica, Arial, sans-serif;
+  margin: 0 0 20px;
+  line-height: 1.1;
+  overflow-wrap: break-word;
+  font-weight: 700;
+  border-bottom:none;
+}
+
 a {
   color: #292929;
   text-decoration: none;
   overflow-wrap: break-word;
+}
+
+.header a{
+  color: #292929;
+  text-decoration: none;
+  overflow-wrap: break-word;
+  font: 0.95em "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.section a{
+  color: #292929;
+  text-decoration: none;
+  overflow-wrap: break-word;
+  border-bottom:1px #000;
+  font: 1em "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+.span a{
+  color: #292929;
+  text-decoration: none;
+  overflow-wrap: break-word;
+  font: 1em "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 600;
 }
 
 a:hover, a:focus {
