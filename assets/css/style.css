@@ -344,7 +344,7 @@ h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
-.section h1{
+.section h1 {
   font-size: 1.8em;
   color: #292929;
   font: "Segoe UI", Helvetica, Arial, sans-serif;
@@ -355,7 +355,7 @@ h3, h4, h5, h6 {
   border-bottom:none;
 }
 
-.section h2{
+.section h2 {
   color: #393939;
   font: "Segoe UI", Helvetica, Arial, sans-serif;
   margin: 0 0 20px;
@@ -381,7 +381,7 @@ a {
   overflow-wrap: break-word;
 }
 
-.header a{
+.header a {
   color: #292929;
   text-decoration: none;
   overflow-wrap: break-word;
@@ -389,7 +389,7 @@ a {
   font-weight: 400;
 }
 
-.section a{
+.section a {
   color: #292929;
   text-decoration: none;
   overflow-wrap: break-word;
@@ -398,7 +398,16 @@ a {
   font-weight: 600;
 }
 
-.span a{
+.entry a {
+  color: #292929;
+  text-decoration: none;
+  overflow-wrap: break-word;
+  border-bottom:1px #000;
+  font: 1em "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+.highligher-rouge a {
   color: #292929;
   text-decoration: none;
   overflow-wrap: break-word;
