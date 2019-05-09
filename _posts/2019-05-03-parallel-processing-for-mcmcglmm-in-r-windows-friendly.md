@@ -9,7 +9,7 @@ mixed-models in a Bayesian framework. The documentation is generally very good b
 
 I’m happy to share that I have worked out a solution using the [parallel](https://www.rdocumentation.org/packages/parallel/versions/3.5.1) package. Basically, I set up a virtual cluster and then use the `parallel::parLapply()` function to run iterations of `MCMCglmm()` in parallel.
 
-<small>(This is a re-post of an entry that appeared on my old blog - see [here](https://www.vikram-baliga.com/blog/2018/9/30/parallel-processing-for-mcmcglmm-in-r-windows-friendly)).</small>
+<small>(This is a re-post of an entry that appeared on my old blog - see **[here](https://www.vikram-baliga.com/blog/2018/9/30/parallel-processing-for-mcmcglmm-in-r-windows-friendly)).</small>**
 <!---more--->
 
 ## Data
