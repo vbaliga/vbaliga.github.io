@@ -381,7 +381,7 @@ a {
   overflow-wrap: break-word;
 }
 
-.header a {
+.view a {
   color: #292929;
   text-decoration: none;
   overflow-wrap: break-word;
@@ -400,7 +400,6 @@ a {
 
 .entry a {
   color: #292929;
-  text-decoration: none;
   overflow-wrap: break-word;
   border-bottom:1px #000;
   font: 1em "Segoe UI", Helvetica, Arial, sans-serif;
@@ -412,7 +411,7 @@ a {
   text-decoration: none;
   overflow-wrap: break-word;
   font: 1em "Segoe UI", Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 a:hover, a:focus {
