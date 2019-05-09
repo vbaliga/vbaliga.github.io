@@ -9,7 +9,7 @@ Sample variance generally gives an unbiased estimate of the true population vari
 </p>
 <!---more--->
 
-First, we’ll create a normally-distributed parent population with a known mean, variance, and sample size. This represents a natural population of something we’d like to study but for sake of time, money, or feasibility, we cannot measure everything. **Our goal is to figure out how reliable smaller samples are with respect to estimates of variance.** We’ll take increasingly larger samples from this population and see how sample variance fares.
+First, we’ll create a normally-distributed parent population with a known mean, variance, and sample size. This represents a natural population of something we’d like to study but for sake of time, money, or feasibility, we cannot measure everything. ***Our goal is to figure out how reliable smaller samples are with respect to estimates of variance.*** We’ll take increasingly larger samples from this population and see how sample variance fares.
 
 ``` r
 mean = 0
