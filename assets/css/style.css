@@ -426,12 +426,8 @@ a:hover small {
   font-weight: 400;
 }
 
-.highligher-rouge a {
-  color: #292929;
-  text-decoration: none;
-  overflow-wrap: break-word;
-  font: 1em "Segoe UI", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+.tagzz a:hover, a:focus {
+  font-weight: bold;
 }
 
 .wrapper {
