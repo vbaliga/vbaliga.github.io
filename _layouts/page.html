@@ -6,14 +6,13 @@ layout: default
 
   <h1>{{ page.title }}</h1>
   
-  <span>#tags: 
+  <div class="tagzz">#tags: 
     {% for tag in page.tags %}
       {% capture tag_name %}{{ tag }}{% endcapture %}
       <a href="/tag/{{ tag_name }}"><code class="highligher-rouge" font-weight=400><nobr>#{{ tag_name }}</nobr></code>&nbsp;</a>
     {% endfor %}
-  </span>
+  </div>
   
-  <br>
   <br>
 
   <div class="entry">
