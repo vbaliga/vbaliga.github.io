@@ -306,7 +306,7 @@ body {
   background-color: #fff;
   padding: 50px;
   font: 1em "Segoe UI", Helvetica, Arial, sans-serif;
-  color: #666666;
+  color: #24292e;
   font-weight: 400;
 }
 
@@ -329,7 +329,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 1.6em;
+  font-size: 1.8em;
   overflow-wrap: break-word;
   font-weight: 700;
 }
@@ -367,7 +367,7 @@ a:hover small {
 }
 
 .wrapper {
-  max-width: 960px;
+  max-width: 910px;
   margin: 0 auto;
 }
 
@@ -420,7 +420,7 @@ img {
 }
 
 header {
-  max-width: 200px;
+  max-width: 220px;
   float: left;
   padding-bottom: 20px;
   position: fixed;
@@ -488,7 +488,7 @@ header ul a strong {
 }
 
 section {
-  max-width: 670px;
+  max-width: 600px;
   float: right;
   padding-bottom: 50px;
 }
@@ -505,13 +505,13 @@ hr {
 }
 
 footer {
-  max-width: 670px;
+  max-width: 600px;
   float: right;
   bottom: 50px;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
-@media print, screen and (max-width: 1010px) {
+@media print, screen and (max-width: 960px) {
   div.wrapper {
     width: auto;
     margin: 0;
