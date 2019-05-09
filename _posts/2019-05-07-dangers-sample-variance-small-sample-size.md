@@ -46,7 +46,7 @@ var.p <- function(x) {
   var(x) * (length(x) - 1) / length(x)
 }
 ```
-\
+  
 --------------
 ## How does sample variance ‘behave’?
 
@@ -189,7 +189,7 @@ text(
 ![](https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-07/changepoint.png)<!-- -->
 
 The vertical red line shows the sample size after which the variance of sample variance tends to be relatively low.
-\
+  
 --------------
 ## Can we find general patterns?
 
@@ -268,7 +268,7 @@ Pretty interesting\! Although the standard deviation varies widely across these 
 through \~ 46 leaves us vulnerable to the dangers of the left side of the curve. So we’re seeing that samples of \< 5% of the true population size are relatively unreliable.
 
 Of course, the `changepoint` metric does also seem a little conservative. It might be worthwhile thinking of another way to find the point of relative stability.
-\
+  
 --------------
 ## Does population size matter?
 
