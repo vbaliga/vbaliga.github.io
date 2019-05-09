@@ -305,7 +305,7 @@
 body {
   background-color: #fff;
   padding: 50px;
-  font: 1.125em "Segoe UI", Helvetica, Arial, sans-serif;
+  font: 1em "Segoe UI", Helvetica, Arial, sans-serif;
   color: #666666;
   font-weight: 400;
 }
@@ -329,7 +329,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 1.8em;
+  font-size: 1.6em;
   overflow-wrap: break-word;
   font-weight: 700;
 }
