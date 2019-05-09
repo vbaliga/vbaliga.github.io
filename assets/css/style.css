@@ -409,14 +409,12 @@ a:hover small {
   color: #292929;
   text-decoration: none;
   overflow-wrap: break-word;
-  font: 1em "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: 600;
 }
 
 .entry a {
   color: #292929;
   overflow-wrap: break-word;
-  font: 1em "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: 600;
 }
 
@@ -427,7 +425,23 @@ a:hover small {
 }
 
 .tagzz a:hover, a:focus {
+  color: #5D3BE9;
   font-weight: bold;
+}
+
+.view a:hover, a:focus {
+  color: #5D3BE9;
+  font-weight: 600;
+}
+
+.entry a:hover, a:focus {
+  color: #5D3BE9;
+  font-weight: 600;
+}
+
+.section a:hover, a:focus {
+  color: #5D3BE9;
+  font-weight: 600;
 }
 
 .wrapper {
