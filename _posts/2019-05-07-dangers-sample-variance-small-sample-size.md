@@ -47,7 +47,7 @@ var.p <- function(x) {
 }
 ```
 
-\  
+  
 
 ## How does sample variance ‘behave’?
 --------------
@@ -192,7 +192,7 @@ text(
 
 The vertical red line shows the sample size after which the variance of sample variance tends to be relatively low.
 
-\  
+  
 
 ## Can we find general patterns?
 --------------
@@ -273,7 +273,7 @@ through \~ 46 leaves us vulnerable to the dangers of the left side of the curve.
 
 Of course, the `changepoint` metric does also seem a little conservative. It might be worthwhile thinking of another way to find the point of relative stability.
 
-\  
+  
 
 ## Does population size matter?
 --------------
