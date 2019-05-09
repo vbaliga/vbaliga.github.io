@@ -8,7 +8,7 @@ Say you have an R script that you share with others. You may not be sure that ea
 
 Here’s some code that provides an easy way to check whether specific packages are in the default Library. If they are, they’re simply loaded via `library()`. If any packages are missing, they’re installed (with dependencies) into the default Library and are then loaded.
 
-<small>(This is a re-post of an entry that appeared on my old blog - see [here](https://www.vikram-baliga.com/blog/2015/7/19/a-hassle-free-way-to-verify-that-r-packages-are-installed-and-loaded)).</small>
+<small>(This is a re-post of an entry that appeared on my old blog - see **[here](https://www.vikram-baliga.com/blog/2015/7/19/a-hassle-free-way-to-verify-that-r-packages-are-installed-and-loaded)**).</small>
 <!---more--->
 
 ## Install | install & load packages
