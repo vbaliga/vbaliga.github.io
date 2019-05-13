@@ -98,7 +98,7 @@ legend(300, 3000,
 
 This looks generally similar to the first figure from my previous post. The parent population is identical to the one I used previous, as I called `set.seed(123)` prior to each simulation. But I did not use `set.seed()` prior to sampling from the parent, which means that `varmat` will be different each time.
 
-It may be hard to see what’s going on at the smallest sample sizes, so here’s the data at sample size \>= 15:
+It may be hard to see what’s going on at the smallest sample sizes, so here’s the data at sample size \<= 15:
 
 ![](https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-12/sample_variance_sample_sizes_smallSS.png)<!-- -->
 
