@@ -19,7 +19,7 @@ I’ll first re-create part of what I showed in my previous post. We’ll simula
 
 To cut down on time, I will only take samples at particular sample sizes, based on the sample sizes which seemed interesting (to me\!) in the previous post.
 
-```r        
+``` r
 mean = 0
 SD = 20
 popsize = 1000
@@ -29,7 +29,11 @@ pop <- rnorm(popsize, mean, SD)
 
 # verify that we get the same variance as last time
 var(pop)
+```
 
+    ## [1] 393.3836
+
+``` r
 # pick specific Ns this time
 Ns <- c(2, 3, 5, 10, 15, 30, 45, 
         90, 180, 250, 500, 750)
@@ -51,6 +55,7 @@ for (i in 1:dim(varmat)[1])
   }
 }
 rownames(varmat) <- Ns
+
 plot(
   rep(2, ncol(varmat)),
   varmat[1,],
