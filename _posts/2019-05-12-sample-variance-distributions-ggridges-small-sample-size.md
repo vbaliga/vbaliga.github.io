@@ -11,7 +11,7 @@ This time, I will focus more closely on the <i>distribution</i> of sample varian
 
 </p>
 
-<small>For part I, see here</small>
+<small>For part I, see <b><a href="https://vbaliga.github.io/dangers-sample-variance-small-sample-size/">here</a></b></small>
 <!---more--->
 
 ## ‘Behavior’ of sample variance at small sample sizes.
@@ -237,7 +237,7 @@ legend(
 
 ![](https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-12/variance_mean_median.png)<!-- -->
 
-***So at small sample sizes, the means of sample variance are close to but overshoop our population variance, whereas the medians sharply underestimate population variance***.
+***So at small sample sizes, the means of sample variance are close to but overshoot our population variance, whereas the medians sharply underestimate population variance***.
 
 But at sample sizes over 45, means and medians of sample variance are nearly identical to the true population variance.
 
