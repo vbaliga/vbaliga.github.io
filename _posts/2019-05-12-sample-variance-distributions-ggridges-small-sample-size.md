@@ -10,9 +10,8 @@ In my previous post, I showed that although sample variance on average gives an 
 
 This time, I will focus more closely on the <i>distribution</i> of sample variance. How does sample size seem to affect the distribution of sample variance? And how might this inform how we determine which sample sizes are too small? I'll use one of my favorite new(ish) packages, `ggridges`, to plot the sets of distributions from one example simulation.
 
-</p>
-
 <small>For part I, see <b><a href="https://vbaliga.github.io/dangers-sample-variance-small-sample-size/">here</a></b></small>
+</p>
 <!---more--->
 
 ## ‘Behavior’ of sample variance at small sample sizes.
