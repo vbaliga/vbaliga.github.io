@@ -3,6 +3,7 @@ layout: post
 tags: ["R","ggridges","sample-variance","sample-size","variance"]
 title: Sample variance at small sample sizes II: distributions
 ---
+
 <p>
 <img src="https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-12/sample_variance_distributions_ggridges.png" alt="sample variance ggridges" style="float:right;width:200px;height:200px;margin-left:30px;">
 In my previous post, I showed that although sample variance on average gives an unbiased estimate of population variance, it is highly unreliable at extremely small sample sizes. 
