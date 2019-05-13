@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: ["R","ggridges","sample-variance","sample-size","variance"]
-title: Sample variance at small sample sizes 2 distributions
+title: Sample variance at small sample sizes II - distributions
 ---  
 
 <p>
