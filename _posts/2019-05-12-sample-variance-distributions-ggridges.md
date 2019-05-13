@@ -198,7 +198,7 @@ legend(
 
 ***So at small sample sizes, the means of sample variance are close to but overshoot our population variance, whereas the medians sharply underestimate population variance***.
 
-But at sample sizes over 45, means and medians of sample variance are nearly identical to the true population variance. It is roughly around that sample size where we see the sample variances start to show normal distributions.
+But at sample sizes over ~30, means and medians of sample variance are nearly identical to the true population variance. It is roughly around that sample size where we see the sample variances start to show normal distributions.
 
 So we're getting closer to understanding why small sample sizes poorly describe our toy example's population variance. The distributions of sample variance show crazy skew when generated from small samples. In my previous post, I learned that higher population sizes seem to need higher minimum sample sizes to capture population variance, but that was all based on using the `changepoint` algorithm and looking for breakpoints in the variance of sample variance. It might be a good subject to revisit by just plotting distributions as I did here. How does increasing population size affect the behavior of sample variance distributions? 
 
