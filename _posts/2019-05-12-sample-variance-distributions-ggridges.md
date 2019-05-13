@@ -23,7 +23,6 @@ I’ll keep this code tucked away so we can move quickly. Click the text below t
 
 <details><summary>Click here for code</summary>
 <p>
-
 ``` r
 mean = 0
 SD = 20
@@ -34,11 +33,7 @@ pop <- rnorm(popsize, mean, SD)
 
 # verify that we get the same variance as last time
 var(pop)
-```
 
-    ## [1] 393.3836
-
-``` r
 # pick specific Ns this time
 Ns <- c(2, 3, 5, 10, 15, 30, 45, 
         90, 180, 250, 500, 750)
@@ -60,7 +55,6 @@ for (i in 1:dim(varmat)[1])
   }
 }
 rownames(varmat) <- Ns
-
 plot(
   rep(2, ncol(varmat)),
   varmat[1,],
@@ -103,7 +97,6 @@ It may be hard to see what’s going on at the smallest sample sizes, so here’
 
 <details><summary>...and click here for the code</summary>
 <p>
-
 ``` r
 plot(
   rep(2, ncol(varmat)),
@@ -134,7 +127,6 @@ legend(5, 4000,
        col=c(rgb(0, 0, 1, alpha = 0.5), "orange"), 
        lty=1, lwd=3, box.lty=0)
 ```
-
 </p>
 </details>
 
@@ -192,6 +184,8 @@ p
 
 ***At small sample sizes, we see extremely skewed distributions of sample variance.***
 
+As in the other plots, the horizontal blue line shows where the true population variance is. 
+
 For sample size = 15 or below (among our cherry-picked examples), we’re seeing extremely long right-tailed distributions. The shapes of the distributions indicate that median and/or mode might strongly differ from the mean sample variance. Let’s take a look.
 
 We’ll just focus on median vs. mean:
@@ -238,5 +232,8 @@ legend(
 
 ***So at small sample sizes, the means of sample variance are close to but overshoot our population variance, whereas the medians sharply underestimate population variance***.
 
-But at sample sizes over 45, means and medians of sample variance are nearly identical to the true population variance.
+But at sample sizes over 45, means and medians of sample variance are nearly identical to the true population variance. It is roughly around that sample size where we see the sample variances start to show normal distributions.
 
+
+
+🐢
