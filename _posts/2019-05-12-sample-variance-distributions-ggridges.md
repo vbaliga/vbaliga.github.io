@@ -24,6 +24,7 @@ I’ll keep this code tucked away so we can move quickly. Click the text below t
 <details><summary>Click here for code</summary>
 <p>
 <pre>
+
 ```r        
 mean = 0
 SD = 20
@@ -84,6 +85,7 @@ legend(300, 3000,
                 "Means of sample variance"),
        col=c(rgb(0, 0, 1, alpha = 0.5), "orange"), 
        lty=1, lwd=3, box.lty=0)
+```
 </pre>   
 </p>
 </details>
