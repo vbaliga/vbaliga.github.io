@@ -106,7 +106,7 @@ We’ll now take a look at how the distributions of sample variance at each samp
 # First load | install&load packages we'll need
 packages = c("ggplot2", "ggridges", "tidyr", 
              "forcats", "dplyr")
-# See this post for info on this code chunk
+# See [this post](https://vbaliga.github.io/verify-that-r-packages-are-installed-and-loaded/) for info on this code chunk
 package.check <- lapply(
   packages,
   FUN = function(x) {
