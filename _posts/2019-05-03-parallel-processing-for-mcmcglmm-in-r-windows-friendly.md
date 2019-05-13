@@ -3,6 +3,7 @@ layout: post
 tags: ["R","MCMCglmm","parallel","parallel-processing","Windows"]
 title: Parallel processing for MCMCglmm in R (Windows-friendly)
 ---
+<meta name="description" content="I set up a virtual cluster and then use the parallel::parLapply() function to run iterations of MCMCglmm() in parallel for computers running Windows.">
 
 Lately, I have been using the [MCMCglmm](https://cran.r-project.org/web/packages/MCMCglmm/index.html) package to run linear
 mixed-models in a Bayesian framework. The documentation is generally very good but there seems to be relatively little support for using parallel processing (here: using multiple cores on your machine) to efficiently run large volumes of mcmc runs. This is especially true for Windows users, who cannot use functions like `parallel::mclapply()`.
