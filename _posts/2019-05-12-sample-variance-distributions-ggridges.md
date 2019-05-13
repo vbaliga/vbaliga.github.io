@@ -19,12 +19,6 @@ I’ll first re-create part of what I showed in my previous post. We’ll simula
 
 To cut down on time, I will only take samples at particular sample sizes, based on the sample sizes which seemed interesting (to me\!) in the previous post.
 
-I’ll keep this code tucked away so we can move quickly. Click the text below to see all the code if you’d like.
-
-<details><summary>Click here for code</summary>
-<p>
-<pre>
-
 ```r        
 mean = 0
 SD = 20
@@ -86,9 +80,6 @@ legend(300, 3000,
        col=c(rgb(0, 0, 1, alpha = 0.5), "orange"), 
        lty=1, lwd=3, box.lty=0)
 ```
-</pre>   
-</p>
-</details>
 
 ![](https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-12/sample_variance_sample_sizes_all.png)<!-- -->
 
@@ -97,41 +88,6 @@ This looks generally similar to the first figure from my previous post. The pare
 It may be hard to see what’s going on at the smallest sample sizes, so here’s the data at sample size \<= 15:
 
 ![](https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-12/sample_variance_sample_sizes_smallSS.png)<!-- -->
-
-<details><summary>...and click here for the code</summary>
-<p>
-``` r
-plot(
-  rep(2, ncol(varmat)),
-  varmat[1,],
-  ylim = c(0, max(varmat)),
-  xlim = c(0, 15),
-  pch = 19,
-  col = rgb(0, 0, 0, alpha = 0.2),
-  xlab = 'sample size',
-  ylab = 'sample variance',
-  tck = 0.02,
-  bty = "n"
-)
-for (i in 2:length(Ns)) {
-  points(rep(Ns[i], ncol(varmat)),
-         varmat[i,],
-         pch = 19,
-         col = rgb(0, 0, 0, alpha = 0.2))
-}
-abline(h = var.p(pop),
-       col = rgb(0, 0, 1, alpha = 0.5),
-       lwd = 3)
-points(Ns, rowMeans(varmat),
-       col = 'orange', pch = 19)
-legend(5, 4000, 
-       legend=c("True population variance",
-                "Means of sample variance"),
-       col=c(rgb(0, 0, 1, alpha = 0.5), "orange"), 
-       lty=1, lwd=3, box.lty=0)
-```
-</p>
-</details>
 
 Of course, it’s (hopefully) very likely that no published study would try to say anything conclusive about population variance based on a sample size of 2 or 3.
 
