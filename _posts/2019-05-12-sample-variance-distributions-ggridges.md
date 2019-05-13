@@ -33,6 +33,8 @@ var(pop)
 
     ## [1] 393.3836
 
+Checks out - great!
+
 ``` r
 # pick specific Ns this time
 Ns <- c(2, 3, 5, 10, 15, 30, 45, 
@@ -88,7 +90,7 @@ legend(300, 3000,
 
 ![](https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-12/sample_variance_sample_sizes_all.png)<!-- -->
 
-This looks generally similar to the first figure from my previous post. The parent population is identical to the one I used previous, as I called `set.seed(123)` prior to each simulation. But I did not use `set.seed()` prior to sampling from the parent, which means that `varmat` will be different each time.
+This looks generally similar to the first figure from my previous post. The parent population is identical to the one I used previously, as I called `set.seed(123)` prior to each simulation. Because I didn't want to bother with seeding within `for()` loops I did not use `set.seed()` prior to sampling from the parent, which means that `varmat` will be different each time.
 
 It may be hard to see what’s going on at the smallest sample sizes, so here’s the data at sample size \<= 15:
 
@@ -148,15 +150,15 @@ p
 
 ***At small sample sizes, we see extremely skewed distributions of sample variance.***
 
-As in the other plots, the horizontal blue line shows where the true population variance is. 
+As in the other plots, the horizontal blue line shows where the true population variance is. Please also note that the sample sizes are not evenly distributed along the x-axis.
 
-For sample size = 15 or below (among our cherry-picked examples), we’re seeing extremely long right-tailed distributions. The shapes of the distributions indicate that median and/or mode might strongly differ from the mean sample variance. Let’s take a look.
+For sample size 15 or below (among our cherry-picked examples), we’re seeing extremely long right-tailed distributions. The shapes of the distributions indicate that median and/or mode might strongly differ from the mean sample variance. Let’s take a look.
 
 We’ll just focus on median vs. mean:
 
 ``` r
-medianz<-apply(varmat,1,median)
-meanz<-apply(varmat,1,mean)
+medianz <- apply(varmat, 1, median)
+meanz <- apply(varmat, 1, mean)
 
 plot(
   Ns,
@@ -198,6 +200,6 @@ legend(
 
 But at sample sizes over 45, means and medians of sample variance are nearly identical to the true population variance. It is roughly around that sample size where we see the sample variances start to show normal distributions.
 
-
+So we're getting closer to understanding why small sample sizes poorly describe our toy example's population variance. The distributions of sample variance show crazy skew when generated from small samples. In my previous post, I learned that higher population sizes seem to need higher minimum sample sizes to capture population variance, but that was all based on using the `changepoint` algorithm and looking for breakpoints in the variance of sample variance. It might be a good subject to revisit by just plotting distributions as I did here. How does increasing population size affect the behavior of sample variance distributions? 
 
 🐢
