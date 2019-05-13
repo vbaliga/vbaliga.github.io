@@ -23,7 +23,8 @@ I’ll keep this code tucked away so we can move quickly. Click the text below t
 
 <details><summary>Click here for code</summary>
 <p>
-<pre>        
+<pre>
+```r        
 mean = 0
 SD = 20
 popsize = 1000
