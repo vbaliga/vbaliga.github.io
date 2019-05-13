@@ -8,7 +8,7 @@ title: Sample variance at small sample sizes II - distributions
 <img src="https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-12/sample_variance_distributions_ggridges.png" alt="sample variance ggridges" style="float:right;width:200px;height:200px;margin-left:30px;">
 In my <b><a href="https://vbaliga.github.io/dangers-sample-variance-small-sample-size/">previous post</a></b>, I showed that although sample variance on average gives an unbiased estimate of population variance, it is highly unreliable at extremely small sample sizes. 
 
-This time, I will focus more closely on the <i>distributions</i> of sample variance. <b>How does sample size seem to affect the distribution of sample variance?</b> And how might this inform how we determine which sample sizes are too small? I'll use one of my favorite new(ish) packages, <b><a href="https://github.com/clauswilke/ggridges">ggridges</a></b>, to plot the sets of distributions from one example simulation.
+This time, I will focus more closely on the <i>distributions</i> of sample variance. <b>Does sample size affect the distributions of sample variance?</b> And how might this inform how we determine which sample sizes are too small? I'll use one of my favorite new(ish) packages, <b><a href="https://github.com/clauswilke/ggridges">ggridges</a></b>, to plot the sets of distributions from one example simulation.
 
 </p>
 <!---more--->
