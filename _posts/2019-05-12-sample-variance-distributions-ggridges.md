@@ -106,7 +106,6 @@ We’ll now take a look at how the distributions of sample variance at each samp
 # First load | install&load packages we'll need
 packages = c("ggplot2", "ggridges", "tidyr", 
              "forcats", "dplyr")
-# See [this post](https://vbaliga.github.io/verify-that-r-packages-are-installed-and-loaded/) for info on this code chunk
 package.check <- lapply(
   packages,
   FUN = function(x) {
@@ -145,6 +144,7 @@ p <- ggplot(df, aes(x = value, y = key)) +
   theme_ridges()
 p
 ```
+See [this post](https://vbaliga.github.io/verify-that-r-packages-are-installed-and-loaded/) for info on the first few lines of the code chunk.
 
 ![](https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-12/sample_variance_distributions_ggridges.png)<!-- -->
 
