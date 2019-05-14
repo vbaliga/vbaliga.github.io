@@ -15,7 +15,7 @@ I’m happy to share that I have worked out a solution using the [parallel](http
 
 ## Data
 
-I’ll use “Example 2” from the **[MCMCglmm() function help](https://www.rdocumentation.org/packages/MCMCglmm/versions/2.26/topics/MCMCglmm)**. You can skip ahead to the next section if instead you’d like to tailor this to your own data & analysis.
+I’ll use “Example 2” from the [MCMCglmm() function help](https://www.rdocumentation.org/packages/MCMCglmm/versions/2.26/topics/MCMCglmm). You can skip ahead to the next section if instead you’d like to tailor this to your own data & analysis.
 
 First load (or install\&load) the `MCMCglmm` and `parallel` packages:
 
