@@ -406,16 +406,31 @@ a:hover small {
   font-weight: 400;
 }
 
+.view a:hover, a:focus {
+  color: #5D3BE9;
+  font-weight: 600;
+}
+
 .section a {
   color: #5D3BE9;
   text-decoration: none;
   overflow-wrap: break-word;
+  font-weight: 400;
+}
+
+.section a:hover, a:focus {
+  color: #5D3BE9;
   font-weight: 600;
 }
 
 .entry a {
   color: #5D3BE9;
   overflow-wrap: break-word;
+  font-weight: 400;
+}
+
+.entry a:hover, a:focus {
+  color: #5D3BE9;
   font-weight: 600;
 }
 
@@ -428,21 +443,6 @@ a:hover small {
 .tagzz a:hover, a:focus {
   color: #5D3BE9;
   font-weight: bold;
-}
-
-.view a:hover, a:focus {
-  color: #5D3BE9;
-  font-weight: 600;
-}
-
-.entry a:hover, a:focus {
-  color: #5D3BE9;
-  font-weight: 600;
-}
-
-.section a:hover, a:focus {
-  color: #5D3BE9;
-  font-weight: 600;
 }
 
 .wrapper {
@@ -459,7 +459,7 @@ blockquote {
 
 code, pre {
   font-family: Consolas, Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
-  font-size: 14px;
+  font-size: 0.95em;
   color: #333;
   background-color:#F3F4F4;
   padding-left:4px;
