@@ -352,7 +352,7 @@ a {
 }
 
 a:hover, a:focus {
-  color: #00BA57;
+  color: #5D3BE9;
   font-weight: bold;
 }
 
@@ -364,7 +364,7 @@ a small {
 }
 
 a:hover small {
-  color: #00BA57;
+  color: #5D3BE9;
 }
 
 .post h1 {
@@ -426,22 +426,22 @@ a:hover small {
 }
 
 .tagzz a:hover, a:focus {
-  color: #00BA57;
+  color: #5D3BE9;
   font-weight: bold;
 }
 
 .view a:hover, a:focus {
-  color: #00BA57;
+  color: #5D3BE9;
   font-weight: 600;
 }
 
 .entry a:hover, a:focus {
-  color: #00BA57;
+  color: #5D3BE9;
   font-weight: 600;
 }
 
 .section a:hover, a:focus {
-  color: #00BA57;
+  color: #5D3BE9;
   font-weight: 600;
 }
 
