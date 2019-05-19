@@ -92,9 +92,9 @@ t1 - t0
 
 For reference, I ran this on my laptop, which is hilariously less powerful than my desktop computer. Some relevant specs: i7 processor w/ 4 cores @ ~2 GHz each; 8 GB RAM; Windows 10 Pro 64-bit; R 3.5.2 in RStudio 1.2.1335.
 
-**One more important bit:** we'll now collect all products from these parallel runs into a single object which will be of class `multiSimmap`. 
+If you missed it above, please make sure you stop the cluster using `stopCluster(cl)` at this point!
 
-Then just for fun, we'll do some basic plotting of the results to showcase our simulated histories in a couple ways.
+**One more important bit:** we'll now collect all products from these parallel runs into a single object which will be of class `multiSimmap`. 
 
 ``` r
 # Collect all the stochastic maps
@@ -102,7 +102,11 @@ ER_Mk <- do.call(c, ER_Mkparallel)
 class(ER_Mk) <- c("multiSimmap", class(ER_Mk))
 # Summarize them
 ER_Mk_summary <- summary(ER_Mk, plot = FALSE)
+```
 
+Then just for fun, we'll do some basic plotting of the results to showcase our simulated histories in a couple ways.
+
+``` r
 # Just for fun, I'll plot some of the results
 # I'm a big fan of viridis colors
 cols <- viridis(length(levels(as.factor(states))))
