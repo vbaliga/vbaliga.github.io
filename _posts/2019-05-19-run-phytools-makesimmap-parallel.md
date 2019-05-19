@@ -9,8 +9,8 @@ title: Run phytools' make.simmap() in parallel
 In macroevolutionary studies, we often use stochastic character mapping to infer the evolutionary history of a discrete trait. I am very grateful that the phytools package allows easy implementation of character mapping via the `make.simmap()` function.
 </p>
 Of course, this method of inferring character evolution is a Markovian process where we sample character histories in proportion to their posterior probabilities under a given model. So we need to simulate many, many (hundreds, thousands...) of potential histories to get meaningful results. As with any other algorithm that we'd like to run repeatedly, it makes sense to see if parallelization can help us.
-
-***Here I provide code to run `make.simmap()` in parallel. It’s a Windows-friendly approach and similar to my code from [another blog post](https://vbaliga.github.io/parallel-processing-for-mcmcglmm-in-r-windows-friendly/), I make use of `parLapply()`.***
+<br>
+**Here I provide code to run `make.simmap()` in parallel. It’s a Windows-friendly approach and similar to my code from [another blog post](https://vbaliga.github.io/parallel-processing-for-mcmcglmm-in-r-windows-friendly/), I make use of `parLapply()`.**
 
 <!---more--->
 
@@ -121,7 +121,7 @@ plotSimmap(ER_Mk[[1]], colors = cols)
 
 ![](https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-19/simmap_parallel-2.png)<!-- -->
 
-## How much faster?
+## So...how much time does this save us?
 
 So it would be good to compare how fast this batch of runs completed with how it would fare in normal circumstances. Of course, since this is a stochastic process, we can't exactly generate the same batch of simmapped trees again (well, I wonder if `set.seed` does anything here -- something to check later!). 
 
