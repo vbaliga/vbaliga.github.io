@@ -59,6 +59,8 @@ This tree (`tree`), tip data (`states`), and transition matrix (`Q`) should give
 
 Similar to my code from [this post](https://vbaliga.github.io/parallel-processing-for-mcmcglmm-in-r-windows-friendly/), **we will now use `parLapply()` from the [parallel](https://www.rdocumentation.org/packages/parallel/versions/3.6.0) package to execute runs of `make.simmap()` in parallel.** 
 
+We'll set it up to do 10 runs of `nsim = 50` each, resulting in 500 mapped trees. This is far less than the number of simmaps I'd probably infer for a study I intend to publish, but I'd like this example to run relatively quickly.
+
 To show how much time can be saved (using these parameters and with my laptop's specs) I will time it using `Sys.time()` and then compare its timing to a 'vanilla' version run in series later on in this post. 
 
 ``` r
@@ -176,6 +178,6 @@ as.numeric(difftime(t3,t2,units='secs'))/as.numeric(difftime(t1,t0,units='secs')
 
     ## [1] 2.08731
 
-So parallelization is roughly twice as fast, at least for these specifications and on my laptop. I assume computational time varies based on the underlying data as well as the speed & number of your processors -- it would be cool to map this out as a function of tree size...etc later on!
+So parallelization is roughly twice as fast, at least for these specifications and on my laptop. I assume computational time varies based on the underlying data as well as the speed & number of your processors -- it would be cool to map this out as a function of tree size, parallelization scheme...etc later on!
 
 🐢
