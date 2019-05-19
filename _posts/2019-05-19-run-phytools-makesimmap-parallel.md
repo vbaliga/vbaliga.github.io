@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: ["R","phytools","simmap","stochastic-character","parallel","make.simmap"]
+tags: ["R","phytools","simmap","stochastic-character","parallel","make-simmap"]
 title: Run phytools' make.simmap() in parallel
 ---  
 <meta name="description" content="Here I provide code to run in parallel the `make.simmap()` function from phytools. It’s a Windows-friendly approach and similar to my code from another blog post, I make use of `parLapply()`.">
