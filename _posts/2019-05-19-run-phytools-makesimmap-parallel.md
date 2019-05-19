@@ -6,10 +6,10 @@ title: Run phytools' make.simmap() in parallel
 <meta name="description" content="Here I provide code to run in parallel the `make.simmap()` function from phytools. It’s a Windows-friendly approach and similar to my code from another blog post, I make use of `parLapply()`.">
 <p>
 <img src="https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-19/simmap_parallel-1.png" alt="simmap parallel anoledata" style="float:right;width:200px;height:200px;margin-left:30px;">
-In macroevolutionary studies, we often use stochastic character mapping to infer the evolutionary history of a discrete trait.
+In macroevolutionary studies, we often use stochastic character mapping to infer how a discrete trait may have evolved.
 </p> 
 
-I am very grateful that the [phytools](https://github.com/liamrevell/phytools) package allows easy implementation of character mapping via the `make.simmap()` function. Of course, this method of inferring character evolution is a Markovian process where we sample character histories in proportion to their posterior probabilities under a given model. So we need to simulate many, many (hundreds, thousands...) of potential histories to get meaningful results. 
+I am very grateful that the [phytools](https://github.com/liamrevell/phytools) package allows easy implementation of character mapping via the `make.simmap()` function. Of course, this method uses a Markovian process where we sample character histories in proportion to their posterior probabilities under a given model. So we need to simulate many, many (hundreds, thousands...) of potential histories to get meaningful results. 
 
 As with any other algorithm that we'd like to run repeatedly, it makes sense to see if parallelization can help us.
 
@@ -57,7 +57,7 @@ This tree (`tree`), tip data (`states`), and transition matrix (`Q`) should give
 
 ## Run make.simmap() in parallel
 
-Similar to my code from [this post](https://vbaliga.github.io/parallel-processing-for-mcmcglmm-in-r-windows-friendly/), **we will now use `parLapply()` from the [parallel](https://www.rdocumentation.org/packages/parallel/versions/3.6.0) package to execute runs of make.simmap() in parallel.** 
+Similar to my code from [this post](https://vbaliga.github.io/parallel-processing-for-mcmcglmm-in-r-windows-friendly/), **we will now use `parLapply()` from the [parallel](https://www.rdocumentation.org/packages/parallel/versions/3.6.0) package to execute runs of `make.simmap()` in parallel.** 
 
 To show how much time can be saved (using these parameters and with my laptop's specs) I will time it using `Sys.time()` and then compare later it to a 'vanilla' version run in series. 
 
@@ -92,7 +92,7 @@ t1 - t0
 
 For reference, I ran this on my laptop, which is hilariously less powerful than my desktop computer. Some relevant specs: i7 processor w/ 4 cores @ ~2 GHz each; 8 GB RAM; Windows 10 Pro 64-bit; R 3.5.2 in RStudio 1.2.1335.
 
-If you missed it above, please make sure you stop the cluster using `stopCluster(cl)` at this point!
+If you missed it above, please make sure you stop the virtual cluster using `stopCluster(cl)` at this point!
 
 **One more important bit:** we'll now collect all products from these parallel runs into a single object which will be of class `multiSimmap`. 
 
