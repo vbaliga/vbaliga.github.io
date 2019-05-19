@@ -11,7 +11,7 @@ In macroevolutionary studies, we often use stochastic character mapping to infer
 Of course, this method of inferring character evolution is a Markovian process where we sample character histories in proportion to their posterior probabilities under a given model. So we need to simulate many, many (hundreds, thousands...) of potential histories to get meaningful results. As with any other algorithm that we'd like to run repeatedly, it makes sense to see if parallelization can help us.
 
 
-**Here I provide code to run `make.simmap()` in parallel. It’s a Windows-friendly approach and similar to my code from [another blog post](https://vbaliga.github.io/parallel-processing-for-mcmcglmm-in-r-windows-friendly/), I make use of `parLapply()`.**
+**Here I provide code to run `make.simmap()` in parallel.** It’s a Windows-friendly approach and similar to my code from [another blog post](https://vbaliga.github.io/parallel-processing-for-mcmcglmm-in-r-windows-friendly/), I make use of `parLapply()`.
 
 <!---more--->
 
@@ -51,6 +51,8 @@ diag(Q) <- 0
 diag(Q) <- -rowSums(Q)
 colnames(Q) <- rownames(Q) <- fitER$states
 ```
+This tree (`tree`), tip data (`states`), and transition matrix (`Q`) should give us everything we need to run through an example comparison.
+
 ## Run make.simmap() in parallel
 
 Similar to my code from [this post](https://vbaliga.github.io/parallel-processing-for-mcmcglmm-in-r-windows-friendly/), **we will now use `parLapply()` from the [parallel](https://www.rdocumentation.org/packages/parallel/versions/3.6.0) package to execute runs of make.simmap() in parallel.** 
@@ -78,6 +80,8 @@ ER_Mkparallel <- parallel::parLapply(cl = cl, 1:NRUNS, function(i) {
 # Otherwise, cores on your computer will still be dedicated 
 # to running (nonexistant) processes
 stopCluster(cl)
+
+# Finally, measure the time elapsed
 t1 <- Sys.time()
 t1 - t0
 ```
@@ -166,6 +170,6 @@ as.numeric(difftime(t3,t2,units='secs'))/as.numeric(difftime(t1,t0,units='secs')
 
     ## [1] 2.08731
 
-So parallelization is roughly twice as fast, at least for these specifications and on my laptop. I assume computational time varies based on the underlying data as well as the speed & number of your processors - would be cool to map this out as a function of tree size...etc later on!
+So parallelization is roughly twice as fast, at least for these specifications and on my laptop. I assume computational time varies based on the underlying data as well as the speed & number of your processors -- it would be cool to map this out as a function of tree size...etc later on!
 
 🐢
