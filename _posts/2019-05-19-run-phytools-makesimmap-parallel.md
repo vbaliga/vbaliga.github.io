@@ -178,6 +178,6 @@ as.numeric(difftime(t3,t2,units='secs'))/as.numeric(difftime(t1,t0,units='secs')
 
     ## [1] 2.08731
 
-So parallelization is roughly twice as fast, at least for these specifications and on my laptop. I assume computational time varies based on the underlying data as well as the speed & number of your processors -- it would be cool to map this out as a function of tree size, parallelization scheme...etc later on!
+So parallelization is roughly twice as fast, at least for these specifications and on my laptop. I assume computational time varies based on the underlying data as well as the speed & number of processors -- it would be cool to map this out as a function of tree size, parallelization scheme...etc later on!
 
 🐢
