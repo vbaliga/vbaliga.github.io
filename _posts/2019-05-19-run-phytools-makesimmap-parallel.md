@@ -9,7 +9,7 @@ title: Run phytools' make.simmap() in parallel
 In macroevolutionary studies, we often use stochastic character mapping to infer the evolutionary history of a discrete trait.
 </p> 
 
-I am very grateful that the phytools package allows easy implementation of character mapping via the `make.simmap()` function. Of course, this method of inferring character evolution is a Markovian process where we sample character histories in proportion to their posterior probabilities under a given model. So we need to simulate many, many (hundreds, thousands...) of potential histories to get meaningful results. 
+I am very grateful that the [phytools](https://github.com/liamrevell/phytools) package allows easy implementation of character mapping via the `make.simmap()` function. Of course, this method of inferring character evolution is a Markovian process where we sample character histories in proportion to their posterior probabilities under a given model. So we need to simulate many, many (hundreds, thousands...) of potential histories to get meaningful results. 
 
 As with any other algorithm that we'd like to run repeatedly, it makes sense to see if parallelization can help us.
 
@@ -19,7 +19,7 @@ As with any other algorithm that we'd like to run repeatedly, it makes sense to 
 
 ## Set up data
 
-I’ll use the tree and states included in the `anoletree` dataset provided by phytools.
+I’ll use the tree and states included in the `anoletree` dataset provided by [phytools](https://github.com/liamrevell/phytools).
 
 ``` r
 # First load | install&load packages we'll need
