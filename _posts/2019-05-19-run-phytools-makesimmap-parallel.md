@@ -59,7 +59,7 @@ This tree (`tree`), tip data (`states`), and transition matrix (`Q`) should give
 
 Similar to my code from [this post](https://vbaliga.github.io/parallel-processing-for-mcmcglmm-in-r-windows-friendly/), **we will now use `parLapply()` from the [parallel](https://www.rdocumentation.org/packages/parallel/versions/3.6.0) package to execute runs of `make.simmap()` in parallel.** 
 
-To show how much time can be saved (using these parameters and with my laptop's specs) I will time it using `Sys.time()` and then compare later it to a 'vanilla' version run in series. 
+To show how much time can be saved (using these parameters and with my laptop's specs) I will time it using `Sys.time()` and then compare its timing to a 'vanilla' version run in series later on in this post. 
 
 ``` r
 # Now import all these objects on to parallel clusters
