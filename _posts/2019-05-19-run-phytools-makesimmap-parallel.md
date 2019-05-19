@@ -90,7 +90,7 @@ t1 - t0
 
     ## Time difference of 44.06479 secs
 
-For reference, I ran this on my laptop, which is hilariously less powerful than my desktop computer. Some relevant specs: i7 processor w/ 4 cores @ ~2 GHz each; 8 GB RAM; Windows 10 Pro 64-bit; R 3.5.2 in RStudio 1.2.1335.
+For reference, I ran this on my laptop, which is hilariously less powerful than my desktop computer. Some relevant specs: i7 processor w/ 4 cores @ ~2 GHz each; 8 GB RAM; Windows 10 Pro 64-bit; R 3.5.3 in RStudio 1.2.1335.
 
 If you missed it above, please make sure you stop the virtual cluster using `stopCluster(cl)` at this point!
 
