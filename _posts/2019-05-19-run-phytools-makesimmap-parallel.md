@@ -181,6 +181,8 @@ as.numeric(difftime(t3,t2,units='secs'))/as.numeric(difftime(t1,t0,units='secs')
 
 So parallelization is roughly twice as fast, at least for these specifications and on my laptop. I assume computational time varies based on the underlying data as well as the speed & number of processors -- it would be cool to map this out as a function of tree size, parallelization scheme...etc later on!
 
+🐢
+
 *Edit*: I re-ran all this on my desktop computer (i7 w/ 12 logical CPUs @ 4GHz each, 32 GB RAM). Generating 500 stochastic maps in parallel took ~13.9 secs, whereas the standard serial method took 48.8 secs. This amounts to a ~3.5x faster run time in parallel. Since I always shoot to use 85% of my processing power, this analysis actually used 10 logical CPUs instead of the mere 3 my laptop could provide. It's no surprise that having more parallel processors (each of which is faster) = faster run times, but it's cool to see just *how* much faster it can get.
 
-🐢
+
