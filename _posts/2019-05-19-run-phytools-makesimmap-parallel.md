@@ -6,7 +6,7 @@ title: Run phytools' make.simmap() in parallel
 <meta name="description" content="Here I provide code to run in parallel the make.simmap() function from phytools. It’s a Windows-friendly approach and similar to my code from another blog post, I make use of parLapply() from the parallel R package.">
 <p>
   In macroevolutionary studies, we often use stochastic character mapping to infer how a discrete trait may have evolved.
-  <img src="https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-19/simmap_parallel-1.png" alt="simmap parallel anoledata" style="float:right;width:200px;height:200px;margin-left:30px;">
+  <img src="https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-19/simmap_parallel-1.png" alt="simmap parallel anoledata" style="float:right;width:200px;height:200px;margin-left:30px;margin-top:20px;">
 </p> 
 
 I am grateful that the [phytools](https://github.com/liamrevell/phytools) package allows easy implementation of character mapping via the `make.simmap()` function. This method uses a Markovian process where we sample character histories in proportion to their posterior probabilities under a given model. So we need to simulate many, many (hundreds, thousands...) of potential histories to get meaningful results. 
