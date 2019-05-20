@@ -1,15 +1,16 @@
 ---
 layout: post
-tags: ["R","phytools","simmap","stochastic-character","parallel","make-simmap"]
+tags: ["R","phytools","simmap","stochastic-character","parallel","make-simmap","Windows"]
 title: Run phytools' make.simmap() in parallel
 ---  
-<meta name="description" content="Here I provide code to run in parallel the `make.simmap()` function from phytools. It’s a Windows-friendly approach and similar to my code from another blog post, I make use of `parLapply()`.">
+<meta name="description" content="Here I provide code to run in parallel the make.simmap() function from phytools. It’s a Windows-friendly approach and similar to my code from another blog post, I make use of parLapply() from the parallel R package.">
 <p>
 <img src="https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-19/simmap_parallel-1.png" alt="simmap parallel anoledata" style="float:right;width:200px;height:200px;margin-left:30px;">
+  
 In macroevolutionary studies, we often use stochastic character mapping to infer how a discrete trait may have evolved.
 </p> 
 
-I am very grateful that the [phytools](https://github.com/liamrevell/phytools) package allows easy implementation of character mapping via the `make.simmap()` function. Of course, this method uses a Markovian process where we sample character histories in proportion to their posterior probabilities under a given model. So we need to simulate many, many (hundreds, thousands...) of potential histories to get meaningful results. 
+I am grateful that the [phytools](https://github.com/liamrevell/phytools) package allows easy implementation of character mapping via the `make.simmap()` function. This method uses a Markovian process where we sample character histories in proportion to their posterior probabilities under a given model. So we need to simulate many, many (hundreds, thousands...) of potential histories to get meaningful results. 
 
 As with any other algorithm that we'd like to run repeatedly, it makes sense to see if parallelization can help us.
 
@@ -53,13 +54,13 @@ diag(Q) <- 0
 diag(Q) <- -rowSums(Q)
 colnames(Q) <- rownames(Q) <- fitER$states
 ```
-This tree (`tree`), tip data (`states`), and transition matrix (`Q`) should give us everything we need to run through an example comparison.
+The tree (`tree`), tip data (`states`), and transition matrix (`Q`) should give us everything we need to run through an example.  
 
 ## Run make.simmap() in parallel
 
 Similar to my code from [this post](https://vbaliga.github.io/parallel-processing-for-mcmcglmm-in-r-windows-friendly/), **we will now use `parLapply()` from the [parallel](https://www.rdocumentation.org/packages/parallel/versions/3.6.0) package to execute runs of `make.simmap()` in parallel.** 
 
-We'll set it up to do 10 runs of `nsim = 50` each, resulting in 500 mapped trees. This is far less than the number of simmaps I'd probably infer for a study I intend to publish, but I'd like this example to run relatively quickly.
+We'll set it up to do 10 runs of `nsim = 50` each, resulting in 500 mapped trees. This is far fewer than the number of simmaps I'd probably infer for a study I intend to publish, but I'd like this example to run relatively quickly.
 
 To show how much time can be saved (using these parameters and with my laptop's specs) I will time it using `Sys.time()` and then compare its timing to a 'vanilla' version run in series later on in this post. 
 
@@ -92,7 +93,7 @@ t1 - t0
 
     ## Time difference of 44.06479 secs
 
-For reference, I ran this on my laptop, which is hilariously less powerful than my desktop computer. Some relevant specs: i7 processor w/ 4 cores @ ~2 GHz each; 8 GB RAM; Windows 10 Pro 64-bit; R 3.5.3 in RStudio 1.2.1335.
+For reference, I ran this on my laptop, which is hilariously less powerful than my desktop computer. Some relevant specs: i7 processor w/ 4 cores @ ~2 GHz each; 8 GB RAM; Windows 10 Pro 64-bit; R 3.5.3 in RStudio 1.2.1335. So the code itself ran in parallel on 3 processors.
 
 If you missed it above, please make sure you stop the virtual cluster using `stopCluster(cl)` at this point!
 
@@ -179,5 +180,7 @@ as.numeric(difftime(t3,t2,units='secs'))/as.numeric(difftime(t1,t0,units='secs')
     ## [1] 2.08731
 
 So parallelization is roughly twice as fast, at least for these specifications and on my laptop. I assume computational time varies based on the underlying data as well as the speed & number of processors -- it would be cool to map this out as a function of tree size, parallelization scheme...etc later on!
+
+*Edit*: I re-ran all this on my desktop computer (i7 w/ 12 logical CPUs @ 4GHz each, 32 GB RAM). Generating 500 stochastic maps in parallel took ~13.9 secs, whereas the standard serial method took 48.8 secs. This amounts to a ~3.5x faster run time in parallel. Since I always shoot to use 85% of my processing power, this analysis actually used 10 logical CPUs instead of the mere 3 my laptop could provide. It's no surprise that having more parallel processors (each of which is faster) = faster run times, but it's cool to see just *how* much faster it can get.
 
 🐢
