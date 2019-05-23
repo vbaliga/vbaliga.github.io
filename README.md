@@ -19,3 +19,8 @@ My main website can be found [here](https://www.vikram-baliga.com/).
 
 🐢
 
+<p align="right">
+
+<img src='images/workloopR_icon_300dpi.png' width='200px' />
+
+</p>
