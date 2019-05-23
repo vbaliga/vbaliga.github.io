@@ -1,6 +1,12 @@
 # posts by vikram
 ### Sporadically updated, (somewhat) useful stuff: https://vbaliga.github.io/
 
+<p align="right">
+
+<img src='images/workloopR_icon_300dpi.png' width='200px' />
+
+</p>
+
 Although I like using squarespace for my main site, I'm not a fan of the way squarespace formats code. All posts here will be made via the magic of [R Markdown](https://rmarkdown.rstudio.com/). 
 
 My main website can be found [here](https://www.vikram-baliga.com/).  
@@ -19,8 +25,4 @@ My main website can be found [here](https://www.vikram-baliga.com/).
 
 🐢
 
-<p align="right">
 
-<img src='images/workloopR_icon_300dpi.png' width='200px' />
-
-</p>
