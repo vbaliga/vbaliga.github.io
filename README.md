@@ -1,7 +1,7 @@
 # posts by vikram
 ### Sporadically updated, (somewhat) useful stuff: https://vbaliga.github.io/
 
-<p align="right">
+<p align="center">
 
 <img src='images/workloopR_icon_300dpi.png' width='200px' />
 
