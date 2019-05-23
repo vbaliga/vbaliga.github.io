@@ -3,7 +3,7 @@
 
 <p align="center">
 
-<img src='images/workloopR_icon_300dpi.png' width='200px' />
+<img src='images/workloopR_icon_300dpi.png' width='150px' />
 
 </p>
 
