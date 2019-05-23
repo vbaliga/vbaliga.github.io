@@ -19,4 +19,4 @@ My main website can be found [here](https://www.vikram-baliga.com/).
 
 🐢
 
-![icon](/images/ 	Vikram-Baliga.jpg "presssssure")
+![icon](/images/Vikram-Baliga.jpg "presssssure")
