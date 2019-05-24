@@ -1,14 +1,15 @@
 # posts by vikram
 
-
+  
+  
 ## Sporadically updated, (somewhat) useful stuff: https://vbaliga.github.io/
 
 Although I like using squarespace for my main site, I'm not a fan of the way squarespace formats code. All posts here will be made via the magic of [R Markdown](https://rmarkdown.rstudio.com/). 
 
 My main website can be found [here](https://www.vikram-baliga.com/).  
  
-
-
+  
+  
 ## Other info
 <details>
   <summary>Click here for more</summary>
@@ -19,6 +20,7 @@ My main website can be found [here](https://www.vikram-baliga.com/).
 > The theme is modified from [orderedlist/minimal](https://github.com/orderedlist/minimal).
 
 </details>
+
 
 
 🐢
