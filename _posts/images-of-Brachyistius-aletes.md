@@ -13,7 +13,7 @@ To trace the evolution of body shape, I collected photos from each of ~300 speci
 
 After these visits, I realized I had missed one species: *Brachyistius aletes*, a type of surfperch. To my surprise, there were no clear photographs of this species available online - at least my frantic Google Images search yielded nothing. 
 
-Fortunately, [Dave Catania] (https://www.calacademy.org/staff/ibss/ichthyology/david-catania) (Senior Collections Manager of Ichthyology at the CAS) was able to hunt down a set of preserved specimens and snap a few photos for me. **Here I'll post these photos of *Brachyistius aletes* to make them available to others.** Thanks again for sharing these, Dave!
+Fortunately, [Dave Catania](https://www.calacademy.org/staff/ibss/ichthyology/david-catania) (Senior Collections Manager of Ichthyology at the CAS) was able to hunt down a set of preserved specimens and snap a few photos for me. **Here I'll post these photos of *Brachyistius aletes* to make them available to others.** Thanks again for sharing these, Dave!
 
 <!---more--->
 
