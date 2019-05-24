@@ -33,7 +33,9 @@ It also looks like there has been some contention about its place among surfperc
 
 A 2015 study (by my friends Gary Longo and Giacomo Bernardi!) determined that this species is indeed a very close sister taxon to *Brachyistius frenatus* [[source](https://dx.doi.org/10.1016/j.ympev.2015.03.027)]. With only ~0.025% genomic divergence between the two species (compared to an average ~0.32% difference found in other surfperch sister species) *Brachyistius aletes* and *Brachysitius frenatus* are so closely related, they may not be separate species according to some criteria.
 
-The idea that we're seeing incipient speciation between these two is reflected in what little morphological divergence we see in body shape. Here is a Procrustes superimposition of body shape landmarks between juvenile individuals of the two species. *By aligning and superimposing landmarks from the two species this way, we can see the (mostly minor!) differences in body shape.*
+The idea that we're seeing incipient speciation between these two is reflected in what little morphological divergence we see in body shape. Here is a Procrustes superimposition of body shape landmarks between juvenile individuals of the two species. 
+
+**By aligning and superimposing landmarks from the two species this way, we can see the (mostly minor!) differences in body shape.**
 
 ![](/images/2019-05-24/Brachyistius_frenatus_vs_B_aletes_geomorph.png "Brachyistius_frenatus_vs_B_aletes_geomorph").
 
