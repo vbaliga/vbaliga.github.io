@@ -47,7 +47,7 @@ The idea that we're seeing incipient speciation between these two is reflected i
 
 Grey dots show the body shape of *Brachyistius frenatus* whereas the smaller black dots show the shape of *Brachyistius aletes*. *B. frenatus* is slightly more elongate, but otherwise the two really don't look all that different!
 
-With these photos (along with those for the other ~300 species), I was able to use geometric morphometric methods to show that cleaning promotes an elongate body shape, but really only among specialist cleaners.
+With these photos (along with those for the other ~300 species), I was able to use geometric morphometric methods to show that cleaning promotes an elongate body shape, but really only among specialist cleaners [[full paper here](https://doi.org/10.1093/icb/icz030)].
 
 Among these two species, *Brachyistius frenatus* is a cleaner whereas we know too little about *B. aletes* to say whether it exhibits this behavior as well. With *B. frenatus* having a slightly more elongate body, the patterns in body shape we see in these sister taxa match our overall findings across cleaners. But, the differences between these sister taxa really aren't meaningful and there's a decent chance *Brachyistius aletes* may also be a cleaner!
 
