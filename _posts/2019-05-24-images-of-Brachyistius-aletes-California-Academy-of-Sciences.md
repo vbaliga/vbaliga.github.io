@@ -3,10 +3,10 @@ layout: post
 tags: ["surfperch","Brachyistius-aletes","Embiotocidae","museum-specimens","CAS","Cal-Academy","cleaning-behavior"]
 title: Images of Brachyistius aletes, courtesy of the California Academy of Sciences
 ---  
-<meta name="description" content="Photographs of Brachistius aletes, a species of surfperch (Embiotocidae).">
+<meta name="description" content="Photographs of Brachyistius aletes, a species of surfperch (Embiotocidae).">
 <p>
   I am happy to share that a study I conducted on how the evolution of cleaning behavior in fishes has affected body shape and size is now available. 
-  <img src="https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-24/Brachyistius_aletes_CAS_24497_002.jpg" alt="Brachyistius aletes image 2" style="float:right;width:200px;height:200px;margin-left:30px;margin-top:20px;">
+  <img src="https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-05-24/Brachyistius_aletes_CAS_24497_002.jpg" alt="Brachyistius aletes image 2" style="float:right;width:200px;height:150px;margin-left:30px;margin-top:20px;">
 </p> 
 
 To trace the evolution of body shape, I collected photos from each of ~300 species of fishes. This meant that I got the chance to visit several museum collections across the US, including the [Smithsonian National Museum of Natural History](https://naturalhistory.si.edu/research/vertebrate-zoology/fishes), the [LA County Museum of Natural History](https://nhm.org/site/research-collections/ichthyology), and the [California Academy of Sciences](https://research.calacademy.org/scientists/ichthyology).
@@ -43,7 +43,7 @@ The idea that we're seeing incipient speciation between these two is reflected i
 
 **By aligning and superimposing landmarks from the two species this way, we can see the (mostly minor!) differences in body shape.**
 
-![](/images/2019-05-24/Brachyistius_frenatus_vs_B_aletes_geomorph.png "Brachyistius_frenatus_vs_B_aletes_geomorph").
+![](/images/2019-05-24/Brachyistius_frenatus_vs_B_aletes_geomorph.png "Brachyistius_frenatus_vs_B_aletes_geomorph")
 
 Grey dots show the body shape of *Brachyistius frenatus* whereas the smaller black dots show the shape of *Brachyistius aletes*. *B. frenatus* is slightly more elongate, but otherwise the two really don't look all that different!
 
