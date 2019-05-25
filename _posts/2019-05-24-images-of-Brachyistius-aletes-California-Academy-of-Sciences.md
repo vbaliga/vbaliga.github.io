@@ -33,7 +33,7 @@ First, I'll share the three photos that Dave sent me. They all have the same (ju
 
 Relatively little is known about this species. It seems to be found only near Baja California, has little life history info available, and doesn't even seem to have a reliable common name [[source](https://www.fishbase.se/summary/52729)].
 
-It also looks like there has been some contention about its place among surfperches. It was originally assigned to the genus *Micrometrus* in the 50s, later reclassfied as a member of *Brachyistius*, but flagged as a species with uncertain taxonomy by Eschmeyer [[source 1](http://www.marinespecies.org/aphia.php?p=taxdetails&id=279408)],[[source 2](https://www.fishbase.se/references/FBRefSummary.php?ID=84883)].
+It also looks like there has been some contention about its place among surfperches. It was originally assigned to the genus *Micrometrus* in the 50s, later reclassfied as a member of *Brachyistius*, but flagged as a species with uncertain taxonomy by Eschmeyer [[source 1](http://www.marinespecies.org/aphia.php?p=taxdetails&id=279408), [source 2](https://www.fishbase.se/references/FBRefSummary.php?ID=84883)].
 
 ## Genetic and morphological similarity between *Brachyistius aletes* and *Brachyistius frenatus*
 
