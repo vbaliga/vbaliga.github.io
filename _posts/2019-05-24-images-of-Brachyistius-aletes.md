@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: ["surfperch","Brachyistius-aletes","Embiotocidae","museum-specimens","CAS","Cal-Academy","cleaning-behavior"]
-title: Images of Brachyistius aletes - courtesy of the California Academy of Sciences
+title: Images of Brachyistius aletes, courtesy of the California Academy of Sciences
 ---  
 <meta name="description" content="Photographs of Brachistius aletes, a species of surfperch (Embiotocidae).">
 <p>
