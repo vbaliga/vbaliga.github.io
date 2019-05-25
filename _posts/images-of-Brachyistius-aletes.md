@@ -17,7 +17,7 @@ Fortunately, [Dave Catania](https://www.calacademy.org/staff/ibss/ichthyology/da
 
 <!---more--->
 
-## Photos 
+## Photos of *Brachyistius aletes*
 
 First, I'll share the three photos that Dave sent me. They all have the same (juvenile-sized) specimens but were shot under different lighting conditions.
 
