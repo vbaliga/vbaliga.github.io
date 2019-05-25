@@ -17,6 +17,8 @@ Fortunately, [Dave Catania](https://www.calacademy.org/staff/ibss/ichthyology/da
 
 <!---more--->
 
+## Photos 
+
 First, I'll share the three photos that Dave sent me. They all have the same (juvenile-sized) specimens but were shot under different lighting conditions.
 
 ![](/images/2019-05-24/Brachyistius_aletes_CAS_24497_001.jpg "Brachyistius_aletes_CAS_24497_001")
@@ -27,9 +29,13 @@ First, I'll share the three photos that Dave sent me. They all have the same (ju
 
 (I have shrunk these images to reduce page loading times. Please feel free to [email me](mailto:vbaliga@zoology.ubc.ca) if you'd like any of these in their original 4000 x 3000px glory.)
 
+## Natural history - we barely know anything
+
 Relatively little is known about this species. It seems to be found only near Baja California, has little life history info available, and doesn't even seem to have a reliable common name [[source](https://www.fishbase.se/summary/52729)].
 
 It also looks like there has been some contention about its place among surfperches. It was originally assigned to the genus *Micrometrus* in the 50s, later reclassfied as a member of *Brachyistius*, but flagged as a species with uncertain taxonomy by Eschmeyer [[source 1](http://www.marinespecies.org/aphia.php?p=taxdetails&id=279408)],[[source 2](https://www.fishbase.se/references/FBRefSummary.php?ID=84883)].
+
+## Genetic and morphological similarity between *Brachyistius aletes* and *Brachyistius frenatus*
 
 A 2015 study (by my friends Gary Longo and Giacomo Bernardi!) determined that this species is indeed a very close sister taxon to *Brachyistius frenatus* [[source](https://dx.doi.org/10.1016/j.ympev.2015.03.027)]. With only ~0.025% genomic divergence between the two species (compared to an average ~0.32% difference found in other surfperch sister species) *Brachyistius aletes* and *Brachysitius frenatus* are so closely related, they may not be separate species according to some criteria.
 
