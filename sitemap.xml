@@ -9,142 +9,182 @@
 
 <url>
   <loc>https://vbaliga.github.io/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:12:03+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/archive/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:12:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vbaliga.github.io/images-of-Brachyistius-aletes-California-Academy-of-Sciences/</loc>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vbaliga.github.io/tag/surfperch/</loc>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vbaliga.github.io/tag/Brachyistius-aletes/</loc>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vbaliga.github.io/tag/Embiotocidae/</loc>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vbaliga.github.io/tag/museum-specimens/</loc>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vbaliga.github.io/tag/CAS/</loc>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vbaliga.github.io/tag/Cal-Academy/</loc>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vbaliga.github.io/tag/cleaning-behavior/</loc>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/run-phytools-makesimmap-parallel/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/tag/R/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/tag/phytools/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/tag/simmap/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/tag/stochastic-character/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/tag/parallel/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/tag/make-simmap/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/tag/Windows/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/parallel-processing-for-mcmcglmm-in-r-windows-friendly/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/sample-variance-distributions-ggridges/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/tag/ggridges/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/tag/sample-variance/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/tag/sample-size/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/tag/variance/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/dangers-sample-variance-small-sample-size/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/tag/changepoint/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/tag/MCMCglmm/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/tag/parallel-processing/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/verify-that-r-packages-are-installed-and-loaded/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/tag/packages/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/tag/package-installation/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/tag/package-loading/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/setDLLs/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/tag/DLLs/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/Test-post/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vbaliga.github.io/tag/test/</loc>
-  <lastmod>2019-05-20T20:06:35+00:00</lastmod>
+  <lastmod>2019-05-25T00:14:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
