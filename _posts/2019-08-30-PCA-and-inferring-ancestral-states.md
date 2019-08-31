@@ -234,7 +234,7 @@ plot_fun(i)
 ```
 ![](https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-08-30/ancestral_states_vs_pca-1.png)<!-- -->
 
-[Click here](https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-08-30/ancestral_states_vs_pca-1.png) to see the full-sized image.
+### [Click here](https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-08-30/ancestral_states_vs_pca-1.png) to see the full-sized image. ###
 
 As a reminder, traits 1 and 2 in the first row of plots had the smallest original variance (simulated under `sig2 = 0.01`). In each successive row, sigma^2 increases: `sig2 = 0.1` and `sig2 = 1`, respectively.
 
