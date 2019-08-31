@@ -281,14 +281,16 @@ head(real_states)
 # but all the values will be 0 (or very close approximations)
 # real_states - GM_states 
 ```
+Yup! We get basically identical values. 
+
 
 ## Observations and recommendations
 
-  - ***As underlying trait variance increased, ancestral character estimation from scores on PC axes was closer to the ‘real’ values*** (but was never perfect). I am uncertain if this pattern is generalizable. It may be because of how I combined these traits together – traits with higher variance may simply have larger influence on PC axes. Therefore, low-variance traits would get washed out and direct inference of their values would be increasingly nonsensical. Running further simulations could confirm if this holds up. In any case, hopefully no one is inferring ancestral states directly from scores on PC axes in published research.
+  - **As underlying trait variance increased, ancestral character estimation from scores on PC axes was closer to the ‘real’ values** (but was never perfect). I am uncertain if this pattern is generalizable. It may be because of how I combined these traits together – traits with higher variance may simply have larger influence on PC axes. Therefore, low-variance traits would get washed out and direct inference of their values would be increasingly nonsensical. Running further simulations could confirm if this holds up. In any case, hopefully no one is inferring ancestral states directly from scores on PC axes in published research.
 
-  - Should regular PCA be prefered (for whatever reason), ***first perform ancestral character estimation on the raw data and then rotate these ancestral values according to the PCA***. Again, `geomorph::gm.prcomp()` and `geomorph::plotGMphylomorphospace()` already implement these steps.
+  - Should regular PCA be prefered (for whatever reason), **first perform ancestral character estimation on the raw data and then rotate these ancestral values according to the PCA**. Again, `geomorph::gm.prcomp()` and `geomorph::plotGMphylomorphospace()` already implement these steps.
 
-  - ***pPCA produced the correct estimates when we inferred ancestral states from scores on pPC axes***. But, we should keep in mind that the estimates had to be back-transformed to get them to the original raw variable scale. Hopefully this is a step that people remember to take\!
+  - **pPCA produced the correct estimates when we inferred ancestral states from scores on pPC axes**. But, we should keep in mind that the estimates had to be back-transformed to get them to the original raw variable scale. Hopefully this is a step that people remember to take\!
 
 
 🐢
