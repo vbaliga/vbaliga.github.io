@@ -12,9 +12,9 @@ There is a healthy debate on the circumstances under which phylogenetic principa
 But unlike 'vanilla' PCA, pPCA results in species' scores being correlated across axes. Summed eigenvalues also don’t match the total variance in the original data. Accordingly, some researchers prefer to use vanilla PCA even if phylogenetic signal in the data is strong.
 </p>
 
-I started to wonder how ancestral state estimation could be affected by choice of PCA technique. Surely, inferring ancestral states directly from scores from vanilla PC axes would lead to biased results? What are the best practices to avoid this kind of bias? Does the software we use already account for all this?
+I started to wonder how ancestral state estimation could be affected by choice of PCA technique. Surely, inferring ancestral states directly from scores from vanilla PC axes would lead to faulty results? What are the best practices to avoid this issue? And does the software we use already account for all this?
 
-In this post, I'll show how <b>inferring ancestral states from scores on vanilla PC axes indeed leads to biased estimates. But if ancestral states are estimated beforehand and then rotated during PCA (as is done in the `geomorph` package), this problem goes away. Inferring ancestral states from phylogenetic PCA scores, however, seems to be fine.</b>
+In this post, I'll show how <b>inferring ancestral states from scores on vanilla PC axes indeed leads to biased estimates. But if ancestral states are estimated beforehand and then rotated during PCA, this problem goes away. Inferring ancestral states from phylogenetic PCA scores, however, seems to be fine.</b>
 
 <!---more--->
 
@@ -68,7 +68,7 @@ tree_data <- treedata(tree, data, sort = TRUE)
 
 We’ll now infer ancestral states from the original raw data. This will be done on a per-trait basis in the scale of each original trait.
 
-Although ancestral state estimation can be tricky in and of itself, we’ll pretend that these estimates are the ‘actual’ values of ancestors. These values will be what we’d hope to find after PCA techniques have been used.
+Although ancestral state estimation can be tricky in and of itself, we’ll pretend that these estimates are the ‘actual’ values of ancestors. These values will be what we’ll hope to find after PCA techniques have been used.
 
 ``` r
 # Ancestral states from raw data via phytools::fastAnc()
@@ -118,7 +118,7 @@ for (i in 1:dim(tree_data$data)[2]) {
 colnames(reg_states) <- paste(rep("a", 6), 1:6, "_reg", sep = "")
 ```
 
-An important thing to remember is that the ancestral states we just inferred are defined via PCA axes and not the original raw data. We’ll need to transform them (through eigenvectors) back to the raw data scale via linear algebra.
+An important thing to remember is that the ancestral states we just inferred are defined via PCA axes and not the original raw data. We’ll need to rotate them (through eigenvectors) back to the raw data scale via linear algebra.
 
 ``` r
 as.matrix(reg_states) %*% reg_pca_eig$vectors -> reg_states_transformed
@@ -171,7 +171,7 @@ for (i in 1:dim(tree_data$data)[2]) {
 colnames(phy_states_PC) <- paste(rep("a", 6), 1:6, "_phy", sep = "")
 ```
 
-Again, the ancestral states we just inferred are defined via pPCA axes and not the original raw data. We’ll need to transform them (via eigenvectors) back to the raw data scale. This can be tricky if not done carefully.
+Again, the ancestral states we just inferred are defined via pPCA axes and not the original raw data. We’ll need to rotate them (via eigenvectors) back to the raw data scale. This can be tricky, so we'll do this in a very explicit manner.
 
 We’ll basically re-perform the pPCA step-by-step and then supply the ancestral states instead of the pPCA scores.
 
@@ -196,11 +196,11 @@ dimnames(result$Eval) <- list(paste("PC", 1:ncol(Y), sep = ""),
 dimnames(result$Evec) <- list(colnames(Y), paste("PC", 1:ncol(Y),
                                                  sep = ""))
 A <- matrix(rep(a, n), n, m, byrow = T)
-# remove the first row because number of 
+# remove one row because number of 
 # ancestral states is 1 fewer than scores
 A[-1, ] -> AncA
 
-# transform the ancestral states back to the raw data scale
+# rotate the ancestral states back to the raw data scale
 (phy_states_PC %*% solve(result$Evec)) + AncA -> phy_states_transformed
 ```
 
@@ -238,13 +238,13 @@ plot_fun(i)
 
 As a reminder, traits 1 and 2 in the first row of plots had the smallest original variance (simulated under `sig2 = 0.01`). In each successive row, sigma^2 increases: `sig2 = 0.1` and `sig2 = 1`, respectively.
 
-Please note that in these visualizations, the orientation of the relationship between variables doesn’t matter, but rather it’s the strength of the covariance we’re interested in. This is because the direction of the first prinicpal component is arbitrary which can have a cascading effect on other PCs. It just so happens that in this example, the directions of all PC axes were similar to those of the original data, but YMMV.
+Please note that in these visualizations, the orientation of the relationship between variables doesn’t matter, but rather it’s the strength of the covariance we’re interested in. This is because the direction of the first prinicpal component is arbitrary, which can have a cascading effect on other PCs. It just so happens that in this example the directions of all PC axes were similar to those of the original data, but YMMV.
 
-In any case, it’s easy to see that ancestral states derived from scores on vanilla PC axes are faulty, whereas those from pPCA axes look just fine.
+In any case, it’s easy to see that ancestral states derived from scores on vanilla PC axes are bogus, whereas those from pPCA axes look just fine.
 
 ## Rotate the ancestral states too\!
 
-Of course, it may be more reasonable to perform ancestral character estimation on the raw data and then rotate these ancestral values according to the PCA (and then throw them in the visualization). `gm.prcomp()` and the related function `plotGMphylomorphospace()` both from `geomorph` take these steps. Let’s try it out:
+Of course, it sounds more reasonable to perform ancestral character estimation on the raw data and then rotate these ancestral values according to the PCA (and then throw them in the visualization). `gm.prcomp()` and the related function `plotGMphylomorphospace()` both from `geomorph` take these steps. Let’s try it out:
 
 ``` r
 GM_states <- plotGMPhyloMorphoSpace(tree_data$phy,tree_data$data)
@@ -288,11 +288,11 @@ Yup! We get basically identical values.
 
 ## Observations and recommendations
 
-  - **As underlying trait variance increased, ancestral character estimation from scores on PC axes was closer to the ‘real’ values** (but was never perfect). I am uncertain if this pattern is generalizable. It may be because of how I combined these traits together – traits with higher variance may simply have larger influence on PC axes. Therefore, low-variance traits would get washed out and direct inference of their values would be increasingly nonsensical. Running further simulations could confirm if this holds up. In any case, hopefully no one is inferring ancestral states directly from scores on PC axes in published research.
+  - **pPCA produced the correct estimates when we inferred ancestral states from scores on pPC axes**. But, we should keep in mind that the estimates had to be rotated back to get them to the original raw variable scale. Hopefully this is a step that people remember to take\!
+
+  - **As underlying trait variance increased, ancestral character estimation from scores on PC axes was closer to the ‘real’ values (but was never perfect)**. I am uncertain if this pattern is generalizable. It may be because of how I combined these traits together – traits with higher variance may simply have larger influence on PC axes. Therefore, low-variance traits could get washed out and direct inference of their values would be increasingly nonsensical. Running further simulations could confirm if this holds up. In any case, hopefully no one is inferring ancestral states directly from scores on PC axes in published research.
 
   - Should regular PCA be prefered (for whatever reason), **first perform ancestral character estimation on the raw data and then rotate these ancestral values according to the PCA**. Again, `geomorph::gm.prcomp()` and `geomorph::plotGMphylomorphospace()` already implement these steps.
-
-  - **pPCA produced the correct estimates when we inferred ancestral states from scores on pPC axes**. But, we should keep in mind that the estimates had to be back-transformed to get them to the original raw variable scale. Hopefully this is a step that people remember to take\!
 
 
 🐢
