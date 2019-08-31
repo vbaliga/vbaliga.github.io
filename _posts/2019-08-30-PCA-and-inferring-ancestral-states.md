@@ -7,8 +7,9 @@ title: PCA and inferring ancestral states - some observations
 <meta name="description" content="How is ancestral state estimation affected by phylogenetic vs. regular PCA?">
 
 <p>
-There is a healthy debate on the circumstances under which phylogenetic principal component analysis (pPCA; Revell 2009) should be used. The technique can be valuable because it provides a rotation of multivariate data that accounts for the effects of phylogeny. But unlike 'vanilla' PCA, pPCA results in species' scores being correlated across axes. Summed eigenvalues also don’t match the total variance in the original data. Accordingly, some researchers prefer to use vanilla PCA even if phylogenetic signal in the data is strong.
+There is a healthy debate on the circumstances under which phylogenetic principal component analysis (pPCA; Revell 2009) should be used. The technique can be valuable because it provides a rotation of multivariate data that accounts for the effects of phylogeny. 
 <img src="https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-08-30/ancestral_states_vs_pca-1.png" alt="ancestral states via PCA techniques" style="float:right;width:200px;height:200px;margin-left:30px;">
+But unlike 'vanilla' PCA, pPCA results in species' scores being correlated across axes. Summed eigenvalues also don’t match the total variance in the original data. Accordingly, some researchers prefer to use vanilla PCA even if phylogenetic signal in the data is strong.
 </p>
 
 I started to wonder how ancestral state estimation could be affected by choice of PCA technique. Surely, inferring ancestral states directly from scores from vanilla PC axes would lead to biased results? What are the best practices to avoid this kind of bias? Does the software we use already account for all this?
