@@ -234,6 +234,8 @@ plot_fun(i)
 ```
 ![](https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-08-30/ancestral_states_vs_pca-1.png)<!-- -->
 
+[Click here](https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-08-30/ancestral_states_vs_pca-1.png) to see the full-sized image.
+
 Please note that in these visualizations, the orientation of the relationship between variables doesn’t matter, but rather it’s the strength of the covariance we’re interested in. This is because the direction of the first prinicpal component is arbitrary and can have a cascading effect on other PCs.
 
 In any case, it’s easy to see that ancestral states derived from scores on vanilla PC axes are faulty, whereas those from pPCA axes look just fine.
