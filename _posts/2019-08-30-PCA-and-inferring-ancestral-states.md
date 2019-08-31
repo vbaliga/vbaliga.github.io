@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: ["R","PCA","ancestral-states","phylogenetic-PCA","variance"]
-title: PCA and inferring ancestral states: some observations
+title: PCA and inferring ancestral states - some observations
 ---  
 
 <meta name="description" content="There is a healthy debate on the circumstances under which phylogenetic principal component analysis (pPCA; Revell 2009) should be used. The technique can be valuable because it provides a rotation of multivariate data that accounts for the effects of phylogeny. But unlike 'vanilla' PCA, pPCA results in species' scores being correlated across axes. Summed eigenvalues also don’t match the total variance in the original data. Accordingly, some researchers prefer to use vanilla PCA even if phylogenetic signal in the data is strong.">
