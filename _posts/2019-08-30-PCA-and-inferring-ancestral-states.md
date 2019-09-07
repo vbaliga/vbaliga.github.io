@@ -7,7 +7,7 @@ title: PCA and inferring ancestral states - some observations
 <meta name="description" content="How is ancestral state estimation affected by phylogenetic vs. regular PCA?">
 
 <p>
-There is a healthy debate on the circumstances under which phylogenetic principal component analysis (pPCA; Revell 2009) should be used. The technique can be valuable because it provides a rotation of multivariate data that accounts for the effects of phylogeny. 
+There is a healthy debate on when we should use phylogenetic principal component analysis (pPCA; Revell 2009). The technique can be valuable because it provides a rotation of multivariate data that accounts for the effects of phylogeny. 
 <img src="https://github.com/vbaliga/vbaliga.github.io/raw/master/images/2019-08-30/ancestral_states_vs_pca-1.png" alt="ancestral states via PCA techniques" style="float:right;width:200px;height:200px;margin-left:30px;">
 But unlike 'vanilla' PCA, pPCA results in species' scores being correlated across axes. Summed eigenvalues also don’t match the total variance in the original data. Accordingly, some researchers prefer to use vanilla PCA even if phylogenetic signal in the data is strong.
 </p>
@@ -290,7 +290,7 @@ Yup! We get basically identical values.
 
   - **pPCA produced the correct estimates when we inferred ancestral states from scores on pPC axes**. But, we should keep in mind that the estimates had to be rotated back to get them to the original raw variable scale. Hopefully this is a step that people remember to take\!
 
-  - **As underlying trait variance increased, ancestral character estimation from scores on PC axes was closer to the ‘real’ values (but was never perfect)**. I am uncertain if this pattern is generalizable. It may be because of how I combined these traits together – traits with higher variance may simply have larger influence on PC axes. Therefore, low-variance traits could get washed out and direct inference of their values would be increasingly nonsensical. Running further simulations could confirm if this holds up. In any case, hopefully no one is inferring ancestral states directly from scores on PC axes in published research.
+  - **As underlying trait variance increased, ancestral character estimation from scores on PC axes was closer to the ‘real’ values (but was never perfect)**. I am not sure if this pattern is generalizable. It may be because of how I combined these traits together – traits with higher variance may simply have larger influence on PC axes. Therefore, low-variance traits could get washed out and direct inference of their values would be increasingly nonsensical. Running further simulations could confirm if this holds up. In any case, hopefully no one is inferring ancestral states directly from scores on PC axes in published research.
 
   - Should regular PCA be prefered (for whatever reason), **first perform ancestral character estimation on the raw data and then rotate these ancestral values according to the PCA**. Again, `geomorph::gm.prcomp()` and `geomorph::plotGMphylomorphospace()` already implement these steps.
 
