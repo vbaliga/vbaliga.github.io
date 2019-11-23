@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: ["R","workloopR","rOpenSci","JOSS","muscle-physiology","code","R-packages"]
+tags: ["R","workloopR","rOpenSci","JOSS","muscle-physiology","R-packages","packages"]
 title: Introducing workloopR - an R package for muscle physiology data
 ---  
 
