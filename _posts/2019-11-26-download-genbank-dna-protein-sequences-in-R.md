@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: ["R","GenBank","rentrez","ape","DNA","protein","tree-inference","phylogeny"]
+tags: ["R","GenBank","rentrez","ape","DNA","protein","tree-inference","phylogeny","FASTA"]
 title: Download DNA or protein sequences from GenBank in R
 ---  
 
@@ -8,7 +8,10 @@ title: Download DNA or protein sequences from GenBank in R
 
 I realized the other day that using `ape::read.Genbank()` does not work for downloading protein sequences in batch from Genbank.
 
-<p> <img src="https://raw.githubusercontent.com/vbaliga/vbaliga.github.io/master/images/2019-11-26/genbank_seqs.png" alt="unaligned sequences from genbank" style="float:right;width:200px;height:97px;margin-left:30px;"> This post will cover how to use the `rentrez` package to download protein sequences from GenBank while also recapping how `read.Genbank()` can do a similar thing for a set of DNA seqs. I’ll actually start with the DNA example because I suspect it’s the more common use case.  </p>
+<img src="https://raw.githubusercontent.com/vbaliga/vbaliga.github.io/master/images/2019-11-26/genbank_seqs.png" alt="unaligned sequences from genbank" style="float:right;width:200px;height:97px;margin-left:30px;"> 
+
+This post will cover how to use the `rentrez` package to download protein sequences from GenBank while also recapping how `read.Genbank()` can do a similar thing for a set of DNA seqs. I’ll actually start with the DNA example because I suspect it’s the more common use case.  
+
 Both pipelines generate `FASTA` files, which can then be used for multiple sequence alignment etc etc.
 
 <!---more--->
