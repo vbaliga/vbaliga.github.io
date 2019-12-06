@@ -24,9 +24,10 @@ pauses between successive calls.
 <blockquote class="twitter-tweet" data-lang="en" data-theme="dark"><p lang="en" dir="ltr">resolved my API access issue: purrr::slowly() did the trick! introduced a 5-sec delay between requests. thanks again to <a href="https://twitter.com/jamie_lendrum?ref_src=twsrc%5Etfw">@jamie_lendrum</a> and <a href="https://twitter.com/BenjaminWolfe?ref_src=twsrc%5Etfw">@BenjaminWolfe</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/tidyverse?src=hash&amp;ref_src=twsrc%5Etfw">#tidyverse</a> <a href="https://t.co/nTucwjICDk">pic.twitter.com/nTucwjICDk</a></p>&mdash; vikram baliga 🐢 (@labrichthys) <a href="https://twitter.com/labrichthys/status/1202730287983034368?ref_src=twsrc%5Etfw">December 5, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 
-The code, available at
+
+The code, which available at
 [vbaliga/genbank\_downloadR](https://github.com/vbaliga/genbank_downloadR),
-works but is also in a developmental stage – I hope to soon add in
+currently works but is also in a developmental stage – I hope to soon add in
 functionality for getting proteins and other sequence types. A stable
 version of the code that works for DNA sequences can be found [in this
 release](https://github.com/vbaliga/genbank_downloadR/releases/tag/0.1.0),
@@ -149,6 +150,8 @@ in](https://twitter.com/labrichthys/status/1202273293127966720) to
 `purrr::slowly`, which as it turns out is perfect for this use case:
 
 <blockquote class="twitter-tweet" data-lang="en" data-theme="dark"><p lang="en" dir="ltr">purrr::slowly() is invaluable for this.</p>&mdash; Jamie Lendrum (@jamie_lendrum) <a href="https://twitter.com/jamie_lendrum/status/1202278201952784384?ref_src=twsrc%5Etfw">December 4, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+
 
 So, the code block below sets up a `rate_delay()` of 2 seconds, which is
 then used by `slowly()` to enforce a 2-second delay between successive
