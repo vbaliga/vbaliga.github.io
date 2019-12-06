@@ -10,8 +10,8 @@ Building off [my previous
 post](https://vbaliga.github.io/download-genbank-dna-protein-sequences-in-R/),
 I have now devised a way to not only batch download GenBank sequences
 for a given gene, but also across multiple genes. This post will give a
-worked-out example using the sets of genes I used to build a [phylogeny
-of 220 birds](https://www.vikram-baliga.com/data-software-code#trees) as
+worked-out example using the sets of genes I used to build a phylogeny
+of 220 birds ([available here](https://www.vikram-baliga.com/data-software-code#trees)) as
 part of [Baliga et al. (2019)](https://doi.org/10.1126/sciadv.aaw6670).
 
 One wrinkle [I had
@@ -25,7 +25,7 @@ pauses between successive calls.
 
 
 
-The code, which available at
+The code, which is available at
 [vbaliga/genbank\_downloadR](https://github.com/vbaliga/genbank_downloadR),
 currently works but is also in a developmental stage – I hope to soon add in
 functionality for getting proteins and other sequence types. A stable
@@ -64,7 +64,7 @@ package.check <- lapply(packages,
 We’ll use the list of accession IDs from [Baliga et
 al. (2019)](https://doi.org/10.1126/sciadv.aaw6670) as an example. I have made
 the accession IDs available through [vbaliga/genbank\_downloadR](https://github.com/vbaliga/genbank_downloadR) 
-as a `CSV` file that can be downloaded remotely (see [here](https://github.com/vbaliga/genbank_downloadR/raw/master/Baliga_et_al_2019_SciAdv_all_genes.csv)).
+as a `CSV` file that can be accessed remotely (see [here](https://github.com/vbaliga/genbank_downloadR/raw/master/Baliga_et_al_2019_SciAdv_all_genes.csv)).
 
 You shouldn’t need to run `library(tidyverse)` or `library(ape)` after
 running the chunk above, but please make sure you have `tidyverse` and
@@ -141,7 +141,7 @@ str(accessions_list)
 ## Pull multiple sequences for multiple genes `slowly()`
 
 We’re now ready for batch downloading, again via `ape::read.GenBank()`.
-As I mentioned above, the issue here is that feeding a constant set of
+As I mentioned above, the issue here is that feeding a constant stream of
 requests to the GenBank servers won’t work. After a few hundred, you’ll
 run into a “`429 Too Many Requests`” error.
 
@@ -185,7 +185,7 @@ sequences_set <-
     })
 ```
 
-Which reports to us each time the call completes and the rate delay kicks in:
+Which reports to us each time the call completes and the delay kicks in:
 
     ## Retrying in 2 seconds.
     ## Retrying in 2 seconds.
