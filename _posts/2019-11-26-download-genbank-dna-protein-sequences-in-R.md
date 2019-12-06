@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: ["R","GenBank","rentrez","ape","DNA","protein","tree-inference","phylogeny","FASTA"]
-title: GenBank in R - Download DNA or protein sequences using the `ape` package 
+title: GenBank in R - Download DNA or protein sequences using the ape and rentrez packages
 ---  
 
 <meta name="description" content="Batch download GenBank sequences via the ape and rentrez packages">
