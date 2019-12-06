@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: ["R","GenBank","purrr","tidyverse","ape","DNA","tree-inference","phylogeny","FASTA"]
-title: Pulling multiple sequences for multiple genes from GenBank in R
+title: GenBank in R, part II - Pulling multiple sequences for multiple genes (with help from purrr)
 ---  
 
 <meta name="description" content="Batch download GenBank sequences via the ape and rentrez packages">
