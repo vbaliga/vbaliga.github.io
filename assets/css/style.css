@@ -409,7 +409,6 @@ a:hover small {
 
 .view a:hover, a:focus {
   color: #5D3BE9;
-  font-weight: 600;
 }
 
 .section a {
@@ -421,7 +420,6 @@ a:hover small {
 
 .section a:hover, a:focus {
   color: #5D3BE9;
-  font-weight: 600;
 }
 
 .entry a {
@@ -432,7 +430,6 @@ a:hover small {
 
 .entry a:hover, a:focus {
   color: #5D3BE9;
-  font-weight: 600;
 }
 
 .tagzz a {
@@ -443,7 +440,6 @@ a:hover small {
 
 .tagzz a:hover, a:focus {
   color: #5D3BE9;
-  font-weight: bold;
 }
 
 .wrapper {
