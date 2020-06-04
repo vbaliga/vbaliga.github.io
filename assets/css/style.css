@@ -454,24 +454,41 @@ blockquote {
   font-style: italic;
 }
 
-code, pre {
-  font-family: Consolas, Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
-  font-size: 0.95em;
-  color: #333;
-  background-color:#F3F4F4;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding-left:4px;
-  padding-right:4px;
+code,
+kbd,
+pre,
+samp {
+ font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace
 }
-
+code {
+ font-size:87.5%;
+ color:#e83e8c;
+ word-break:break-word
+}
+a>code {
+ color:inherit
+}
+kbd {
+ padding:.2rem .4rem;
+ font-size:87.5%;
+ color:#fff;
+ background-color:#212529;
+ border-radius:.2rem
+}
+kbd kbd {
+ padding:0;
+ font-size:100%;
+ font-weight:700
+}
 pre {
-  padding: 8px 15px;
-  background: #F3F4F4;
-  border-radius: 5px;
-  border: 1px solid #e5e5e5;
-  box-shadow: 1px 2px #999999;
-  overflow-x: auto;
+ display:block;
+ font-size:87.5%;
+ color:#212529
+}
+pre code {
+ font-size:inherit;
+ color:inherit;
+ word-break:normal
 }
 
 table {
