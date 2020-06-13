@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: ["GenBank","DNA","tree-inference","phylogeny","FASTA"]
-title: A few tips and tricks re: searching for sequences on GenBank
+title: Searching for sequences on GenBank - a few tips and tricks
 --- 
 
 <meta name="description" content="Some things I've learned from performing searches for DNA 
