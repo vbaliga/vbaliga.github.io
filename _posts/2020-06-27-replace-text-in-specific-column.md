@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: ["stringr", "dplyr", "tidyverse"]
+tags: ["stringr", "dplyr", "tidyverse", "data-cleaning"]
 title: Replace text within all cells of a specific column of a data frame or tibble
 --- 
 
