@@ -9,9 +9,10 @@ title: Replace text within all cells of a specific column of a data frame or tib
 Recently, I needed to find a way to rename specific cells within one
 column of a tibble without affecting cells in other columns. I knew that
 `stringr::str_replace()` is awesome for this sort of thing, but I hadn’t
-quite grasped how I could target specific columns with it. Fortunately,
-`dplyr::mutate_at()`, and newer mechanisms via `dplyr::across()`, seem
-to fit the bill.
+quite grasped how I could target specific columns with it. 
+
+Fortunately,`dplyr::mutate_at()`, and newer mechanisms via `dplyr::across()`, 
+seem to fit the bill. I'll run through a few examples in this post.
 
 <!---more--->
 
@@ -51,12 +52,12 @@ data
 
 ## The issue
 Now say we want to replace the contents of `data$subject` with something
-less tedious. Right now, each subject name has ` 003` appended to it and
+less tedious. Right now, each subject name has `003` appended to it and
 we’d like to shave these parts off the names.
 
 `stringr::str_replace()` is great for replacing text that fits a
 specified criterion. So we could simply tell `str_replace()` to target
-instances of ` 003` within the `subject` column. But the object fed into
+instances of `003` within the `subject` column. But the object fed into
 `str_replace()` needs to be a vector, which can be awkward to pull from
 a tibble. Moreover, we’d like to do this safely and ensure that no other
 columns in the tibble are affected.
@@ -91,7 +92,7 @@ renamed_data
 Nice\!
 
 By using `dplyr::mutate_at()`, we are specifiying that `str_replace()`
-should target the `subject` column only and take all instances of ` 003`
+should target the `subject` column only and take all instances of `003`
 and replace them with nothing (`""`).
 
 For those who prefer to not use pipes, we can accomplish the same thing
