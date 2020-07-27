@@ -113,6 +113,13 @@ setCores <- round(detectCores() * 0.8)
 
 # make the cluster
 cl <- makeCluster(getOption("cl.cores", setCores))
+  # EDIT ON 2020-07-27: I have been informed that Mac users 
+  # may have better luck using:
+  # cl <- parallel::makeCluster(getOption("cl.cores", setCores), 
+  #                             setup_strategy = "sequential")
+  # This is due to an apparent issue in RStudio. 
+  # See this stackoverflow page for details:
+  # https://stackoverflow.com/questions/61700586/r-makecluster-command-used-to-work-but-now-fails-in-rstudio
 
 # load the MCMCglmm package within the cluster
 cl.pkg <- clusterEvalQ(cl, library(MCMCglmm))
