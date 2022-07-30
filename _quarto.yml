@@ -1,7 +1,7 @@
 project:
   type: website
 
-website:
+website: 
   title: "vbaliga.github.io"
   navbar:
     left:
@@ -11,9 +11,11 @@ website:
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme:
+      - litera
+      - html/custom.scss
     toc: true
-
+    highlight-style: monokai
+    
 editor: visual
 
