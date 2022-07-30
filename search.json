@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Peer-reviewed software publications\n\n2021\nBaliga VB. 2021. gaussplotR: Fit, predict, and plot 2D-Gaussians in R. Journal of Open Source Software. 6:60, 3074. doi: 10.21105/joss.03074\n\n\n2019\nBaliga VB and Senthivasan S. 2019. workloopR: Analysis of work loops and other data from muscle physiology experiments in R. Journal of Open Source Software. 4:43, 1856. doi: 10.21105/joss.01856\n\n\n\n\nConference papers\nFull-length papers submitted in concert with conference presentations; not peer-reviewed\n\n2020\nHarvey C, Baliga VB, and Inman DJ. 2020. Control force required to morph the elbow and wrist in gulls. American Institute of Aeronautics and Astronautics Scitech 2020 Forum. Held January 6 - 10, 2020 in Orlando, FL. doi:10.2514/6.2020-1037\n\n\n2019\nHarvey C, Baliga VB, Altshuler DL, and Inman DJ. 2019. Pitch Control Effectiveness of the Avian Elbow and Wrist via a Numerical Lifting Line Analysis. American Institute of Aeronautics and Astronautics Scitech 2019 Forum (AIAA 2019-0853). Held January 7 - 11, 2019 in San Diego, CA. doi:10.2514/6.2019-0853\n\n\n\n\nInquiry-based teaching modules\nAvailable at the SCWIBLES Modules page\n\n2014\nBaliga VB, and Yew B. 2014. Demystifying Dimensions: A mini-lesson on dimensional analysis. Product of GK-12 SCWIBLES, NSF DGE-0947923\n\nBaliga VB, Yew B, Herradora R, Callahan W. 2014. A Fact of Matter: Exploring trends across the Periodic Table. Product of GK-12 SCWIBLES, NSF DGE-0947923\nde Nesnera K, Baliga VB, et al. 2014. Presentation Skills: A video designed for science fair participants in high school. Product of GK–12 SCWIBLES, NSF DGE-0947923\nBaliga VB, and Baumgart S. 2014. A Matter of Human Proportions: Are you Vitruvian? Product of GK-12 SCWIBLES, NSF DGE-0947923\n2013\nBaliga VB, and Baumgart S. 2013. Hold Your Breath: What triggers the dive response in mammals? Product of GK-12 SCWIBLES, NSF DGE-0947923"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
