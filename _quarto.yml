@@ -8,6 +8,8 @@ website:
   twitter-card: 
     site: "@labrichthys"
   navbar:
+    pinned: true
+    background: "#EE6A24"
     left:
       - href: index.qmd
         text: Home
