@@ -1,8 +1,12 @@
 project:
   type: website
 
-website:
+website: 
   title: "vbaliga.github.io"
+  site-url: https://vbaliga.github.io
+  repo-url: https://github.com/vbaliga/vbaliga.github.io
+  twitter-card: 
+    site: "@labrichthys"
   navbar:
     left:
       - href: index.qmd
@@ -11,9 +15,11 @@ website:
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme:
+      - litera
+      - html/custom.scss
     toc: true
-
+    highlight-style: monokai
+    
 editor: visual
 
