@@ -2,6 +2,8 @@
 title: "vbaliga.github.io"
 ---
 
+## Welcome
+
 Welcome to my personal site. I'm a data scientist who solves problems related to animal locomotion, evolutionary biology, and physiology. I currently am a Research Associate at the University of British Columbia ([see my department profile](https://www.zoology.ubc.ca/person/vikram-baliga)).
 
 My research asks how musculoskeletal and visual systems allow animals to make complex movements. This often involves techniques from motion capture and virtual reality to probe animals' locomotor behaviors, along with comparative anatomy and physiology to probe the mechanisms that underlie animals' locomotor capabilities. It sometimes involves machine learning techniques to make sense of stupidly convoluted data.
