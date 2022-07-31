@@ -5,8 +5,10 @@ website:
   title: "vbaliga.github.io"
   site-url: https://vbaliga.github.io
   repo-url: https://github.com/vbaliga/vbaliga.github.io
+  description-meta: "Personal site for Vikram B. Baliga"
   twitter-card: 
     site: "@labrichthys"
+  favicon: "/images/vb32.png"
   navbar:
     pinned: true
     background: "#EE6A24"

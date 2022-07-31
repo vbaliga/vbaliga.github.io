@@ -1,7 +1,28 @@
 ---
 title: "Vikram B. Baliga"
-editor: visual
 ---
+
+::: {.grid .course-details .course-details-smaller}
+
+::: {.g-col-5}
+- {{< fa user >}} &nbsp; [{{< var author.profile_text >}}]({{< var author.department_profile_url >}})
+- {{< fa university >}} &nbsp; [{{< var author.department >}}]({{< var author.department_url >}})
+- {{< fa envelope >}} &nbsp; <a href="mailto:{{< var author.email >}}">{{< var author.email >}}</a>
+- {{< fa github-square >}} &nbsp; [{{< var author.github >}}]({{< var author.github_url >}})
+- {{< fa brands twitter >}} &nbsp; [{{< var author.twitter >}}](https://www.twitter.com/{{< var author.twitter >}})
+:::
+
+::: {.g-col-5}
+- {{< fa graduation-cap >}} &nbsp; [{{< var author.google_scholar >}}]({{< var author.google_scholar_url >}})
+- {{< fa info-circle >}} &nbsp; [{{< var author.orcid >}}]({{< var author.orcid_url >}})
+- {{< fa users >}} &nbsp; [{{< var author.researchgate >}}]({{< var author.researchgate_url >}})
+- {{< fa spinner >}} &nbsp; [{{< var author.figshare >}}]({{< var author.figshare_url >}})
+- {{< fa id-card >}} &nbsp; [{{< var author.publons >}}]({{< var author.publons_url >}})
+:::
+
+:::
+
+![](/images/vikram_baliga.jpg){fig-alt="Vikram B. Baliga" style="float:right;" width="200"} 
 
 ## Welcome
 
@@ -9,18 +30,10 @@ Welcome to my personal site. I'm a data scientist who solves problems related to
 
 My research asks how musculoskeletal and visual systems allow animals to make complex movements. This often involves techniques from motion capture and virtual reality to probe animals' locomotor behaviors, along with comparative anatomy and physiology to probe the mechanisms that underlie animals' locomotor capabilities. It sometimes involves machine learning techniques to make sense of stupidly convoluted data.
 
-This framework not only helps address how ecology shapes the evolution of animal design, but also has inspired the development of engineered structures. Some of my chief collaborators are engineers who incorporate biological insight to designing structures with multi-functional capabilities.
+This framework not only helps address how ecology shapes the evolution of animal design, but also inspires the development of engineered structures. Some of my chief collaborators are engineers who incorporate biological insight while designing structures with multi-functional capabilities.
 
-Truth be told, I'm not a fan of having a website dedicated to my persona. I might even delete it soon. In the meantime, please hop over to my pubs or check out my software and code to see my track record to date. If you like what you see or if you think I can help you, feel free to reach out. The point of this site is to connect with people like you.
+Truth be told, I'm not a fan of having a website dedicated to my persona. The point of this site is to connect with people. If you like what you see or if you think I can help you, feel free to reach out.
 
-It's also worth mentioning that there is at least one other "Vikram Baliga" with whom you may have me confused. If you are looking for a Vikram Baliga with more of a flare for horticulture, [be sure to check out his work](https://www.podchaser.com/creators/vikram-baliga-107a4YrAy8). I'm the Vikram Baliga who would [undoubtedly beat you in a James Harden look-alike contest](https://www.vikram-baliga.com/s/James-Harden.jpg) (though I can't say I'm a fan of Harden's game).
-
-------------------------------------------------------------------------
-
-## Research profiles
-
--   Google Scholar: [publications profile](https://scholar.google.com/citations?user=sXz0JqQAAAAJ&hl=en)
--   ORCID: [0000-0002-9367-8974](http://orcid.org/0000-0002-9367-8974)
--   ResearchGate: [profile](https://www.researchgate.net/profile/Vikram_Baliga)
+It's also worth mentioning that there is at least one other "Vikram Baliga" with whom you may have me confused. If you are looking for a Vikram Baliga with more of a flare for horticulture, [be sure to check out his work](https://www.podchaser.com/creators/vikram-baliga-107a4YrAy8). I'm the Vikram Baliga who would [undoubtedly beat you in a James Harden look-alike contest](/images/James-Harden.jpg) (though I can't say I'm a fan of Harden's game).
 
 ------------------------------------------------------------------------

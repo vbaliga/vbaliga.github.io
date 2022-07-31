@@ -38,7 +38,7 @@ $dark:          $gray-800 !default;
 $font-family-sans-serif:      Fira Sans Condensed, sans-serif !default;
 $font-family-serif:           Barlow, serif !default;  /* Not actually a serif font but whatever */
 
-$font-size-base:              1.15rem !default;
+$font-size-base:              1.20rem !default;
 $headings-font-weight:        700 !default;
 
 $h1-font-size: $font-size-base * 2.45;
@@ -103,7 +103,7 @@ ol {
 
 .contact-policy p {
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 .course-details-smaller li {
@@ -111,7 +111,7 @@ ol {
 }
 
 .course-details-smaller h3 {
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 
@@ -244,7 +244,7 @@ pre.text {
 img {
     padding:0px;
     border:0px;
-    margin:10px;
+    margin:20px;
 };
 
 // Gaps
@@ -260,3 +260,7 @@ img {
 	width:100%; 
 	height:30px; 
 } 
+
+body {
+  line-height: 1.4;
+}
