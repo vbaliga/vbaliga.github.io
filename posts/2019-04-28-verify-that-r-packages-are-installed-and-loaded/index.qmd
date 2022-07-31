@@ -1,0 +1,55 @@
+---
+title: "Check if packages are installed (and install if not) in R"
+subtitle: "Here’s some code that provides an easy way to check whether specific packages are in the default Library. If they are, they’re simply loaded via library(). If any packages are missing, they’re installed (with dependencies) into the default Library and are then loaded."
+author: "Vikram B. Baliga"
+categories:
+  - R
+  - packages 
+  - package-installation
+  - package-loading
+date: 2019-04-28
+toc: true
+#image: "featured-photo.jpeg"
+---
+
+Say you have an R script that you share with others. You may not be sure that each user has installed all the packages the script will require. Using `install.packages()` would be unnecessary for users who already have the packages and simply need to load them.
+
+Here's some code that provides an easy way to check whether specific packages are in the default Library. If they are, they're simply loaded via `library()`. If any packages are missing, they're installed (with dependencies) into the default Library and are then loaded.
+
+## Install \| install & load packages
+
+```{r, results='hide', message=FALSE}
+## If a package is installed, it will be loaded. If any 
+## are not, the missing package(s) will be installed 
+## from CRAN and then loaded.
+
+## First specify the packages of interest
+packages = c("tidyverse", "geomorph",
+             "phytools", "viridis")
+
+## Now load or install&load all
+package.check <- lapply(
+  packages,
+  FUN = function(x) {
+    if (!require(x, character.only = TRUE)) {
+      install.packages(x, dependencies = TRUE)
+      library(x, character.only = TRUE)
+    }
+  }
+)
+```
+
+The logic of the `package.check()` function basically goes:
+
+\* Using `lapply()` to the list of `packages`,\
+\* If a package is not installed, install it.\
+\* Otherwise, load it.
+
+You can then use `search()` to determine whether all the packages have loaded.
+
+```{r}
+search()
+```
+
+That's all!\
+🐢

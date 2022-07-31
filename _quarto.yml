@@ -21,6 +21,8 @@ website:
         href: data-software-code.qmd
       - text: "Press"
         href: press.qmd
+      - text: "Blog"
+        href: blog.qmd
   page-footer:
     left: |
       Content {{< fa brands creative-commons >}} {{< var site.copyright_year >}} by [{{< var author.name_no_title >}}]({{< var author.url >}}). All images by V.B.B. unless otherwise noted. <br>
