@@ -1,0 +1,88 @@
+---
+title: "Press"
+editor: visual
+---
+
+## Video segments
+
+[Discovering the key to birds' agility could improve drone design](https://www.youtube.com/watch?v=1sWLDbakQ1I)
+
+UBC Science\
+March 9, 2022
+
+[Evolution of bird maneuverability and lessons for UAV design](https://www.youtube.com/watch?v=gKnuEEUKAFg)
+
+University of Michigan Engineering\
+March 9, 2022
+
+[Building a better airplane by borrowing from birds](https://www.kcts9.org/show/human-elements/episode/building-a-better-airplane-by-borrowing-from-birds-jo0ryh)
+
+Crosscut's Human Elements\
+April 19, 2020
+
+[Beaty Biodiversity Museum's *Researchers Revealed*](https://beatymuseum.ubc.ca/2020/02/24/vikram-baliga/)
+
+UBC Biodiversity Centre\
+February 24, 2020
+
+------------------------------------------------------------------------
+
+## Articles
+
+*The University of Michigan*: [Avian secret: The key to agile bird flight is switching quickly between stable and unstable gliding](https://news.engin.umich.edu/2022/03/avian-secret-the-key-to-agile-bird-flight-is-switching-quickly-between-stable-and-unstable-gliding/); March 9, 2022. Also covered by [Phys.org](https://phys.org/news/2022-03-avian-secret-key-agile-bird.html), [Canadian News Media](https://canadanewsmedia.ca/avian-secret-the-key-to-agile-bird-flight-is-switching-quickly-between-stable-and-unstable-gliding-phys-org/), [Head Topics](https://headtopics.com/us/avian-secret-the-key-to-agile-bird-flight-is-switching-quickly-between-stable-and-unstable-gliding-24632796), and [Gamers Grade](https://gamersgrade.com/the-key-to-agile-bird-flight-is-switching-quickly-between-stable-and-unstable-gliding/).
+
+*UBC Science:* [Discovering the key to birds' agility could improve drone design](https://science.ubc.ca/news/discovering-key-birds%E2%80%99-agility-could-improve-drone-design); March 9, 2022.
+
+*Nature News and Views (written by Dr. Aimy Wissa)*: [Trade-offs between stability and manoeuvrability in bird flight](https://www.nature.com/articles/d41586-022-00638-x); March 7, 2022.
+
+*The Michigan Engineer News Center:* [Bird-like wings could help drones keep stable in gusts](https://news.engin.umich.edu/2021/06/bird-like-wings-could-help-drones-keep-stable-in-gusts/); June 10, 2021.
+
+*Journal of Experimental Biology - Outside JEB:* [Wing swing, not shape, is key to bird flight](https://dx.doi.org/10.1242/jeb.211441); February 3, 2020.
+
+*The Wildlife Society:* [Bird wing study reveals different flight development paths](https://wildlife.org/bird-wing-study-reveals-different-flight-development-paths/); November 15, 2019.
+
+*Vet Candy:* [Why are bald eagles such great gliders?](https://www.myvetcandy.com/newsblog/2019/11/3/why-are-bald-eagles-such-great-gliders); November 3, 2019.
+
+*Technology Org:* [Scientists are trying to figure out how birds hover, soar and glide](https://www.technology.org/2019/10/31/scientists-are-trying-to-figure-out-how-birds-hover-soar-and-glide/); October 31, 2019.
+
+*Nature has no boss:* [Swimming through the air](https://naturehasnoboss.com/2019/10/31/swimming-through-air/); October 31, 2019.
+
+*The Scientist:* [Image of the Day: Flight Styles](https://www.the-scientist.com/image-of-the-day/image-of-the-day--flight-styles--66632); October 25, 2019.
+
+*United Press International (UPI):* [An eagle's gliding ability relies on its wrist movements](https://www.upi.com/Science_News/2019/10/24/An-eagles-gliding-ability-relies-on-its-wrist-movements/7171571943902/); October 24, 2019. Also covered by [Brietbart](https://www.breitbart.com/news/an-eagles-gliding-ability-relies-on-its-wrist-movements/), [Space Daily](http://www.spacedaily.com/reports/An_eagles_gliding_ability_relies_on_its_wrist_movements_999.html) and [News of the Day](https://news--of-the-day.com/2019/10/24/an-eagles-gliding-ability-relies-on-its-wrist-movements/).
+
+*Cosmos Magazine:* [Birds wing it in many ways](https://cosmosmagazine.com/biology/bird-flight-is-all-in-the-way-they-move); October 24, 2019.
+
+*CBC Radio-Canada:* [Le mystère entourant les styles de vol des oiseaux pourrait être résolu](https://ici.radio-canada.ca/nouvelle/1359304/zoologie-vikram-baliga-ubc-oiseaux-faucons-faune-animaux-sciences) (in French); October 24, 2019.
+
+*La Presse:* [Les mystères des ailes d'oiseaux (in French)](https://www.lapresse.ca/actualites/sciences/201910/24/01-5246786-les-mysteres-des-ailes-doiseaux.php); October 24, 2019.
+
+*Beaty Biodiversity Museum News & Stories:* [Rethinking wings](https://beatymuseum.ubc.ca/2019/10/23/rethinking-wings/); October 23, 2019.
+
+*EurekAlert! (AAAS):* [Why are bald eagles such great gliders? It's all in the wrist](https://www.eurekalert.org/pub_releases/2019-10/uobc-wab102219.php); October 23, 2019. Also covered by [Science Daily](http://ct.moreover.com/?a=40505244570&p=1pl&v=1&x=awXRtklpd4uJKMsJpkxCnA), [PhysOrg](http://ct.moreover.com/?a=40497572148&p=1pl&v=1&x=xLh6bj37BBVVglMsEyBYtg), and [UBC News](https://news.ubc.ca/2019/10/23/why-are-bald-eagles-such-great-gliders-its-all-in-the-wrist/). [Featured image](https://www.eurekalert.org/multimedia/pub/215329.php) on *EurekAlert!*
+
+*Engineering.com:* [Gull Wing Morphing Research Aims to Enhance Flight Design](https://www.engineering.com/DesignerEdge/DesignerEdgeArticles/ArticleID/18216/Gull-Wing-Morphing-Research-Aims-to-Enhance-Flight-Design.aspx); January 10, 2019.
+
+*Environmental News Network:* [A better way to fly? Researchers study birds and their wings](https://www.enn.com/articles/56362-a-better-way-to-fly-researchers-study-birds-and-their-wings); January 9, 2019.
+
+*The Hindu:* [Inspired by seagull's wings](https://www.thehindu.com/todays-paper/tp-in-school/inspired-by-seagulls-wings/article25945209.ece); January 9, 2019.
+
+*University of Toronto News:* [A better way to fly? U of T and UBC researchers study birds and their wings](https://www.utoronto.ca/news/better-way-fly-u-t-and-ubc-researchers-study-birds-and-their-wings); January 7, 2019.
+
+*The Times (UK):* [Gulls' bendy wings point way ahead for smarter drones](https://www.thetimes.co.uk/article/gulls-bendy-wings-point-way-ahead-for-smarter-drones-38gz9r2bh); January 3, 2019.
+
+*EurekAlert! (AAAS):* [Could gulls' wings inspire smarter airplane design?](https://www.eurekalert.org/pub_releases/2019-01/uobc-cgw010219.php); January 3, 2019. Also covered by [AlphaGalileo](https://www.alphagalileo.org/en-gb/Item-Display/ItemId/172628?returnurl=https%3A%2F%2Fwww.alphagalileo.org%2Fen-gb%2FItem-Display%2FItemId%2F172628) and [Lab Manager](https://www.labmanager.com/news/2019/01/could-gulls-wings-inspire-smarter-airplane-design-).
+
+*SciTech Europa:* [How studying gulls' wings could improve aircraft design](https://www.scitecheuropa.eu/aircraft-design/91868/); January 3, 2019.
+
+*The Tribune (India):* [Seagull wings may inspire smarter airplane design](https://www.tribuneindia.com/news/science-technology/story/708124.html); January 3, 2019. Also covered by [The New Indian Express](http://www.newindianexpress.com/lifestyle/tech/2019/jan/03/seagull-wings-may-inspire-smarter-airplane-design-1920149.html).
+
+*News Center Maine:* [Gull 'wing morphing' could be the future of airplane tech](https://www.newscentermaine.com/video/tech/science/amaze-lab/gull-wing-morphing-could-be-the-future-of-airplane-tech/609-dde5ce5b-3440-40a7-8fcb-1ff1ebe4d356); Video by Amaze Lab; January 3, 2019.
+
+*Business Standard:* [Gull's wings may help design smarter airplanes](https://www.business-standard.com/article/news-ians/gull-s-wings-may-help-design-smarter-airplanes-119010301026_1.html); January 3, 2019. Also covered by [Hindustan Times](https://www.hindustantimes.com/travel/gull-s-wings-may-help-design-smarter-airplanes/story-20xSMnMZ9H5NWIxvJdAKkM.html), [Canindia News](https://www.canindia.com/gulls-wings-may-help-design-smarter-airplanes/), and [Newkerala.com](https://www.newkerala.com/news/read/85339/gulls-wings-may-help-design-smarter-airplanes.html).
+
+*Science Daily:* [Engineers, zoologists reveal how gulls 'wing morph' for stable soaring](https://www.sciencedaily.com/releases/2019/01/190102112844.htm); January 2, 2019. Also covered by [Tech Xplore](https://techxplore.com/news/2019-01-zoologists-reveal-gulls-wing-morph.html).
+
+*NRC Handelsblad:* [Wiebelende meeuw stabiliseert zich met slim ellebogenwerk](https://www.nrc.nl/nieuws/2019/01/02/wiebelende-meeuw-stabiliseert-zich-met-slim-ellebogenwerk-a3127627) (in German); January 2, 2019.
+
+------------------------------------------------------------------------

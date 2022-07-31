@@ -1,10 +1,9 @@
 ---
 title: "Publications"
-author: "Vikram B. Baliga"
 editor: visual
 ---
 
-# Peer-reviewed journal articles
+## Peer-reviewed journal articles
 
 ### 2022
 
@@ -70,7 +69,7 @@ Bryce CM, **Baliga VB**, De Nesnera KL, Fiack D, Goetz K, Tarjan LM, Wade C, Yov
 
 ------------------------------------------------------------------------
 
-# Peer-reviewed software publications
+## Peer-reviewed software publications
 
 ### 2021
 
@@ -82,7 +81,7 @@ Bryce CM, **Baliga VB**, De Nesnera KL, Fiack D, Goetz K, Tarjan LM, Wade C, Yov
 
 ------------------------------------------------------------------------
 
-# Conference papers
+## Conference papers
 
 Full-length papers submitted in concert with conference presentations; not peer-reviewed
 
@@ -96,7 +95,7 @@ Harvey C, **Baliga VB**, Altshuler DL, and Inman DJ. 2019. [Pitch Control Effect
 
 ------------------------------------------------------------------------
 
-# Inquiry-based teaching modules
+## Inquiry-based teaching modules
 
 Available at the [SCWIBLES Modules page](http://scwibles.ucsc.edu/SCWIBLESModules.html)
 
