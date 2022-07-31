@@ -29,7 +29,7 @@ First load (or install&load) the `MCMCglmm` and `parallel` packages:
 ## from CRAN and then loaded.
 
 ## First specify the packages of interest
-packages = c("MCMCglmm", "parallel")
+packages = c("MCMCglmm", "parallel", "jsonlite")
 
 ## Now load or install&load all
 package.check <- lapply(
