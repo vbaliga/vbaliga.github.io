@@ -23,13 +23,13 @@ I'll use "Example 2" from the [MCMCglmm() function help](https://www.rdocumentat
 
 First load (or install&load) the `MCMCglmm` and `parallel` packages:
 
-```{r, results='hide', message=FALSE}
+```{r, eval = FALSE}
 ## If a package is installed, it will be loaded. If any 
 ## are not, the missing package(s) will be installed 
 ## from CRAN and then loaded.
 
 ## First specify the packages of interest
-packages = c("MCMCglmm", "parallel", "jsonlite")
+packages = c("MCMCglmm", "parallel")
 
 ## Now load or install&load all
 package.check <- lapply(
@@ -45,7 +45,7 @@ package.check <- lapply(
 
 With the packages loaded, we'll prep our data set. Lifting this directly from the `MCMCglmm()` help page:
 
-```{r}
+```{r, eval = FALSE}
 data(bird.families)
 phylo.effect <- rbv(bird.families, 1, nodes = "TIPS")
 phenotype <- phylo.effect + rnorm(dim(phylo.effect)[1], 0, 1)
@@ -74,6 +74,23 @@ model2 <- MCMCglmm(
 summary(model2)
 ```
 
+     Iterations = 301:1300
+     Thinning interval  = 1
+     Sample size  = 1000 
+
+     DIC: 375.0159 
+
+     G-structure:  ~taxon
+
+
+     R-structure:  ~units
+
+
+     Location effects: phenotype ~ 1 
+
+                post.mean l-95% CI u-95% CI eff.samp pMCMC
+    (Intercept)    0.1630  -0.5899   0.8938     1000 0.654
+
 Of course, the example provided sets `nitt` to only 1300, yielding an ESS of only \~800 for the fixed effect. I am guessing this is intended to make sure the example is quick to run.
 
 Boosting this to `nitt = 100000`, `burnin = 10000`, and `thin = 10` gives a more healthy ESS \> 8000. But please note that this will take a lot longer to finish (I'll leave it up to you to use the `Sys.time()` function to time it yourself).
@@ -84,7 +101,7 @@ Whenever conducting MCMC-based analyses, it's advisable to conduct multiple runs
 
 ***PLEASE NOTE**: I am setting this up to use only 80% of your machine's total logical processors. You can certainly harness all of your CPUs if you'd like, although I advise against doing so if any of your MCMC runs take more than a few minutes. It also doesn't make sense to set the number of logical processors to be greater than the number of runs (chains), but more on that later. Anyway, treat your silicon well!*
 
-```{r}
+```{r, eval = FALSE}
 # use detectCores() by itself if you want all CPUs
 setCores <- round(detectCores() * 0.8)
 
@@ -128,6 +145,27 @@ stopCluster(cl)
 ```
 
 The `model2_10runs` object is a list that contains each of the 10 mcmc models. You can perform all the usual summarization, plotting...etc, but just be sure to specify models within the list, e.g.: `summary(model2_10runs[[3]])` to summarize the third model out of the 10
+
+     Iterations = 10001:99991
+     Thinning interval  = 10
+     Sample size  = 9000 
+
+     DIC: 109.7491 
+
+     G-structure:  ~taxon
+
+          post.mean l-95% CI u-95% CI eff.samp
+    taxon     1.782   0.3085    2.989    178.6
+
+     R-structure:  ~units
+
+          post.mean  l-95% CI u-95% CI eff.samp
+    units    0.4437 0.0001843    1.224    181.1
+
+     Location effects: phenotype ~ 1 
+
+                post.mean l-95% CI u-95% CI eff.samp pMCMC
+    (Intercept)    0.1697  -0.5989   0.9841     9000 0.666
 
 As I mentioned above, we'll leave convergence and other fun topics like autocorrelation for another day.
 
