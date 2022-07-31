@@ -1,42 +1,24 @@
 on:
-  workflow_dispatch:
   push:
-    branches: [main, master]
+    branches: main
 
-name: deploy
+name: Quarto Publish
 
 jobs:
-  deploy:
+  build-deploy:
     runs-on: ubuntu-latest
-    env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-      LANG: "en_US.UTF-8"
-      LC_ALL: "en_US.UTF-8"
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v2
+      - name: Check out repository
+        uses: actions/checkout@v2
 
-      - uses: quarto-dev/quarto-actions/setup@main
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
 
-      - uses: r-lib/actions/setup-r@v1
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
         with:
-          install-r: false
-          use-public-rspm: true
-
-      - name: Install system dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install libcurl4-openssl-dev
-      - uses: r-lib/actions/setup-renv@v1
-
-      - name: Render site
-        run: quarto render
-      
-      - run: cp -r talks _site
-
-      - name: Deploy to GitHub pages 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.4
-        with:
-          branch: gh-pages
-          folder: _site
-          single-commit: true
-          clean: true
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
