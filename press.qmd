@@ -5,36 +5,46 @@ editor: visual
 
 ## Video segments
 
-[![](/images/ubc-2022-nature-promo.jpg){fig-alt="Jasmin Wong, Vikram Baliga, and Ildiko Szabo in the Beaty Museum Prep Lab" style="float:left;" width="200"}](https://www.youtube.com/watch?v=1sWLDbakQ1I) [Discovering the key to birds' agility could improve drone design](https://www.youtube.com/watch?v=1sWLDbakQ1I)
+[![](/images/ubc-2022-nature-promo.jpg){fig-alt="Jasmin Wong, Vikram Baliga, and Ildiko Szabo in the Beaty Museum Prep Lab" style="float:left;" width="200"}](https://www.youtube.com/watch?v=1sWLDbakQ1I) 
+[Discovering the key to birds' agility could improve drone design](https://www.youtube.com/watch?v=1sWLDbakQ1I)
 
 UBC Science\
 March 9, 2022
 
-::: gap-30
+::: gap-10
 :::
 
-[![](/images/umich-ubc-birds-uav-design.jpg){fig-alt="Evolution of bird maneuverability and lessons for UAV design" style="float:left;" width="200"}](https://www.youtube.com/watch?v=gKnuEEUKAFg) [Evolution of bird maneuverability and lessons for UAV design](https://www.youtube.com/watch?v=gKnuEEUKAFg)
+------------------------------------------------------------------------
+
+[![](/images/umich-ubc-birds-uav-design.jpg){fig-alt="Evolution of bird maneuverability and lessons for UAV design" style="float:left;" width="200"}](https://www.youtube.com/watch?v=gKnuEEUKAFg) 
+[Evolution of bird maneuverability and lessons for UAV design](https://www.youtube.com/watch?v=gKnuEEUKAFg)
 
 University of Michigan Engineering\
 March 9, 2022
 
-::: gap-30
+::: gap-10
 :::
 
-[![](/images/vikram-baliga-human-elements.png){fig-alt="Vikram Baliga in the Beaty Museum Prep Lab Human Elements" style="float:left;" width="200"}](https://www.kcts9.org/show/human-elements/episode/building-a-better-airplane-by-borrowing-from-birds-jo0ryh) [Building a better airplane by borrowing from birds](https://www.kcts9.org/show/human-elements/episode/building-a-better-airplane-by-borrowing-from-birds-jo0ryh)
+------------------------------------------------------------------------
+
+[![](/images/vikram-baliga-human-elements.png){fig-alt="Vikram Baliga in the Beaty Museum Prep Lab Human Elements" style="float:left;" width="200"}](https://www.kcts9.org/show/human-elements/episode/building-a-better-airplane-by-borrowing-from-birds-jo0ryh) 
+[Building a better airplane by borrowing from birds](https://www.kcts9.org/show/human-elements/episode/building-a-better-airplane-by-borrowing-from-birds-jo0ryh)
 
 Crosscut's Human Elements\
 April 19, 2020
 
-::: gap-30
+::: gap-10
 :::
 
-[![](/images/vikram-baliga-researchers-revealed.jpg){fig-alt="Vikram Baliga UBC Researchers Revealed" style="float:left;" width="200"}](https://www.youtube.com/watch?v=JepRktA2W54) [Beaty Biodiversity Museum's *Researchers Revealed*](https://www.youtube.com/watch?v=JepRktA2W54)
+------------------------------------------------------------------------
+
+[![](/images/vikram-baliga-researchers-revealed.jpg){fig-alt="Vikram Baliga UBC Researchers Revealed" style="float:left;" width="200"}](https://www.youtube.com/watch?v=JepRktA2W54) 
+[Beaty Biodiversity Museum's *Researchers Revealed*](https://www.youtube.com/watch?v=JepRktA2W54)
 
 UBC Biodiversity Centre\
 February 24, 2020
 
-::: gap-30
+::: gap-10
 :::
 
 ------------------------------------------------------------------------

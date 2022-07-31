@@ -12,7 +12,7 @@ website:
   navbar:
     pinned: true
     background: "#EE6A24"
-    left:
+    right:
       - text: "Home"
         href: index.qmd
       - text: "Publications"

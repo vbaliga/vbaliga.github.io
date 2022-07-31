@@ -1,23 +1,24 @@
 ---
 title: "Vikram B. Baliga"
+subtitle: "Research Associate, University of British Columbia"
 ---
 
 ::: {.grid .course-details .course-details-smaller}
 
 ::: {.g-col-5}
-- {{< fa user >}} &nbsp; [{{< var author.profile_text >}}]({{< var author.department_profile_url >}})
+- {{< fa solid user >}} &nbsp; [{{< var author.profile_text >}}]({{< var author.department_profile_url >}})
 - {{< fa university >}} &nbsp; [{{< var author.department >}}]({{< var author.department_url >}})
 - {{< fa envelope >}} &nbsp; <a href="mailto:{{< var author.email >}}">{{< var author.email >}}</a>
-- {{< fa github-square >}} &nbsp; [{{< var author.github >}}]({{< var author.github_url >}})
-- {{< fa brands twitter >}} &nbsp; [{{< var author.twitter >}}](https://www.twitter.com/{{< var author.twitter >}})
+- {{< fa brands github >}} &nbsp; [@vbaliga]({{< var author.github_url >}})
+- {{< fa brands twitter >}} &nbsp; [@labricthys](https://www.twitter.com/{{< var author.twitter >}})
 :::
 
 ::: {.g-col-5}
-- {{< fa graduation-cap >}} &nbsp; [{{< var author.google_scholar >}}]({{< var author.google_scholar_url >}})
-- {{< fa info-circle >}} &nbsp; [{{< var author.orcid >}}]({{< var author.orcid_url >}})
-- {{< fa users >}} &nbsp; [{{< var author.researchgate >}}]({{< var author.researchgate_url >}})
-- {{< fa spinner >}} &nbsp; [{{< var author.figshare >}}]({{< var author.figshare_url >}})
-- {{< fa id-card >}} &nbsp; [{{< var author.publons >}}]({{< var author.publons_url >}})
+- {{< fa book >}} &nbsp; [{{< var author.google_scholar >}}]({{< var author.google_scholar_url >}})
+- {{< fa fingerprint >}} &nbsp; [{{< var author.orcid >}}]({{< var author.orcid_url >}})
+- {{< fa brands researchgate >}} &nbsp; [{{< var author.researchgate >}}]({{< var author.researchgate_url >}})
+- {{< fa solid spinner >}} &nbsp; [{{< var author.figshare >}}]({{< var author.figshare_url >}})
+- {{< fa solid copy >}} &nbsp; [{{< var author.publons >}}]({{< var author.publons_url >}})
 :::
 
 :::
@@ -28,7 +29,7 @@ title: "Vikram B. Baliga"
 
 Welcome to my personal site. I'm a data scientist who solves problems related to animal locomotion, evolutionary biology, and physiology. I currently am a Research Associate at the University of British Columbia ([see my department profile](https://www.zoology.ubc.ca/person/vikram-baliga)).
 
-My research asks how musculoskeletal and visual systems allow animals to make complex movements. This often involves techniques from motion capture and virtual reality to probe animals' locomotor behaviors, along with comparative anatomy and physiology to probe the mechanisms that underlie animals' locomotor capabilities. It sometimes involves machine learning techniques to make sense of stupidly convoluted data.
+My research asks how musculoskeletal and visual systems allow animals to make complex movements. This often involves techniques from motion capture and virtual reality to probe animals' locomotor behaviors, along with anatomy & physiology to understand the mechanisms that underlie animals' locomotor capabilities. It sometimes involves machine learning techniques to make sense of stupidly convoluted data.
 
 This framework not only helps address how ecology shapes the evolution of animal design, but also inspires the development of engineered structures. Some of my chief collaborators are engineers who incorporate biological insight while designing structures with multi-functional capabilities.
 
