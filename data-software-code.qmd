@@ -8,7 +8,7 @@ Many of the links below will take you to content on GitHub ([\@vbaliga](https://
 
 ### [avinertia](https://cran.r-project.org/web/packages/AvInertia/index.html): Calculate the inertial properties of a flying bird
 
-*avinertia* provides tools to compute the center of gravity and moment of inertia tensor of any flying bird. The tools function by modeling a bird as a composite structure of simple geometric objects. This requires detailed morphological measurements of bird specimens although those obtained for the associated paper have been included in the package for use. Written with [Christina A. Harvey](https://www.christinaharvey.ca/) and [Jasmin C.M. Wong](https://research-information.bris.ac.uk/en/persons/jasmin-wong)
+*avinertia* provides tools to compute the center of gravity and moment of inertia tensor of any flying bird. The tools function by modeling a bird as a composite structure of simple geometric objects. This requires detailed morphological measurements of bird specimens although those obtained for the associated paper have been included in the package for use. Written with [Christina A. Harvey](https://www.christinaharvey.ca/) and [Jasmin C.M. Wong](https://research-information.bris.ac.uk/en/persons/jasmin-wong).
 
 Accompanying paper ([Harvey et al., 2022](https://doi.org/10.1038/s41586-022-04477-8)) in Nature
 
@@ -20,7 +20,7 @@ Accompanying paper ([Harvey et al., 2022](https://doi.org/10.1038/s41586-022-044
 
 Part of the rOpenSci project (github: [ropensci/pathviewr](https://github.com/ropensci/pathviewr))
 
-*pathviewr* offers tools to import, clean, and visualize movement data, particularly from motion capture systems such from [Optitrack's Motive](https://optitrack.com/products/motive/), the [Straw Lab's Flydra](https://github.com/strawlab/flydra), or from other sources. We provide functions to remove artifacts, standardize tunnel position and tunnel axes, select a region of interest, isolate specific trajectories, fill gaps in trajectory data, and calculate 3D and per-axis velocity. For experiments of visual guidance, we also provide functions that use subject position to estimate perception of visual stimuli. Written with [Melissa S. Armstrong](https://melissasarmstrong.com/) and [Eric R. Press](https://www.grad.ubc.ca/campus-community/meet-our-students/press-eric)
+*pathviewr* offers tools to import, clean, and visualize movement data, particularly from motion capture systems such from [Optitrack's Motive](https://optitrack.com/products/motive/), the [Straw Lab's Flydra](https://github.com/strawlab/flydra), or from other sources. We provide functions to remove artifacts, standardize tunnel position and tunnel axes, select a region of interest, isolate specific trajectories, fill gaps in trajectory data, and calculate 3D and per-axis velocity. For experiments of visual guidance, we also provide functions that use subject position to estimate perception of visual stimuli. Written with [Melissa S. Armstrong](https://melissasarmstrong.com/) and [Eric R. Press](https://www.grad.ubc.ca/campus-community/meet-our-students/press-eric).
 
 ------------------------------------------------------------------------
 
@@ -54,7 +54,7 @@ written as a standalone R script rather than as a full-blown package. Stable rel
 
 ## Data & code from pubs
 
-Many of these repositories contain phylogenies that we've inferred, but be sure to see the **Phylogenetic trees** section below for straightforward access to MCC & ML trees.
+Many of these repositories contain phylogenies that we've inferred, but be sure to see the [Phylogenetic trees](data-software-code.qmd#phylogenetic-trees) section below for straightforward access to MCC & ML trees.
 
 -   [figshare repository](https://doi.org/10.6084/m9.figshare.19425737) for: Smyth G**,** Baliga VB**,** Gaede AH, Wylie DR, and Altshuler DL. 2022. Specializations in optic flow encodingin the pretectum of hummingbirds and zebra finches. *Current Biology*.
 
