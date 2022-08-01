@@ -31,15 +31,12 @@ jobs:
           if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
           renv::restore()
 
-      - name: Render site
-        run: quarto render
-      
-      - run: cp -r talks _site
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Deploy to GitHub pages 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
         with:
-          branch: gh-pages
-          folder: _site
-          single-commit: true
-          clean: true
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
