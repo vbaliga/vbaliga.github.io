@@ -24,8 +24,7 @@ Here's some code that provides an easy way to check whether specific packages ar
 ## from CRAN and then loaded.
 
 ## First specify the packages of interest
-packages = c("tidyverse", "geomorph",
-             "phytools", "viridis")
+packages = c("MASS", "nlme")
 
 ## Now load or install&load all
 package.check <- lapply(
