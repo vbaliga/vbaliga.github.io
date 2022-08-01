@@ -1,6 +1,12 @@
 project:
   type: website
 
+editor: 
+  mode: source
+  markdown:
+    wrap: 80
+    canonical: true
+
 website: 
   title: "vbaliga.github.io"
   site-url: https://vbaliga.github.io
@@ -40,5 +46,3 @@ format:
       - html/custom.scss
     toc: true
     highlight-style: monokai
-    
-editor: visual

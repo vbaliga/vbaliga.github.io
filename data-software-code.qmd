@@ -1,6 +1,5 @@
 ---
 title: "Data, software & code"
-editor: visual
 ---
 
 Many of the links below will take you to content on GitHub ([\@vbaliga](https://github.com/vbaliga)) or Figshare ([see my profile here](https://figshare.com/authors/Vikram_B_Baliga/4769286)).
@@ -41,7 +40,7 @@ Accompanying paper ([Baliga, 2021](https://doi.org/10.21105/joss.03074)) in the 
 
 Part of the [rOpenSci](https://ropensci.org/) project (github: [ropensci/workloopR](https://github.com/ropensci/workloopR))
 
-workloopR (pronounced "work looper") provides functions for the import, transformation, and analysis of muscle physiology experiments in R. Over the course of developing the package, we expanded this goal to also cover experiments that are often complementary to the work loop technique.
+workloopR (pronounced "work looper") provides functions for the import, transformation, and analysis of muscle physiology experiments in R. Over the course of developing the package, we expanded this goal to also cover experiments that are often complementary to the work loop technique. Written with [Shree Senthivasan](https://www.linkedin.com/in/shreeram-senthivasan-43b0881bb/).
 
 Accompanying paper ([Baliga and Senthivasan, 2019](https://doi.org/10.21105/joss.01856)) in the Journal of Open Source Software
 
@@ -49,9 +48,7 @@ Accompanying paper ([Baliga and Senthivasan, 2019](https://doi.org/10.21105/joss
 
 ### [genbank_downloadR](https://github.com/vbaliga/genbank_downloadR): Batch downloading of DNA or protein sequences from GenBank
 
--   Available on github: [vbaliga/genbank_downloadR](https://github.com/vbaliga/genbank_downloadR)
-
--   This is (currently) written as an R script rather than as a full-blown package
+written as a standalone R script rather than as a full-blown package. Stable releases also [available on Figshare](https://doi.org/10.6084/m9.figshare.12980189).
 
 ------------------------------------------------------------------------
 
@@ -87,7 +84,6 @@ I am generally happy to share trees from posterior distributions --- just shoot 
 
 -   222 taxa across Aves + outgroup; from Baliga et al. 2019 (*Science Advances*):
     -   Bayesian MCC tree ([download](https://vikram-baliga.squarespace.com/s/Baliga-etal-Science-Advances_222s_Avian_MCCtree.tre))
-
     -   Maximum likelihood tree ([download](https://vikram-baliga.squarespace.com/s/Baliga-etal-Science-Advances_222s_Avian_MLtree.tre))
 
 ### Gobies (Gobiidae)
