@@ -10,7 +10,7 @@ categories:
   - Windows
 date: 2019-05-03
 toc: true
-#image: "featured-photo.jpeg"
+image: "mcmcglmm-parallel.png"
 ---
 
 Lately, I have been using the [MCMCglmm](https://cran.r-project.org/web/packages/MCMCglmm/index.html) package to run linear mixed-models in a Bayesian framework. The documentation is generally very good but there seems to be relatively little support for using parallel processing (here: using multiple cores on your machine) to efficiently run large volumes of mcmc runs. This is especially true for Windows users, who cannot use functions like `parallel::mclapply()`.

@@ -9,14 +9,14 @@ categories:
   - package-loading
 date: 2019-04-28
 toc: true
-#image: "featured-photo.jpeg"
+image: "verify-that-r-package.png"
 ---
 
 Say you have an R script that you share with others. You may not be sure that each user has installed all the packages the script will require. Using `install.packages()` would be unnecessary for users who already have the packages and simply need to load them.
 
 Here's some code that provides an easy way to check whether specific packages are in the default Library. If they are, they're simply loaded via `library()`. If any packages are missing, they're installed (with dependencies) into the default Library and are then loaded.
 
-## Install \| install & load packages
+## Load \| install & load packages
 
 ```{r, results='hide', message=FALSE}
 ## If a package is installed, it will be loaded. If any 
@@ -40,9 +40,11 @@ package.check <- lapply(
 
 The logic of the `package.check()` function basically goes:
 
-\* Using `lapply()` to the list of `packages`,\
-\* If a package is not installed, install it.\
-\* Otherwise, load it.
+-   Using `lapply()` to the list of `packages`,
+
+-   If a package is not installed, install it.
+
+-   Otherwise, load it.
 
 You can then use `search()` to determine whether all the packages have loaded.
 

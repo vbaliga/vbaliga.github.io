@@ -1,5 +1,5 @@
 ---
-title: "Stuff I tried to Google"
+title: "Stuff I tried to google"
 listing: 
   contents: posts
   fields: [image, date, title, subtitle, categories, author, reading-time]
@@ -11,7 +11,7 @@ listing:
 editor: visual
 ---
 
-The motivation for these posts often comes from trying to google a question or topic only to find little-to-no answer. Should I have luck in answering it myself, I'll post it here with the hope that it helps other people with similar questions 🐢
+The motivation for these posts often comes from trying to google a question or topic related to coding, only to find little-to-no answer. Should I have luck in answering it myself, I'll post it here with the hope that it helps other people with similar questions 🐢
 
 ::: gap-10
 :::

@@ -23,18 +23,16 @@ subtitle: "Research Associate, University of British Columbia"
 
 :::
 
-![](/images/vikram_baliga.jpg){fig-alt="Vikram B. Baliga" style="float:right;" width="200"} 
+![](images/vikram_baliga.jpg){fig-alt="Vikram B. Baliga" style="float:right;" width="200"} 
 
 ## Welcome
 
-Welcome to my personal site. I'm a data scientist who solves problems related to animal locomotion, evolutionary biology, and physiology. I currently am a Research Associate at the University of British Columbia ([see my department profile](https://www.zoology.ubc.ca/person/vikram-baliga)).
+Welcome to my personal site. I'm a data scientist who solves problems related to animal locomotion, evolutionary biology, and physiology. 
 
-My research asks how musculoskeletal and visual systems allow animals to make complex movements. This often involves techniques from motion capture and virtual reality to probe animals' locomotor behaviors, along with anatomy & physiology to understand the mechanisms that underlie animals' locomotor capabilities. It sometimes involves machine learning techniques to make sense of stupidly convoluted data.
+My research asks how musculoskeletal and visual systems allow animals to control complex motion. This means I get to use motion capture and virtual reality to investigate animals' locomotor behaviors, and delve into anatomy & physiology to understand how these behaviors are made possible. It sometimes involves machine learning techniques to make sense of stupidly convoluted data.
 
-This framework not only helps address how ecology shapes the evolution of animal design, but also inspires the development of engineered structures. Some of my chief collaborators are engineers who incorporate biological insight while designing structures with multi-functional capabilities.
+This framework not only helps us understand animals' capabilities, but also inspires the development of engineered structures. Some of my chief collaborators are engineers who incorporate biological insight into designing structures with multi-functional capabilities. The pages on this site should help give you a sense of what I've been up to -- if you think I can help you, feel free to reach out.
 
-Truth be told, I'm not really a fan of having a website dedicated to myself. The point of this site is to connect with people. If you like what you see or if you think I can help you, feel free to reach out.
-
-It's also worth mentioning that there is at least one other "Vikram Baliga" with whom you may have me confused. If you are looking for the Vikram Baliga with more of a flare for horticulture, [try this page instead](https://www.podchaser.com/creators/vikram-baliga-107a4YrAy8). I'm the Vikram Baliga who would [undoubtedly beat you in a James Harden look-alike contest](/images/James-Harden.jpg) (though I can't say I'm a fan of Harden's game).
+That said, there is at least one other "Vikram Baliga" with whom you may have me confused. If you are looking for the Vikram Baliga with more of a flare for horticulture, [try this page instead](https://www.podchaser.com/creators/vikram-baliga-107a4YrAy8). I'm the Vikram Baliga who would [undoubtedly beat you in a James Harden look-alike contest](/images/James-Harden.jpg) (though I can't say I'm a fan of Harden's game).
 
 ------------------------------------------------------------------------

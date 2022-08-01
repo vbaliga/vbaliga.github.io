@@ -21,7 +21,7 @@ website:
         href: data-software-code.qmd
       - text: "Press"
         href: press.qmd
-      - text: "Blog"
+      - text: "Stuff I tried to google"
         href: blog.qmd
   page-footer:
     left: |
