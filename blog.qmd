@@ -1,6 +1,6 @@
 ---
 title: "Stuff I tried to google"
-subtitle: "Sporadically updated, (somewhat) useful stuff"
+subtitle: "(but ended up figuring out myself)"
 listing: 
   contents: posts
   fields: [image, date, title, subtitle, categories, author, reading-time]
@@ -12,9 +12,9 @@ listing:
 editor: visual
 ---
 
-The motivation for these posts often comes from trying to google a question or topic related to coding, only to find little-to-no answer. Should I have luck in answering it myself, I'll post it here with the hope that it helps other people with similar questions 🐢
+The motivation for these posts often comes from trying to google a question or topic related to coding, only to find little-to-no answer. Should I find a way to answer it myself, I'll post a "How to" here with the hope that it helps other people with similar questions. 🐢
 
 ::: gap-10
 :::
 
-Subscribe to new updates via [RSS](blog.xml).
+Subscribe to very sporadic updates via [RSS](blog.xml).

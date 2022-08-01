@@ -7,8 +7,17 @@ Many of the links below will take you to content on GitHub ([\@vbaliga](https://
 
 ## Software packages
 
+### [avinertia](https://cran.r-project.org/web/packages/AvInertia/index.html): Calculate the inertial properties of a flying bird
+
+*avinertia* provides tools to compute the center of gravity and moment of inertia tensor of any flying bird. The tools function by modeling a bird as a composite structure of simple geometric objects. This requires detailed morphological measurements of bird specimens although those obtained for the associated paper have been included in the package for use. Written with [Christina A. Harvey](https://www.christinaharvey.ca/) and [Jasmin C.M. Wong](https://research-information.bris.ac.uk/en/persons/jasmin-wong)
+
+Accompanying paper ([Harvey et al., 2022](https://doi.org/10.1038/s41586-022-04477-8)) in Nature
+
+------------------------------------------------------------------------
+
 ### [pathviewr](https://github.com/ropensci/pathviewr): Tools to import, clean, and visualize animal movement data in R
-![](/images/pathviewrhex_600dpi_trns.png){fig-alt="pathviewr r package" style="float:left;" width="100"} 
+
+![](/images/pathviewrhex_600dpi_trns.png){fig-alt="pathviewr r package" style="float:left;" width="100"}
 
 Part of the rOpenSci project (github: [ropensci/pathviewr](https://github.com/ropensci/pathviewr))
 
@@ -17,7 +26,8 @@ Part of the rOpenSci project (github: [ropensci/pathviewr](https://github.com/ro
 ------------------------------------------------------------------------
 
 ### [gaussplotR](https://github.com/vbaliga/gaussplotR): Fit, predict, and plot 2D Gaussians in R
-![](/images/gaussplotR.png){fig-alt="gaussplotR r package" style="float:left;" width="100"} 
+
+![](/images/gaussplotR.png){fig-alt="gaussplotR r package" style="float:left;" width="100"}
 
 gaussplotR provides functions to fit two-dimensional Gaussian functions, predict values from such functions, and produce plots of predicted data.
 
@@ -26,11 +36,12 @@ Accompanying paper ([Baliga, 2021](https://doi.org/10.21105/joss.03074)) in the 
 ------------------------------------------------------------------------
 
 ### [workloopR](https://github.com/ropensci/workloopR): Analysis of work loops and other data from muscle physiology experiments in R
-![](/images/workloopR_icon_300dpi.png){fig-alt="workloopR r package" style="float:left;" width="100"} 
+
+![](/images/workloopR_icon_300dpi.png){fig-alt="workloopR r package" style="float:left;" width="100"}
 
 Part of the [rOpenSci](https://ropensci.org/) project (github: [ropensci/workloopR](https://github.com/ropensci/workloopR))
 
-workloopR (pronounced "work looper") provides functions for the import, transformation, and analysis of muscle physiology experiments in R. Over the course of developing the package, we expanded this goal to also cover experiments that are often complementary to the work loop technique. 
+workloopR (pronounced "work looper") provides functions for the import, transformation, and analysis of muscle physiology experiments in R. Over the course of developing the package, we expanded this goal to also cover experiments that are often complementary to the work loop technique.
 
 Accompanying paper ([Baliga and Senthivasan, 2019](https://doi.org/10.21105/joss.01856)) in the Journal of Open Source Software
 
