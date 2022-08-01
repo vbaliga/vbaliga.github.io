@@ -7,6 +7,7 @@ website:
   repo-url: https://github.com/vbaliga/vbaliga.github.io
   description-meta: "Personal site for Vikram B. Baliga"
   twitter-card: 
+    creator: "@labrichthys"
     site: "@labrichthys"
   favicon: "/images/vb32.png"
   navbar:

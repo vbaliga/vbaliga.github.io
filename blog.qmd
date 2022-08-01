@@ -1,5 +1,6 @@
 ---
 title: "Stuff I tried to google"
+subtitle: "Sporadically updated, (somewhat) useful stuff"
 listing: 
   contents: posts
   fields: [image, date, title, subtitle, categories, author, reading-time]
