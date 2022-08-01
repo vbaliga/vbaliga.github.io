@@ -124,7 +124,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <meta name="twitter:title" content="vbaliga.github.io - Check if packages are installed (and install if not) in R">
 <meta name="twitter:description" content="Here’s some code that provides an easy way to check whether specific packages are in the default Library. If they are, they’re simply loaded via library(). If any packages are missing, they’re installed (with dependencies) into the default Library and are then loaded.">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/vbaliga/vbaliga.github.io/posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/verify-that-r-package.png">
+<meta name="twitter:image-height" content="399">
+<meta name="twitter:image-width" content="493">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed">
@@ -154,7 +157,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <a class="nav-link" href="../../press.html">Press</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../blog.html">Blog</a>
+    <a class="nav-link" href="../../blog.html">Stuff I tried to google</a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -171,7 +174,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#install-install-load-packages" id="toc-install-install-load-packages" class="nav-link active" data-scroll-target="#install-install-load-packages">Install | install &amp; load packages</a></li>
+  <li><a href="#load-install-load-packages" id="toc-load-install-load-packages" class="nav-link active" data-scroll-target="#load-install-load-packages">Load | install &amp; load packages</a></li>
   </ul>
 </nav>
     </div>
@@ -215,8 +218,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <p>Say you have an R script that you share with others. You may not be sure that each user has installed all the packages the script will require. Using <code>install.packages()</code> would be unnecessary for users who already have the packages and simply need to load them.</p>
 <p>Here’s some code that provides an easy way to check whether specific packages are in the default Library. If they are, they’re simply loaded via <code>library()</code>. If any packages are missing, they’re installed (with dependencies) into the default Library and are then loaded.</p>
-<section id="install-install-load-packages" class="level2">
-<h2 class="anchored" data-anchor-id="install-install-load-packages">Install | install &amp; load packages</h2>
+<section id="load-install-load-packages" class="level2">
+<h2 class="anchored" data-anchor-id="load-install-load-packages">Load | install &amp; load packages</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## If a package is installed, it will be loaded. If any </span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="do">## are not, the missing package(s) will be installed </span></span>
@@ -237,9 +240,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The logic of the <code>package.check()</code> function basically goes:</p>
-<p>* Using <code>lapply()</code> to the list of <code>packages</code>,<br>
-* If a package is not installed, install it.<br>
-* Otherwise, load it.</p>
+<ul>
+<li><p>Using <code>lapply()</code> to the list of <code>packages</code>,</p></li>
+<li><p>If a package is not installed, install it.</p></li>
+<li><p>Otherwise, load it.</p></li>
+</ul>
 <p>You can then use <code>search()</code> to determine whether all the packages have loaded.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">search</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>

@@ -179,6 +179,7 @@ units    0.4437 0.0001843    1.224    181.1
   <category>Windows</category>
   <guid>https://github.com/vbaliga/vbaliga.github.io/posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/index.html</guid>
   <pubDate>Fri, 03 May 2019 00:00:00 GMT</pubDate>
+  <media:content url="https://github.com/vbaliga/vbaliga.github.io/posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/mcmcglmm-parallel.png" medium="image" type="image/png" height="147" width="144"/>
 </item>
 <item>
   <title>Check if packages are installed (and install if not) in R</title>
@@ -190,8 +191,8 @@ units    0.4437 0.0001843    1.224    181.1
 
 <p>Say you have an R script that you share with others. You may not be sure that each user has installed all the packages the script will require. Using <code>install.packages()</code> would be unnecessary for users who already have the packages and simply need to load them.</p>
 <p>Here’s some code that provides an easy way to check whether specific packages are in the default Library. If they are, they’re simply loaded via <code>library()</code>. If any packages are missing, they’re installed (with dependencies) into the default Library and are then loaded.</p>
-<section id="install-install-load-packages" class="level2">
-<h2 class="anchored" data-anchor-id="install-install-load-packages">Install | install &amp; load packages</h2>
+<section id="load-install-load-packages" class="level2">
+<h2 class="anchored" data-anchor-id="load-install-load-packages">Load | install &amp; load packages</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="do" style="color: #5E5E5E;
 font-style: italic;">## If a package is installed, it will be loaded. If any </span></span>
@@ -217,9 +218,11 @@ font-style: italic;">## Now load or install&amp;load all</span></span>
 <span id="cb1-17">)</span></code></pre></div>
 </div>
 <p>The logic of the <code>package.check()</code> function basically goes:</p>
-<p>* Using <code>lapply()</code> to the list of <code>packages</code>,<br>
-* If a package is not installed, install it.<br>
-* Otherwise, load it.</p>
+<ul>
+<li><p>Using <code>lapply()</code> to the list of <code>packages</code>,</p></li>
+<li><p>If a package is not installed, install it.</p></li>
+<li><p>Otherwise, load it.</p></li>
+</ul>
 <p>You can then use <code>search()</code> to determine whether all the packages have loaded.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="fu" style="color: #4758AB;">search</span>()</span></code></pre></div>
@@ -244,6 +247,7 @@ font-style: italic;">## Now load or install&amp;load all</span></span>
   <category>package-loading</category>
   <guid>https://github.com/vbaliga/vbaliga.github.io/posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/index.html</guid>
   <pubDate>Sun, 28 Apr 2019 00:00:00 GMT</pubDate>
+  <media:content url="https://github.com/vbaliga/vbaliga.github.io/posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/verify-that-r-package.png" medium="image" type="image/png" height="117" width="144"/>
 </item>
 </channel>
 </rss>
