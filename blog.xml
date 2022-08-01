@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>vbaliga.github.io</title>
+<link>https://github.com/vbaliga/vbaliga.github.io/blog.html</link>
+<atom:link href="https://github.com/vbaliga/vbaliga.github.io/blog.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.0.37</generator>
+<lastBuildDate>Fri, 03 May 2019 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Parallel processing for MCMCglmm in R (Windows-friendly)</title>
+  <dc:creator>Vikram B. Baliga</dc:creator>
+  <link>https://github.com/vbaliga/vbaliga.github.io/posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>Lately, I have been using the <a href="https://cran.r-project.org/web/packages/MCMCglmm/index.html">MCMCglmm</a> package to run linear mixed-models in a Bayesian framework. The documentation is generally very good but there seems to be relatively little support for using parallel processing (here: using multiple cores on your machine) to efficiently run large volumes of mcmc runs. This is especially true for Windows users, who cannot use functions like <code>parallel::mclapply()</code>.</p>
+<p>I’m happy to share that I have worked out a solution using the <a href="https://www.rdocumentation.org/packages/parallel/versions/3.5.1">parallel</a> package. Basically, I set up a virtual cluster and then use the <code>parallel::parLapply()</code> function to run iterations of <code>MCMCglmm()</code> in parallel.</p>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<p>I’ll use “Example 2” from the <a href="https://www.rdocumentation.org/packages/MCMCglmm/versions/2.26/topics/MCMCglmm">MCMCglmm() function help</a>. You can skip ahead to the next section if instead you’d like to tailor this to your own data &amp; analysis.</p>
+<p>First load (or install&amp;load) the <code>MCMCglmm</code> and <code>parallel</code> packages:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="do" style="color: #5E5E5E;
+font-style: italic;">## If a package is installed, it will be loaded. If any </span></span>
+<span id="cb1-2"><span class="do" style="color: #5E5E5E;
+font-style: italic;">## are not, the missing package(s) will be installed </span></span>
+<span id="cb1-3"><span class="do" style="color: #5E5E5E;
+font-style: italic;">## from CRAN and then loaded.</span></span>
+<span id="cb1-4"></span>
+<span id="cb1-5"><span class="do" style="color: #5E5E5E;
+font-style: italic;">## First specify the packages of interest</span></span>
+<span id="cb1-6">packages <span class="ot" style="color: #003B4F;">=</span> <span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">"MCMCglmm"</span>, <span class="st" style="color: #20794D;">"parallel"</span>)</span>
+<span id="cb1-7"></span>
+<span id="cb1-8"><span class="do" style="color: #5E5E5E;
+font-style: italic;">## Now load or install&amp;load all</span></span>
+<span id="cb1-9">package.check <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">lapply</span>(</span>
+<span id="cb1-10">  packages,</span>
+<span id="cb1-11">  <span class="at" style="color: #657422;">FUN =</span> <span class="cf" style="color: #003B4F;">function</span>(x) {</span>
+<span id="cb1-12">    <span class="cf" style="color: #003B4F;">if</span> (<span class="sc" style="color: #5E5E5E;">!</span><span class="fu" style="color: #4758AB;">require</span>(x, <span class="at" style="color: #657422;">character.only =</span> <span class="cn" style="color: #8f5902;">TRUE</span>)) {</span>
+<span id="cb1-13">      <span class="fu" style="color: #4758AB;">install.packages</span>(x, <span class="at" style="color: #657422;">dependencies =</span> <span class="cn" style="color: #8f5902;">TRUE</span>)</span>
+<span id="cb1-14">      <span class="fu" style="color: #4758AB;">library</span>(x, <span class="at" style="color: #657422;">character.only =</span> <span class="cn" style="color: #8f5902;">TRUE</span>)</span>
+<span id="cb1-15">    }</span>
+<span id="cb1-16">  }</span>
+<span id="cb1-17">)</span></code></pre></div>
+</div>
+<p>With the packages loaded, we’ll prep our data set. Lifting this directly from the <code>MCMCglmm()</code> help page:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="fu" style="color: #4758AB;">data</span>(bird.families)</span>
+<span id="cb2-2">phylo.effect <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">rbv</span>(bird.families, <span class="dv" style="color: #AD0000;">1</span>, <span class="at" style="color: #657422;">nodes =</span> <span class="st" style="color: #20794D;">"TIPS"</span>)</span>
+<span id="cb2-3">phenotype <span class="ot" style="color: #003B4F;">&lt;-</span> phylo.effect <span class="sc" style="color: #5E5E5E;">+</span> <span class="fu" style="color: #4758AB;">rnorm</span>(<span class="fu" style="color: #4758AB;">dim</span>(phylo.effect)[<span class="dv" style="color: #AD0000;">1</span>], <span class="dv" style="color: #AD0000;">0</span>, <span class="dv" style="color: #AD0000;">1</span>)</span>
+<span id="cb2-4"></span>
+<span id="cb2-5"><span class="co" style="color: #5E5E5E;"># simulate phylogenetic and residual effects</span></span>
+<span id="cb2-6"><span class="co" style="color: #5E5E5E;"># with unit variance</span></span>
+<span id="cb2-7">test.data <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">data.frame</span>(<span class="at" style="color: #657422;">phenotype =</span> phenotype,</span>
+<span id="cb2-8">                        <span class="at" style="color: #657422;">taxon =</span> <span class="fu" style="color: #4758AB;">row.names</span>(phenotype))</span>
+<span id="cb2-9">Ainv <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">inverseA</span>(bird.families)<span class="sc" style="color: #5E5E5E;">$</span>Ainv</span>
+<span id="cb2-10"></span>
+<span id="cb2-11"><span class="co" style="color: #5E5E5E;"># inverse matrix of shared phyloegnetic history</span></span>
+<span id="cb2-12">prior <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">list</span>(<span class="at" style="color: #657422;">R =</span> <span class="fu" style="color: #4758AB;">list</span>(<span class="at" style="color: #657422;">V =</span> <span class="dv" style="color: #AD0000;">1</span>, <span class="at" style="color: #657422;">nu =</span> <span class="fl" style="color: #AD0000;">0.002</span>), </span>
+<span id="cb2-13">              <span class="at" style="color: #657422;">G =</span> <span class="fu" style="color: #4758AB;">list</span>(<span class="at" style="color: #657422;">G1 =</span> <span class="fu" style="color: #4758AB;">list</span>(<span class="at" style="color: #657422;">V =</span> <span class="dv" style="color: #AD0000;">1</span>, <span class="at" style="color: #657422;">nu =</span> <span class="fl" style="color: #AD0000;">0.002</span>)))</span>
+<span id="cb2-14"></span>
+<span id="cb2-15">model2 <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">MCMCglmm</span>(</span>
+<span id="cb2-16">  phenotype <span class="sc" style="color: #5E5E5E;">~</span> <span class="dv" style="color: #AD0000;">1</span>,</span>
+<span id="cb2-17">  <span class="at" style="color: #657422;">random =</span>  <span class="sc" style="color: #5E5E5E;">~</span> taxon,</span>
+<span id="cb2-18">  <span class="at" style="color: #657422;">ginverse =</span> <span class="fu" style="color: #4758AB;">list</span>(<span class="at" style="color: #657422;">taxon =</span> Ainv),</span>
+<span id="cb2-19">  <span class="at" style="color: #657422;">data =</span> test.data,</span>
+<span id="cb2-20">  <span class="at" style="color: #657422;">prior =</span> prior,</span>
+<span id="cb2-21">  <span class="at" style="color: #657422;">verbose =</span> <span class="cn" style="color: #8f5902;">FALSE</span>,</span>
+<span id="cb2-22">  <span class="at" style="color: #657422;">nitt =</span> <span class="dv" style="color: #AD0000;">1300</span>,</span>
+<span id="cb2-23">  <span class="at" style="color: #657422;">burnin =</span> <span class="dv" style="color: #AD0000;">300</span>,</span>
+<span id="cb2-24">  <span class="at" style="color: #657422;">thin =</span> <span class="dv" style="color: #AD0000;">1</span></span>
+<span id="cb2-25">)</span>
+<span id="cb2-26"><span class="fu" style="color: #4758AB;">summary</span>(model2)</span></code></pre></div>
+</div>
+<pre><code> Iterations = 301:1300
+ Thinning interval  = 1
+ Sample size  = 1000 
+
+ DIC: 375.0159 
+
+ G-structure:  ~taxon
+
+
+ R-structure:  ~units
+
+
+ Location effects: phenotype ~ 1 
+
+            post.mean l-95% CI u-95% CI eff.samp pMCMC
+(Intercept)    0.1630  -0.5899   0.8938     1000 0.654</code></pre>
+<p>Of course, the example provided sets <code>nitt</code> to only 1300, yielding an ESS of only ~800 for the fixed effect. I am guessing this is intended to make sure the example is quick to run.</p>
+<p>Boosting this to <code>nitt = 100000</code>, <code>burnin = 10000</code>, and <code>thin = 10</code> gives a more healthy ESS &gt; 8000. But please note that this will take a lot longer to finish (I’ll leave it up to you to use the <code>Sys.time()</code> function to time it yourself).</p>
+</section>
+<section id="run-mcmc-chains-in-parallel" class="level2">
+<h2 class="anchored" data-anchor-id="run-mcmc-chains-in-parallel">Run MCMC chains in parallel</h2>
+<p>Whenever conducting MCMC-based analyses, it’s advisable to conduct multiple runs (different chains) and then assess convergence. I’ll leave the convergence assessments for another day (but here’s <a href="https://stats.stackexchange.com/questions/507/what-is-the-best-method-for-checking-convergence-in-mcmc">a good StackExchange post</a>). For now we’ll just conduct 10 runs of this model, each using <code>nitt = 100000</code>, using parallel processing.</p>
+<p><em><strong>PLEASE NOTE</strong>: I am setting this up to use only 80% of your machine’s total logical processors. You can certainly harness all of your CPUs if you’d like, although I advise against doing so if any of your MCMC runs take more than a few minutes. It also doesn’t make sense to set the number of logical processors to be greater than the number of runs (chains), but more on that later. Anyway, treat your silicon well!</em></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="co" style="color: #5E5E5E;"># use detectCores() by itself if you want all CPUs</span></span>
+<span id="cb4-2">setCores <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">round</span>(<span class="fu" style="color: #4758AB;">detectCores</span>() <span class="sc" style="color: #5E5E5E;">*</span> <span class="fl" style="color: #AD0000;">0.8</span>)</span>
+<span id="cb4-3"></span>
+<span id="cb4-4"><span class="co" style="color: #5E5E5E;"># make the cluster</span></span>
+<span id="cb4-5">cl <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">makeCluster</span>(<span class="fu" style="color: #4758AB;">getOption</span>(<span class="st" style="color: #20794D;">"cl.cores"</span>, setCores))</span>
+<span id="cb4-6">  <span class="co" style="color: #5E5E5E;"># EDIT ON 2020-07-27: I have been informed that Mac users </span></span>
+<span id="cb4-7">  <span class="co" style="color: #5E5E5E;"># may have better luck using:</span></span>
+<span id="cb4-8">  <span class="co" style="color: #5E5E5E;"># cl &lt;- parallel::makeCluster(getOption("cl.cores", setCores), </span></span>
+<span id="cb4-9">  <span class="co" style="color: #5E5E5E;">#                             setup_strategy = "sequential")</span></span>
+<span id="cb4-10">  <span class="co" style="color: #5E5E5E;"># This is due to an apparent issue in RStudio. </span></span>
+<span id="cb4-11">  <span class="co" style="color: #5E5E5E;"># See this stackoverflow page for details:</span></span>
+<span id="cb4-12">  <span class="co" style="color: #5E5E5E;"># https://stackoverflow.com/questions/61700586/r-makecluster-command-used-to-work-but-now-fails-in-rstudio</span></span>
+<span id="cb4-13"></span>
+<span id="cb4-14"><span class="co" style="color: #5E5E5E;"># load the MCMCglmm package within the cluster</span></span>
+<span id="cb4-15">cl.pkg <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">clusterEvalQ</span>(cl, <span class="fu" style="color: #4758AB;">library</span>(MCMCglmm))</span>
+<span id="cb4-16"></span>
+<span id="cb4-17"><span class="co" style="color: #5E5E5E;"># import each object that's necessary to run the function</span></span>
+<span id="cb4-18"><span class="fu" style="color: #4758AB;">clusterExport</span>(cl, <span class="st" style="color: #20794D;">"prior"</span>)</span>
+<span id="cb4-19"><span class="fu" style="color: #4758AB;">clusterExport</span>(cl, <span class="st" style="color: #20794D;">"test.data"</span>)</span>
+<span id="cb4-20"><span class="fu" style="color: #4758AB;">clusterExport</span>(cl, <span class="st" style="color: #20794D;">"Ainv"</span>)</span>
+<span id="cb4-21"></span>
+<span id="cb4-22"><span class="co" style="color: #5E5E5E;"># use parLapply() to execute 10 runs of MCMCglmm()</span></span>
+<span id="cb4-23"><span class="co" style="color: #5E5E5E;"># each with nitt=100000</span></span>
+<span id="cb4-24">model2_10runs <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">parLapply</span>(<span class="at" style="color: #657422;">cl =</span> cl, <span class="dv" style="color: #AD0000;">1</span><span class="sc" style="color: #5E5E5E;">:</span><span class="dv" style="color: #AD0000;">10</span>, <span class="cf" style="color: #003B4F;">function</span>(i) {</span>
+<span id="cb4-25">  <span class="fu" style="color: #4758AB;">MCMCglmm</span>(</span>
+<span id="cb4-26">    phenotype <span class="sc" style="color: #5E5E5E;">~</span> <span class="dv" style="color: #AD0000;">1</span>,</span>
+<span id="cb4-27">    <span class="at" style="color: #657422;">random =</span>  <span class="sc" style="color: #5E5E5E;">~</span> taxon,</span>
+<span id="cb4-28">    <span class="at" style="color: #657422;">ginverse =</span> <span class="fu" style="color: #4758AB;">list</span>(<span class="at" style="color: #657422;">taxon =</span> Ainv),</span>
+<span id="cb4-29">    <span class="at" style="color: #657422;">data =</span> test.data,</span>
+<span id="cb4-30">    <span class="at" style="color: #657422;">prior =</span> prior,</span>
+<span id="cb4-31">    <span class="at" style="color: #657422;">verbose =</span> <span class="cn" style="color: #8f5902;">FALSE</span>,</span>
+<span id="cb4-32">    <span class="at" style="color: #657422;">nitt =</span> <span class="dv" style="color: #AD0000;">100000</span>,</span>
+<span id="cb4-33">    <span class="at" style="color: #657422;">burnin =</span> <span class="dv" style="color: #AD0000;">10000</span>,</span>
+<span id="cb4-34">    <span class="at" style="color: #657422;">thin =</span> <span class="dv" style="color: #AD0000;">10</span></span>
+<span id="cb4-35">  )</span>
+<span id="cb4-36">})</span>
+<span id="cb4-37"></span>
+<span id="cb4-38"><span class="co" style="color: #5E5E5E;"># once it's finished, use stopCluster() to stop running</span></span>
+<span id="cb4-39"><span class="co" style="color: #5E5E5E;"># the parallel cluster</span></span>
+<span id="cb4-40"><span class="fu" style="color: #4758AB;">stopCluster</span>(cl)</span></code></pre></div>
+</div>
+<p>The <code>model2_10runs</code> object is a list that contains each of the 10 mcmc models. You can perform all the usual summarization, plotting…etc, but just be sure to specify models within the list, e.g.: <code>summary(model2_10runs[[3]])</code> to summarize the third model out of the 10</p>
+<pre><code> Iterations = 10001:99991
+ Thinning interval  = 10
+ Sample size  = 9000 
+
+ DIC: 109.7491 
+
+ G-structure:  ~taxon
+
+      post.mean l-95% CI u-95% CI eff.samp
+taxon     1.782   0.3085    2.989    178.6
+
+ R-structure:  ~units
+
+      post.mean  l-95% CI u-95% CI eff.samp
+units    0.4437 0.0001843    1.224    181.1
+
+ Location effects: phenotype ~ 1 
+
+            post.mean l-95% CI u-95% CI eff.samp pMCMC
+(Intercept)    0.1697  -0.5989   0.9841     9000 0.666</code></pre>
+<p>As I mentioned above, we’ll leave convergence and other fun topics like autocorrelation for another day.</p>
+<p>That’s all!<br>
+🐢</p>
+
+
+</section>
+
+ ]]></description>
+  <category>R</category>
+  <category>MCMCglmm</category>
+  <category>parallel</category>
+  <category>parallel-processing</category>
+  <category>Windows</category>
+  <guid>https://github.com/vbaliga/vbaliga.github.io/posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/index.html</guid>
+  <pubDate>Fri, 03 May 2019 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Check if packages are installed (and install if not) in R</title>
+  <dc:creator>Vikram B. Baliga</dc:creator>
+  <link>https://github.com/vbaliga/vbaliga.github.io/posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>Say you have an R script that you share with others. You may not be sure that each user has installed all the packages the script will require. Using <code>install.packages()</code> would be unnecessary for users who already have the packages and simply need to load them.</p>
+<p>Here’s some code that provides an easy way to check whether specific packages are in the default Library. If they are, they’re simply loaded via <code>library()</code>. If any packages are missing, they’re installed (with dependencies) into the default Library and are then loaded.</p>
+<section id="install-install-load-packages" class="level2">
+<h2 class="anchored" data-anchor-id="install-install-load-packages">Install | install &amp; load packages</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="do" style="color: #5E5E5E;
+font-style: italic;">## If a package is installed, it will be loaded. If any </span></span>
+<span id="cb1-2"><span class="do" style="color: #5E5E5E;
+font-style: italic;">## are not, the missing package(s) will be installed </span></span>
+<span id="cb1-3"><span class="do" style="color: #5E5E5E;
+font-style: italic;">## from CRAN and then loaded.</span></span>
+<span id="cb1-4"></span>
+<span id="cb1-5"><span class="do" style="color: #5E5E5E;
+font-style: italic;">## First specify the packages of interest</span></span>
+<span id="cb1-6">packages <span class="ot" style="color: #003B4F;">=</span> <span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">"MASS"</span>, <span class="st" style="color: #20794D;">"nlme"</span>)</span>
+<span id="cb1-7"></span>
+<span id="cb1-8"><span class="do" style="color: #5E5E5E;
+font-style: italic;">## Now load or install&amp;load all</span></span>
+<span id="cb1-9">package.check <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">lapply</span>(</span>
+<span id="cb1-10">  packages,</span>
+<span id="cb1-11">  <span class="at" style="color: #657422;">FUN =</span> <span class="cf" style="color: #003B4F;">function</span>(x) {</span>
+<span id="cb1-12">    <span class="cf" style="color: #003B4F;">if</span> (<span class="sc" style="color: #5E5E5E;">!</span><span class="fu" style="color: #4758AB;">require</span>(x, <span class="at" style="color: #657422;">character.only =</span> <span class="cn" style="color: #8f5902;">TRUE</span>)) {</span>
+<span id="cb1-13">      <span class="fu" style="color: #4758AB;">install.packages</span>(x, <span class="at" style="color: #657422;">dependencies =</span> <span class="cn" style="color: #8f5902;">TRUE</span>)</span>
+<span id="cb1-14">      <span class="fu" style="color: #4758AB;">library</span>(x, <span class="at" style="color: #657422;">character.only =</span> <span class="cn" style="color: #8f5902;">TRUE</span>)</span>
+<span id="cb1-15">    }</span>
+<span id="cb1-16">  }</span>
+<span id="cb1-17">)</span></code></pre></div>
+</div>
+<p>The logic of the <code>package.check()</code> function basically goes:</p>
+<p>* Using <code>lapply()</code> to the list of <code>packages</code>,<br>
+* If a package is not installed, install it.<br>
+* Otherwise, load it.</p>
+<p>You can then use <code>search()</code> to determine whether all the packages have loaded.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="fu" style="color: #4758AB;">search</span>()</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] ".GlobalEnv"        "package:nlme"      "package:MASS"     
+ [4] "tools:quarto"      "package:stats"     "package:graphics" 
+ [7] "package:grDevices" "package:datasets"  "renv:shims"       
+[10] "package:utils"     "package:methods"   "Autoloads"        
+[13] "package:base"     </code></pre>
+</div>
+</div>
+<p>That’s all!<br>
+🐢</p>
+
+
+</section>
+
+ ]]></description>
+  <category>R</category>
+  <category>packages</category>
+  <category>package-installation</category>
+  <category>package-loading</category>
+  <guid>https://github.com/vbaliga/vbaliga.github.io/posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/index.html</guid>
+  <pubDate>Sun, 28 Apr 2019 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
