@@ -9,6 +9,11 @@
 <link>https://github.com/vbaliga/vbaliga.github.io/blog.html</link>
 <atom:link href="https://github.com/vbaliga/vbaliga.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
+<image>
+<url>https://github.com/vbaliga/vbaliga.github.io/images/vbaliga.github.io - social preview.png</url>
+<title>vbaliga.github.io</title>
+<link>https://github.com/vbaliga/vbaliga.github.io/blog.html</link>
+</image>
 <generator>quarto-1.0.37</generator>
 <lastBuildDate>Fri, 03 May 2019 00:00:00 GMT</lastBuildDate>
 <item>
