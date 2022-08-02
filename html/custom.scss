@@ -38,7 +38,7 @@ $dark:          $gray-800 !default;
 $font-family-sans-serif:      Fira Sans Condensed, sans-serif !default;
 $font-family-serif:           Barlow, serif !default;  /* Not actually a serif font but whatever */
 
-$font-size-base:              1.20rem !default;
+$font-size-base:              1.1rem !default;
 $headings-font-weight:        700 !default;
 
 $h1-font-size: $font-size-base * 2.45;
@@ -55,7 +55,7 @@ $sidebar-font-size-section: 0.9rem;
 $link-color: $red;
 $link-hover-color: $yellow;
 
-$monokai-bg: #2e3440;
+$monokai-bg: #161616;
 
 
 /*-- scss:rules --*/
@@ -107,11 +107,11 @@ ol {
 }
 
 .course-details-smaller li {
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 .course-details-smaller h3 {
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 
@@ -240,11 +240,14 @@ pre.text {
   color: #ffffff;
 }
 
-// Image padding-top: 
+// Image padding/border/margins: 
 img {
     padding:0px;
     border:0px;
-    margin:20px;
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:10px;
+    margin-bottom:10px;
 };
 
 // Gaps
@@ -266,6 +269,6 @@ body {
 }
 
 .navbar {
- font-size: 1.3rem;
+ font-size: 1.2rem;
  border: 1px solid rgba(0,0,0,.1)
 }

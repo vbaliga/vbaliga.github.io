@@ -9,10 +9,13 @@ listing:
   sort-ui: true
   filter-ui: true
   feed: true
-editor: visual
+editor: source
 ---
 
-The motivation for these posts often comes from trying to google a question or topic related to coding, only to find little-to-no answer. Should I find a way to answer it myself, I'll post a "How to" here with the hope that it helps other people with similar questions. 🐢
+The motivation for these posts often comes from trying to google a question or
+topic related to coding, only to find little-to-no answer. Should I find a way
+to answer it myself, I'll post a "How to" here with the hope that it helps other
+people with similar questions. 🐢
 
 ::: gap-10
 :::

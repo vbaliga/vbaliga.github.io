@@ -14,10 +14,16 @@ website:
   title: "vbaliga.github.io"
   site-url: https://vbaliga.github.io
   repo-url: https://github.com/vbaliga/vbaliga.github.io
+  image: "/images/vbaliga.github.io - social preview.png"
   description-meta: "Personal site for Vikram B. Baliga"
   twitter-card: 
+    image: "/images/vbaliga.github.io - social preview.png"
+    card-style: summary_large_image
     creator: "@labrichthys"
     site: "@labrichthys"
+  open-graph:
+    image: "/images/vbaliga.github.io - social preview.png"
+    locale: en_US
   favicon: "/images/vb32.png"
   navbar:
     pinned: true
@@ -33,12 +39,15 @@ website:
         href: press.qmd
       - text: "Stuff I tried to google"
         href: blog.qmd
+  search:
+    location: navbar
+    type: overlay
   page-footer:
     left: |
-      Content {{< fa brands creative-commons >}} {{< var site.copyright_year >}} by [{{< var author.name_no_title >}}]({{< var author.url >}}). All images by V.B.B. unless otherwise noted. <br>
+      Content {{< fa brands creative-commons >}} {{< var site.copyright_year >}} by [{{< var author.name_no_title >}}](mailto:{{< var author.email >}}). All images by V.B.B. unless otherwise noted. <br>
       All content licensed under a {{< fa brands creative-commons >}}
       {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-nc >}}
-      [Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/)
+      [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license
     right: |
       Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)<br>
 
@@ -49,3 +58,4 @@ format:
       - html/custom.scss
     toc: true
     highlight-style: monokai
+    code-overflow: wrap
