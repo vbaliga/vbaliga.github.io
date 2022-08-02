@@ -4,6 +4,20 @@ subtitle: "Research Associate, University of British Columbia"
 editor: source
 ---
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+```{=html}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ENXZZXR1H8"></script>
+```
+```{=html}
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ENXZZXR1H8');
+</script>
+```
 ::: {.grid .course-details .course-details-smaller}
 ::: {.g-col-6 .g-col-md-3}
 -   {{< fa solid user >}}  
