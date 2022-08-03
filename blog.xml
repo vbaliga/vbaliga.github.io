@@ -254,5 +254,48 @@ font-style: italic;">## Now load or install&amp;load all</span></span>
   <pubDate>Sun, 28 Apr 2019 00:00:00 GMT</pubDate>
   <media:content url="https://github.com/vbaliga/vbaliga.github.io/posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/verify-that-r-package.png" medium="image" type="image/png" height="117" width="144"/>
 </item>
+<item>
+  <title>Set max DLLs in R (Windows)</title>
+  <dc:creator>Vikram B. Baliga</dc:creator>
+  <link>https://github.com/vbaliga/vbaliga.github.io/posts/2019-04-22-set-max-DLLs-in-r/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>On occasion, you may need adjust the max number of .dll files that R can handle. I first encountered this need when using a high number of packages together.</p>
+<p>I’ve had trouble finding this info in the past, so I decided to create this post for others. This works if you are using Windows.</p>
+<p>The following is machine-specific, so you will need to do this on each computer you run R.</p>
+<section id="find-the-.renviron-file" class="level2">
+<h2 class="anchored" data-anchor-id="find-the-.renviron-file">Find the <code>.Renviron</code> file</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">user_renviron <span class="ot" style="color: #003B4F;">&lt;-</span> </span>
+<span id="cb1-2">  <span class="fu" style="color: #4758AB;">path.expand</span>(<span class="fu" style="color: #4758AB;">file.path</span>(<span class="st" style="color: #20794D;">"~"</span>, <span class="st" style="color: #20794D;">".Renviron"</span>))</span>
+<span id="cb1-3"><span class="co" style="color: #5E5E5E;"># check to see if the file already exists</span></span>
+<span id="cb1-4"><span class="co" style="color: #5E5E5E;"># typically under: "C:/Users/YOURUSERNAME/Documents/.Renviron"</span></span>
+<span id="cb1-5"><span class="cf" style="color: #003B4F;">if</span>(<span class="sc" style="color: #5E5E5E;">!</span><span class="fu" style="color: #4758AB;">file.exists</span>(user_renviron)) </span>
+<span id="cb1-6">  <span class="fu" style="color: #4758AB;">file.create</span>(user_renviron)</span>
+<span id="cb1-7"><span class="fu" style="color: #4758AB;">file.edit</span>(user_renviron) </span></code></pre></div>
+</div>
+<p>If <code>file.edit(user_renviron)</code> fails to work, just open the file itself (located wherever <code>user_renviron</code> is pointing) with a text editor.</p>
+</section>
+<section id="edit-max-dlls" class="level2">
+<h2 class="anchored" data-anchor-id="edit-max-dlls">Edit max DLLs</h2>
+<p>Once you have the file open, edit or add the following line, save, and restart R:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">R_MAX_NUM_DLLS<span class="ot" style="color: #003B4F;">=</span><span class="dv" style="color: #AD0000;">500</span></span></code></pre></div>
+</div>
+<p>🐢</p>
+
+
+</section>
+
+ ]]></description>
+  <category>R</category>
+  <category>DLLs</category>
+  <category>Windows</category>
+  <guid>https://github.com/vbaliga/vbaliga.github.io/posts/2019-04-22-set-max-DLLs-in-r/index.html</guid>
+  <pubDate>Mon, 22 Apr 2019 00:00:00 GMT</pubDate>
+  <media:content url="https://github.com/vbaliga/vbaliga.github.io/posts/2019-04-22-set-max-DLLs-in-r/set-max-DLLs-r.png" medium="image" type="image/png" height="85" width="144"/>
+</item>
 </channel>
 </rss>

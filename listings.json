@@ -3,7 +3,8 @@
     "listing": "/blog.html",
     "items": [
       "/posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/index.html",
-      "/posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/index.html"
+      "/posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/index.html",
+      "/posts/2019-04-22-set-max-DLLs-in-r/index.html"
     ]
   }
 ]
