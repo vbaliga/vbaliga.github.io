@@ -1,0 +1,186 @@
+---
+title: "Replace text within all cells of a specific column in R"
+subtitle: "How to target specific column(s) in a `data.frame` or `tibble` to replace text within"
+author: "Vikram B. Baliga"
+categories:
+  - R
+  - stringr
+  - dplyr
+  - tidyverse
+  - data-cleaning
+date: 2020-06-27
+toc: true
+image: "replace-text-in-specific-column.png"
+---
+
+Recently, I needed to find a way to rename specific cells within one column of a
+tibble without affecting cells in other columns. I knew that
+`stringr::str_replace()` is awesome for this sort of thing, but I hadn't quite
+grasped how I could target specific columns with it.
+
+Fortunately,`dplyr::mutate_at()`, and newer mechanisms via `dplyr::across()`,
+seem to fit the bill. I'll run through a few examples in this post.
+
+We'll start by loading `tidyverse`:
+
+```{r}
+#| eval: false
+library(tidyverse) ## I'm  using v1.3.0.9000
+```
+
+## The data
+
+We'll now generate an example `tibble` to work with which we will simply call
+`data`.
+
+*Code to make this object will be appended to the end of this post so we can get
+to the punchline faster. Look down there if you'd like to re-create this example
+fully on your own*
+
+Here's how `data` looks:
+
+```{r}
+#| eval: false
+data
+```
+
+    # A tibble: 100 × 5
+       subject       treatment      var1   var2   var3
+       <chr>         <chr>         <dbl>  <dbl>  <dbl>
+     1 subject_c 003 treatment z  0.452  0.464  0.231 
+     2 subject_c 003 treatment y  0.0412 0.165  0.350 
+     3 subject_c 003 treatment y -0.422  0.585  0.605 
+     4 subject_b 003 treatment z -2.05   0.271  0.453 
+     5 subject_c 003 treatment x  1.13   0.230  0.447 
+     6 subject_b 003 treatment x -1.46   0.691  0.413 
+     7 subject_b 003 treatment z  0.740  0.283  0.0504
+     8 subject_b 003 treatment y  1.91   0.810  0.587 
+     9 subject_c 003 treatment y -1.44   0.0939 0.433 
+    10 subject_a 003 treatment y  0.702  0.822  0.121 
+    # … with 90 more rows
+
+## The issue
+
+Now say we want to replace the contents of `data$subject` with something less
+tedious. Right now, each subject name has `003` appended to it and we'd like to
+shave these parts off the names.
+
+`stringr::str_replace()` is great for replacing text that fits a specified
+criterion. So we could simply tell `str_replace()` to target instances of `003`
+within the `subject` column. But the object fed into `str_replace()` needs to be
+a vector, which can be awkward to pull from a tibble. Moreover, we'd like to do
+this safely and ensure that no other columns in the tibble are affected.
+
+## Use `mutate_at()` with `str_replace()`
+
+Fortunately, I found that `dplyr::mutate_at()` can help us target column(s) of
+interest (here `subject`) and leave other columns untouched.
+
+```{r}
+#| eval: false
+renamed_data <- 
+  data %>% 
+  mutate_at("subject", str_replace, " 003", "")
+renamed_data
+```
+
+    # A tibble: 100 x 5
+      subject   treatment      var1   var2   var3
+      <chr>     <chr>         <dbl>  <dbl>  <dbl>
+    1 subject_c treatment z  0.452  0.464  0.231 
+    2 subject_c treatment y  0.0412 0.165  0.350 
+    3 subject_c treatment y -0.422  0.585  0.605 
+    4 subject_b treatment z -2.05   0.271  0.453 
+    5 subject_c treatment x  1.13   0.230  0.447 
+    6 subject_b treatment x -1.46   0.691  0.413 
+    7 subject_b treatment z  0.740  0.283  0.0504
+    8 subject_b treatment y  1.91   0.810  0.587 
+    9 subject_c treatment y -1.44   0.0939 0.433 
+    10 subject_a treatment y  0.702  0.822  0.121 
+    # … with 90 more rows
+
+Nice!
+
+By using `dplyr::mutate_at()`, we are specifiying that `str_replace()` should
+target the `subject` column only and take all instances of `003` and replace
+them with nothing (`""`).
+
+For those who prefer to not use pipes, we can accomplish the same thing by
+specifying `data` as the first argument in `mutate_at()`.
+
+```{r}
+#| eval: false
+renamed_data_no_pipe <- 
+  mutate_at(data, "subject", str_replace, " 003", "")
+renamed_data_no_pipe
+```
+
+    # A tibble: 100 x 5
+       subject   treatment      var1   var2   var3
+       <chr>     <chr>         <dbl>  <dbl>  <dbl>
+     1 subject_c treatment z  0.452  0.464  0.231 
+     2 subject_c treatment y  0.0412 0.165  0.350 
+     3 subject_c treatment y -0.422  0.585  0.605 
+     4 subject_b treatment z -2.05   0.271  0.453 
+     5 subject_c treatment x  1.13   0.230  0.447 
+     6 subject_b treatment x -1.46   0.691  0.413 
+     7 subject_b treatment z  0.740  0.283  0.0504
+     8 subject_b treatment y  1.91   0.810  0.587 
+     9 subject_c treatment y -1.44   0.0939 0.433 
+    10 subject_a treatment y  0.702  0.822  0.121 
+    # … with 90 more rows
+
+## Use `mutate()` and `across()` with `str_replace()`
+
+I should note that the `_at` component of `dplyr` has now been considered
+"superseded". Instead, the authors of `dplyr` recommend we use `dplyr::across()`
+to target our column(s) of interest. So we can write another version of the
+above:
+
+```{r}
+#| eval: false
+renamed_data_across <-
+  data %>%
+  mutate(across("subject", str_replace, " 003", ""))
+renamed_data_across
+```
+
+    # A tibble: 100 x 5
+       subject   treatment      var1   var2   var3
+       <chr>     <chr>         <dbl>  <dbl>  <dbl>
+     1 subject_c treatment z  0.452  0.464  0.231 
+     2 subject_c treatment y  0.0412 0.165  0.350 
+     3 subject_c treatment y -0.422  0.585  0.605 
+     4 subject_b treatment z -2.05   0.271  0.453 
+     5 subject_c treatment x  1.13   0.230  0.447 
+     6 subject_b treatment x -1.46   0.691  0.413 
+     7 subject_b treatment z  0.740  0.283  0.0504
+     8 subject_b treatment y  1.91   0.810  0.587 
+     9 subject_c treatment y -1.44   0.0939 0.433 
+    10 subject_a treatment y  0.702  0.822  0.121 
+    # … with 90 more rows
+
+Either way, we are able to trim off the extra text in `subject` names and avoid
+the potential of affecting other columns.
+
+## Data
+
+Here's the code that was used to create `data`:
+
+```{r}
+#| eval: false
+strings_subs   <- c("subject_a 003", "subject_b 003", "subject_c 003")
+strings_treats <- c("treatment x", "treatment y", "treatment z")
+
+set.seed(123)
+data <- 
+  tibble::tibble(subject   = sample(strings_subs,   100, replace = TRUE),
+                 treatment = sample(strings_treats, 100, replace = TRUE),
+                 var1 = rnorm(100, 0, 1),
+                 var2 = runif(100, 0, 1),
+                 var3 = rbeta(100, 1, 1))
+```
+
+That's all!
+
+🐢

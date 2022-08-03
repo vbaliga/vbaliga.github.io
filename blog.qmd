@@ -1,6 +1,6 @@
 ---
 title: "Stuff I tried to google"
-subtitle: "(but ended up figuring out myself)"
+subtitle: "but ended up figuring out myself"
 listing: 
   contents: posts
   fields: [image, date, title, subtitle, categories, author, reading-time]
