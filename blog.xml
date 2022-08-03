@@ -15,7 +15,152 @@
 <link>https://github.com/vbaliga/vbaliga.github.io/blog.html</link>
 </image>
 <generator>quarto-1.0.37</generator>
-<lastBuildDate>Fri, 03 May 2019 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 27 Jun 2020 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Replace text within all cells of a specific column in R</title>
+  <dc:creator>Vikram B. Baliga</dc:creator>
+  <link>https://github.com/vbaliga/vbaliga.github.io/posts/2020-06-27-replace-text-in-specific-column/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>Recently, I needed to find a way to rename specific cells within one column of a tibble without affecting cells in other columns. I knew that <code>stringr::str_replace()</code> is awesome for this sort of thing, but I hadn’t quite grasped how I could target specific columns with it.</p>
+<p>Fortunately,<code>dplyr::mutate_at()</code>, and newer mechanisms via <code>dplyr::across()</code>, seem to fit the bill. I’ll run through a few examples in this post.</p>
+<p>We’ll start by loading <code>tidyverse</code>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;">library</span>(tidyverse) <span class="do" style="color: #5E5E5E;
+font-style: italic;">## I'm  using v1.3.0.9000</span></span></code></pre></div>
+</div>
+<section id="the-data" class="level2">
+<h2 class="anchored" data-anchor-id="the-data">The data</h2>
+<p>We’ll now generate an example <code>tibble</code> to work with which we will simply call <code>data</code>.</p>
+<p><em>Code to make this object will be appended to the end of this post so we can get to the punchline faster. Look down there if you’d like to re-create this example fully on your own</em></p>
+<p>Here’s how <code>data</code> looks:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">data</span></code></pre></div>
+</div>
+<pre><code># A tibble: 100 × 5
+   subject       treatment      var1   var2   var3
+   &lt;chr&gt;         &lt;chr&gt;         &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;
+ 1 subject_c 003 treatment z  0.452  0.464  0.231 
+ 2 subject_c 003 treatment y  0.0412 0.165  0.350 
+ 3 subject_c 003 treatment y -0.422  0.585  0.605 
+ 4 subject_b 003 treatment z -2.05   0.271  0.453 
+ 5 subject_c 003 treatment x  1.13   0.230  0.447 
+ 6 subject_b 003 treatment x -1.46   0.691  0.413 
+ 7 subject_b 003 treatment z  0.740  0.283  0.0504
+ 8 subject_b 003 treatment y  1.91   0.810  0.587 
+ 9 subject_c 003 treatment y -1.44   0.0939 0.433 
+10 subject_a 003 treatment y  0.702  0.822  0.121 
+# … with 90 more rows</code></pre>
+</section>
+<section id="the-issue" class="level2">
+<h2 class="anchored" data-anchor-id="the-issue">The issue</h2>
+<p>Now say we want to replace the contents of <code>data$subject</code> with something less tedious. Right now, each subject name has <code>003</code> appended to it and we’d like to shave these parts off the names.</p>
+<p><code>stringr::str_replace()</code> is great for replacing text that fits a specified criterion. So we could simply tell <code>str_replace()</code> to target instances of <code>003</code> within the <code>subject</code> column. But the object fed into <code>str_replace()</code> needs to be a vector, which can be awkward to pull from a tibble. Moreover, we’d like to do this safely and ensure that no other columns in the tibble are affected.</p>
+</section>
+<section id="use-mutate_at-with-str_replace" class="level2">
+<h2 class="anchored" data-anchor-id="use-mutate_at-with-str_replace">Use <code>mutate_at()</code> with <code>str_replace()</code></h2>
+<p>Fortunately, I found that <code>dplyr::mutate_at()</code> can help us target column(s) of interest (here <code>subject</code>) and leave other columns untouched.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1">renamed_data <span class="ot" style="color: #003B4F;">&lt;-</span> </span>
+<span id="cb4-2">  data <span class="sc" style="color: #5E5E5E;">%&gt;%</span> </span>
+<span id="cb4-3">  <span class="fu" style="color: #4758AB;">mutate_at</span>(<span class="st" style="color: #20794D;">"subject"</span>, str_replace, <span class="st" style="color: #20794D;">" 003"</span>, <span class="st" style="color: #20794D;">""</span>)</span>
+<span id="cb4-4">renamed_data</span></code></pre></div>
+</div>
+<pre><code># A tibble: 100 x 5
+  subject   treatment      var1   var2   var3
+  &lt;chr&gt;     &lt;chr&gt;         &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;
+1 subject_c treatment z  0.452  0.464  0.231 
+2 subject_c treatment y  0.0412 0.165  0.350 
+3 subject_c treatment y -0.422  0.585  0.605 
+4 subject_b treatment z -2.05   0.271  0.453 
+5 subject_c treatment x  1.13   0.230  0.447 
+6 subject_b treatment x -1.46   0.691  0.413 
+7 subject_b treatment z  0.740  0.283  0.0504
+8 subject_b treatment y  1.91   0.810  0.587 
+9 subject_c treatment y -1.44   0.0939 0.433 
+10 subject_a treatment y  0.702  0.822  0.121 
+# … with 90 more rows</code></pre>
+<p>Nice!</p>
+<p>By using <code>dplyr::mutate_at()</code>, we are specifiying that <code>str_replace()</code> should target the <code>subject</code> column only and take all instances of <code>003</code> and replace them with nothing (<code>""</code>).</p>
+<p>For those who prefer to not use pipes, we can accomplish the same thing by specifying <code>data</code> as the first argument in <code>mutate_at()</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1">renamed_data_no_pipe <span class="ot" style="color: #003B4F;">&lt;-</span> </span>
+<span id="cb6-2">  <span class="fu" style="color: #4758AB;">mutate_at</span>(data, <span class="st" style="color: #20794D;">"subject"</span>, str_replace, <span class="st" style="color: #20794D;">" 003"</span>, <span class="st" style="color: #20794D;">""</span>)</span>
+<span id="cb6-3">renamed_data_no_pipe</span></code></pre></div>
+</div>
+<pre><code># A tibble: 100 x 5
+   subject   treatment      var1   var2   var3
+   &lt;chr&gt;     &lt;chr&gt;         &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;
+ 1 subject_c treatment z  0.452  0.464  0.231 
+ 2 subject_c treatment y  0.0412 0.165  0.350 
+ 3 subject_c treatment y -0.422  0.585  0.605 
+ 4 subject_b treatment z -2.05   0.271  0.453 
+ 5 subject_c treatment x  1.13   0.230  0.447 
+ 6 subject_b treatment x -1.46   0.691  0.413 
+ 7 subject_b treatment z  0.740  0.283  0.0504
+ 8 subject_b treatment y  1.91   0.810  0.587 
+ 9 subject_c treatment y -1.44   0.0939 0.433 
+10 subject_a treatment y  0.702  0.822  0.121 
+# … with 90 more rows</code></pre>
+</section>
+<section id="use-mutate-and-across-with-str_replace" class="level2">
+<h2 class="anchored" data-anchor-id="use-mutate-and-across-with-str_replace">Use <code>mutate()</code> and <code>across()</code> with <code>str_replace()</code></h2>
+<p>I should note that the <code>_at</code> component of <code>dplyr</code> has now been considered “superseded”. Instead, the authors of <code>dplyr</code> recommend we use <code>dplyr::across()</code> to target our column(s) of interest. So we can write another version of the above:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1">renamed_data_across <span class="ot" style="color: #003B4F;">&lt;-</span></span>
+<span id="cb8-2">  data <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb8-3">  <span class="fu" style="color: #4758AB;">mutate</span>(<span class="fu" style="color: #4758AB;">across</span>(<span class="st" style="color: #20794D;">"subject"</span>, str_replace, <span class="st" style="color: #20794D;">" 003"</span>, <span class="st" style="color: #20794D;">""</span>))</span>
+<span id="cb8-4">renamed_data_across</span></code></pre></div>
+</div>
+<pre><code># A tibble: 100 x 5
+   subject   treatment      var1   var2   var3
+   &lt;chr&gt;     &lt;chr&gt;         &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;
+ 1 subject_c treatment z  0.452  0.464  0.231 
+ 2 subject_c treatment y  0.0412 0.165  0.350 
+ 3 subject_c treatment y -0.422  0.585  0.605 
+ 4 subject_b treatment z -2.05   0.271  0.453 
+ 5 subject_c treatment x  1.13   0.230  0.447 
+ 6 subject_b treatment x -1.46   0.691  0.413 
+ 7 subject_b treatment z  0.740  0.283  0.0504
+ 8 subject_b treatment y  1.91   0.810  0.587 
+ 9 subject_c treatment y -1.44   0.0939 0.433 
+10 subject_a treatment y  0.702  0.822  0.121 
+# … with 90 more rows</code></pre>
+<p>Either way, we are able to trim off the extra text in <code>subject</code> names and avoid the potential of affecting other columns.</p>
+</section>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<p>Here’s the code that was used to create <code>data</code>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1">strings_subs   <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">"subject_a 003"</span>, <span class="st" style="color: #20794D;">"subject_b 003"</span>, <span class="st" style="color: #20794D;">"subject_c 003"</span>)</span>
+<span id="cb10-2">strings_treats <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">"treatment x"</span>, <span class="st" style="color: #20794D;">"treatment y"</span>, <span class="st" style="color: #20794D;">"treatment z"</span>)</span>
+<span id="cb10-3"></span>
+<span id="cb10-4"><span class="fu" style="color: #4758AB;">set.seed</span>(<span class="dv" style="color: #AD0000;">123</span>)</span>
+<span id="cb10-5">data <span class="ot" style="color: #003B4F;">&lt;-</span> </span>
+<span id="cb10-6">  tibble<span class="sc" style="color: #5E5E5E;">::</span><span class="fu" style="color: #4758AB;">tibble</span>(<span class="at" style="color: #657422;">subject   =</span> <span class="fu" style="color: #4758AB;">sample</span>(strings_subs,   <span class="dv" style="color: #AD0000;">100</span>, <span class="at" style="color: #657422;">replace =</span> <span class="cn" style="color: #8f5902;">TRUE</span>),</span>
+<span id="cb10-7">                 <span class="at" style="color: #657422;">treatment =</span> <span class="fu" style="color: #4758AB;">sample</span>(strings_treats, <span class="dv" style="color: #AD0000;">100</span>, <span class="at" style="color: #657422;">replace =</span> <span class="cn" style="color: #8f5902;">TRUE</span>),</span>
+<span id="cb10-8">                 <span class="at" style="color: #657422;">var1 =</span> <span class="fu" style="color: #4758AB;">rnorm</span>(<span class="dv" style="color: #AD0000;">100</span>, <span class="dv" style="color: #AD0000;">0</span>, <span class="dv" style="color: #AD0000;">1</span>),</span>
+<span id="cb10-9">                 <span class="at" style="color: #657422;">var2 =</span> <span class="fu" style="color: #4758AB;">runif</span>(<span class="dv" style="color: #AD0000;">100</span>, <span class="dv" style="color: #AD0000;">0</span>, <span class="dv" style="color: #AD0000;">1</span>),</span>
+<span id="cb10-10">                 <span class="at" style="color: #657422;">var3 =</span> <span class="fu" style="color: #4758AB;">rbeta</span>(<span class="dv" style="color: #AD0000;">100</span>, <span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">1</span>))</span></code></pre></div>
+</div>
+<p>That’s all!</p>
+<p>🐢</p>
+
+
+</section>
+
+ ]]></description>
+  <category>R</category>
+  <category>stringr</category>
+  <category>dplyr</category>
+  <category>tidyverse</category>
+  <category>data-cleaning</category>
+  <guid>https://github.com/vbaliga/vbaliga.github.io/posts/2020-06-27-replace-text-in-specific-column/index.html</guid>
+  <pubDate>Sat, 27 Jun 2020 00:00:00 GMT</pubDate>
+  <media:content url="https://github.com/vbaliga/vbaliga.github.io/posts/2020-06-27-replace-text-in-specific-column/replace-text-in-specific-column.png" medium="image" type="image/png" height="41" width="144"/>
+</item>
 <item>
   <title>Parallel processing for MCMCglmm in R (Windows-friendly)</title>
   <dc:creator>Vikram B. Baliga</dc:creator>
