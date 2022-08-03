@@ -1,0 +1,49 @@
+---
+title: "Set max DLLs in R (Windows)"
+subtitle: "If you need to adjust the max number of .dll files that R can handle, here is code that works if you are using Windows."
+author: "Vikram B. Baliga"
+categories:
+  - R
+  - DLLs 
+  - Windows
+date: 2019-04-22
+toc: true
+image: "set-max-DLLs-r.png"
+---
+
+On occasion, you may need adjust the max number of .dll files that R can handle.
+I first encountered this need when using a high number of packages together.
+
+I've had trouble finding this info in the past, so I decided to create this post
+for others. This works if you are using Windows.
+
+The following is machine-specific, so you will need to do this on each computer
+you run R.
+
+## Find the `.Renviron` file
+
+```{r}
+#| eval: false
+user_renviron <- 
+  path.expand(file.path("~", ".Renviron"))
+# check to see if the file already exists
+# typically under: "C:/Users/YOURUSERNAME/Documents/.Renviron"
+if(!file.exists(user_renviron)) 
+  file.create(user_renviron)
+file.edit(user_renviron) 
+```
+
+If `file.edit(user_renviron)` fails to work, just open the file itself (located
+wherever `user_renviron` is pointing) with a text editor.
+
+## Edit max DLLs
+
+Once you have the file open, edit or add the following line, save, and restart
+R:
+
+```{r}
+#| eval: false
+R_MAX_NUM_DLLS=500
+```
+
+🐢
