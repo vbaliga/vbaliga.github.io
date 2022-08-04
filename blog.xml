@@ -14,7 +14,7 @@
 <title>vbaliga.github.io</title>
 <link>https://github.com/vbaliga/vbaliga.github.io/blog.html</link>
 </image>
-<generator>quarto-1.0.37</generator>
+<generator>quarto-1.0.38</generator>
 <lastBuildDate>Sat, 27 Jun 2020 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Replace text within all cells of a specific column in R</title>
@@ -160,6 +160,40 @@ font-style: italic;">## I'm  using v1.3.0.9000</span></span></code></pre></div>
   <guid>https://github.com/vbaliga/vbaliga.github.io/posts/2020-06-27-replace-text-in-specific-column/index.html</guid>
   <pubDate>Sat, 27 Jun 2020 00:00:00 GMT</pubDate>
   <media:content url="https://github.com/vbaliga/vbaliga.github.io/posts/2020-06-27-replace-text-in-specific-column/replace-text-in-specific-column.png" medium="image" type="image/png" height="41" width="144"/>
+</item>
+<item>
+  <title>Searching for sequences on GenBank - a few tips and tricks</title>
+  <dc:creator>Vikram B. Baliga</dc:creator>
+  <link>https://github.com/vbaliga/vbaliga.github.io/posts/2020-06-13-genbank-searches-tips-and-tricks/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>This will be a “low-tech” post, i.e.&nbsp;one that doesn’t showcase code.</p>
+<p>Over the past few years, I’ve done a lot of searches for genetic sequences on GenBank with the endgame of building phylogenetic trees. Here’s a list of things that have &amp; haven’t worked for me when it has come to the task of finding specific genes for specific taxa.</p>
+<p>A few good ways to set up the search term for nuclear genes are (ordered by specificity):</p>
+<ul>
+<li><code>(Genus_species) NOT (whole genome) NOT predicted</code></li>
+<li><code>(Genus_species) NOT (whole genome) NOT predicted NOT mitochondri\*</code></li>
+<li><code>(Genus_species) NOT (whole genome) NOT predicted NOT mitochondri\*</code></li>
+</ul>
+<p><strong>Note 1</strong>: I always avoid including sequences that have the word “predicted” in the title; I’d rather rely on sequences that have established identity. That said, including <code>NOT predicted</code> can be dangerous as the word “predicted” may appear e.g.&nbsp;in the title of the corresponding paper, but the sequence itself may be known with more certainty.</p>
+<p><strong>Note 2</strong>: For similar reasons, <code>NOT (whole genome)</code> may fare better than <code>NOT genome</code></p>
+<p><strong>Note 3</strong>: <code>OR</code> needs to be nested within parenthetical statements. Taking the third bullet point as an example, a search without the the parentheses surrounding the <code>OR</code> statement such as <code>(Genus_species) NOT (whole genome) NOT predicted NOT mitochondri* AND gene1 OR gene2</code> would amount to searching for <code>(Genus_species) NOT (whole genome) NOT predicted NOT mitochondri* AND gene1</code> OR <code>gene2</code>. Therefore, all cases of gene2 for every species ever would appear in the search results!</p>
+<p>Perhaps this list of notes will grow more someday, but that’s all for now.</p>
+<p>🐢</p>
+
+
+
+ ]]></description>
+  <category>GenBank</category>
+  <category>DNA</category>
+  <category>tree-inference</category>
+  <category>phylogeny</category>
+  <category>fasta</category>
+  <guid>https://github.com/vbaliga/vbaliga.github.io/posts/2020-06-13-genbank-searches-tips-and-tricks/index.html</guid>
+  <pubDate>Sat, 13 Jun 2020 00:00:00 GMT</pubDate>
+  <media:content url="https://github.com/vbaliga/vbaliga.github.io/posts/2020-06-13-genbank-searches-tips-and-tricks/genbank-searches-tips-tricks.png" medium="image" type="image/png" height="33" width="144"/>
 </item>
 <item>
   <title>Parallel processing for MCMCglmm in R (Windows-friendly)</title>
