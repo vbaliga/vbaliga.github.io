@@ -1,6 +1,6 @@
 ---
 title: "Replace text within all cells of a specific column in R"
-subtitle: "How to target specific column(s) in a `data.frame` or `tibble` to replace text within"
+subtitle: "Here's how to target specific column(s) in a `data.frame` or `tibble` to replace text within."
 author: "Vikram B. Baliga"
 categories:
   - R
