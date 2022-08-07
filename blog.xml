@@ -21,6 +21,15 @@
   <dc:creator>Vikram B. Baliga</dc:creator>
   <link>https://github.com/vbaliga/vbaliga.github.io/posts/2020-06-27-replace-text-in-specific-column/index.html</link>
   <description><![CDATA[ 
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FJ398GVKTF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FJ398GVKTF');
+</script>
 
 
 
@@ -166,6 +175,15 @@ font-style: italic;">## I'm  using v1.3.0.9000</span></span></code></pre></div>
   <dc:creator>Vikram B. Baliga</dc:creator>
   <link>https://github.com/vbaliga/vbaliga.github.io/posts/2020-06-13-genbank-searches-tips-and-tricks/index.html</link>
   <description><![CDATA[ 
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FJ398GVKTF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FJ398GVKTF');
+</script>
 
 
 
@@ -200,6 +218,15 @@ font-style: italic;">## I'm  using v1.3.0.9000</span></span></code></pre></div>
   <dc:creator>Vikram B. Baliga</dc:creator>
   <link>https://github.com/vbaliga/vbaliga.github.io/posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/index.html</link>
   <description><![CDATA[ 
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FJ398GVKTF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FJ398GVKTF');
+</script>
 
 
 
@@ -370,6 +397,15 @@ units    0.4437 0.0001843    1.224    181.1
   <dc:creator>Vikram B. Baliga</dc:creator>
   <link>https://github.com/vbaliga/vbaliga.github.io/posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/index.html</link>
   <description><![CDATA[ 
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FJ398GVKTF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FJ398GVKTF');
+</script>
 
 
 
@@ -438,6 +474,15 @@ font-style: italic;">## Now load or install&amp;load all</span></span>
   <dc:creator>Vikram B. Baliga</dc:creator>
   <link>https://github.com/vbaliga/vbaliga.github.io/posts/2019-04-22-set-max-DLLs-in-r/index.html</link>
   <description><![CDATA[ 
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FJ398GVKTF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FJ398GVKTF');
+</script>
 
 
 
