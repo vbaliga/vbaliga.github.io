@@ -6,20 +6,20 @@
       version="2.0">
 <channel>
 <title>vbaliga.github.io</title>
-<link>https://github.com/vbaliga/vbaliga.github.io/blog.html</link>
-<atom:link href="https://github.com/vbaliga/vbaliga.github.io/blog.xml" rel="self" type="application/rss+xml"/>
+<link>https://vbaliga.github.io/blog.html</link>
+<atom:link href="https://vbaliga.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <image>
-<url>https://github.com/vbaliga/vbaliga.github.io/images/vbaliga.github.io - social preview.png</url>
+<url>https://vbaliga.github.io/images/vbaliga.github.io - social preview.png</url>
 <title>vbaliga.github.io</title>
-<link>https://github.com/vbaliga/vbaliga.github.io/blog.html</link>
+<link>https://vbaliga.github.io/blog.html</link>
 </image>
-<generator>quarto-1.0.38</generator>
+<generator>quarto-1.2.280</generator>
 <lastBuildDate>Sat, 27 Jun 2020 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Replace text within all cells of a specific column in R</title>
   <dc:creator>Vikram B. Baliga</dc:creator>
-  <link>https://github.com/vbaliga/vbaliga.github.io/posts/2020-06-27-replace-text-in-specific-column/index.html</link>
+  <link>https://vbaliga.github.io/posts/2020-06-27-replace-text-in-specific-column/index.html</link>
   <description><![CDATA[ 
 <!-- Google tag (gtag.js) -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FJ398GVKTF"></script>
@@ -166,14 +166,14 @@ font-style: italic;">## I'm  using v1.3.0.9000</span></span></code></pre></div>
   <category>dplyr</category>
   <category>tidyverse</category>
   <category>data-cleaning</category>
-  <guid>https://github.com/vbaliga/vbaliga.github.io/posts/2020-06-27-replace-text-in-specific-column/index.html</guid>
+  <guid>https://vbaliga.github.io/posts/2020-06-27-replace-text-in-specific-column/index.html</guid>
   <pubDate>Sat, 27 Jun 2020 00:00:00 GMT</pubDate>
-  <media:content url="https://github.com/vbaliga/vbaliga.github.io/posts/2020-06-27-replace-text-in-specific-column/replace-text-in-specific-column.png" medium="image" type="image/png" height="41" width="144"/>
+  <media:content url="https://vbaliga.github.io/posts/2020-06-27-replace-text-in-specific-column/replace-text-in-specific-column.png" medium="image" type="image/png" height="41" width="144"/>
 </item>
 <item>
   <title>Searching for sequences on GenBank - a few tips and tricks</title>
   <dc:creator>Vikram B. Baliga</dc:creator>
-  <link>https://github.com/vbaliga/vbaliga.github.io/posts/2020-06-13-genbank-searches-tips-and-tricks/index.html</link>
+  <link>https://vbaliga.github.io/posts/2020-06-13-genbank-searches-tips-and-tricks/index.html</link>
   <description><![CDATA[ 
 <!-- Google tag (gtag.js) -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FJ398GVKTF"></script>
@@ -209,14 +209,14 @@ font-style: italic;">## I'm  using v1.3.0.9000</span></span></code></pre></div>
   <category>tree-inference</category>
   <category>phylogeny</category>
   <category>fasta</category>
-  <guid>https://github.com/vbaliga/vbaliga.github.io/posts/2020-06-13-genbank-searches-tips-and-tricks/index.html</guid>
+  <guid>https://vbaliga.github.io/posts/2020-06-13-genbank-searches-tips-and-tricks/index.html</guid>
   <pubDate>Sat, 13 Jun 2020 00:00:00 GMT</pubDate>
-  <media:content url="https://github.com/vbaliga/vbaliga.github.io/posts/2020-06-13-genbank-searches-tips-and-tricks/genbank-searches-tips-tricks.png" medium="image" type="image/png" height="33" width="144"/>
+  <media:content url="https://vbaliga.github.io/posts/2020-06-13-genbank-searches-tips-and-tricks/genbank-searches-tips-tricks.png" medium="image" type="image/png" height="33" width="144"/>
 </item>
 <item>
   <title>Parallel processing for MCMCglmm in R (Windows-friendly)</title>
   <dc:creator>Vikram B. Baliga</dc:creator>
-  <link>https://github.com/vbaliga/vbaliga.github.io/posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/index.html</link>
+  <link>https://vbaliga.github.io/posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/index.html</link>
   <description><![CDATA[ 
 <!-- Google tag (gtag.js) -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FJ398GVKTF"></script>
@@ -388,14 +388,14 @@ units    0.4437 0.0001843    1.224    181.1
   <category>parallel</category>
   <category>parallel-processing</category>
   <category>Windows</category>
-  <guid>https://github.com/vbaliga/vbaliga.github.io/posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/index.html</guid>
+  <guid>https://vbaliga.github.io/posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/index.html</guid>
   <pubDate>Fri, 03 May 2019 00:00:00 GMT</pubDate>
-  <media:content url="https://github.com/vbaliga/vbaliga.github.io/posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/mcmcglmm-parallel.png" medium="image" type="image/png" height="147" width="144"/>
+  <media:content url="https://vbaliga.github.io/posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/mcmcglmm-parallel.png" medium="image" type="image/png" height="147" width="144"/>
 </item>
 <item>
   <title>Check if packages are installed (and install if not) in R</title>
   <dc:creator>Vikram B. Baliga</dc:creator>
-  <link>https://github.com/vbaliga/vbaliga.github.io/posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/index.html</link>
+  <link>https://vbaliga.github.io/posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/index.html</link>
   <description><![CDATA[ 
 <!-- Google tag (gtag.js) -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FJ398GVKTF"></script>
@@ -448,10 +448,10 @@ font-style: italic;">## Now load or install&amp;load all</span></span>
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="fu" style="color: #4758AB;">search</span>()</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> [1] ".GlobalEnv"        "package:nlme"      "package:MASS"     
- [4] "tools:quarto"      "package:stats"     "package:graphics" 
- [7] "package:grDevices" "package:datasets"  "renv:shims"       
-[10] "package:utils"     "package:methods"   "Autoloads"        
-[13] "package:base"     </code></pre>
+ [4] "tools:quarto"      "tools:quarto"      "package:stats"    
+ [7] "package:graphics"  "package:grDevices" "package:datasets" 
+[10] "renv:shims"        "package:utils"     "package:methods"  
+[13] "Autoloads"         "package:base"     </code></pre>
 </div>
 </div>
 <p>That’s all!<br>
@@ -465,14 +465,14 @@ font-style: italic;">## Now load or install&amp;load all</span></span>
   <category>packages</category>
   <category>package-installation</category>
   <category>package-loading</category>
-  <guid>https://github.com/vbaliga/vbaliga.github.io/posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/index.html</guid>
+  <guid>https://vbaliga.github.io/posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/index.html</guid>
   <pubDate>Sun, 28 Apr 2019 00:00:00 GMT</pubDate>
-  <media:content url="https://github.com/vbaliga/vbaliga.github.io/posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/verify-that-r-package.png" medium="image" type="image/png" height="117" width="144"/>
+  <media:content url="https://vbaliga.github.io/posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/verify-that-r-package.png" medium="image" type="image/png" height="117" width="144"/>
 </item>
 <item>
   <title>Set max DLLs in R (Windows)</title>
   <dc:creator>Vikram B. Baliga</dc:creator>
-  <link>https://github.com/vbaliga/vbaliga.github.io/posts/2019-04-22-set-max-DLLs-in-r/index.html</link>
+  <link>https://vbaliga.github.io/posts/2019-04-22-set-max-DLLs-in-r/index.html</link>
   <description><![CDATA[ 
 <!-- Google tag (gtag.js) -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FJ398GVKTF"></script>
@@ -517,9 +517,9 @@ font-style: italic;">## Now load or install&amp;load all</span></span>
   <category>R</category>
   <category>DLLs</category>
   <category>Windows</category>
-  <guid>https://github.com/vbaliga/vbaliga.github.io/posts/2019-04-22-set-max-DLLs-in-r/index.html</guid>
+  <guid>https://vbaliga.github.io/posts/2019-04-22-set-max-DLLs-in-r/index.html</guid>
   <pubDate>Mon, 22 Apr 2019 00:00:00 GMT</pubDate>
-  <media:content url="https://github.com/vbaliga/vbaliga.github.io/posts/2019-04-22-set-max-DLLs-in-r/set-max-DLLs-r.png" medium="image" type="image/png" height="85" width="144"/>
+  <media:content url="https://vbaliga.github.io/posts/2019-04-22-set-max-DLLs-in-r/set-max-DLLs-r.png" medium="image" type="image/png" height="85" width="144"/>
 </item>
 </channel>
 </rss>

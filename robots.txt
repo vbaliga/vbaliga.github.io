@@ -1,1 +1,1 @@
-Sitemap: https://github.com/vbaliga/vbaliga.github.io/sitemap.xml
+Sitemap: https://vbaliga.github.io/sitemap.xml
