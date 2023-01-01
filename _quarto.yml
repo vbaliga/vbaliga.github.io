@@ -10,12 +10,13 @@ editor:
 execute:
   freeze: auto
 
+description-meta: "Personal site for Vikram B. Baliga"
+
 website: 
   title: "vbaliga.github.io"
   site-url: https://vbaliga.github.io
   repo-url: https://github.com/vbaliga/vbaliga.github.io
   image: "/images/vbaliga.github.io - social preview.png"
-  description-meta: "Personal site for Vikram B. Baliga"
   twitter-card: 
     image: "/images/vbaliga.github.io - social preview.png"
     card-style: summary_large_image
