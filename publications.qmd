@@ -3,114 +3,207 @@ title: "Publications"
 editor: visual
 ---
 
+## Pre-prints
+
+### 2023
+
+Skandalis DS, **Baliga VB**, Goller B, and Altshuler DL. 2023. [The
+spatiotemporal richness of hummingbird wing
+deformations](https://doi.org/10.1101/2023.05.08.539717). *bioRxiv*.
+doi:10.1101/2023.05.08.539717
+
+--------------------------------------------------------------------------------
+
 ## Peer-reviewed journal articles
 
 ### 2022
 
-Smyth G\***, Baliga VB**\***,** Gaede AH\*, Wylie DR, and Altshuler DL. 2022. [Specializations in optic flow encoding in the pretectum of hummingbirds and zebra finches](https://doi.org/10.1016/j.cub.2022.04.076). *Current Biology.* 32, 1-8. doi:10.1016/j.cub.2022.04.076*.\
+Smyth G\***, Baliga VB**\***,** Gaede AH\*, Wylie DR, and Altshuler DL. 2022.
+[Specializations in optic flow encoding in the pretectum of hummingbirds and
+zebra finches](https://doi.org/10.1016/j.cub.2022.04.076). *Current Biology.*
+32, 1-8. doi:10.1016/j.cub.2022.04.076*\
 \** Equal contribution
 
-Harvey CA, **Baliga VB**, Wong JCM, Altshuler DL, and Inman DJ. 2022. [Birds can transition between stable and unstable states via wing morphing](https://doi.org/10.1038/s41586-022-04477-8). *Nature.* 603, 648--653. doi:10.1038/s41586-022-04477-8
+Harvey CA, **Baliga VB**, Wong JCM, Altshuler DL, and Inman DJ. 2022. [Birds can
+transition between stable and unstable states via wing
+morphing](https://doi.org/10.1038/s41586-022-04477-8). *Nature.* 603, 648--653.
+doi:10.1038/s41586-022-04477-8
 
-Gaede AH\*, **Baliga VB**\*, Smyth G, Gutiérrez-Ibáñez C, Altshuler DL, and Wylie DR. 2022. [Response Properties of Optic Flow Neurons in the Accessory Optic System of Hummingbirds vs. Zebra Finches and Pigeons](https://doi.org/10.1152/jn.00437.2021). *Journal of Neurophysiology.* 127, 130-144. doi:10.1152/jn.00437.2021\
+Gaede AH\*, **Baliga VB**\*, Smyth G, Gutiérrez-Ibáñez C, Altshuler DL, and
+Wylie DR. 2022. [Response Properties of Optic Flow Neurons in the Accessory
+Optic System of Hummingbirds vs. Zebra Finches and
+Pigeons](https://doi.org/10.1152/jn.00437.2021). *Journal of Neurophysiology.*
+127, 130-144. doi:10.1152/jn.00437.2021\
 *\** Equal contribution
 
 ### 2021
 
-Leal PBC, Cabral-Seanez M, **Baliga VB**, Altshuler DL, and Hartl DJ. 2021. [Phase transformation-driven artificial muscle mimics the multifunctionality of avian wing muscle](https://doi.org/10.1098/rsif.2020.1042). *Journal of the Royal Society Interface.* 18, 20201042. doi:10.1098/rsif.2020.1042
+Leal PBC, Cabral-Seanez M, **Baliga VB**, Altshuler DL, and Hartl DJ. 2021.
+[Phase transformation-driven artificial muscle mimics the multifunctionality of
+avian wing muscle](https://doi.org/10.1098/rsif.2020.1042). *Journal of the
+Royal Society Interface.* 18, 20201042. doi:10.1098/rsif.2020.1042
 
-Harvey C, **Baliga VB**, Goates CD, Hunsaker D, and Inman DJ. 2021. [Gull-inspired joint-driven wing morphing allows adaptive longitudinal flight control](https://doi.org/10.1098/rsif.2021.0132). *Journal of the Royal Society Interface.* 18, 20210132. doi:10.1098/rsif.2021.0132
+Harvey C, **Baliga VB**, Goates CD, Hunsaker D, and Inman DJ. 2021.
+[Gull-inspired joint-driven wing morphing allows adaptive longitudinal flight
+control](https://doi.org/10.1098/rsif.2021.0132). *Journal of the Royal Society
+Interface.* 18, 20210132. doi:10.1098/rsif.2021.0132
 
 ### 2020
 
-Bahlman JW\*, **Baliga VB**\*, and Altshuler DL. 2020. [Flight muscle power increases with strain amplitude and decreases with cycle frequency in zebra finches (*Taeniopygia guttata*)](https://dx.doi.org/10.1242/jeb.225839). *Journal of Experimental Biology.* 223*,* jeb225839. doi:10.1242/jeb.225839*\
+Bahlman JW\*, **Baliga VB**\*, and Altshuler DL. 2020. [Flight muscle power
+increases with strain amplitude and decreases with cycle frequency in zebra
+finches (*Taeniopygia guttata*)](https://dx.doi.org/10.1242/jeb.225839).
+*Journal of Experimental Biology.* 223*,* jeb225839. doi:10.1242/jeb.225839*\
     \** Equal contribution
 
 ### 2019
 
-**Baliga VB**, Szabo I, and Altshuler DL. 2019. [Range of motion in the avian wing is strongly associated with flight behavior and body mass](https://doi.org/10.1126/sciadv.aaw6670). *Science Advances.* 5, eaaw6670. doi:10.1126/sciadv.aaw6670
+**Baliga VB**, Szabo I, and Altshuler DL. 2019. [Range of motion in the avian
+wing is strongly associated with flight behavior and body
+mass](https://doi.org/10.1126/sciadv.aaw6670). *Science Advances.* 5, eaaw6670.
+doi:10.1126/sciadv.aaw6670
 
-Damsgaard C, **Baliga VB**, Bates E, Burggren W, McKenzie DJ, Taylor E, and Wright PA. 2019. [Evolutionary and Cardio-Respiratory Physiology of Air-breathing and Amphibious Fishes](https://doi.org/10.1111/apha.13406). *Acta Physiologica.* 228, e13406.doi:10.1111/apha.13406
+Damsgaard C, **Baliga VB**, Bates E, Burggren W, McKenzie DJ, Taylor E, and
+Wright PA. 2019. [Evolutionary and Cardio-Respiratory Physiology of
+Air-breathing and Amphibious Fishes](https://doi.org/10.1111/apha.13406). *Acta
+Physiologica.* 228, e13406. doi:10.1111/apha.13406
 
-**Baliga VB** and Mehta RS. 2019. [Morphology, ecology, and biogeography of independent origins of cleaning behavior around the world.](https://doi.org/10.1093/icb/icz030) *Integrative and Comparative Biology*. 59, 625--637. doi:10.1093/icb/icz030
+**Baliga VB** and Mehta RS. 2019. [Morphology, ecology, and biogeography of
+independent origins of cleaning behavior around the
+world.](https://doi.org/10.1093/icb/icz030) *Integrative and Comparative
+Biology*. 59, 625--637. doi:10.1093/icb/icz030
 
-Harvey C, **Baliga VB**, Lavoie P, and Altshuler DL. 2019. [Wing morphing allows gulls to modulate static pitch stability during gliding.](http://dx.doi.org/10.1098/rsif.2018.0641) *Journal of the Royal Society Interface*. 16, 20180641. doi:10.1098/rsif.2018.0641
+Harvey C, **Baliga VB**, Lavoie P, and Altshuler DL. 2019. [Wing morphing allows
+gulls to modulate static pitch stability during
+gliding.](http://dx.doi.org/10.1098/rsif.2018.0641) *Journal of the Royal
+Society Interface*. 16, 20180641. doi:10.1098/rsif.2018.0641
 
 ### 2018
 
-**Baliga VB** and Mehta RS. 2018. [Phylo-allometric analyses showcase the interplay between life history patterns and phenotypic convergence in cleaner wrasses](https://doi.org/10.1086/697047). *American Naturalist.* 191, E129--E143 . doi:10.1086/697047
+**Baliga VB** and Mehta RS. 2018. [Phylo-allometric analyses showcase the
+interplay between life history patterns and phenotypic convergence in cleaner
+wrasses](https://doi.org/10.1086/697047). *American Naturalist.* 191,
+E129--E143. doi:10.1086/697047
 
 ### 2017
 
-**Baliga VB**, Bernstein ZJ\*, Sundaram S\*, and Mehta RS. 2017. [Labrid cleaner fishes show kinematic convergence as juveniles despite variation in morphology](http://dx.doi.org/10.1242/jeb.153783). *Journal of Experimental Biology*. 220, 2787--2797. doi:10.1242/jeb.153783\
+**Baliga VB**, Bernstein ZJ\*, Sundaram S\*, and Mehta RS. 2017. [Labrid cleaner
+fishes show kinematic convergence as juveniles despite variation in
+morphology](http://dx.doi.org/10.1242/jeb.153783). *Journal of Experimental
+Biology*. 220, 2787--2797. doi:10.1242/jeb.153783\
 \* High school intern, [UCSC-SIP](http://ucsc-sip.org/)
 
-Diluzio AR\*, **Baliga VB**, Higgins BA, and Mehta RS. 2017. [Effects of prey characteristics on the feeding behaviors of an apex marine predator, the California moray (*Gymnothorax mordax*).](http://dx.doi.org/10.1016/j.zool.2017.03.002) *Zoology*. 122, 80--89. doi:10.1016/j.zool.2017.03.002\
+Diluzio AR\*, **Baliga VB**, Higgins BA, and Mehta RS. 2017. [Effects of prey
+characteristics on the feeding behaviors of an apex marine predator, the
+California moray (*Gymnothorax
+mordax*).](http://dx.doi.org/10.1016/j.zool.2017.03.002) *Zoology*. 122, 80--89.
+doi:10.1016/j.zool.2017.03.002\
 \* Undergraduate student
 
-Law CJ, **Baliga VB**, Tinker MT, and Mehta RS. 2017. [Asynchrony in craniomandibular development and growth in *Enhydra lutris nereis* (Carnivora: Mustelidae): are southern sea otters born to bite?](http://dx.doi.org/10.1093/biolinnean/blw050) *Biological Journal of the Linnean Society.* 121:3, 420--438. doi:10.1093/biolinnean/blw050
+Law CJ, **Baliga VB**, Tinker MT, and Mehta RS. 2017. [Asynchrony in
+craniomandibular development and growth in *Enhydra lutris nereis* (Carnivora:
+Mustelidae): are southern sea otters born to
+bite?](http://dx.doi.org/10.1093/biolinnean/blw050) *Biological Journal of the
+Linnean Society.* 121:3, 420--438. doi:10.1093/biolinnean/blw050
 
 ### 2016
 
-**Baliga VB** and Mehta RS. 2016. [Ontogenetic Allometry in Shape and Flexibility Underlies Life History Patterns of Labrid Cleaning Behavior](http://dx.doi.org/10.1093/icb/icw028). *Integrative and Comparative Biology*. 56:3, 416--427. doi:10.1093/icb/icw028
+**Baliga VB** and Mehta RS. 2016. [Ontogenetic Allometry in Shape and
+Flexibility Underlies Life History Patterns of Labrid Cleaning
+Behavior](http://dx.doi.org/10.1093/icb/icw028). *Integrative and Comparative
+Biology*. 56:3, 416--427. doi:10.1093/icb/icw028
 
-**Baliga VB** and Law CJ. 2016. [Cleaners among wrasses: Phylogenetics and evolutionary patterns of cleaning behavior within Labridae](http://dx.doi.org/10.1016/j.ympev.2015.09.006). *Molecular Phylogenetics and Evolution.* 94A, 424--435. doi:10.1016/j.ympev.2015.09.006
+**Baliga VB** and Law CJ. 2016. [Cleaners among wrasses: Phylogenetics and
+evolutionary patterns of cleaning behavior within
+Labridae](http://dx.doi.org/10.1016/j.ympev.2015.09.006). *Molecular
+Phylogenetics and Evolution.* 94A, 424--435. doi:10.1016/j.ympev.2015.09.006
 
-Bryce CM, **Baliga VB**, De Nesnera KL, Fiack D, Goetz K, Tarjan LM, Wade C, Yovovich V, Baumgart S\*, Bard DG, Ash D, Parker IM, and Gilbert GS. 2016*.* [Exploring Models in the Biology Classroom](http://dx.doi.org/10.1525/abt.2016.78.1.35). *The American Biology Teacher.* 78:1, 35--42. doi:10.1525/abt.2016.78.1.35\
+Bryce CM, **Baliga VB**, De Nesnera KL, Fiack D, Goetz K, Tarjan LM, Wade C,
+Yovovich V, Baumgart S\*, Bard DG, Ash D, Parker IM, and Gilbert GS. 2016*.*
+[Exploring Models in the Biology
+Classroom](http://dx.doi.org/10.1525/abt.2016.78.1.35). *The American Biology
+Teacher.* 78:1, 35--42. doi:10.1525/abt.2016.78.1.35\
 \* High school teacher
 
 ### 2015
 
-**Baliga VB** and Mehta RS. 2015. [Linking Cranial Morphology to Prey Capture Kinematics in Three Cleaner Wrasses: *Labroides dimidiatus*, *Larabicus quadrilineatus*, and *Thalassoma lutescens*](http://dx.doi.org/10.1002/jmor.20425). *Journal of Morphology*. 276, 1377--91. doi:10.1002/jmor.20425
+**Baliga VB** and Mehta RS. 2015. [Linking Cranial Morphology to Prey Capture
+Kinematics in Three Cleaner Wrasses: *Labroides dimidiatus*, *Larabicus
+quadrilineatus*, and *Thalassoma
+lutescens*](http://dx.doi.org/10.1002/jmor.20425). *Journal of Morphology*. 276,
+1377--91. doi:10.1002/jmor.20425
 
 ### 2014
 
-**Baliga VB** and Mehta RS. 2014. [Scaling patterns inform ontogenetic transitions away from cleaning in *Thalassoma* wrasses](http://dx.doi.org/10.1242/jeb.107680). *Journal of Experimental Biology*. 217, 3597--3606. doi:10.1242/jeb.107680
+**Baliga VB** and Mehta RS. 2014. [Scaling patterns inform ontogenetic
+transitions away from cleaning in *Thalassoma*
+wrasses](http://dx.doi.org/10.1242/jeb.107680). *Journal of Experimental
+Biology*. 217, 3597--3606. doi:10.1242/jeb.107680
 
-------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 ## Peer-reviewed software publications
 
 ### 2021
 
-**Baliga VB**. 2021. gaussplotR: [Fit, predict, and plot 2D-Gaussians in R.](https://doi.org/10.21105/joss.03074) *Journal of Open Source Software*. 6:60, 3074. doi: 10.21105/joss.03074
+**Baliga VB**. 2021. gaussplotR: [Fit, predict, and plot 2D-Gaussians in
+R.](https://doi.org/10.21105/joss.03074) *Journal of Open Source Software*.
+6:60, 3074. doi: 10.21105/joss.03074
 
 ### 2019
 
-**Baliga VB** and Senthivasan S. 2019. [workloopR: Analysis of work loops and other data from muscle physiology experiments in R](https://doi.org/10.21105/joss.01856). *Journal of Open Source Software.* 4:43, 1856. doi: 10.21105/joss.01856
+**Baliga VB** and Senthivasan S. 2019. [workloopR: Analysis of work loops and
+other data from muscle physiology experiments in
+R](https://doi.org/10.21105/joss.01856). *Journal of Open Source Software.*
+4:43, 1856. doi: 10.21105/joss.01856
 
-------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 ## Conference papers
 
-Full-length papers submitted in concert with conference presentations; not peer-reviewed
+Full-length papers submitted in concert with conference presentations; not
+peer-reviewed
 
 ### 2020
 
-Harvey C, **Baliga VB**, and Inman DJ. 2020. [Control force required to morph the elbow and wrist in gulls](https://dx.doi.org/10.2514/6.2020-1037). American Institute of Aeronautics and Astronautics Scitech 2020 Forum. Held January 6 - 10, 2020 in Orlando, FL. doi:10.2514/6.2020-1037
+Harvey C, **Baliga VB**, and Inman DJ. 2020. [Control force required to morph
+the elbow and wrist in gulls](https://dx.doi.org/10.2514/6.2020-1037). American
+Institute of Aeronautics and Astronautics Scitech 2020 Forum. Held January 6 -
+10, 2020 in Orlando, FL. doi:10.2514/6.2020-1037
 
 ### 2019
 
-Harvey C, **Baliga VB**, Altshuler DL, and Inman DJ. 2019. [Pitch Control Effectiveness of the Avian Elbow and Wrist via a Numerical Lifting Line Analysis](https://doi.org/10.2514/6.2019-0853). American Institute of Aeronautics and Astronautics Scitech 2019 Forum (AIAA 2019-0853). Held January 7 - 11, 2019 in San Diego, CA. doi:10.2514/6.2019-0853
+Harvey C, **Baliga VB**, Altshuler DL, and Inman DJ. 2019. [Pitch Control
+Effectiveness of the Avian Elbow and Wrist via a Numerical Lifting Line
+Analysis](https://doi.org/10.2514/6.2019-0853). American Institute of
+Aeronautics and Astronautics Scitech 2019 Forum (AIAA 2019-0853). Held January
+7 - 11, 2019 in San Diego, CA. doi:10.2514/6.2019-0853
 
-------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 ## Inquiry-based teaching modules
 
-Available at the [SCWIBLES Modules page](http://scwibles.ucsc.edu/SCWIBLESModules.html)
+Available at the [SCWIBLES Modules
+page](http://scwibles.ucsc.edu/SCWIBLESModules.html)
 
 ### 2014
 
-**Baliga VB**, and Yew B. 2014. Demystifying Dimensions: A mini-lesson on dimensional analysis. Product of GK-12 SCWIBLES, NSF DGE-0947923\
+**Baliga VB**, and Yew B. 2014. Demystifying Dimensions: A mini-lesson on
+dimensional analysis. Product of GK-12 SCWIBLES, NSF DGE-0947923\
 \
-**Baliga VB**, Yew B, Herradora R, Callahan W. 2014. A Fact of Matter: Exploring trends across the Periodic Table. Product of GK-12 SCWIBLES, NSF DGE-0947923
+**Baliga VB**, Yew B, Herradora R, Callahan W. 2014. A Fact of Matter: Exploring
+trends across the Periodic Table. Product of GK-12 SCWIBLES, NSF DGE-0947923
 
-de Nesnera K, **Baliga VB**, et al. 2014. Presentation Skills: A video designed for science fair participants in high school. Product of GK--12 SCWIBLES, NSF DGE-0947923
+de Nesnera K, **Baliga VB**, et al. 2014. Presentation Skills: A video designed
+for science fair participants in high school. Product of GK--12 SCWIBLES, NSF
+DGE-0947923
 
-**Baliga VB**, and Baumgart S. 2014. A Matter of Human Proportions: Are you Vitruvian? Product of GK-12 SCWIBLES, NSF DGE-0947923
+**Baliga VB**, and Baumgart S. 2014. A Matter of Human Proportions: Are you
+Vitruvian? Product of GK-12 SCWIBLES, NSF DGE-0947923
 
 ### 2013
 
-**Baliga VB**, and Baumgart S. 2013. Hold Your Breath: What triggers the dive response in mammals? Product of GK-12 SCWIBLES, NSF DGE-0947923
+**Baliga VB**, and Baumgart S. 2013. Hold Your Breath: What triggers the dive
+response in mammals? Product of GK-12 SCWIBLES, NSF DGE-0947923
 
-------------------------------------------------------------------------
+--------------------------------------------------------------------------------
