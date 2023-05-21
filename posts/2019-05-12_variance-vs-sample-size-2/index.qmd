@@ -146,7 +146,7 @@ size (i.e. each vertical strip) vary.
 ```{r samples_ggridges, fig.height=6, fig.width=6, message=FALSE, warning=FALSE, dpi=300}
 # First load | install&load packages we'll need
 packages = c("ggplot2", "ggridges", "tidyr", 
-             "forcats", "dplyr")
+             "forcats", "dplyr","viridis")
 # See this post for info on this code chunk
 package.check <- lapply(
   packages,
