@@ -172,7 +172,16 @@ implement the `changepoint::cpt.var()` function to identify a potential point
 where sample variances seem to stabilize.
 
 ```{r changepoint, fig.height=5, fig.width=5,dpi=300}
-library(changepoint)
+packages = c("changepoint")
+package.check <- lapply(
+  packages,
+  FUN = function(x) {
+    if (!require(x, character.only = TRUE)) {
+      install.packages(x, dependencies = TRUE)
+      library(x, character.only = TRUE)
+    }
+  }
+)
 
 # Plot again
 plot(
