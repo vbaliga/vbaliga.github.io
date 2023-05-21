@@ -2,46 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://vbaliga.github.io/press.html</loc>
-    <lastmod>2023-05-11T17:25:04.976Z</lastmod>
+    <lastmod>2023-05-21T20:51:48.460Z</lastmod>
   </url>
   <url>
     <loc>https://vbaliga.github.io/blog.html</loc>
-    <lastmod>2023-05-11T17:25:06.424Z</lastmod>
+    <lastmod>2023-05-21T20:51:50.012Z</lastmod>
   </url>
   <url>
     <loc>https://vbaliga.github.io/publications.html</loc>
-    <lastmod>2023-05-11T17:25:06.984Z</lastmod>
+    <lastmod>2023-05-21T20:51:50.568Z</lastmod>
   </url>
   <url>
     <loc>https://vbaliga.github.io/index.html</loc>
-    <lastmod>2023-05-11T17:25:07.404Z</lastmod>
+    <lastmod>2023-05-21T20:51:51.000Z</lastmod>
   </url>
   <url>
     <loc>https://vbaliga.github.io/data-software-code.html</loc>
-    <lastmod>2023-05-11T17:25:07.956Z</lastmod>
+    <lastmod>2023-05-21T20:51:51.568Z</lastmod>
   </url>
   <url>
     <loc>https://vbaliga.github.io/posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/index.html</loc>
-    <lastmod>2023-05-11T17:25:09.680Z</lastmod>
+    <lastmod>2023-05-21T20:51:53.548Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vbaliga.github.io/posts/2019-05-05-variance-vs-sample-size/index.html</loc>
+    <lastmod>2023-05-21T21:26:22.958Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vbaliga.github.io/posts/2019-05-12_variance-vs-sample-size-2/index.html</loc>
+    <lastmod>2023-05-21T21:30:01.286Z</lastmod>
   </url>
   <url>
     <loc>https://vbaliga.github.io/posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/index.html</loc>
-    <lastmod>2023-05-11T17:25:11.288Z</lastmod>
+    <lastmod>2023-05-21T21:30:03.230Z</lastmod>
   </url>
   <url>
     <loc>https://vbaliga.github.io/posts/2020-06-27-replace-text-in-specific-column/index.html</loc>
-    <lastmod>2023-05-11T17:25:12.864Z</lastmod>
+    <lastmod>2023-05-21T21:30:05.262Z</lastmod>
   </url>
   <url>
     <loc>https://vbaliga.github.io/posts/2019-04-22-set-max-DLLs-in-r/index.html</loc>
-    <lastmod>2023-05-11T17:25:14.412Z</lastmod>
+    <lastmod>2023-05-21T21:30:07.094Z</lastmod>
   </url>
   <url>
     <loc>https://vbaliga.github.io/posts/2020-06-13-genbank-searches-tips-and-tricks/index.html</loc>
-    <lastmod>2023-05-11T17:25:14.832Z</lastmod>
+    <lastmod>2023-05-21T21:30:07.546Z</lastmod>
   </url>
   <url>
     <loc>https://vbaliga.github.io/about.html</loc>
-    <lastmod>2023-05-11T17:25:15.176Z</lastmod>
+    <lastmod>2023-05-21T21:30:07.890Z</lastmod>
   </url>
 </urlset>
