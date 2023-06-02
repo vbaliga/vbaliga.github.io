@@ -1,0 +1,9 @@
+---
+layout: none
+permalink: .well-known/security.txt
+---
+
+Contact: https://github.com/vbaliga/vbaliga.github.io/issues
+Expires: 2024-06-01T07:00:00.000Z
+Preferred-Languages: en
+Canonical: https://vbaliga.github.io/.well-known/security.txt
