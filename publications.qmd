@@ -16,13 +16,19 @@ doi:10.1101/2023.05.08.539717
 
 ## Peer-reviewed journal articles
 
+### 2023
+
+**Baliga VB**, Dakin R, Wylie DR, and Altshuler DL. *Accepted*. Hummingbirds use
+distinct control strategies for forward and hovering flight. *Proceedings of the
+Royal Society B: Biological Sciences.*
+
 ### 2022
 
 Smyth G\***, Baliga VB**\***,** Gaede AH\*, Wylie DR, and Altshuler DL. 2022.
 [Specializations in optic flow encoding in the pretectum of hummingbirds and
 zebra finches](https://doi.org/10.1016/j.cub.2022.04.076). *Current Biology.*
 32, 1-8. doi:10.1016/j.cub.2022.04.076*\
-\** Equal contribution
+    \** Equal contribution
 
 Harvey CA, **Baliga VB**, Wong JCM, Altshuler DL, and Inman DJ. 2022. [Birds can
 transition between stable and unstable states via wing
@@ -34,7 +40,7 @@ Wylie DR. 2022. [Response Properties of Optic Flow Neurons in the Accessory
 Optic System of Hummingbirds vs. Zebra Finches and
 Pigeons](https://doi.org/10.1152/jn.00437.2021). *Journal of Neurophysiology.*
 127, 130-144. doi:10.1152/jn.00437.2021\
-*\** Equal contribution
+    \*\* Equal contribution
 
 ### 2021
 
@@ -91,14 +97,14 @@ E129--E143. doi:10.1086/697047
 fishes show kinematic convergence as juveniles despite variation in
 morphology](http://dx.doi.org/10.1242/jeb.153783). *Journal of Experimental
 Biology*. 220, 2787--2797. doi:10.1242/jeb.153783\
-\* High school intern, [UCSC-SIP](http://ucsc-sip.org/)
+   \* High school intern, [UCSC-SIP](http://ucsc-sip.org/)
 
 Diluzio AR\*, **Baliga VB**, Higgins BA, and Mehta RS. 2017. [Effects of prey
 characteristics on the feeding behaviors of an apex marine predator, the
 California moray (*Gymnothorax
 mordax*).](http://dx.doi.org/10.1016/j.zool.2017.03.002) *Zoology*. 122, 80--89.
 doi:10.1016/j.zool.2017.03.002\
-\* Undergraduate student
+   \* Undergraduate student
 
 Law CJ, **Baliga VB**, Tinker MT, and Mehta RS. 2017. [Asynchrony in
 craniomandibular development and growth in *Enhydra lutris nereis* (Carnivora:
@@ -123,7 +129,7 @@ Yovovich V, Baumgart S\*, Bard DG, Ash D, Parker IM, and Gilbert GS. 2016*.*
 [Exploring Models in the Biology
 Classroom](http://dx.doi.org/10.1525/abt.2016.78.1.35). *The American Biology
 Teacher.* 78:1, 35--42. doi:10.1525/abt.2016.78.1.35\
-\* High school teacher
+   \* High school teacher
 
 ### 2015
 
