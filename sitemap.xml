@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://vbaliga.github.io/publications.html</loc>
-    <lastmod>2023-11-21T19:30:08.920Z</lastmod>
-  </url>
-  <url>
     <loc>https://vbaliga.github.io/press.html</loc>
-    <lastmod>2023-11-21T19:30:08.104Z</lastmod>
+    <lastmod>2023-12-19T19:02:43.038Z</lastmod>
   </url>
   <url>
     <loc>https://vbaliga.github.io/posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/index.html</loc>
-    <lastmod>2023-11-21T19:30:07.156Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vbaliga.github.io/posts/2020-06-13-genbank-searches-tips-and-tricks/index.html</loc>
-    <lastmod>2023-11-21T19:30:06.120Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vbaliga.github.io/posts/2019-05-12_variance-vs-sample-size-2/index.html</loc>
-    <lastmod>2023-11-21T19:30:05.316Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vbaliga.github.io/about.html</loc>
-    <lastmod>2023-11-21T19:30:04.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vbaliga.github.io/index.html</loc>
-    <lastmod>2023-11-21T19:30:02.476Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vbaliga.github.io/blog.html</loc>
-    <lastmod>2023-11-21T19:30:03.716Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vbaliga.github.io/posts/2019-05-05-variance-vs-sample-size/index.html</loc>
-    <lastmod>2023-11-21T19:30:04.728Z</lastmod>
+    <lastmod>2023-12-19T19:02:42.214Z</lastmod>
   </url>
   <url>
     <loc>https://vbaliga.github.io/posts/2019-04-22-set-max-DLLs-in-r/index.html</loc>
-    <lastmod>2023-11-21T19:30:05.792Z</lastmod>
+    <lastmod>2023-12-19T19:02:41.146Z</lastmod>
   </url>
   <url>
-    <loc>https://vbaliga.github.io/posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/index.html</loc>
-    <lastmod>2023-11-21T19:30:06.672Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vbaliga.github.io/posts/2020-06-27-replace-text-in-specific-column/index.html</loc>
-    <lastmod>2023-11-21T19:30:07.700Z</lastmod>
+    <loc>https://vbaliga.github.io/posts/2019-05-12_variance-vs-sample-size-2/index.html</loc>
+    <lastmod>2023-12-19T19:02:39.934Z</lastmod>
   </url>
   <url>
     <loc>https://vbaliga.github.io/data-software-code.html</loc>
-    <lastmod>2023-11-21T19:30:08.512Z</lastmod>
+    <lastmod>2023-12-19T19:02:38.770Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vbaliga.github.io/blog.html</loc>
+    <lastmod>2023-12-19T19:02:37.994Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vbaliga.github.io/about.html</loc>
+    <lastmod>2023-12-19T19:02:36.258Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vbaliga.github.io/publications.html</loc>
+    <lastmod>2023-12-19T19:02:37.022Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vbaliga.github.io/index.html</loc>
+    <lastmod>2023-12-19T19:02:38.350Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vbaliga.github.io/posts/2020-06-27-replace-text-in-specific-column/index.html</loc>
+    <lastmod>2023-12-19T19:02:39.326Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vbaliga.github.io/posts/2019-05-05-variance-vs-sample-size/index.html</loc>
+    <lastmod>2023-12-19T19:02:40.678Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vbaliga.github.io/posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/index.html</loc>
+    <lastmod>2023-12-19T19:02:41.718Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vbaliga.github.io/posts/2020-06-13-genbank-searches-tips-and-tricks/index.html</loc>
+    <lastmod>2023-12-19T19:02:42.550Z</lastmod>
   </url>
 </urlset>
