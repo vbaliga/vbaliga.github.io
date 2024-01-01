@@ -2,3 +2,9 @@
 /_site/
 .Rproj.user
 .DS_Store
+.DS_Store
+_freeze/.DS_Store
+_freeze/posts/.DS_Store
+_freeze/site_libs/.DS_Store
+posts/.DS_Store
+renv/.DS_Store
