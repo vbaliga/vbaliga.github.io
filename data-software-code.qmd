@@ -1,105 +1,208 @@
 ---
 title: "Data, software & code"
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
-Many of the links below will take you to content on GitHub ([\@vbaliga](https://github.com/vbaliga)) or Figshare ([see my profile here](https://figshare.com/authors/Vikram_B_Baliga/4769286)).
+Many of the links below will take you to content on GitHub
+([\@vbaliga](https://github.com/vbaliga)) or Figshare ([see my profile
+here](https://figshare.com/authors/Vikram_B_Baliga/4769286)).
 
 ## Software packages
 
 ### [avinertia](https://cran.r-project.org/web/packages/AvInertia/index.html): Calculate the inertial properties of a flying bird
 
-*avinertia* provides tools to compute the center of gravity and moment of inertia tensor of any flying bird. The tools function by modeling a bird as a composite structure of simple geometric objects. This requires detailed morphological measurements of bird specimens although those obtained for the associated paper have been included in the package for use. Written with [Christina A. Harvey](https://www.christinaharvey.ca/) and [Jasmin C.M. Wong](https://research-information.bris.ac.uk/en/persons/jasmin-wong).
+*avinertia* provides tools to compute the center of gravity and moment
+of inertia tensor of any flying bird. The tools function by modeling a
+bird as a composite structure of simple geometric objects. This requires
+detailed morphological measurements of bird specimens although those
+obtained for the associated paper have been included in the package for
+use. Written with [Christina A. Harvey](https://www.christinaharvey.ca/)
+and [Jasmin C.M.
+Wong](https://research-information.bris.ac.uk/en/persons/jasmin-wong).
 
-Accompanying paper ([Harvey et al., 2022](https://doi.org/10.1038/s41586-022-04477-8)) in Nature
+Accompanying paper ([Harvey et al.,
+2022](https://doi.org/10.1038/s41586-022-04477-8)) in Nature
 
 ------------------------------------------------------------------------
 
 ### [pathviewr](https://github.com/ropensci/pathviewr): Tools to import, clean, and visualize animal movement data in R
 
-![](/images/pathviewrhex_600dpi_trns.png){fig-alt="pathviewr r package" style="float:left;" width="100"}
+![](/images/pathviewrhex_600dpi_trns.png){fig-alt="pathviewr r package"
+style="float:left;" width="100"}
 
-Part of the rOpenSci project (github: [ropensci/pathviewr](https://github.com/ropensci/pathviewr))
+Part of the rOpenSci project (github:
+[ropensci/pathviewr](https://github.com/ropensci/pathviewr))
 
-*pathviewr* offers tools to import, clean, and visualize movement data, particularly from motion capture systems such from [Optitrack's Motive](https://optitrack.com/products/motive/), the [Straw Lab's Flydra](https://github.com/strawlab/flydra), or from other sources. We provide functions to remove artifacts, standardize tunnel position and tunnel axes, select a region of interest, isolate specific trajectories, fill gaps in trajectory data, and calculate 3D and per-axis velocity. For experiments of visual guidance, we also provide functions that use subject position to estimate perception of visual stimuli. Written with [Melissa S. Armstrong](https://melissasarmstrong.com/) and [Eric R. Press](https://www.grad.ubc.ca/campus-community/meet-our-students/press-eric).
+*pathviewr* offers tools to import, clean, and visualize movement data,
+particularly from motion capture systems such from [Optitrack's
+Motive](https://optitrack.com/products/motive/), the [Straw Lab's
+Flydra](https://github.com/strawlab/flydra), or from other sources. We
+provide functions to remove artifacts, standardize tunnel position and
+tunnel axes, select a region of interest, isolate specific trajectories,
+fill gaps in trajectory data, and calculate 3D and per-axis velocity.
+For experiments of visual guidance, we also provide functions that use
+subject position to estimate perception of visual stimuli. Written with
+[Melissa S. Armstrong](https://melissasarmstrong.com/) and [Eric R.
+Press](https://www.grad.ubc.ca/campus-community/meet-our-students/press-eric).
 
 ------------------------------------------------------------------------
 
 ### [gaussplotR](https://github.com/vbaliga/gaussplotR): Fit, predict, and plot 2D Gaussians in R
 
-![](/images/gaussplotR.png){fig-alt="gaussplotR r package" style="float:left;" width="100"}
+![](/images/gaussplotR.png){fig-alt="gaussplotR r package"
+style="float:left;" width="100"}
 
-gaussplotR provides functions to fit two-dimensional Gaussian functions, predict values from such functions, and produce plots of predicted data.
+gaussplotR provides functions to fit two-dimensional Gaussian functions,
+predict values from such functions, and produce plots of predicted data.
 
-Accompanying paper ([Baliga, 2021](https://doi.org/10.21105/joss.03074)) in the Journal of Open Source Software
+Accompanying paper ([Baliga, 2021](https://doi.org/10.21105/joss.03074))
+in the Journal of Open Source Software
 
 ------------------------------------------------------------------------
 
 ### [workloopR](https://github.com/ropensci/workloopR): Analysis of work loops and other data from muscle physiology experiments in R
 
-![](/images/workloopR_icon_300dpi.png){fig-alt="workloopR r package" style="float:left;" width="100"}
+![](/images/workloopR_icon_300dpi.png){fig-alt="workloopR r package"
+style="float:left;" width="100"}
 
-Part of the [rOpenSci](https://ropensci.org/) project (github: [ropensci/workloopR](https://github.com/ropensci/workloopR))
+Part of the [rOpenSci](https://ropensci.org/) project (github:
+[ropensci/workloopR](https://github.com/ropensci/workloopR))
 
-workloopR (pronounced "work looper") provides functions for the import, transformation, and analysis of muscle physiology experiments in R. Over the course of developing the package, we expanded this goal to also cover experiments that are often complementary to the work loop technique. Written with [Shree Senthivasan](https://www.linkedin.com/in/shreeram-senthivasan-43b0881bb/).
+workloopR (pronounced "work looper") provides functions for the import,
+transformation, and analysis of muscle physiology experiments in R. Over
+the course of developing the package, we expanded this goal to also
+cover experiments that are often complementary to the work loop
+technique. Written with [Shree
+Senthivasan](https://www.linkedin.com/in/shreeram-senthivasan-43b0881bb/).
 
-Accompanying paper ([Baliga and Senthivasan, 2019](https://doi.org/10.21105/joss.01856)) in the Journal of Open Source Software
+Accompanying paper ([Baliga and Senthivasan,
+2019](https://doi.org/10.21105/joss.01856)) in the Journal of Open
+Source Software
 
 ------------------------------------------------------------------------
 
 ### [genbank_downloadR](https://github.com/vbaliga/genbank_downloadR): Batch downloading of DNA or protein sequences from GenBank
 
-written as a standalone R script rather than as a full-blown package. Stable releases also [available on Figshare](https://doi.org/10.6084/m9.figshare.12980189).
+written as a standalone R script rather than as a full-blown package.
+Stable releases also [available on
+Figshare](https://doi.org/10.6084/m9.figshare.12980189).
 
 ------------------------------------------------------------------------
 
 ## Data & code from pubs
 
-Many of these repositories contain phylogenies that we've inferred, but be sure to see the [Phylogenetic trees](data-software-code.qmd#phylogenetic-trees) section below for straightforward access to MCC & ML trees.
+Many of these repositories contain phylogenies that we've inferred, but
+be sure to see the [Phylogenetic
+trees](data-software-code.qmd#phylogenetic-trees) section below for
+straightforward access to MCC & ML trees.
 
--   [figshare repository](https://doi.org/10.6084/m9.figshare.19425737) for: Smyth G**,** Baliga VB**,** Gaede AH, Wylie DR, and Altshuler DL. 2022. Specializations in optic flow encodingin the pretectum of hummingbirds and zebra finches. *Current Biology*.
+-   [figshare repository](https://doi.org/10.6084/m9.figshare.23535717)
+    for: Baliga VB, Dakin R, Wylie DR, and Altshuler DL. 2024.
+    Hummingbirds use distinct control strategies for forward and
+    hovering flight. *Proceedings of the Royal Society B: Biological
+    Sciences*.
 
--   [figshare repository](https://figshare.com/collections/Supplement_to_Inertia_links_avian_morphology_to_flight_manoeuvrability/5503989) for: Harvey, CA, Baliga VB, Wong JCM, Altshuler DL, and Inman DJ. 2022. Birds can transition between stable and unstable states via wing morphing. *Nature*. (repository arranged & maintained by [Christina Harvey](https://figshare.com/authors/Christina_Harvey/4766004))
+-   [figshare repository](https://doi.org/10.6084/m9.figshare.19425737)
+    for: Smyth G, Baliga VB, Gaede AH, Wylie DR, and Altshuler DL. 2022.
+    Specializations in optic flow encodingin the pretectum of
+    hummingbirds and zebra finches. *Current Biology*.
 
--   [figshare repository](https://rs.figshare.com/collections/Supplementary_material_from_Gull-inspired_joint-driven_wing_morphing_allows_adaptive_longitudinal_flight_control_/5438933) for: Harvey C, Baliga VB, Goates CD, Hunsaker D, and Inman DJ. 2021. Gull-inspired joint-driven wing morphing allows adaptive longitudinal flight control. *Journal of the Royal Society Interface*. (repository arranged & maintained by [Christina Harvey](https://figshare.com/authors/Christina_Harvey/4766004))
+-   [figshare
+    repository](https://figshare.com/collections/Supplement_to_Inertia_links_avian_morphology_to_flight_manoeuvrability/5503989)
+    for: Harvey, CA, Baliga VB, Wong JCM, Altshuler DL, and Inman
+    DJ. 2022. Birds can transition between stable and unstable states
+    via wing morphing. *Nature*. (repository arranged & maintained by
+    [Christina
+    Harvey](https://figshare.com/authors/Christina_Harvey/4766004))
 
--   [figshare repository](https://rs.figshare.com/collections/Supplementary_material_from_Phase_transformation-driven_artificial_muscle_mimics_the_multi-functionality_of_avian_wing_muscle_/5675606) for: Leal PBC, Cabral-Seanez M, Baliga VB, Altshuler DL, and Hartl DJ. 2021. Phase transformation-driven artificial muscle mimics the multifunctionality of avian wing muscle. *Journal of the Royal Society Interface*. (repository arranged & maintained by [Pedro Leal](https://rs.figshare.com/authors/_/11598656))
+-   [figshare
+    repository](https://rs.figshare.com/collections/Supplementary_material_from_Gull-inspired_joint-driven_wing_morphing_allows_adaptive_longitudinal_flight_control_/5438933)
+    for: Harvey C, Baliga VB, Goates CD, Hunsaker D, and Inman DJ. 2021.
+    Gull-inspired joint-driven wing morphing allows adaptive
+    longitudinal flight control. *Journal of the Royal Society
+    Interface*. (repository arranged & maintained by [Christina
+    Harvey](https://figshare.com/authors/Christina_Harvey/4766004))
 
--   [figshare repository](https://figshare.com/articles/dataset/Data_and_code_for_Flight_muscle_power_increases_with_strain_amplitude_and_decreases_with_cycle_frequency_in_zebra_finches_Taeniopygia_guttata_/12520733) for: Bahlman JW, Baliga VB, and Altshuler DL. 2020. Flight muscle power increases with strain amplitude and decreases with cycle frequency in zebra finches (Taeniopygia guttata). *Journal of Experimental Biology*.
+-   [figshare
+    repository](https://rs.figshare.com/collections/Supplementary_material_from_Phase_transformation-driven_artificial_muscle_mimics_the_multi-functionality_of_avian_wing_muscle_/5675606)
+    for: Leal PBC, Cabral-Seanez M, Baliga VB, Altshuler DL, and Hartl
+    DJ. 2021. Phase transformation-driven artificial muscle mimics the
+    multifunctionality of avian wing muscle. *Journal of the Royal
+    Society Interface*. (repository arranged & maintained by [Pedro
+    Leal](https://rs.figshare.com/authors/_/11598656))
 
--   [figshare repository](https://doi.org/10.6084/m9.figshare.8856161) for: Baliga VB, Szabo I, and Altshuler DL. 2019. Range of motion in the avian wing is strongly associated with flight behavior and body mass. *Science Advances.*
+-   [figshare
+    repository](https://figshare.com/articles/dataset/Data_and_code_for_Flight_muscle_power_increases_with_strain_amplitude_and_decreases_with_cycle_frequency_in_zebra_finches_Taeniopygia_guttata_/12520733)
+    for: Bahlman JW, Baliga VB, and Altshuler DL. 2020. Flight muscle
+    power increases with strain amplitude and decreases with cycle
+    frequency in zebra finches (Taeniopygia guttata). *Journal of
+    Experimental Biology*.
 
--   [github repository](https://github.com/christiandamsgaard/Evolution-of-air-breathing) for: Damsgaard C, Baliga VB, Bates E, Burggren W, McKenzie DJ, Taylor E, and Wright PA. 2019. Evolutionary and Cardio-Respiratory Physiology of Air-breathing and Amphibious Fishes. *Acta Physiologica.* (repository arranged & maintained by [Christian Damsgaard](https://github.com/christiandamsgaard))
+-   [figshare repository](https://doi.org/10.6084/m9.figshare.8856161)
+    for: Baliga VB, Szabo I, and Altshuler DL. 2019. Range of motion in
+    the avian wing is strongly associated with flight behavior and body
+    mass. *Science Advances.*
 
--   [figshare repository](https://doi.org/10.6084/m9.figshare.7658597) for: Baliga VB and Mehta RS. 2019. Morphology, ecology, and biogeography of independent origins of cleaning behavior around the world. *Integrative and Comparative Biology.*
+-   [github
+    repository](https://github.com/christiandamsgaard/Evolution-of-air-breathing)
+    for: Damsgaard C, Baliga VB, Bates E, Burggren W, McKenzie DJ,
+    Taylor E, and Wright PA. 2019. Evolutionary and Cardio-Respiratory
+    Physiology of Air-breathing and Amphibious Fishes. *Acta
+    Physiologica.* (repository arranged & maintained by [Christian
+    Damsgaard](https://github.com/christiandamsgaard))
 
--   [figshare repository](https://doi.org/10.6084/m9.figshare.c.3977505.v1) for: Harvey C, Baliga VB, Lavoie P, and Altshuler DL. 2019. Wing morphing allows gulls to modulate static pitch stability during gliding. *Journal of the Royal Society Interface*. (repository arranged & maintained by [Christina Harvey](https://figshare.com/authors/Christina_Harvey/4766004))
+-   [figshare repository](https://doi.org/10.6084/m9.figshare.7658597)
+    for: Baliga VB and Mehta RS. 2019. Morphology, ecology, and
+    biogeography of independent origins of cleaning behavior around the
+    world. *Integrative and Comparative Biology.*
+
+-   [figshare
+    repository](https://doi.org/10.6084/m9.figshare.c.3977505.v1) for:
+    Harvey C, Baliga VB, Lavoie P, and Altshuler DL. 2019. Wing morphing
+    allows gulls to modulate static pitch stability during gliding.
+    *Journal of the Royal Society Interface*. (repository arranged &
+    maintained by [Christina
+    Harvey](https://figshare.com/authors/Christina_Harvey/4766004))
 
 ------------------------------------------------------------------------
 
 ## Phylogenetic trees
 
-I am generally happy to share trees from posterior distributions --- just shoot me an email
+I am generally happy to share trees from posterior distributions ---
+just shoot me an email
 
 ### Birds (Aves)
 
--   222 taxa across Aves + outgroup; from Baliga et al. 2019 (*Science Advances*):
-    -   Bayesian MCC tree ([download](https://vikram-baliga.squarespace.com/s/Baliga-etal-Science-Advances_222s_Avian_MCCtree.tre))
-    -   Maximum likelihood tree ([download](https://vikram-baliga.squarespace.com/s/Baliga-etal-Science-Advances_222s_Avian_MLtree.tre))
+-   222 taxa across Aves + outgroup; from Baliga et al. 2019 (*Science
+    Advances*):
+    -   Bayesian MCC tree
+        ([download](https://vikram-baliga.squarespace.com/s/Baliga-etal-Science-Advances_222s_Avian_MCCtree.tre))
+    -   Maximum likelihood tree
+        ([download](https://vikram-baliga.squarespace.com/s/Baliga-etal-Science-Advances_222s_Avian_MLtree.tre))
 
 ### Gobies (Gobiidae)
 
--   54 species of Western Atlantic gobies + outgroup; from Baliga and Mehta 2019 (*Integrative and Comparative Biology*):
-    -   Bayesian MCC tree ([download](https://vikram-baliga.squarespace.com/s/Gobiidae_MCC.tre))
+-   54 species of Western Atlantic gobies + outgroup; from Baliga and
+    Mehta 2019 (*Integrative and Comparative Biology*):
+    -   Bayesian MCC tree
+        ([download](https://vikram-baliga.squarespace.com/s/Gobiidae_MCC.tre))
 
 ### Marine Angelfishes (Pomacanthidae)
 
--   72 species of marine angelfishes + outgroup; from Baliga and Mehta 2019 (*Integrative and Comparative Biology*):
-    -   Bayesian MCC tree ([download](https://vikram-baliga.squarespace.com/s/Pomacanthidae_MCC.tre))
+-   72 species of marine angelfishes + outgroup; from Baliga and Mehta
+    2019 (*Integrative and Comparative Biology*):
+    -   Bayesian MCC tree
+        ([download](https://vikram-baliga.squarespace.com/s/Pomacanthidae_MCC.tre))
 
 ### Wrasses & Parrotfishes (Labridae)
 
--   344 species of wrasses + parrotfishes + outgroup; from Baliga and Law 2016 (*Molecular Phylogenetics and Evolution*):
-    -   Bayesian MCC tree ([download](https://vikram-baliga.squarespace.com/s/BaligaLaw2016_344SP_MCC.nwk))
-    -   Maximum likelihood tree ([download](https://vikram-baliga.squarespace.com/s/BaligaLaw2016_344SP_MLtree.nwk))
+-   344 species of wrasses + parrotfishes + outgroup; from Baliga and
+    Law 2016 (*Molecular Phylogenetics and Evolution*):
+    -   Bayesian MCC tree
+        ([download](https://vikram-baliga.squarespace.com/s/BaligaLaw2016_344SP_MCC.nwk))
+    -   Maximum likelihood tree
+        ([download](https://vikram-baliga.squarespace.com/s/BaligaLaw2016_344SP_MLtree.nwk))
 
 ------------------------------------------------------------------------

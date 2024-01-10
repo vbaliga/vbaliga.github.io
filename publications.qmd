@@ -16,11 +16,12 @@ doi:10.1101/2023.05.08.539717
 
 ## Peer-reviewed journal articles
 
-### 2023
+### 2024
 
-**Baliga VB**, Dakin R, Wylie DR, and Altshuler DL. *Accepted*. Hummingbirds use
-distinct control strategies for forward and hovering flight. *Proceedings of the
-Royal Society B: Biological Sciences.*
+**Baliga VB**, Dakin R, Wylie DR, and Altshuler DL. 2024. [Hummingbirds use
+distinct control strategies for forward and hovering
+flight](https://doi.org/10.1098/rspb.2023.2155). *Proceedings of the Royal
+Society B: Biological Sciences.* 291, 20232155. doi:10.1098/rspb.2023.2155
 
 ### 2022
 
