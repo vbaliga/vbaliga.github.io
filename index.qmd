@@ -13,8 +13,6 @@ editor: source
 -   {{< fa envelope >}}   <a href="mailto:{{< var author.email >}}">Email</a>
 -   {{< fa brands github >}}  
     [\@vbaliga](%7B%7B%3C%20var%20author.github_url%20%3E%7D%7D)
--   {{< fa brands twitter >}}  
-    [\@labricthys](https://www.twitter.com/%7B%7B%3C%20var%20author.twitter%20%3E%7D%7D)
 :::
 
 ::: {.g-col-6 .g-col-md-3}
@@ -24,8 +22,6 @@ editor: source
     [{{< var author.orcid >}}](%7B%7B%3C%20var%20author.orcid_url%20%3E%7D%7D)
 -   {{< fa brands researchgate >}}  
     [{{< var author.researchgate >}}](%7B%7B%3C%20var%20author.researchgate_url%20%3E%7D%7D)
--   {{< fa solid spinner >}}  
-    [{{< var author.figshare >}}](%7B%7B%3C%20var%20author.figshare_url%20%3E%7D%7D)
 -   {{< fa solid copy >}}  
     [{{< var author.publons >}}](%7B%7B%3C%20var%20author.publons_url%20%3E%7D%7D)
 :::
