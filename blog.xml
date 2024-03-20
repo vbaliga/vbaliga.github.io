@@ -2025,7 +2025,7 @@ These packages will be installed into "~/work/vbaliga.github.io/vbaliga.github.i
 
 # Installing packages --------------------------------------------------------
 - Installing changepoint ...                    OK [linked from cache]
-Successfully installed 1 package in 11 milliseconds.</code></pre>
+Successfully installed 1 package in 5.3 milliseconds.</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><span class="fu" style="color: #4758AB;
 background-color: null;
