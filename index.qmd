@@ -6,24 +6,21 @@ editor: source
 
 ::: {.grid .course-details .course-details-smaller}
 ::: {.g-col-6 .g-col-md-3}
--   {{< fa solid user >}}  
-    [{{< var author.profile_text >}}](%7B%7B%3C%20var%20author.department_profile_url%20%3E%7D%7D)
--   {{< fa university >}}  
-    [{{< var author.department >}}](%7B%7B%3C%20var%20author.department_url%20%3E%7D%7D)
+-   {{< fa solid user >}}   [Dept.
+    page](https://www.zoology.ubc.ca/person/vikram-baliga)
+-   {{< fa university >}}   [UBC Zoology](https://zoology.ubc.ca/)
 -   {{< fa envelope >}}   [Email](mailto:vikram.baliga@ubc.ca)
--   {{< fa brands github >}}  
-    [\@vbaliga](%7B%7B%3C%20var%20author.github_url%20%3E%7D%7D)
+-   {{< fa brands github >}}   [\@vbaliga](https://github.com/vbaliga)
 :::
 
 ::: {.g-col-6 .g-col-md-3}
--   {{< fa book >}}  
-    [{{< var author.google_scholar >}}](%7B%7B%3C%20var%20author.google_scholar_url%20%3E%7D%7D)
--   {{< fa fingerprint >}}  
-    [{{< var author.orcid >}}](%7B%7B%3C%20var%20author.orcid_url%20%3E%7D%7D)
+-   {{< fa book >}}   [Google
+    Scholar](https://scholar.google.com/citations?user=sXz0JqQAAAAJ&hl=en)
+-   {{< fa fingerprint >}}   [ORCID](http://orcid.org/0000-0002-9367-8974)
 -   {{< fa brands researchgate >}}  
-    [{{< var author.researchgate >}}](%7B%7B%3C%20var%20author.researchgate_url%20%3E%7D%7D)
+    [ResearchGate](https://www.researchgate.net/profile/Vikram_Baliga)
 -   {{< fa solid copy >}}  
-    [{{< var author.publons >}}](%7B%7B%3C%20var%20author.publons_url%20%3E%7D%7D)
+    [Publons](http://www.researcherid.com/rid/H-1546-2013)
 :::
 :::
 
