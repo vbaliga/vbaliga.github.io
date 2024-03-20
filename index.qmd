@@ -44,12 +44,12 @@ engineered structures. Some of my chief collaborators are engineers who
 incorporate biological insight into designing structures with multi-functional
 capabilities.
 
-Making sense of information in diverse, noisy data sets has made me appreciate
-statistical methods and the art of conveying patterns effectively through
-visualization. Having the chance to help others think through statistical
-problems is especially invigorating and rewarding. The pages on this site should
-help give you a sense of my professional interests and activities -- if you
-think I can help you, please feel free to reach out.
+Making sense of information in diverse, noisy data makes me appreciate
+statistical methods and the design of effective visualizations. Having the
+chance to help others think through statistical problems is invigorating and
+rewarding. The pages on this site should help give you a sense of my
+professional interests and activities -- if you think I can help you, please
+feel free to reach out.
 
 That said, there is at least one other "Vikram Baliga" with whom you may have me
 confused. If you are looking for the Vikram Baliga with more of a flare for
