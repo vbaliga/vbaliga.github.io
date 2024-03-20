@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.551">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -50,7 +50,12 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -59,6 +64,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -98,10 +104,37 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="alternate" type="application/rss+xml" title="vbaliga.github.io" href="blog.xml"><meta property="og:title" content="vbaliga.github.io - Stuff I tried to google">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="alternate" type="application/rss+xml" title="vbaliga.github.io" href="blog.xml" data-external="1"><meta property="og:title" content="vbaliga.github.io - Stuff I tried to google">
 <meta property="og:description" content="but ended up figuring out myself">
 <meta property="og:image" content="https://vbaliga.github.io/images/vbaliga.github.io - social preview.png">
-<meta property="og:site-name" content="vbaliga.github.io">
+<meta property="og:site_name" content="vbaliga.github.io">
 <meta property="og:locale" content="en_US">
 <meta property="og:image:height" content="640">
 <meta property="og:image:width" content="1280">
@@ -119,9 +152,9 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">vbaliga.github.io</span>
     </a>
@@ -133,29 +166,29 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html" rel="" target="">
- <span class="menu-text">Publications</span></a>
+    <a class="nav-link" href="./publications.html"> 
+<span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./data-software-code.html" rel="" target="">
- <span class="menu-text">Data, software &amp; code</span></a>
+    <a class="nav-link" href="./data-software-code.html"> 
+<span class="menu-text">Data, software &amp; code</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./press.html" rel="" target="">
- <span class="menu-text">Press</span></a>
+    <a class="nav-link" href="./press.html"> 
+<span class="menu-text">Press</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" rel="" target="" aria-current="page">
- <span class="menu-text">Stuff I tried to google</span></a>
+    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+<span class="menu-text">Stuff I tried to google</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -194,7 +227,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <p>The motivation for these posts often comes from trying to google a question or topic related to coding, only to find little-to-no answer. Should I find a way to answer it myself, I’ll post a “How to” here with the hope that it helps other people with similar questions. 🐢</p>
 <div class="gap-10">
@@ -232,19 +267,19 @@ ul.task-list li input[type="checkbox"] {
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="R,stringr,dplyr,tidyverse,data-cleaning" data-listing-date-sort="1593216000000" data-listing-file-modified-sort="1705084734129" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<div class="quarto-post image-right" data-index="0" data-categories="R,stringr,dplyr,tidyverse,data-cleaning" data-listing-date-sort="1593216000000" data-listing-file-modified-sort="1710949014732" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1361">
 <div class="thumbnail">
-<p><a href="./posts/2020-06-27-replace-text-in-specific-column/index.html"> <img src="./posts/2020-06-27-replace-text-in-specific-column/replace-text-in-specific-column.png" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2020-06-27-replace-text-in-specific-column/index.html" class="no-external"></a></p><a href="./posts/2020-06-27-replace-text-in-specific-column/index.html" class="no-external">
+<p><img src="./posts/2020-06-27-replace-text-in-specific-column/replace-text-in-specific-column.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2020-06-27-replace-text-in-specific-column/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2020-06-27-replace-text-in-specific-column/index.html">
 <h3 class="no-anchor listing-title">
-Replace text within all cells of a specific column in R
+<a href="./posts/2020-06-27-replace-text-in-specific-column/index.html" class="no-external">Replace text within all cells of a specific column in R</a>
 </h3>
 <div class="listing-subtitle">
-Here’s how to target specific column(s) in a <code>data.frame</code> or <code>tibble</code> to replace text within.
+<a href="./posts/2020-06-27-replace-text-in-specific-column/index.html" class="no-external">Here’s how to target specific column(s) in a <code>data.frame</code> or <code>tibble</code> to replace text within.</a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -262,10 +297,9 @@ tidyverse
 data-cleaning
 </div>
 </div>
-<a href="./posts/2020-06-27-replace-text-in-specific-column/index.html"> </a>
 </div>
 <div class="metadata">
-<a href="./posts/2020-06-27-replace-text-in-specific-column/index.html">
+<a href="./posts/2020-06-27-replace-text-in-specific-column/index.html" class="no-external">
 <div class="listing-date">
 Jun 27, 2020
 </div>
@@ -278,19 +312,19 @@ Vikram B. Baliga
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="GenBank,DNA,tree-inference,phylogeny,fasta" data-listing-date-sort="1592006400000" data-listing-file-modified-sort="1705084734129" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="1" data-categories="GenBank,DNA,tree-inference,phylogeny,fasta" data-listing-date-sort="1592006400000" data-listing-file-modified-sort="1710949014732" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="242">
 <div class="thumbnail">
-<p><a href="./posts/2020-06-13-genbank-searches-tips-and-tricks/index.html"> <img src="./posts/2020-06-13-genbank-searches-tips-and-tricks/genbank-searches-tips-tricks.png" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2020-06-13-genbank-searches-tips-and-tricks/index.html" class="no-external"></a></p><a href="./posts/2020-06-13-genbank-searches-tips-and-tricks/index.html" class="no-external">
+<p><img src="./posts/2020-06-13-genbank-searches-tips-and-tricks/genbank-searches-tips-tricks.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2020-06-13-genbank-searches-tips-and-tricks/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2020-06-13-genbank-searches-tips-and-tricks/index.html">
 <h3 class="no-anchor listing-title">
-Searching for sequences on GenBank - a few tips and tricks
+<a href="./posts/2020-06-13-genbank-searches-tips-and-tricks/index.html" class="no-external">Searching for sequences on GenBank - a few tips and tricks</a>
 </h3>
 <div class="listing-subtitle">
-Some things I’ve learned from performing searches for DNA sequences on GenBank.
+<a href="./posts/2020-06-13-genbank-searches-tips-and-tricks/index.html" class="no-external">Some things I’ve learned from performing searches for DNA sequences on GenBank.</a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('GenBank'); return false;">
 GenBank
@@ -308,10 +342,9 @@ phylogeny
 fasta
 </div>
 </div>
-<a href="./posts/2020-06-13-genbank-searches-tips-and-tricks/index.html"> </a>
 </div>
 <div class="metadata">
-<a href="./posts/2020-06-13-genbank-searches-tips-and-tricks/index.html">
+<a href="./posts/2020-06-13-genbank-searches-tips-and-tricks/index.html" class="no-external">
 <div class="listing-date">
 Jun 13, 2020
 </div>
@@ -324,19 +357,19 @@ Vikram B. Baliga
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="R,variance,sample-size" data-listing-date-sort="1557619200000" data-listing-file-modified-sort="1705084734129" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<div class="quarto-post image-right" data-index="2" data-categories="R,variance,sample-size" data-listing-date-sort="1557619200000" data-listing-file-modified-sort="1710949014732" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1328">
 <div class="thumbnail">
-<p><a href="./posts/2019-05-12_variance-vs-sample-size-2/index.html"> <img src="./posts/2019-05-12_variance-vs-sample-size-2/variance-small-sample-size2.png" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2019-05-12_variance-vs-sample-size-2/index.html" class="no-external"></a></p><a href="./posts/2019-05-12_variance-vs-sample-size-2/index.html" class="no-external">
+<p><img src="./posts/2019-05-12_variance-vs-sample-size-2/variance-small-sample-size2.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2019-05-12_variance-vs-sample-size-2/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2019-05-12_variance-vs-sample-size-2/index.html">
 <h3 class="no-anchor listing-title">
-Sample variance at small sample sizes II: distributions
+<a href="./posts/2019-05-12_variance-vs-sample-size-2/index.html" class="no-external">Sample variance at small sample sizes II: distributions</a>
 </h3>
 <div class="listing-subtitle">
-How does sample size affect the distribution of sample variance?
+<a href="./posts/2019-05-12_variance-vs-sample-size-2/index.html" class="no-external">How does sample size affect the distribution of sample variance?</a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -348,10 +381,9 @@ variance
 sample-size
 </div>
 </div>
-<a href="./posts/2019-05-12_variance-vs-sample-size-2/index.html"> </a>
 </div>
 <div class="metadata">
-<a href="./posts/2019-05-12_variance-vs-sample-size-2/index.html">
+<a href="./posts/2019-05-12_variance-vs-sample-size-2/index.html" class="no-external">
 <div class="listing-date">
 May 12, 2019
 </div>
@@ -364,19 +396,19 @@ Vikram B. Baliga
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="R,variance,sample-size" data-listing-date-sort="1557014400000" data-listing-file-modified-sort="1705084734129" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
+<div class="quarto-post image-right" data-index="3" data-categories="R,variance,sample-size" data-listing-date-sort="1557014400000" data-listing-file-modified-sort="1710949014732" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1807">
 <div class="thumbnail">
-<p><a href="./posts/2019-05-05-variance-vs-sample-size/index.html"> <img src="./posts/2019-05-05-variance-vs-sample-size/variance-small-sample-size.png" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2019-05-05-variance-vs-sample-size/index.html" class="no-external"></a></p><a href="./posts/2019-05-05-variance-vs-sample-size/index.html" class="no-external">
+<p><img src="./posts/2019-05-05-variance-vs-sample-size/variance-small-sample-size.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2019-05-05-variance-vs-sample-size/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2019-05-05-variance-vs-sample-size/index.html">
 <h3 class="no-anchor listing-title">
-When is sample variance is a unreliable estimate of population variance?
+<a href="./posts/2019-05-05-variance-vs-sample-size/index.html" class="no-external">When is sample variance is a unreliable estimate of population variance?</a>
 </h3>
 <div class="listing-subtitle">
-Empirically showing that show that sample variance has high variance at low sample sizes
+<a href="./posts/2019-05-05-variance-vs-sample-size/index.html" class="no-external">Empirically showing that show that sample variance has high variance at low sample sizes</a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -388,10 +420,9 @@ variance
 sample-size
 </div>
 </div>
-<a href="./posts/2019-05-05-variance-vs-sample-size/index.html"> </a>
 </div>
 <div class="metadata">
-<a href="./posts/2019-05-05-variance-vs-sample-size/index.html">
+<a href="./posts/2019-05-05-variance-vs-sample-size/index.html" class="no-external">
 <div class="listing-date">
 May 5, 2019
 </div>
@@ -404,19 +435,19 @@ Vikram B. Baliga
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="R,MCMCglmm,parallel,parallel-processing,Windows" data-listing-date-sort="1556841600000" data-listing-file-modified-sort="1705084734129" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
+<div class="quarto-post image-right" data-index="4" data-categories="R,MCMCglmm,parallel,parallel-processing,Windows" data-listing-date-sort="1556841600000" data-listing-file-modified-sort="1710949014732" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1115">
 <div class="thumbnail">
-<p><a href="./posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/index.html"> <img src="./posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/mcmcglmm-parallel.png" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/index.html" class="no-external"></a></p><a href="./posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/index.html" class="no-external">
+<p><img src="./posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/mcmcglmm-parallel.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/index.html">
 <h3 class="no-anchor listing-title">
-Parallel processing for MCMCglmm in R (Windows-friendly)
+<a href="./posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/index.html" class="no-external">Parallel processing for MCMCglmm in R (Windows-friendly)</a>
 </h3>
 <div class="listing-subtitle">
-I set up a virtual cluster and then use the parallel::parLapply() function to run iterations of MCMCglmm() in parallel for computers running Windows.
+<a href="./posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/index.html" class="no-external">I set up a virtual cluster and then use the parallel::parLapply() function to run iterations of MCMCglmm() in parallel for computers running Windows.</a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -434,10 +465,9 @@ parallel-processing
 Windows
 </div>
 </div>
-<a href="./posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/index.html"> </a>
 </div>
 <div class="metadata">
-<a href="./posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/index.html">
+<a href="./posts/2019-05-03-parallel-processing-for-mcmcglmm-in-r-windows-friendly/index.html" class="no-external">
 <div class="listing-date">
 May 3, 2019
 </div>
@@ -450,19 +480,19 @@ Vikram B. Baliga
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="R,packages,package-installation,package-loading" data-listing-date-sort="1556409600000" data-listing-file-modified-sort="1705084734129" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="5" data-categories="R,packages,package-installation,package-loading" data-listing-date-sort="1556409600000" data-listing-file-modified-sort="1710949014732" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="218">
 <div class="thumbnail">
-<p><a href="./posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/index.html"> <img src="./posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/verify-that-r-package.png" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/index.html" class="no-external"></a></p><a href="./posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/index.html" class="no-external">
+<p><img src="./posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/verify-that-r-package.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/index.html">
 <h3 class="no-anchor listing-title">
-Check if packages are installed (and install if not) in R
+<a href="./posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/index.html" class="no-external">Check if packages are installed (and install if not) in R</a>
 </h3>
 <div class="listing-subtitle">
-Here’s some code that provides an easy way to check whether specific packages are in the default Library. If they are, they’re simply loaded via library(). If any packages are missing, they’re installed (with dependencies) into the default Library and are then loaded.
+<a href="./posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/index.html" class="no-external">Here’s some code that provides an easy way to check whether specific packages are in the default Library. If they are, they’re simply loaded via library(). If any packages are missing, they’re installed (with dependencies) into the default Library and are then loaded.</a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -477,10 +507,9 @@ package-installation
 package-loading
 </div>
 </div>
-<a href="./posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/index.html"> </a>
 </div>
 <div class="metadata">
-<a href="./posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/index.html">
+<a href="./posts/2019-04-28-verify-that-r-packages-are-installed-and-loaded/index.html" class="no-external">
 <div class="listing-date">
 Apr 28, 2019
 </div>
@@ -493,19 +522,19 @@ Vikram B. Baliga
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="R,DLLs,Windows" data-listing-date-sort="1555891200000" data-listing-file-modified-sort="1705084734125" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="6" data-categories="R,DLLs,Windows" data-listing-date-sort="1555891200000" data-listing-file-modified-sort="1710949014732" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="124">
 <div class="thumbnail">
-<p><a href="./posts/2019-04-22-set-max-DLLs-in-r/index.html"> <img src="./posts/2019-04-22-set-max-DLLs-in-r/set-max-DLLs-r.png" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2019-04-22-set-max-DLLs-in-r/index.html" class="no-external"></a></p><a href="./posts/2019-04-22-set-max-DLLs-in-r/index.html" class="no-external">
+<p><img src="./posts/2019-04-22-set-max-DLLs-in-r/set-max-DLLs-r.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2019-04-22-set-max-DLLs-in-r/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2019-04-22-set-max-DLLs-in-r/index.html">
 <h3 class="no-anchor listing-title">
-Set max DLLs in R (Windows)
+<a href="./posts/2019-04-22-set-max-DLLs-in-r/index.html" class="no-external">Set max DLLs in R (Windows)</a>
 </h3>
 <div class="listing-subtitle">
-If you need to adjust the max number of .dll files that R can handle, here is code that works if you are using Windows.
+<a href="./posts/2019-04-22-set-max-DLLs-in-r/index.html" class="no-external">If you need to adjust the max number of .dll files that R can handle, here is code that works if you are using Windows.</a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -517,10 +546,9 @@ DLLs
 Windows
 </div>
 </div>
-<a href="./posts/2019-04-22-set-max-DLLs-in-r/index.html"> </a>
 </div>
 <div class="metadata">
-<a href="./posts/2019-04-22-set-max-DLLs-in-r/index.html">
+<a href="./posts/2019-04-22-set-max-DLLs-in-r/index.html" class="no-external">
 <div class="listing-date">
 Apr 22, 2019
 </div>
@@ -617,10 +645,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/vbaliga\.github\.io");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -630,8 +675,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -643,7 +697,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -687,6 +864,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -712,6 +890,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -774,13 +978,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Content <i class="fa-brands fa-creative-commons" aria-hidden="true"></i> 2022-2024 by <a href="mailto:vbaliga@zoology.ubc.ca">Vikram B. Baliga</a>. All images by V.B.B. unless otherwise noted. <br> All content licensed under a <i class="fa-brands fa-creative-commons" aria-hidden="true"></i> <i class="fa-brands fa-creative-commons-by" aria-hidden="true"></i> <i class="fa-brands fa-creative-commons-nc" aria-hidden="true"></i> <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a> license</div>   
+    <div class="nav-footer-left">
+<p>Content <i class="fa-brands fa-creative-commons" aria-hidden="true"></i> 2022-2024 by <a href="mailto:vbaliga@zoology.ubc.ca">Vikram B. Baliga</a>. All images by V.B.B. unless otherwise noted. <br> All content licensed under a <i class="fa-brands fa-creative-commons" aria-hidden="true"></i> <i class="fa-brands fa-creative-commons-by" aria-hidden="true"></i> <i class="fa-brands fa-creative-commons-nc" aria-hidden="true"></i> <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a> license</p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
-    <div class="nav-footer-right">Made with <i class="fa-brands fa-r-project" aria-hidden="true"></i> and <a href="https://quarto.org/">Quarto</a><br></div>
+    <div class="nav-footer-right">
+<p>Made with <i class="fa-brands fa-r-project" aria-hidden="true"></i> and <a href="https://quarto.org/">Quarto</a><br></p>
+</div>
   </div>
 </footer>
+
 
 
 
