@@ -10,7 +10,7 @@ editor: source
     [{{< var author.profile_text >}}](%7B%7B%3C%20var%20author.department_profile_url%20%3E%7D%7D)
 -   {{< fa university >}}  
     [{{< var author.department >}}](%7B%7B%3C%20var%20author.department_url%20%3E%7D%7D)
--   {{< fa envelope >}}   <a href="mailto:{{< var author.email >}}">Email</a>
+-   {{< fa envelope >}}   [Email](mailto:vikram.baliga@ubc.ca)
 -   {{< fa brands github >}}  
     [\@vbaliga](%7B%7B%3C%20var%20author.github_url%20%3E%7D%7D)
 :::
