@@ -14,7 +14,7 @@
 <title>vbaliga.github.io</title>
 <link>https://vbaliga.github.io/blog.html</link>
 </image>
-<generator>quarto-1.4.551</generator>
+<generator>quarto-1.5.53</generator>
 <lastBuildDate>Sat, 27 Jun 2020 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Replace text within all cells of a specific column in R</title>
@@ -441,6 +441,7 @@ font-style: inherit;">1000</span></span>
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">function</span>(x) {</span>
 <span id="cb3-7">  <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -481,8 +482,10 @@ background-color: null;
 font-style: inherit;">ncol =</span> reps)</span>
 <span id="cb3-14"><span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">for</span> (i <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">in</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
@@ -495,8 +498,10 @@ font-style: inherit;">1</span>])</span>
 <span id="cb3-15">{</span>
 <span id="cb3-16">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">for</span> (j <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">in</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
@@ -600,8 +605,10 @@ font-style: inherit;">"n"</span></span>
 <span id="cb3-34">)</span>
 <span id="cb3-35"><span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">for</span> (i <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">in</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2</span><span class="sc" style="color: #5E5E5E;
@@ -809,8 +816,10 @@ font-style: inherit;">"n"</span></span>
 <span id="cb4-12">)</span>
 <span id="cb4-13"><span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">for</span> (i <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">in</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2</span><span class="sc" style="color: #5E5E5E;
@@ -987,9 +996,11 @@ font-style: inherit;">lapply</span>(</span>
 background-color: null;
 font-style: inherit;">FUN =</span> <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">function</span>(x) {</span>
 <span id="cb5-8">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">if</span> (<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">!</span><span class="fu" style="color: #4758AB;
@@ -1385,8 +1396,10 @@ background-color: null;
 font-style: inherit;">12</span>])</span>
 <span id="cb7-5"><span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">for</span> (i <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">in</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">11</span><span class="sc" style="color: #5E5E5E;
@@ -1552,6 +1565,7 @@ font-style: inherit;"># whole population.</span></span>
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">function</span>(x) {</span>
 <span id="cb3-13">  <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -1591,8 +1605,10 @@ background-color: null;
 font-style: inherit;">ncol =</span> reps)</span>
 <span id="cb4-3"><span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">for</span> (i <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">in</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
@@ -1605,8 +1621,10 @@ font-style: inherit;">1</span>])</span>
 <span id="cb4-4">{</span>
 <span id="cb4-5">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">for</span> (j <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">in</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
@@ -1740,8 +1758,10 @@ font-style: inherit;">"n"</span></span>
 <span id="cb5-15">)</span>
 <span id="cb5-16"><span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">for</span> (i <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">in</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">3</span><span class="sc" style="color: #5E5E5E;
@@ -1908,6 +1928,7 @@ font-style: inherit;"># variance across all the replicates.</span></span>
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">function</span>(x) {</span>
 <span id="cb6-4">  <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -2025,7 +2046,7 @@ These packages will be installed into "~/work/vbaliga.github.io/vbaliga.github.i
 
 # Installing packages --------------------------------------------------------
 - Installing changepoint ...                    OK [linked from cache]
-Successfully installed 1 package in 5.3 milliseconds.</code></pre>
+Successfully installed 1 package in 12 milliseconds.</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -2272,6 +2293,7 @@ font-style: inherit;"># previous analysis and function-izes it.</span></span>
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">function</span>(SD, popsize) {</span>
 <span id="cb15-12">  pop <span class="ot" style="color: #003B4F;
 background-color: null;
@@ -2301,8 +2323,10 @@ background-color: null;
 font-style: inherit;">ncol =</span> reps)</span>
 <span id="cb15-16">  <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">for</span> (i <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">in</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
@@ -2315,8 +2339,10 @@ font-style: inherit;">1</span>])</span>
 <span id="cb15-17">  {</span>
 <span id="cb15-18">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">for</span> (j <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">in</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
@@ -2522,8 +2548,10 @@ background-color: null;
 font-style: inherit;"># Run. This will take some time.</span></span>
 <span id="cb15-59"><span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">for</span> (i <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">in</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
@@ -2648,8 +2676,10 @@ background-color: null;
 font-style: inherit;"># Run. This will take some time.</span></span>
 <span id="cb24-14"><span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">for</span> (i <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">in</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
@@ -2876,9 +2906,11 @@ font-style: inherit;">lapply</span>(</span>
 background-color: null;
 font-style: inherit;">FUN =</span> <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">function</span>(x) {</span>
 <span id="cb1-12">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">if</span> (<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">!</span><span class="fu" style="color: #4758AB;
@@ -3178,6 +3210,7 @@ font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">10</span>, <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">function</span>(i) {</span>
 <span id="cb4-25">  <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -3335,9 +3368,11 @@ font-style: inherit;">lapply</span>(</span>
 background-color: null;
 font-style: inherit;">FUN =</span> <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">function</span>(x) {</span>
 <span id="cb1-12">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">if</span> (<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">!</span><span class="fu" style="color: #4758AB;
@@ -3442,6 +3477,7 @@ background-color: null;
 font-style: inherit;"># typically under: "C:/Users/YOURUSERNAME/Documents/.Renviron"</span></span>
 <span id="cb1-5"><span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">if</span>(<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">!</span><span class="fu" style="color: #4758AB;

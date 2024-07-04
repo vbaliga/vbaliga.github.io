@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.551">
+<meta name="generator" content="quarto-1.5.53">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="description" content="Personal site for Vikram B. Baliga">
 
-<title>vbaliga.github.io - Vikram B. Baliga</title>
+<title>Vikram B. Baliga – vbaliga.github.io</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,14 +71,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="google-site-verification" content="sd2EIIUXN6XunYAgTo3nG_aSpeflVbvxVXI2q8KlKzU">
 
 
-<meta property="og:title" content="vbaliga.github.io - Vikram B. Baliga">
+<meta property="og:title" content="Vikram B. Baliga – vbaliga.github.io">
 <meta property="og:description" content="Research Associate, University of British Columbia">
 <meta property="og:image" content="https://vbaliga.github.io/images/vbaliga.github.io - social preview.png">
 <meta property="og:site_name" content="vbaliga.github.io">
 <meta property="og:locale" content="en_US">
 <meta property="og:image:height" content="640">
 <meta property="og:image:width" content="1280">
-<meta name="twitter:title" content="vbaliga.github.io - Vikram B. Baliga">
+<meta name="twitter:title" content="Vikram B. Baliga – vbaliga.github.io">
 <meta name="twitter:description" content="Research Associate, University of British Columbia">
 <meta name="twitter:image" content="https://vbaliga.github.io/images/vbaliga.github.io - social preview.png">
 <meta name="twitter:creator" content="@labrichthys">
@@ -100,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -127,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -198,10 +198,9 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/vikram_baliga.jpg" class="img-fluid" style="float:left;" alt="Vikram B. Baliga" width="200"></p>
 <section id="welcome-to-my-personal-site" class="level2">
 <h2 class="anchored" data-anchor-id="welcome-to-my-personal-site">Welcome to my personal site</h2>
-<p>I’m a data scientist who focuses on questions related to animal locomotion, evolutionary biology, and physiology.</p>
-<p>My research asks how musculoskeletal and visual systems allow animals to control complex motion. This means I get to use motion capture and virtual reality to investigate animals’ locomotor behaviors, and examine anatomy &amp; physiology to understand how these behaviors are made possible. This framework not only helps us understand animals’ capabilities, but also inspires the development of engineered structures. Some of my chief collaborators are engineers who incorporate biological insight into designing structures with multi-functional capabilities.</p>
-<p>Making sense of information in diverse, noisy data makes me appreciate statistical methods and the design of effective visualizations. Having the chance to help others think through statistical problems is invigorating and rewarding. The pages on this site should help give you a sense of my professional interests and activities – if you think I can help you, please feel free to reach out.</p>
-<p>That said, there is at least one other “Vikram Baliga” with whom you may have me confused. If you are looking for the Vikram Baliga with more of a flare for horticulture, <a href="https://www.podchaser.com/creators/vikram-baliga-107a4YrAy8">try this page instead</a>. I’m the Vikram Baliga who would <a href="./images/James-Harden.jpg">undoubtedly beat you in a James Harden look-alike contest</a> (though I can’t say I’m a fan of Harden’s game).</p>
+<p>I’m a (data) scientist at UBC who focuses on questions related to animal locomotion, vision, and evolutionary biology.</p>
+<p>My research asks how musculoskeletal and visual systems allow animals to control complex motion. This means I get to use motion capture and virtual reality to investigate animals’ locomotor behaviors, and examine anatomy &amp; physiology to understand how these behaviors are made possible. This framework not only helps us understand animals’ capabilities, but also inspires engineering. Some of my chief collaborators are engineers who incorporate biological insight into designing structures with multi-functional capabilities.</p>
+<p>Data from behavioral or physiological studies tend to be extremely noisy. Making sense of information in these diverse data sets makes me appreciate statistical methods and the design of effective visualizations. One of my favorite things to do is help people think through these types of problems. If you think I can help you, please feel free to reach out.</p>
 <p>🐢</p>
 <hr>
 
@@ -244,18 +243,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -287,7 +275,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp("https:\/\/vbaliga\.github\.io");
@@ -295,7 +305,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
