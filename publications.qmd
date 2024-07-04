@@ -3,20 +3,14 @@ title: "Publications"
 editor: visual
 ---
 
-## Pre-prints
-
-### 2023
-
-Skandalis DS, **Baliga VB**, Goller B, and Altshuler DL. 2023. [The
-spatiotemporal richness of hummingbird wing
-deformations](https://doi.org/10.1101/2023.05.08.539717). *bioRxiv*.
-doi:10.1101/2023.05.08.539717
-
---------------------------------------------------------------------------------
-
 ## Peer-reviewed journal articles
 
 ### 2024
+
+Skandalis DS, **Baliga VB**, Goller B, and Altshuler DL. 2024. [The
+spatiotemporal richness of hummingbird wing
+deformations](https://doi.org/10.1242/jeb.246223). *Journal of Experimental
+Biology.* 227, jeb246223. doi:10.1242/jeb.246223
 
 **Baliga VB**, Dakin R, Wylie DR, and Altshuler DL. 2024. [Hummingbirds use
 distinct control strategies for forward and hovering
