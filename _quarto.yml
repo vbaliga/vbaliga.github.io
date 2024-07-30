@@ -38,7 +38,7 @@ website:
         href: data-software-code.qmd
       - text: "Press"
         href: press.qmd
-      - text: "Stuff I tried to google"
+      - text: "Tidbits"
         href: blog.qmd
   search:
     location: navbar
