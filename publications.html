@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.55">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dd08061cb7210c315e315379d94beb87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-2a7eda82d1acfb4143260037523854ee.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -207,12 +207,14 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="peer-reviewed-journal-articles">Peer-reviewed journal articles</h2>
 <section id="section" class="level3">
 <h3 class="anchored" data-anchor-id="section">2024</h3>
+<p>Dash S*, <strong>Baliga VB</strong>*, Lapsansky AB, Wylie DR, and Altshuler DL. 2024. <a href="https://doi.org/10.1523/ENEURO.0301-24.2024">Encoding of global visual motion in the avian pretectum shifts from a bias for temporal-to-nasal selectivity to omnidirectional excitation across speeds</a>. <em>eNeuro.</em> doi:10.1523/ENEURO.0301-24.2024<em><br>
+&nbsp;&nbsp;&nbsp; *</em> Equal contribution</p>
 <p>Skandalis DS, <strong>Baliga VB</strong>, Goller B, and Altshuler DL. 2024. <a href="https://doi.org/10.1242/jeb.246223">The spatiotemporal richness of hummingbird wing deformations</a>. <em>Journal of Experimental Biology.</em> 227, jeb246223. doi:10.1242/jeb.246223</p>
 <p><strong>Baliga VB</strong>, Dakin R, Wylie DR, and Altshuler DL. 2024. <a href="https://doi.org/10.1098/rspb.2023.2155">Hummingbirds use distinct control strategies for forward and hovering flight</a>. <em>Proceedings of the Royal Society B: Biological Sciences.</em> 291, 20232155. doi:10.1098/rspb.2023.2155</p>
 </section>
 <section id="section-1" class="level3">
 <h3 class="anchored" data-anchor-id="section-1">2022</h3>
-<p>Smyth G*<strong>, Baliga VB</strong>*<strong>,</strong> Gaede AH*, Wylie DR, and Altshuler DL. 2022. <a href="https://doi.org/10.1016/j.cub.2022.04.076">Specializations in optic flow encoding in the pretectum of hummingbirds and zebra finches</a>. <em>Current Biology.</em> 32, 1-8. doi:10.1016/j.cub.2022.04.076<em><br>
+<p>Smyth G*, <strong>Baliga VB</strong>*, Gaede AH*, Wylie DR, and Altshuler DL. 2022. <a href="https://doi.org/10.1016/j.cub.2022.04.076">Specializations in optic flow encoding in the pretectum of hummingbirds and zebra finches</a>. <em>Current Biology.</em> 32, 1-8. doi:10.1016/j.cub.2022.04.076<em><br>
 &nbsp;&nbsp;&nbsp; *</em> Equal contribution</p>
 <p>Harvey CA, <strong>Baliga VB</strong>, Wong JCM, Altshuler DL, and Inman DJ. 2022. <a href="https://doi.org/10.1038/s41586-022-04477-8">Birds can transition between stable and unstable states via wing morphing</a>. <em>Nature.</em> 603, 648–653. doi:10.1038/s41586-022-04477-8</p>
 <p>Gaede AH*, <strong>Baliga VB</strong>*, Smyth G, Gutiérrez-Ibáñez C, Altshuler DL, and Wylie DR. 2022. <a href="https://doi.org/10.1152/jn.00437.2021">Response Properties of Optic Flow Neurons in the Accessory Optic System of Hummingbirds vs.&nbsp;Zebra Finches and Pigeons</a>. <em>Journal of Neurophysiology.</em> 127, 130-144. doi:10.1152/jn.00437.2021<br>
@@ -392,8 +394,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -504,7 +504,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.55">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dd08061cb7210c315e315379d94beb87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-2a7eda82d1acfb4143260037523854ee.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -230,8 +230,9 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="data-code-from-pubs" class="level2">
 <h2 class="anchored" data-anchor-id="data-code-from-pubs">Data &amp; code from pubs</h2>
-<p>Many of these repositories contain phylogenies that we’ve inferred, but be sure to see the <a href="./data-software-code.html#phylogenetic-trees">Phylogenetic trees</a> section below for straightforward access to MCC &amp; ML trees.</p>
+<p>Some of these repositories contain phylogenies that we’ve inferred, but see the <a href="./data-software-code.html#phylogenetic-trees">Phylogenetic trees</a> section below for straightforward access to MCC &amp; ML trees.</p>
 <ul>
+<li><p><a href="https://doi.org/10.6084/m9.figshare.26107999">figshare repository</a> for: Dash S, Baliga VB, Lapsansky AB, Wylie DR, and Altshuler DL. 2024. Encoding of global visual motion in the avian pretectum shifts from a bias for temporal-to-nasal selectivity to omnidirectional excitation across speeds. <em>eNeuro</em>.</p></li>
 <li><p><a href="https://doi.org/10.6084/m9.figshare.23535717">figshare repository</a> for: Baliga VB, Dakin R, Wylie DR, and Altshuler DL. 2024. Hummingbirds use distinct control strategies for forward and hovering flight. <em>Proceedings of the Royal Society B: Biological Sciences</em>.</p></li>
 <li><p><a href="https://doi.org/10.6084/m9.figshare.19425737">figshare repository</a> for: Smyth G, Baliga VB, Gaede AH, Wylie DR, and Altshuler DL. 2022. Specializations in optic flow encodingin the pretectum of hummingbirds and zebra finches. <em>Current Biology</em>.</p></li>
 <li><p><a href="https://figshare.com/collections/Supplement_to_Inertia_links_avian_morphology_to_flight_manoeuvrability/5503989">figshare repository</a> for: Harvey, CA, Baliga VB, Wong JCM, Altshuler DL, and Inman DJ. 2022. Birds can transition between stable and unstable states via wing morphing. <em>Nature</em>. (repository arranged &amp; maintained by <a href="https://figshare.com/authors/Christina_Harvey/4766004">Christina Harvey</a>)</p></li>
@@ -374,8 +375,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -486,7 +485,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
