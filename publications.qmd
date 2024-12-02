@@ -7,6 +7,13 @@ editor: visual
 
 ### 2024
 
+Dash S\*, **Baliga VB**\*, Lapsansky AB, Wylie DR, and Altshuler DL. 2024.
+[Encoding of global visual motion in the avian pretectum shifts from a bias for
+temporal-to-nasal selectivity to omnidirectional excitation across
+speeds](https://doi.org/10.1523/ENEURO.0301-24.2024). *eNeuro.*
+doi:10.1523/ENEURO.0301-24.2024*\
+    \** Equal contribution
+
 Skandalis DS, **Baliga VB**, Goller B, and Altshuler DL. 2024. [The
 spatiotemporal richness of hummingbird wing
 deformations](https://doi.org/10.1242/jeb.246223). *Journal of Experimental
@@ -19,7 +26,7 @@ Society B: Biological Sciences.* 291, 20232155. doi:10.1098/rspb.2023.2155
 
 ### 2022
 
-Smyth G\***, Baliga VB**\***,** Gaede AH\*, Wylie DR, and Altshuler DL. 2022.
+Smyth G\*, **Baliga VB**\*, Gaede AH\*, Wylie DR, and Altshuler DL. 2022.
 [Specializations in optic flow encoding in the pretectum of hummingbirds and
 zebra finches](https://doi.org/10.1016/j.cub.2022.04.076). *Current Biology.*
 32, 1-8. doi:10.1016/j.cub.2022.04.076*\

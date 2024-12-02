@@ -27,7 +27,7 @@ editor: source
 ![](images/vikram_baliga.jpg){fig-alt="Vikram B. Baliga" style="float:left;"
 width="200"}
 
-## Welcome to my personal site
+## Welcome
 
 I'm a (data) scientist at UBC who focuses on questions related to animal
 locomotion, vision, and evolutionary biology.
@@ -43,8 +43,7 @@ designing structures with multi-functional capabilities.
 Data from behavioral or physiological studies tend to be extremely noisy. Making
 sense of information in these diverse data sets makes me appreciate statistical
 methods and the design of effective visualizations. One of my favorite things to
-do is help people think through these types of problems. If you think I can help
-you, please feel free to reach out.
+do is work with people through these types of problems.
 
 🐢
 

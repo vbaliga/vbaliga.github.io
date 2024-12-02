@@ -93,10 +93,15 @@ Figshare](https://doi.org/10.6084/m9.figshare.12980189).
 
 ## Data & code from pubs
 
-Many of these repositories contain phylogenies that we've inferred, but
-be sure to see the [Phylogenetic
-trees](data-software-code.qmd#phylogenetic-trees) section below for
-straightforward access to MCC & ML trees.
+Some of these repositories contain phylogenies that we've inferred, but
+see the [Phylogenetic trees](data-software-code.qmd#phylogenetic-trees)
+section below for straightforward access to MCC & ML trees.
+
+-   [figshare repository](https://doi.org/10.6084/m9.figshare.26107999)
+    for: Dash S, Baliga VB, Lapsansky AB, Wylie DR, and
+    Altshuler DL. 2024. Encoding of global visual motion in the avian
+    pretectum shifts from a bias for temporal-to-nasal selectivity to
+    omnidirectional excitation across speeds. *eNeuro*.
 
 -   [figshare repository](https://doi.org/10.6084/m9.figshare.23535717)
     for: Baliga VB, Dakin R, Wylie DR, and Altshuler DL. 2024.

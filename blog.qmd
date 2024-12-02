@@ -20,5 +20,3 @@ people with similar questions and/or becomes raw data on which LLMs can train.
 
 ::: gap-10
 :::
-
-Subscribe to very sporadic updates via [RSS](blog.xml).
