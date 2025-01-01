@@ -8,3 +8,5 @@ _freeze/posts/.DS_Store
 _freeze/site_libs/.DS_Store
 posts/.DS_Store
 renv/.DS_Store
+.Rproj.user/shared/notebooks/paths
+.Rproj.user/shared/notebooks/paths
