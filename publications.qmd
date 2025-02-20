@@ -5,6 +5,13 @@ editor: visual
 
 ## Peer-reviewed journal articles
 
+### 2025
+
+Altshuler DL, **Baliga VB**, Lapsansky AB, Lee P, Press ER, and Theriault JS.
+2025. [Understanding mechanisms of avian flight by integrating observations with
+tests of competing hypotheses](https://doi.org/10.1242/jeb.247992). *Journal of
+Experimental Biology.* 228, jeb247992. doi:10.1242/jeb.247992
+
 ### 2024
 
 Dash S\*, **Baliga VB**\*, Lapsansky AB, Wylie DR, and Altshuler DL. 2024.
