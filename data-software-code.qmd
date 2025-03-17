@@ -9,7 +9,7 @@ Many of the links below will take you to content on GitHub
 ([\@vbaliga](https://github.com/vbaliga)) or Figshare ([see my profile
 here](https://figshare.com/authors/Vikram_B_Baliga/4769286)).
 
-## Software packages
+## R packages
 
 ### [avinertia](https://cran.r-project.org/web/packages/AvInertia/index.html): Calculate the inertial properties of a flying bird
 
@@ -88,6 +88,26 @@ Source Software
 written as a standalone R script rather than as a full-blown package.
 Stable releases also [available on
 Figshare](https://doi.org/10.6084/m9.figshare.12980189).
+
+------------------------------------------------------------------------
+
+## Tutorials
+
+### [Multi-panel plots with R](https://flightlab.github.io/MultiPanelPlotsWithR)
+
+Developed for BIOL 548L (Visual and Oral Presentations), graduate course
+at UBC
+
+Learning objectives:
+
+-   Determine how to import & wrangle data from diverse sources
+
+-   Use the grammar of graphics to construct plots in ggplot2
+
+-   Plan a sequence of plots that support a declarative statement of a
+    result
+
+-   Construct multi-panel, publication-quality figures using code
 
 ------------------------------------------------------------------------
 
