@@ -17,11 +17,6 @@ website:
   site-url: https://vbaliga.github.io
   repo-url: https://github.com/vbaliga/vbaliga.github.io
   image: "/images/vbaliga.github.io - social preview.png"
-  twitter-card: 
-    image: "/images/vbaliga.github.io - social preview.png"
-    card-style: summary_large_image
-    creator: "@labrichthys"
-    site: "@labrichthys"
   open-graph:
     image: "/images/vbaliga.github.io - social preview.png"
     locale: en_US
