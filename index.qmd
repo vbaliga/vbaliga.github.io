@@ -1,10 +1,10 @@
 ---
 title: "Vikram B. Baliga"
-subtitle: "Research Associate, University of British Columbia"
+subtitle: "Assistant Professor of Teaching, University of British Columbia"
 editor: source
 ---
 
-::: {.grid .course-details .course-details-smaller}
+::::: {.grid .course-details .course-details-smaller}
 ::: {.g-col-6 .g-col-md-3}
 -   {{< fa solid user >}}   [Dept.
     page](https://www.zoology.ubc.ca/person/vikram-baliga)
@@ -22,28 +22,33 @@ editor: source
 -   {{< fa solid copy >}}  
     [Publons](http://www.researcherid.com/rid/H-1546-2013)
 :::
-:::
+:::::
 
 ![](images/vikram_baliga.jpg){fig-alt="Vikram B. Baliga" style="float:left;"
 width="200"}
 
 ## Welcome
 
-I'm a (data) scientist at UBC who focuses on questions related to animal
-locomotion, vision, and evolutionary biology.
+I am an Assistant Professor of Teaching in the Department of Zoology at UBC.
 
-My research asks how musculoskeletal and visual systems allow animals to control
-complex motion. This means I get to use motion capture and virtual reality to
-investigate animals' locomotor behaviors, and examine anatomy & physiology to
-understand how these behaviors are made possible. This framework not only helps
-us understand animals' capabilities, but also inspires engineering. Some of my
-chief collaborators are engineers who incorporate biological insight into
-designing structures with multi-functional capabilities.
+In the recent past, I was a scientist (also at UBC) whose work focused on animal
+locomotion, vision, and evolutionary biology. My research asked how
+musculoskeletal and visual systems allow animals to control complex motion. This
+means I got to use motion capture and virtual reality to investigate animals'
+locomotor behaviors, and examine anatomy & physiology to understand how these
+behaviors are made possible.
 
 Data from behavioral or physiological studies tend to be extremely noisy. Making
 sense of information in these diverse data sets makes me appreciate statistical
 methods and the design of effective visualizations. One of my favorite things to
-do is work with people through these types of problems.
+do is work with people through these types of problems, which inspired me to
+teach data science and biostatistics to undergrads at UBC.
+
+I am now actively involved in teaching [BIOL
+300](https://biologyprogram-2023.sites.olt.ubc.ca/files/2019/08/Syllabus_BIOL300_2019.pdf):
+Fundamentals of Biostatistics regularly at UBC. Future teaching efforts may
+relate to [DSCI
+100](https://www.stat.ubc.ca/sites/default/files/course_outlines/dsci100_outline_2020st2_melissa.pdf).
 
 🐢
 
