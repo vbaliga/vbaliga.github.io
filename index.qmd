@@ -29,8 +29,9 @@ width="200"}
 
 ## Welcome
 
-I am an Assistant Professor of Teaching in the Department of Zoology at UBC,
-with a special focus on Biostatistics and Data Science.
+I am an Assistant Professor of Teaching in the [Department of Zoology at
+UBC](https://www.zoology.ubc.ca/person/vikram-baliga), with a special focus on
+Biostatistics and Data Science.
 
 In the recent past, I was a scientist (also at UBC) whose work focused on animal
 locomotion, vision, and evolutionary biology. My research asked how
@@ -41,11 +42,11 @@ understand mechanisms and limitations.
 
 Data from behavioral or physiological studies tend to be extremely noisy. Making
 sense of information in these diverse data sets made me appreciate statistical
-methods and the design of effective visualizations. My passion for discussing
-and teaching statistics developed organically as I steadily embraced the
-analytical aspects of my job and sought opportunities to teach. I realized one
-of my favorite things to do is to work with people through these types of
-problems.
+methods and the design of effective visualizations. I also realized one of my
+favorite things to do is to work with people through these types of problems. My
+passion for discussing and teaching statistics developed organically as I
+steadily embraced the analytical aspects of my job and looked for opportunities
+to teach.
 
 As an Assistant Professor, I now teach and/or coordinate [BIOL
 300](https://biologyprogram-2023.sites.olt.ubc.ca/files/2019/08/Syllabus_BIOL300_2019.pdf):
