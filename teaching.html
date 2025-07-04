@@ -6,11 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Vikram B. Baliga">
-<meta name="dcterms.date" content="2019-04-22">
 <meta name="description" content="Vikram B. Baliga">
 
-<title>Set max DLLs in R (Windows) – vbaliga.github.io</title>
+<title>Teaching – vbaliga.github.io</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,63 +21,28 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../..//images/vb32.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-9f30c2c2d2429ed22c1cf9f617479b3b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-e36b36607abdd9f5199565a700c2e155.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href=".//images/vb32.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-9f30c2c2d2429ed22c1cf9f617479b3b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-e36b36607abdd9f5199565a700c2e155.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -113,13 +76,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<meta property="og:title" content="Set max DLLs in R (Windows) – vbaliga.github.io">
-<meta property="og:description" content="If you need to adjust the max number of .dll files that R can handle, here is code that works if you are using Windows.">
-<meta property="og:image" content="https://vbaliga.github.io/posts/2019-04-22-set-max-DLLs-in-r/set-max-DLLs-r.png">
+<meta property="og:title" content="Teaching – vbaliga.github.io">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://vbaliga.github.io/images/vbaliga.github.io - social preview.png">
 <meta property="og:site_name" content="vbaliga.github.io">
 <meta property="og:locale" content="en_US">
-<meta property="og:image:height" content="277">
-<meta property="og:image:width" content="467">
+<meta property="og:image:height" content="640">
+<meta property="og:image:width" content="1280">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -129,7 +92,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">vbaliga.github.io</span>
     </a>
   </div>
@@ -140,27 +103,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../teaching.html"> 
+    <a class="nav-link active" href="./teaching.html" aria-current="page"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../data-software-code.html"> 
+    <a class="nav-link" href="./data-software-code.html"> 
 <span class="menu-text">Data, software &amp; code</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../publications.html"> 
+    <a class="nav-link" href="./publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../press.html"> 
+    <a class="nav-link" href="./press.html"> 
 <span class="menu-text">Press</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../blog.html"> 
+    <a class="nav-link" href="./blog.html"> 
 <span class="menu-text">Tidbits</span></a>
   </li>  
 </ul>
@@ -179,8 +142,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#find-the-.renviron-file" id="toc-find-the-.renviron-file" class="nav-link active" data-scroll-target="#find-the-.renviron-file">Find the <code>.Renviron</code> file</a></li>
-  <li><a href="#edit-max-dlls" id="toc-edit-max-dlls" class="nav-link" data-scroll-target="#edit-max-dlls">Edit max DLLs</a></li>
+  <li><a href="#upcoming-courses" id="toc-upcoming-courses" class="nav-link active" data-scroll-target="#upcoming-courses">Upcoming courses</a>
+  <ul class="collapse">
+  <li><a href="#w2" id="toc-w2" class="nav-link" data-scroll-target="#w2">2025W2</a></li>
+  <li><a href="#w1" id="toc-w1" class="nav-link" data-scroll-target="#w1">2025W1</a></li>
+  </ul></li>
+  <li><a href="#courses-taught" id="toc-courses-taught" class="nav-link" data-scroll-target="#courses-taught">Courses taught</a>
+  <ul class="collapse">
+  <li><a href="#s2" id="toc-s2" class="nav-link" data-scroll-target="#s2">2025S2</a></li>
+  <li><a href="#w1-1" id="toc-w1-1" class="nav-link" data-scroll-target="#w1-1">2024W1</a></li>
+  <li><a href="#w1-2" id="toc-w1-2" class="nav-link" data-scroll-target="#w1-2">2019W1</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -198,32 +170,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Set max DLLs in R (Windows)</h1>
-<p class="subtitle lead">If you need to adjust the max number of .dll files that R can handle, here is code that works if you are using Windows.</p>
-  <div class="quarto-categories">
-    <div class="quarto-category">R</div>
-    <div class="quarto-category">DLLs</div>
-    <div class="quarto-category">Windows</div>
-  </div>
-  </div>
+<h1 class="title">Teaching</h1>
+</div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Vikram B. Baliga </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">April 22, 2019</p>
-    </div>
-  </div>
   
     
   </div>
@@ -233,31 +187,46 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>On occasion, you may need adjust the max number of .dll files that R can handle. I first encountered this need when using a high number of packages together.</p>
-<p>I’ve had trouble finding this info in the past, so I decided to create this post for others. This works if you are using Windows.</p>
-<p>The following is machine-specific, so you will need to do this on each computer you run R.</p>
-<section id="find-the-.renviron-file" class="level2">
-<h2 class="anchored" data-anchor-id="find-the-.renviron-file">Find the <code>.Renviron</code> file</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>user_renviron <span class="ot">&lt;-</span> </span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">path.expand</span>(<span class="fu">file.path</span>(<span class="st">"~"</span>, <span class="st">".Renviron"</span>))</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># check to see if the file already exists</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># typically under: "C:/Users/YOURUSERNAME/Documents/.Renviron"</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span><span class="fu">file.exists</span>(user_renviron)) </span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">file.create</span>(user_renviron)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">file.edit</span>(user_renviron) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>If <code>file.edit(user_renviron)</code> fails to work, just open the file itself (located wherever <code>user_renviron</code> is pointing) with a text editor.</p>
+<p>All courses taught at UBC unless otherwise noted. Content for each course is within the specific Canvas site for each term (accessible to enrolled students and teaching team only), but syllabi are available via the links below.</p>
+<hr>
+<section id="upcoming-courses" class="level2">
+<h2 class="anchored" data-anchor-id="upcoming-courses">Upcoming courses</h2>
+<section id="w2" class="level3">
+<h3 class="anchored" data-anchor-id="w2">2025W2</h3>
+<ul>
+<li><a href="https://biologyprogram-2023.sites.olt.ubc.ca/files/2019/08/Syllabus_BIOL300_2019.pdf">BIOL 300: Fundamentals of Biostatistics</a> Sections 201 and 202 (jointly with Darren Irwin)</li>
+</ul>
 </section>
-<section id="edit-max-dlls" class="level2">
-<h2 class="anchored" data-anchor-id="edit-max-dlls">Edit max DLLs</h2>
-<p>Once you have the file open, edit or add the following line, save, and restart R:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>R_MAX_NUM_DLLS<span class="ot">=</span><span class="dv">500</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>🐢</p>
+<section id="w1" class="level3">
+<h3 class="anchored" data-anchor-id="w1">2025W1</h3>
+<ul>
+<li><a href="https://biologyprogram-2023.sites.olt.ubc.ca/files/2019/08/Syllabus_BIOL300_2019.pdf">BIOL 300: Fundamentals of Biostatistics</a> Section 101 (jointly with Kaitlyn Gaynor)</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="courses-taught" class="level2">
+<h2 class="anchored" data-anchor-id="courses-taught">Courses taught</h2>
+<section id="s2" class="level3">
+<h3 class="anchored" data-anchor-id="s2">2025S2</h3>
+<ul>
+<li><a href="https://biologyprogram-2023.sites.olt.ubc.ca/files/2019/08/Syllabus_BIOL300_2019.pdf">BIOL 300: Fundamentals of Biostatistics</a> Section 951 (Coordinator; Instructor is Mike Whitlock)</li>
+</ul>
+</section>
+<section id="w1-1" class="level3">
+<h3 class="anchored" data-anchor-id="w1-1">2024W1</h3>
+<ul>
+<li><a href="https://biologyprogram-2023.sites.olt.ubc.ca/files/2019/08/Syllabus_BIOL300_2019.pdf">BIOL 300: Fundamentals of Biostatistics</a> Section 101</li>
+</ul>
+</section>
+<section id="w1-2" class="level3">
+<h3 class="anchored" data-anchor-id="w1-2">2019W1</h3>
+<ul>
+<li><a href="https://vancouver.calendar.ubc.ca/course-descriptions/courses/sciev-300">SCIE 300: Communicating Science</a> Section 111</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
