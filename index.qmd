@@ -29,26 +29,30 @@ width="200"}
 
 ## Welcome
 
-I am an Assistant Professor of Teaching in the Department of Zoology at UBC.
+I am an Assistant Professor of Teaching in the Department of Zoology at UBC,
+with a special focus on Biostatistics and Data Science.
 
 In the recent past, I was a scientist (also at UBC) whose work focused on animal
 locomotion, vision, and evolutionary biology. My research asked how
 musculoskeletal and visual systems allow animals to control complex motion. This
-means I got to use motion capture and virtual reality to investigate animals'
-locomotor behaviors, and examine anatomy & physiology to understand how these
-behaviors are made possible.
+means that I used motion capture and virtual reality to investigate animals'
+locomotor behaviors, and examined the evolution of anatomy & physiology to
+understand mechanisms and limitations.
 
 Data from behavioral or physiological studies tend to be extremely noisy. Making
-sense of information in these diverse data sets makes me appreciate statistical
-methods and the design of effective visualizations. One of my favorite things to
-do is work with people through these types of problems, which inspired me to
-teach data science and biostatistics to undergrads at UBC.
+sense of information in these diverse data sets made me appreciate statistical
+methods and the design of effective visualizations. My passion for discussing
+and teaching statistics developed organically as I steadily embraced the
+analytical aspects of my job and sought opportunities to teach. I realized one
+of my favorite things to do is to work with people through these types of
+problems.
 
-I am now actively involved in teaching [BIOL
+As an Assistant Professor, I now teach and/or coordinate [BIOL
 300](https://biologyprogram-2023.sites.olt.ubc.ca/files/2019/08/Syllabus_BIOL300_2019.pdf):
 Fundamentals of Biostatistics regularly at UBC. Future teaching efforts may
 relate to [DSCI
-100](https://www.stat.ubc.ca/sites/default/files/course_outlines/dsci100_outline_2020st2_melissa.pdf).
+100](https://www.stat.ubc.ca/sites/default/files/course_outlines/dsci100_outline_2020st2_melissa.pdf)
+or courses that blend biology, statistics, and data science.
 
 🐢
 

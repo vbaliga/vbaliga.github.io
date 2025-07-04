@@ -10,7 +10,7 @@ editor:
 execute:
   freeze: auto
 
-description-meta: "Personal site for Vikram B. Baliga"
+description-meta: "Vikram B. Baliga"
 
 website: 
   title: "vbaliga.github.io"
@@ -27,10 +27,12 @@ website:
     right:
       - text: "Home"
         href: index.qmd
+      - text: "Teaching"
+        href: teaching.qmd
+      - text: "Data, software & code"
+        href: data-software-code.qmd        
       - text: "Publications"
         href: publications.qmd
-      - text: "Data, software & code"
-        href: data-software-code.qmd
       - text: "Press"
         href: press.qmd
       - text: "Tidbits"
