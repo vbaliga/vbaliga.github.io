@@ -7,36 +7,43 @@ on:
 
 jobs:
   build-deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest       # GitHub-hosted Ubuntu 24.04
     permissions:
       contents: write
 
     steps:
-      # 1 — check out the repo (unchanged, but updated to latest action revision)
+      # 1 ──────────── Check out the repo
       - name: Check out repository
         uses: actions/checkout@v4
 
-      # 2 — install the requested version of R (version bumped to 4.5.0)
+      # 2 ──────────── Install the matching version of R
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
         with:
-          r-version: '4.5.0'
+          r-version: '4.5.0'     # ← matches your lock-file
 
-      # 3 — SAFER: install all Linux libs detected from renv.lock / DESCRIPTION
-      - name: Install system dependencies
-        uses: r-lib/actions/setup-system-dependencies@v2
+      # 3 ──────────── Install *system* libraries needed by curl, ragg, etc.
+      - name: Install Linux libraries needed by R packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libcurl4-openssl-dev \
+            libfontconfig1-dev \
+            libfreetype6-dev \
+            libx11-dev \
+            pandoc
 
-      # 4 — restore R packages via renv, using a fresh cache key
+      # 4 ──────────── Restore the renv library + cache
       - name: Install R dependencies via renv
         uses: r-lib/actions/setup-renv@v2
         with:
-          cache-version: 2        # <-- bumped so the R-4.4 cache is not reused
+          cache-version: 2        # bump => new cache under R-4.5
 
-      # 5 — install Quarto CLI (same as before)
+      # 5 ──────────── Install Quarto CLI
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      # 6 — render the site and push to gh-pages (unchanged)
+      # 6 ──────────── Render the site and push to gh-pages
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
