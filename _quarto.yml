@@ -54,6 +54,7 @@ format:
     theme:
       - litera
       - html/custom.scss
+    css: styles.css 
     toc: true
     highlight-style: monokai
     code-overflow: wrap
@@ -66,3 +67,6 @@ format:
           </style>
     include-before-body: 
       - file: ga4_tag.html
+    grid:
+      body-width: 900px   # pick any pixel value you like (default is 800px)
+      # sidebar-width, margin-width, gutter-width keep their defaults

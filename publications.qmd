@@ -5,14 +5,11 @@ editor: visual
 
 ## Peer-reviewed journal articles
 
-### 2025
-
+::: indent-block
 Altshuler DL, **Baliga VB**, Lapsansky AB, Lee P, Press ER, and Theriault JS.
 2025. [Understanding mechanisms of avian flight by integrating observations with
 tests of competing hypotheses](https://doi.org/10.1242/jeb.247992). *Journal of
 Experimental Biology.* 228, jeb247992. doi:10.1242/jeb.247992
-
-### 2024
 
 Dash S\*, **Baliga VB**\*, Lapsansky AB, Wylie DR, and Altshuler DL. 2024.
 [Encoding of global visual motion in the avian pretectum shifts from a bias for
@@ -31,8 +28,6 @@ distinct control strategies for forward and hovering
 flight](https://doi.org/10.1098/rspb.2023.2155). *Proceedings of the Royal
 Society B: Biological Sciences.* 291, 20232155. doi:10.1098/rspb.2023.2155
 
-### 2022
-
 Smyth G\*, **Baliga VB**\*, Gaede AH\*, Wylie DR, and Altshuler DL. 2022.
 [Specializations in optic flow encoding in the pretectum of hummingbirds and
 zebra finches](https://doi.org/10.1016/j.cub.2022.04.076). *Current Biology.*
@@ -48,10 +43,8 @@ Gaede AH\*, **Baliga VB**\*, Smyth G, Gutiérrez-Ibáñez C, Altshuler DL, and
 Wylie DR. 2022. [Response Properties of Optic Flow Neurons in the Accessory
 Optic System of Hummingbirds vs. Zebra Finches and
 Pigeons](https://doi.org/10.1152/jn.00437.2021). *Journal of Neurophysiology.*
-127, 130-144. doi:10.1152/jn.00437.2021\
-    \*\* Equal contribution
-
-### 2021
+127, 130-144. doi:10.1152/jn.00437.2021*\
+    \** Equal contribution
 
 Leal PBC, Cabral-Seanez M, **Baliga VB**, Altshuler DL, and Hartl DJ. 2021.
 [Phase transformation-driven artificial muscle mimics the multifunctionality of
@@ -63,15 +56,11 @@ Harvey C, **Baliga VB**, Goates CD, Hunsaker D, and Inman DJ. 2021.
 control](https://doi.org/10.1098/rsif.2021.0132). *Journal of the Royal Society
 Interface.* 18, 20210132. doi:10.1098/rsif.2021.0132
 
-### 2020
-
 Bahlman JW\*, **Baliga VB**\*, and Altshuler DL. 2020. [Flight muscle power
 increases with strain amplitude and decreases with cycle frequency in zebra
 finches (*Taeniopygia guttata*)](https://dx.doi.org/10.1242/jeb.225839).
 *Journal of Experimental Biology.* 223*,* jeb225839. doi:10.1242/jeb.225839*\
     \** Equal contribution
-
-### 2019
 
 **Baliga VB**, Szabo I, and Altshuler DL. 2019. [Range of motion in the avian
 wing is strongly associated with flight behavior and body
@@ -93,14 +82,10 @@ gulls to modulate static pitch stability during
 gliding.](http://dx.doi.org/10.1098/rsif.2018.0641) *Journal of the Royal
 Society Interface*. 16, 20180641. doi:10.1098/rsif.2018.0641
 
-### 2018
-
 **Baliga VB** and Mehta RS. 2018. [Phylo-allometric analyses showcase the
 interplay between life history patterns and phenotypic convergence in cleaner
 wrasses](https://doi.org/10.1086/697047). *American Naturalist.* 191,
 E129--E143. doi:10.1086/697047
-
-### 2017
 
 **Baliga VB**, Bernstein ZJ\*, Sundaram S\*, and Mehta RS. 2017. [Labrid cleaner
 fishes show kinematic convergence as juveniles despite variation in
@@ -121,8 +106,6 @@ Mustelidae): are southern sea otters born to
 bite?](http://dx.doi.org/10.1093/biolinnean/blw050) *Biological Journal of the
 Linnean Society.* 121:3, 420--438. doi:10.1093/biolinnean/blw050
 
-### 2016
-
 **Baliga VB** and Mehta RS. 2016. [Ontogenetic Allometry in Shape and
 Flexibility Underlies Life History Patterns of Labrid Cleaning
 Behavior](http://dx.doi.org/10.1093/icb/icw028). *Integrative and Comparative
@@ -140,69 +123,61 @@ Classroom](http://dx.doi.org/10.1525/abt.2016.78.1.35). *The American Biology
 Teacher.* 78:1, 35--42. doi:10.1525/abt.2016.78.1.35\
    \* High school teacher
 
-### 2015
-
 **Baliga VB** and Mehta RS. 2015. [Linking Cranial Morphology to Prey Capture
 Kinematics in Three Cleaner Wrasses: *Labroides dimidiatus*, *Larabicus
 quadrilineatus*, and *Thalassoma
 lutescens*](http://dx.doi.org/10.1002/jmor.20425). *Journal of Morphology*. 276,
 1377--91. doi:10.1002/jmor.20425
 
-### 2014
-
 **Baliga VB** and Mehta RS. 2014. [Scaling patterns inform ontogenetic
 transitions away from cleaning in *Thalassoma*
 wrasses](http://dx.doi.org/10.1242/jeb.107680). *Journal of Experimental
 Biology*. 217, 3597--3606. doi:10.1242/jeb.107680
+:::
 
 --------------------------------------------------------------------------------
 
 ## Peer-reviewed software publications
 
-### 2021
-
+::: indent-block
 **Baliga VB**. 2021. gaussplotR: [Fit, predict, and plot 2D-Gaussians in
 R.](https://doi.org/10.21105/joss.03074) *Journal of Open Source Software*.
 6:60, 3074. doi: 10.21105/joss.03074
-
-### 2019
 
 **Baliga VB** and Senthivasan S. 2019. [workloopR: Analysis of work loops and
 other data from muscle physiology experiments in
 R](https://doi.org/10.21105/joss.01856). *Journal of Open Source Software.*
 4:43, 1856. doi: 10.21105/joss.01856
+:::
 
 --------------------------------------------------------------------------------
 
 ## Conference papers
 
 Full-length papers submitted in concert with conference presentations; not
-peer-reviewed
+peer-reviewed.
 
-### 2020
-
+::: indent-block
 Harvey C, **Baliga VB**, and Inman DJ. 2020. [Control force required to morph
 the elbow and wrist in gulls](https://dx.doi.org/10.2514/6.2020-1037). American
 Institute of Aeronautics and Astronautics Scitech 2020 Forum. Held January 6 -
 10, 2020 in Orlando, FL. doi:10.2514/6.2020-1037
-
-### 2019
 
 Harvey C, **Baliga VB**, Altshuler DL, and Inman DJ. 2019. [Pitch Control
 Effectiveness of the Avian Elbow and Wrist via a Numerical Lifting Line
 Analysis](https://doi.org/10.2514/6.2019-0853). American Institute of
 Aeronautics and Astronautics Scitech 2019 Forum (AIAA 2019-0853). Held January
 7 - 11, 2019 in San Diego, CA. doi:10.2514/6.2019-0853
+:::
 
 --------------------------------------------------------------------------------
 
 ## Inquiry-based teaching modules
 
 Available at the [SCWIBLES Modules
-page](http://scwibles.ucsc.edu/SCWIBLESModules.html)
+page](http://scwibles.ucsc.edu/SCWIBLESModules.html).
 
-### 2014
-
+::: indent-block
 **Baliga VB**, and Yew B. 2014. Demystifying Dimensions: A mini-lesson on
 dimensional analysis. Product of GK-12 SCWIBLES, NSF DGE-0947923\
 \
@@ -216,9 +191,8 @@ DGE-0947923
 **Baliga VB**, and Baumgart S. 2014. A Matter of Human Proportions: Are you
 Vitruvian? Product of GK-12 SCWIBLES, NSF DGE-0947923
 
-### 2013
-
 **Baliga VB**, and Baumgart S. 2013. Hold Your Breath: What triggers the dive
 response in mammals? Product of GK-12 SCWIBLES, NSF DGE-0947923
+:::
 
 --------------------------------------------------------------------------------

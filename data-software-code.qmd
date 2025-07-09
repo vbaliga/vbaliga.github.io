@@ -11,6 +11,7 @@ here](https://figshare.com/authors/Vikram_B_Baliga/4769286)).
 
 ## R packages
 
+::: indent-block
 ### [avinertia](https://cran.r-project.org/web/packages/AvInertia/index.html): Calculate the inertial properties of a flying bird
 
 *avinertia* provides tools to compute the center of gravity and moment
@@ -18,15 +19,15 @@ of inertia tensor of any flying bird. The tools function by modeling a
 bird as a composite structure of simple geometric objects. This requires
 detailed morphological measurements of bird specimens although those
 obtained for the associated paper have been included in the package for
-use. Written with [Christina A. Harvey](https://www.christinaharvey.ca/)
-and [Jasmin C.M.
-Wong](https://research-information.bris.ac.uk/en/persons/jasmin-wong).
+use. Written with Christina A. Harvey and Jasmin C.M. Wong.
 
 Accompanying paper ([Harvey et al.,
-2022](https://doi.org/10.1038/s41586-022-04477-8)) in Nature
+2022](https://doi.org/10.1038/s41586-022-04477-8)) in *Nature*.
+:::
 
 ------------------------------------------------------------------------
 
+::: indent-block
 ### [pathviewr](https://github.com/ropensci/pathviewr): Tools to import, clean, and visualize animal movement data in R
 
 ![](/images/pathviewrhex_600dpi_trns.png){fig-alt="pathviewr r package"
@@ -44,24 +45,35 @@ tunnel axes, select a region of interest, isolate specific trajectories,
 fill gaps in trajectory data, and calculate 3D and per-axis velocity.
 For experiments of visual guidance, we also provide functions that use
 subject position to estimate perception of visual stimuli. Written with
-[Melissa S. Armstrong](https://melissasarmstrong.com/) and [Eric R.
-Press](https://www.grad.ubc.ca/campus-community/meet-our-students/press-eric).
+Melissa S. Armstrong and Eric R. Press.
+:::
 
 ------------------------------------------------------------------------
 
+::: indent-block
 ### [gaussplotR](https://github.com/vbaliga/gaussplotR): Fit, predict, and plot 2D Gaussians in R
 
 ![](/images/gaussplotR.png){fig-alt="gaussplotR r package"
 style="float:left;" width="100"}
 
-gaussplotR provides functions to fit two-dimensional Gaussian functions,
-predict values from such functions, and produce plots of predicted data.
+*gaussplotR* provides functions to fit two-dimensional Gaussian
+functions, predict values from such functions, and produce plots of
+predicted data.
+
+Fitting is achieved via `stats::nls()` to find the best-fitting
+parameters of a 2D-Gaussian fit. Prediction can then be achieved over a
+supplied grid of X- and Y-values. Plotting can then be achieved in a
+`ggplot2`-friendly way, but other plotting frameworks such as
+`lattice::levelplot()` can also be used. A 3D plot can also be produced
+via `rgl`.
 
 Accompanying paper ([Baliga, 2021](https://doi.org/10.21105/joss.03074))
-in the Journal of Open Source Software
+in the *Journal of Open Source Software*.
+:::
 
 ------------------------------------------------------------------------
 
+::: indent-block
 ### [workloopR](https://github.com/ropensci/workloopR): Analysis of work loops and other data from muscle physiology experiments in R
 
 ![](/images/workloopR_icon_300dpi.png){fig-alt="workloopR r package"
@@ -70,44 +82,46 @@ style="float:left;" width="100"}
 Part of the [rOpenSci](https://ropensci.org/) project (github:
 [ropensci/workloopR](https://github.com/ropensci/workloopR))
 
-workloopR (pronounced "work looper") provides functions for the import,
-transformation, and analysis of muscle physiology experiments in R. Over
-the course of developing the package, we expanded this goal to also
-cover experiments that are often complementary to the work loop
-technique. Written with [Shree
-Senthivasan](https://www.linkedin.com/in/shreeram-senthivasan-43b0881bb/).
+*workloopR* (pronounced "work looper") provides functions for the
+import, transformation, and analysis of muscle physiology experiments in
+R. Over the course of developing the package, we expanded this goal to
+also cover experiments that are often complementary to the work loop
+technique. Written with Shree Senthivasan.
 
 Accompanying paper ([Baliga and Senthivasan,
-2019](https://doi.org/10.21105/joss.01856)) in the Journal of Open
-Source Software
+2019](https://doi.org/10.21105/joss.01856)) in the *Journal of Open
+Source Software*.
+:::
 
 ------------------------------------------------------------------------
 
+::: indent-block
 ### [genbank_downloadR](https://github.com/vbaliga/genbank_downloadR): Batch downloading of DNA or protein sequences from GenBank
 
-written as a standalone R script rather than as a full-blown package.
+Written as a standalone R script rather than as a full-blown package.
 Stable releases also [available on
 Figshare](https://doi.org/10.6084/m9.figshare.12980189).
+:::
 
 ------------------------------------------------------------------------
 
 ## Tutorials
 
+::: indent-block
 ### [Multi-panel plots with R](https://flightlab.github.io/MultiPanelPlotsWithR)
 
 Developed for BIOL 548L (Visual and Oral Presentations), graduate course
-at UBC
+at UBC. Learning objectives include:
 
-Learning objectives:
+-   Determining how to import & wrangle data from diverse sources.
 
--   Determine how to import & wrangle data from diverse sources
+-   Using the grammar of graphics to construct plots in `ggplot2`.
 
--   Use the grammar of graphics to construct plots in ggplot2
+-   Planning a sequence of plots that support a declarative statement of
+    a result.
 
--   Plan a sequence of plots that support a declarative statement of a
-    result
-
--   Construct multi-panel, publication-quality figures using code
+-   Constructing multi-panel, publication-quality figures using code.
+:::
 
 ------------------------------------------------------------------------
 
@@ -117,6 +131,7 @@ Some of these repositories contain phylogenies that we've inferred, but
 see the [Phylogenetic trees](data-software-code.qmd#phylogenetic-trees)
 section below for straightforward access to MCC & ML trees.
 
+::: indent-block
 -   [figshare repository](https://doi.org/10.6084/m9.figshare.26107999)
     for: Dash S, Baliga VB, Lapsansky AB, Wylie DR, and
     Altshuler DL. 2024. Encoding of global visual motion in the avian
@@ -190,14 +205,16 @@ section below for straightforward access to MCC & ML trees.
     *Journal of the Royal Society Interface*. (repository arranged &
     maintained by [Christina
     Harvey](https://figshare.com/authors/Christina_Harvey/4766004))
+:::
 
 ------------------------------------------------------------------------
 
 ## Phylogenetic trees
 
 I am generally happy to share trees from posterior distributions ---
-just shoot me an email
+just shoot me an email.
 
+::: indent-block
 ### Birds (Aves)
 
 -   222 taxa across Aves + outgroup; from Baliga et al. 2019 (*Science
@@ -214,14 +231,14 @@ just shoot me an email
     -   Bayesian MCC tree
         ([download](https://vikram-baliga.squarespace.com/s/Gobiidae_MCC.tre))
 
-### Marine Angelfishes (Pomacanthidae)
+### Marine angelfishes (Pomacanthidae)
 
 -   72 species of marine angelfishes + outgroup; from Baliga and Mehta
     2019 (*Integrative and Comparative Biology*):
     -   Bayesian MCC tree
         ([download](https://vikram-baliga.squarespace.com/s/Pomacanthidae_MCC.tre))
 
-### Wrasses & Parrotfishes (Labridae)
+### Wrasses & parrotfishes (Labridae)
 
 -   344 species of wrasses + parrotfishes + outgroup; from Baliga and
     Law 2016 (*Molecular Phylogenetics and Evolution*):
@@ -229,5 +246,6 @@ just shoot me an email
         ([download](https://vikram-baliga.squarespace.com/s/BaligaLaw2016_344SP_MCC.nwk))
     -   Maximum likelihood tree
         ([download](https://vikram-baliga.squarespace.com/s/BaligaLaw2016_344SP_MLtree.nwk))
+:::
 
 ------------------------------------------------------------------------

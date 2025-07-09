@@ -3,44 +3,54 @@ title: "Teaching"
 editor: visual
 ---
 
+::: indent-block
 All courses taught at UBC unless otherwise noted. Content for each course is
 within the specific Canvas site for each term (accessible to enrolled students
 and teaching team only), but syllabi are available via the links below.
+:::
 
 --------------------------------------------------------------------------------
 
 ## Upcoming courses
 
+::: indent-block
 ### 2025W2
 
--   [BIOL 300: Fundamentals of
-    Biostatistics](https://biologyprogram-2023.sites.olt.ubc.ca/files/2019/08/Syllabus_BIOL300_2019.pdf)
-    Sections 201 and 202 (jointly with Darren Irwin)
+-   [BIOL
+    300](https://biologyprogram-2023.sites.olt.ubc.ca/files/2019/08/Syllabus_BIOL300_2019.pdf):
+    Fundamentals of Biostatistics, Sections 201 and 202 (jointly with Darren
+    Irwin)
 
 ### 2025W1
 
--   [BIOL 300: Fundamentals of
-    Biostatistics](https://biologyprogram-2023.sites.olt.ubc.ca/files/2019/08/Syllabus_BIOL300_2019.pdf)
-    Section 101 (jointly with Kaitlyn Gaynor)
+-   [BIOL
+    300](https://biologyprogram-2023.sites.olt.ubc.ca/files/2019/08/Syllabus_BIOL300_2019.pdf):
+    Fundamentals of Biostatistics, Section 101 (jointly with Kaitlyn Gaynor)
+:::
 
 --------------------------------------------------------------------------------
 
 ## Courses taught
 
+::: indent-block
 ### 2025S2
 
--   [BIOL 300: Fundamentals of
-    Biostatistics](https://biologyprogram-2023.sites.olt.ubc.ca/files/2019/08/Syllabus_BIOL300_2019.pdf)
-    Section 951 (Coordinator; Instructor is Mike Whitlock)
+-   [BIOL
+    300](https://biologyprogram-2023.sites.olt.ubc.ca/files/2019/08/Syllabus_BIOL300_2019.pdf):
+    Fundamentals of Biostatistics, Section 951 (Coordinator; Instructor is Mike
+    Whitlock)
 
 ### 2024W1
 
--   [BIOL 300: Fundamentals of
-    Biostatistics](https://biologyprogram-2023.sites.olt.ubc.ca/files/2019/08/Syllabus_BIOL300_2019.pdf)
-    Section 101
+-   [BIOL
+    300](https://biologyprogram-2023.sites.olt.ubc.ca/files/2019/08/Syllabus_BIOL300_2019.pdf):
+    Fundamentals of Biostatistics, Section 101
 
 ### 2019W1
 
--   [SCIE 300: Communicating
-    Science](https://vancouver.calendar.ubc.ca/course-descriptions/courses/sciev-300)
-    Section 111
+-   [SCIE
+    300](https://vancouver.calendar.ubc.ca/course-descriptions/courses/sciev-300):
+    Communicating Science, Section 111
+:::
+
+--------------------------------------------------------------------------------
