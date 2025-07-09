@@ -2,34 +2,41 @@ name: Render and deploy Quarto
 
 on:
   push:
-    branches: main
+    branches:
+      - main
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v2
 
+    steps:
+      # 1 — check out the repo (unchanged, but updated to latest action revision)
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      # 2 — install the requested version of R (version bumped to 4.5.0)
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.5.0'
+
+      # 3 — SAFER: install all Linux libs detected from renv.lock / DESCRIPTION
+      - name: Install system dependencies
+        uses: r-lib/actions/setup-system-dependencies@v2
+
+      # 4 — restore R packages via renv, using a fresh cache key
+      - name: Install R dependencies via renv
+        uses: r-lib/actions/setup-renv@v2
+        with:
+          cache-version: 2        # <-- bumped so the R-4.4 cache is not reused
+
+      # 5 — install Quarto CLI (same as before)
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Install R
-        uses: r-lib/actions/setup-r@v2
-        with:
-          r-version: '4.4.0'
-
-      - name: Install R Dependencies
-        uses: r-lib/actions/setup-renv@v2
-        with:
-          cache-version: 1
-          
-      - name: Install curl for Bioconductor
-        run: |
-          sudo apt -y install libcurl4-openssl-dev
-      
+      # 6 — render the site and push to gh-pages (unchanged)
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
