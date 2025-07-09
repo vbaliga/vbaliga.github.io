@@ -1,0 +1,14 @@
+/* custom css styles */
+
+.indent-block {
+  /* Shift the whole paragraph over. 2 em ≈ two characters.  */
+  margin-left: 2em;
+
+  /* ─ Optional alternative ─
+     If you want ONLY the first line indented like a book,
+     comment-out the line above and uncomment the two lines below.
+
+  text-indent: 2em;
+  margin-left: 0;
+  */
+}

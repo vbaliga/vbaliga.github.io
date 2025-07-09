@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-9f30c2c2d2429ed22c1cf9f617479b3b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-e36b36607abdd9f5199565a700c2e155.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9883d3a09cf32f798fcc737d2662d7c5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -76,6 +76,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
+<link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Data, software &amp; code – vbaliga.github.io">
 <meta property="og:description" content="">
 <meta property="og:image" content="https://vbaliga.github.io/images/vbaliga.github.io - social preview.png">
@@ -155,13 +156,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#multi-panel-plots-with-r" id="toc-multi-panel-plots-with-r" class="nav-link" data-scroll-target="#multi-panel-plots-with-r">Multi-panel plots with R</a></li>
   </ul></li>
   <li><a href="#data-code-from-pubs" id="toc-data-code-from-pubs" class="nav-link" data-scroll-target="#data-code-from-pubs">Data &amp; code from pubs</a></li>
-  <li><a href="#phylogenetic-trees" id="toc-phylogenetic-trees" class="nav-link" data-scroll-target="#phylogenetic-trees">Phylogenetic trees</a>
-  <ul class="collapse">
-  <li><a href="#birds-aves" id="toc-birds-aves" class="nav-link" data-scroll-target="#birds-aves">Birds (Aves)</a></li>
-  <li><a href="#gobies-gobiidae" id="toc-gobies-gobiidae" class="nav-link" data-scroll-target="#gobies-gobiidae">Gobies (Gobiidae)</a></li>
-  <li><a href="#marine-angelfishes-pomacanthidae" id="toc-marine-angelfishes-pomacanthidae" class="nav-link" data-scroll-target="#marine-angelfishes-pomacanthidae">Marine Angelfishes (Pomacanthidae)</a></li>
-  <li><a href="#wrasses-parrotfishes-labridae" id="toc-wrasses-parrotfishes-labridae" class="nav-link" data-scroll-target="#wrasses-parrotfishes-labridae">Wrasses &amp; Parrotfishes (Labridae)</a></li>
-  </ul></li>
+  <li><a href="#phylogenetic-trees" id="toc-phylogenetic-trees" class="nav-link" data-scroll-target="#phylogenetic-trees">Phylogenetic trees</a></li>
   </ul>
 </nav>
     </div>
@@ -199,58 +194,59 @@ ul.task-list li input[type="checkbox"] {
 <p>Many of the links below will take you to content on GitHub (<a href="https://github.com/vbaliga">@vbaliga</a>) or Figshare (<a href="https://figshare.com/authors/Vikram_B_Baliga/4769286">see my profile here</a>).</p>
 <section id="r-packages" class="level2">
 <h2 class="anchored" data-anchor-id="r-packages">R packages</h2>
-<section id="avinertia-calculate-the-inertial-properties-of-a-flying-bird" class="level3">
+<section id="avinertia-calculate-the-inertial-properties-of-a-flying-bird" class="level3 indent-block">
 <h3 class="anchored" data-anchor-id="avinertia-calculate-the-inertial-properties-of-a-flying-bird"><a href="https://cran.r-project.org/web/packages/AvInertia/index.html">avinertia</a>: Calculate the inertial properties of a flying bird</h3>
-<p><em>avinertia</em> provides tools to compute the center of gravity and moment of inertia tensor of any flying bird. The tools function by modeling a bird as a composite structure of simple geometric objects. This requires detailed morphological measurements of bird specimens although those obtained for the associated paper have been included in the package for use. Written with <a href="https://www.christinaharvey.ca/">Christina A. Harvey</a> and <a href="https://research-information.bris.ac.uk/en/persons/jasmin-wong">Jasmin C.M. Wong</a>.</p>
-<p>Accompanying paper (<a href="https://doi.org/10.1038/s41586-022-04477-8">Harvey et al., 2022</a>) in Nature</p>
-<hr>
+<p><em>avinertia</em> provides tools to compute the center of gravity and moment of inertia tensor of any flying bird. The tools function by modeling a bird as a composite structure of simple geometric objects. This requires detailed morphological measurements of bird specimens although those obtained for the associated paper have been included in the package for use. Written with Christina A. Harvey and Jasmin C.M. Wong.</p>
+<p>Accompanying paper (<a href="https://doi.org/10.1038/s41586-022-04477-8">Harvey et al., 2022</a>) in <em>Nature</em>.</p>
 </section>
-<section id="pathviewr-tools-to-import-clean-and-visualize-animal-movement-data-in-r" class="level3">
+<hr>
+<section id="pathviewr-tools-to-import-clean-and-visualize-animal-movement-data-in-r" class="level3 indent-block">
 <h3 class="anchored" data-anchor-id="pathviewr-tools-to-import-clean-and-visualize-animal-movement-data-in-r"><a href="https://github.com/ropensci/pathviewr">pathviewr</a>: Tools to import, clean, and visualize animal movement data in R</h3>
 <p><img src="./images/pathviewrhex_600dpi_trns.png" class="img-fluid" style="float:left;" alt="pathviewr r package" width="100"></p>
 <p>Part of the rOpenSci project (github: <a href="https://github.com/ropensci/pathviewr">ropensci/pathviewr</a>)</p>
-<p><em>pathviewr</em> offers tools to import, clean, and visualize movement data, particularly from motion capture systems such from <a href="https://optitrack.com/products/motive/">Optitrack’s Motive</a>, the <a href="https://github.com/strawlab/flydra">Straw Lab’s Flydra</a>, or from other sources. We provide functions to remove artifacts, standardize tunnel position and tunnel axes, select a region of interest, isolate specific trajectories, fill gaps in trajectory data, and calculate 3D and per-axis velocity. For experiments of visual guidance, we also provide functions that use subject position to estimate perception of visual stimuli. Written with <a href="https://melissasarmstrong.com/">Melissa S. Armstrong</a> and <a href="https://www.grad.ubc.ca/campus-community/meet-our-students/press-eric">Eric R. Press</a>.</p>
-<hr>
+<p><em>pathviewr</em> offers tools to import, clean, and visualize movement data, particularly from motion capture systems such from <a href="https://optitrack.com/products/motive/">Optitrack’s Motive</a>, the <a href="https://github.com/strawlab/flydra">Straw Lab’s Flydra</a>, or from other sources. We provide functions to remove artifacts, standardize tunnel position and tunnel axes, select a region of interest, isolate specific trajectories, fill gaps in trajectory data, and calculate 3D and per-axis velocity. For experiments of visual guidance, we also provide functions that use subject position to estimate perception of visual stimuli. Written with Melissa S. Armstrong and Eric R. Press.</p>
 </section>
-<section id="gaussplotr-fit-predict-and-plot-2d-gaussians-in-r" class="level3">
+<hr>
+<section id="gaussplotr-fit-predict-and-plot-2d-gaussians-in-r" class="level3 indent-block">
 <h3 class="anchored" data-anchor-id="gaussplotr-fit-predict-and-plot-2d-gaussians-in-r"><a href="https://github.com/vbaliga/gaussplotR">gaussplotR</a>: Fit, predict, and plot 2D Gaussians in R</h3>
 <p><img src="./images/gaussplotR.png" class="img-fluid" style="float:left;" alt="gaussplotR r package" width="100"></p>
-<p>gaussplotR provides functions to fit two-dimensional Gaussian functions, predict values from such functions, and produce plots of predicted data.</p>
-<p>Accompanying paper (<a href="https://doi.org/10.21105/joss.03074">Baliga, 2021</a>) in the Journal of Open Source Software</p>
-<hr>
+<p><em>gaussplotR</em> provides functions to fit two-dimensional Gaussian functions, predict values from such functions, and produce plots of predicted data.</p>
+<p>Fitting is achieved via <code>stats::nls()</code> to find the best-fitting parameters of a 2D-Gaussian fit. Prediction can then be achieved over a supplied grid of X- and Y-values. Plotting can then be achieved in a <code>ggplot2</code>-friendly way, but other plotting frameworks such as <code>lattice::levelplot()</code> can also be used. A 3D plot can also be produced via <code>rgl</code>.</p>
+<p>Accompanying paper (<a href="https://doi.org/10.21105/joss.03074">Baliga, 2021</a>) in the <em>Journal of Open Source Software</em>.</p>
 </section>
-<section id="workloopr-analysis-of-work-loops-and-other-data-from-muscle-physiology-experiments-in-r" class="level3">
+<hr>
+<section id="workloopr-analysis-of-work-loops-and-other-data-from-muscle-physiology-experiments-in-r" class="level3 indent-block">
 <h3 class="anchored" data-anchor-id="workloopr-analysis-of-work-loops-and-other-data-from-muscle-physiology-experiments-in-r"><a href="https://github.com/ropensci/workloopR">workloopR</a>: Analysis of work loops and other data from muscle physiology experiments in R</h3>
 <p><img src="./images/workloopR_icon_300dpi.png" class="img-fluid" style="float:left;" alt="workloopR r package" width="100"></p>
 <p>Part of the <a href="https://ropensci.org/">rOpenSci</a> project (github: <a href="https://github.com/ropensci/workloopR">ropensci/workloopR</a>)</p>
-<p>workloopR (pronounced “work looper”) provides functions for the import, transformation, and analysis of muscle physiology experiments in R. Over the course of developing the package, we expanded this goal to also cover experiments that are often complementary to the work loop technique. Written with <a href="https://www.linkedin.com/in/shreeram-senthivasan-43b0881bb/">Shree Senthivasan</a>.</p>
-<p>Accompanying paper (<a href="https://doi.org/10.21105/joss.01856">Baliga and Senthivasan, 2019</a>) in the Journal of Open Source Software</p>
-<hr>
+<p><em>workloopR</em> (pronounced “work looper”) provides functions for the import, transformation, and analysis of muscle physiology experiments in R. Over the course of developing the package, we expanded this goal to also cover experiments that are often complementary to the work loop technique. Written with Shree Senthivasan.</p>
+<p>Accompanying paper (<a href="https://doi.org/10.21105/joss.01856">Baliga and Senthivasan, 2019</a>) in the <em>Journal of Open Source Software</em>.</p>
 </section>
-<section id="genbank_downloadr-batch-downloading-of-dna-or-protein-sequences-from-genbank" class="level3">
+<hr>
+<section id="genbank_downloadr-batch-downloading-of-dna-or-protein-sequences-from-genbank" class="level3 indent-block">
 <h3 class="anchored" data-anchor-id="genbank_downloadr-batch-downloading-of-dna-or-protein-sequences-from-genbank"><a href="https://github.com/vbaliga/genbank_downloadR">genbank_downloadR</a>: Batch downloading of DNA or protein sequences from GenBank</h3>
-<p>written as a standalone R script rather than as a full-blown package. Stable releases also <a href="https://doi.org/10.6084/m9.figshare.12980189">available on Figshare</a>.</p>
-<hr>
+<p>Written as a standalone R script rather than as a full-blown package. Stable releases also <a href="https://doi.org/10.6084/m9.figshare.12980189">available on Figshare</a>.</p>
 </section>
+<hr>
 </section>
 <section id="tutorials" class="level2">
 <h2 class="anchored" data-anchor-id="tutorials">Tutorials</h2>
-<section id="multi-panel-plots-with-r" class="level3">
+<section id="multi-panel-plots-with-r" class="level3 indent-block">
 <h3 class="anchored" data-anchor-id="multi-panel-plots-with-r"><a href="https://flightlab.github.io/MultiPanelPlotsWithR">Multi-panel plots with R</a></h3>
-<p>Developed for BIOL 548L (Visual and Oral Presentations), graduate course at UBC</p>
-<p>Learning objectives:</p>
+<p>Developed for BIOL 548L (Visual and Oral Presentations), graduate course at UBC. Learning objectives include:</p>
 <ul>
-<li><p>Determine how to import &amp; wrangle data from diverse sources</p></li>
-<li><p>Use the grammar of graphics to construct plots in ggplot2</p></li>
-<li><p>Plan a sequence of plots that support a declarative statement of a result</p></li>
-<li><p>Construct multi-panel, publication-quality figures using code</p></li>
+<li><p>Determining how to import &amp; wrangle data from diverse sources.</p></li>
+<li><p>Using the grammar of graphics to construct plots in <code>ggplot2</code>.</p></li>
+<li><p>Planning a sequence of plots that support a declarative statement of a result.</p></li>
+<li><p>Constructing multi-panel, publication-quality figures using code.</p></li>
 </ul>
-<hr>
 </section>
+<hr>
 </section>
 <section id="data-code-from-pubs" class="level2">
 <h2 class="anchored" data-anchor-id="data-code-from-pubs">Data &amp; code from pubs</h2>
 <p>Some of these repositories contain phylogenies that we’ve inferred, but see the <a href="./data-software-code.html#phylogenetic-trees">Phylogenetic trees</a> section below for straightforward access to MCC &amp; ML trees.</p>
+<div class="indent-block">
 <ul>
 <li><p><a href="https://doi.org/10.6084/m9.figshare.26107999">figshare repository</a> for: Dash S, Baliga VB, Lapsansky AB, Wylie DR, and Altshuler DL. 2024. Encoding of global visual motion in the avian pretectum shifts from a bias for temporal-to-nasal selectivity to omnidirectional excitation across speeds. <em>eNeuro</em>.</p></li>
 <li><p><a href="https://doi.org/10.6084/m9.figshare.23535717">figshare repository</a> for: Baliga VB, Dakin R, Wylie DR, and Altshuler DL. 2024. Hummingbirds use distinct control strategies for forward and hovering flight. <em>Proceedings of the Royal Society B: Biological Sciences</em>.</p></li>
@@ -264,11 +260,13 @@ ul.task-list li input[type="checkbox"] {
 <li><p><a href="https://doi.org/10.6084/m9.figshare.7658597">figshare repository</a> for: Baliga VB and Mehta RS. 2019. Morphology, ecology, and biogeography of independent origins of cleaning behavior around the world. <em>Integrative and Comparative Biology.</em></p></li>
 <li><p><a href="https://doi.org/10.6084/m9.figshare.c.3977505.v1">figshare repository</a> for: Harvey C, Baliga VB, Lavoie P, and Altshuler DL. 2019. Wing morphing allows gulls to modulate static pitch stability during gliding. <em>Journal of the Royal Society Interface</em>. (repository arranged &amp; maintained by <a href="https://figshare.com/authors/Christina_Harvey/4766004">Christina Harvey</a>)</p></li>
 </ul>
+</div>
 <hr>
 </section>
 <section id="phylogenetic-trees" class="level2">
 <h2 class="anchored" data-anchor-id="phylogenetic-trees">Phylogenetic trees</h2>
-<p>I am generally happy to share trees from posterior distributions — just shoot me an email</p>
+<p>I am generally happy to share trees from posterior distributions — just shoot me an email.</p>
+<div class="indent-block">
 <section id="birds-aves" class="level3">
 <h3 class="anchored" data-anchor-id="birds-aves">Birds (Aves)</h3>
 <ul>
@@ -289,7 +287,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 <section id="marine-angelfishes-pomacanthidae" class="level3">
-<h3 class="anchored" data-anchor-id="marine-angelfishes-pomacanthidae">Marine Angelfishes (Pomacanthidae)</h3>
+<h3 class="anchored" data-anchor-id="marine-angelfishes-pomacanthidae">Marine angelfishes (Pomacanthidae)</h3>
 <ul>
 <li>72 species of marine angelfishes + outgroup; from Baliga and Mehta 2019 (<em>Integrative and Comparative Biology</em>):
 <ul>
@@ -298,7 +296,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 <section id="wrasses-parrotfishes-labridae" class="level3">
-<h3 class="anchored" data-anchor-id="wrasses-parrotfishes-labridae">Wrasses &amp; Parrotfishes (Labridae)</h3>
+<h3 class="anchored" data-anchor-id="wrasses-parrotfishes-labridae">Wrasses &amp; parrotfishes (Labridae)</h3>
 <ul>
 <li>344 species of wrasses + parrotfishes + outgroup; from Baliga and Law 2016 (<em>Molecular Phylogenetics and Evolution</em>):
 <ul>
@@ -306,10 +304,11 @@ ul.task-list li input[type="checkbox"] {
 <li>Maximum likelihood tree (<a href="https://vikram-baliga.squarespace.com/s/BaligaLaw2016_344SP_MLtree.nwk">download</a>)</li>
 </ul></li>
 </ul>
+</section>
+</div>
 <hr>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
