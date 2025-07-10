@@ -8,7 +8,8 @@ editor:
 
 ## Video segments
 
-::: grid
+::::::::::::::: indent-block
+::::: grid
 ::: {.g-col-6 .g-col-md-3}
 [![](images/ubc-2022-nature-promo.jpg){fig-alt="Jasmin Wong, Vikram Baliga, and Ildiko Szabo in the Beaty Museum Prep Lab"
 style="float:left; margin-left:10px;"
@@ -22,11 +23,11 @@ design](https://www.youtube.com/watch?v=1sWLDbakQ1I)
 UBC Science\
 March 9, 2022
 :::
-:::
+:::::
 
 ------------------------------------------------------------------------
 
-::: grid
+::::: grid
 ::: {.g-col-6 .g-col-md-3}
 [![](images/umich-ubc-birds-uav-design.jpg){fig-alt="Evolution of bird maneuverability and lessons for UAV design"
 style="float:left; margin-left:10px;"
@@ -40,11 +41,11 @@ design](https://www.youtube.com/watch?v=gKnuEEUKAFg)
 University of Michigan Engineering\
 March 9, 2022
 :::
-:::
+:::::
 
 ------------------------------------------------------------------------
 
-::: grid
+::::: grid
 ::: {.g-col-6 .g-col-md-3}
 [![](images/vikram-baliga-human-elements.png){fig-alt="Vikram Baliga in the Beaty Museum Prep Lab Human Elements"
 style="float:left; margin-left:10px;"
@@ -58,11 +59,11 @@ birds](https://www.kcts9.org/show/human-elements/episode/building-a-better-airpl
 Crosscut's Human Elements\
 April 19, 2020
 :::
-:::
+:::::
 
 ------------------------------------------------------------------------
 
-::: grid
+::::: grid
 ::: {.g-col-6 .g-col-md-3}
 [![](images/vikram-baliga-researchers-revealed.jpg){fig-alt="Vikram Baliga UBC Researchers Revealed"
 style="float:left; margin-left:10px;"
@@ -76,12 +77,14 @@ Revealed*](https://www.youtube.com/watch?v=JepRktA2W54)
 UBC Biodiversity Centre\
 February 24, 2020
 :::
-:::
+:::::
+:::::::::::::::
 
 ------------------------------------------------------------------------
 
 ## Articles
 
+::: indent-block
 *Scientific American*: [Hummingbirds Control Their Flight with a
 Newfound
 Mechanism](https://www.scientificamerican.com/article/hummingbirds-control-their-flight-with-a-newfound-mechanism/);
@@ -247,5 +250,6 @@ Xplore](https://techxplore.com/news/2019-01-zoologists-reveal-gulls-wing-morph.h
 *NRC Handelsblad:* [Wiebelende meeuw stabiliseert zich met slim
 ellebogenwerk](https://www.nrc.nl/nieuws/2019/01/02/wiebelende-meeuw-stabiliseert-zich-met-slim-ellebogenwerk-a3127627)
 (in German); January 2, 2019.
+:::
 
 ------------------------------------------------------------------------

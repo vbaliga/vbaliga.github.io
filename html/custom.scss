@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Sans+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /*-- scss:defaults --*/
 $white:    #fff !default;
@@ -35,8 +35,8 @@ $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
 
-$font-family-sans-serif:      Fira Sans Condensed, sans-serif !default;
-$font-family-serif:           Barlow, serif !default;  /* Not actually a serif font but whatever */
+$font-family-sans-serif:      'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$font-family-serif:           'Lato', sans-serif !default;  /* Not actually a serif font but whatever */
 
 $font-size-base:              1.1rem !default;
 $headings-font-weight:        700 !default;
