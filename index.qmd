@@ -25,7 +25,8 @@ editor: source
 :::::
 
 ![](images/Vikram_Baliga.png){fig-alt="Vikram B. Baliga" style="float:left;"
-width="300"}
+width="250"
+fig-cap="Photo taken by <a href='https://zoology.ubc.ca/person/sylvia-heredia'>Sylvia Heredia</a>"}
 
 ## Welcome
 
