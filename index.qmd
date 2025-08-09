@@ -24,8 +24,8 @@ editor: source
 :::
 :::::
 
-![](images/vikram_baliga.jpg){fig-alt="Vikram B. Baliga" style="float:left;"
-width="200"}
+![](images/Vikram_Baliga.png){fig-alt="Vikram B. Baliga" style="float:left;"
+width="300"}
 
 ## Welcome
 
