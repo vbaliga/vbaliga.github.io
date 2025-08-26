@@ -39,7 +39,7 @@ Fundamentals of Biostatistics. Future efforts may relate to [DSCI
 biology, statistics, and data science.
 
 Previously, I was a scientist (also at UBC) who used motion capture and virtual
-reality to investigate flight control in birds. Data from such studies of
-behavior and neuroscience often require semantic validation or dealing with
-noise. Making sense of information in these contexts made me appreciate the
-importance of sanity checks and the design of effective visualizations.
+reality to investigate flight control in birds. Data from studies of behavior
+and neuroscience often require semantic validation and dealing with noise.
+Making sense of information in these contexts made me appreciate the importance
+of sanity checks and the design of effective visualizations.
