@@ -14,7 +14,7 @@
 <title>vbaliga.github.io</title>
 <link>https://vbaliga.github.io/blog.html</link>
 </image>
-<generator>quarto-1.7.33</generator>
+<generator>quarto-1.8.25</generator>
 <lastBuildDate>Sat, 27 Jun 2020 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Replace text within all cells of a specific column in R</title>
@@ -38,11 +38,11 @@
 <p>Fortunately,<code>dplyr::mutate_at()</code>, and newer mechanisms via <code>dplyr::across()</code>, seem to fit the bill. I’ll run through a few examples in this post.</p>
 <p>We’ll start by loading <code>tidyverse</code>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">library</span>(tidyverse) <span class="do" style="color: #5E5E5E;
 background-color: null;
-font-style: italic;">## I'm  using v1.3.0.9000</span></span></code></pre></div>
+font-style: italic;">## I'm  using v1.3.0.9000</span></span></code></pre></div></div>
 </div>
 <section id="the-data" class="level2">
 <h2 class="anchored" data-anchor-id="the-data">The data</h2>
@@ -50,7 +50,7 @@ font-style: italic;">## I'm  using v1.3.0.9000</span></span></code></pre></div>
 <p><em>Code to make this object will be appended to the end of this post so we can get to the punchline faster. Look down there if you’d like to re-create this example fully on your own</em></p>
 <p>Here’s how <code>data</code> looks:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">data</span></code></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">data</span></code></pre></div></div>
 </div>
 <pre><code># A tibble: 100 × 5
    subject       treatment      var1   var2   var3
@@ -76,7 +76,7 @@ font-style: italic;">## I'm  using v1.3.0.9000</span></span></code></pre></div>
 <h2 class="anchored" data-anchor-id="use-mutate_at-with-str_replace">Use <code>mutate_at()</code> with <code>str_replace()</code></h2>
 <p>Fortunately, I found that <code>dplyr::mutate_at()</code> can help us target column(s) of interest (here <code>subject</code>) and leave other columns untouched.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1">renamed_data <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1">renamed_data <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> </span>
 <span id="cb4-2">  data <span class="sc" style="color: #5E5E5E;
@@ -91,7 +91,7 @@ background-color: null;
 font-style: inherit;">" 003"</span>, <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">""</span>)</span>
-<span id="cb4-4">renamed_data</span></code></pre></div>
+<span id="cb4-4">renamed_data</span></code></pre></div></div>
 </div>
 <pre><code># A tibble: 100 x 5
   subject   treatment      var1   var2   var3
@@ -111,7 +111,7 @@ font-style: inherit;">""</span>)</span>
 <p>By using <code>dplyr::mutate_at()</code>, we are specifiying that <code>str_replace()</code> should target the <code>subject</code> column only and take all instances of <code>003</code> and replace them with nothing (<code>""</code>).</p>
 <p>For those who prefer to not use pipes, we can accomplish the same thing by specifying <code>data</code> as the first argument in <code>mutate_at()</code>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1">renamed_data_no_pipe <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1">renamed_data_no_pipe <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> </span>
 <span id="cb6-2">  <span class="fu" style="color: #4758AB;
@@ -123,7 +123,7 @@ background-color: null;
 font-style: inherit;">" 003"</span>, <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">""</span>)</span>
-<span id="cb6-3">renamed_data_no_pipe</span></code></pre></div>
+<span id="cb6-3">renamed_data_no_pipe</span></code></pre></div></div>
 </div>
 <pre><code># A tibble: 100 x 5
    subject   treatment      var1   var2   var3
@@ -144,7 +144,7 @@ font-style: inherit;">""</span>)</span>
 <h2 class="anchored" data-anchor-id="use-mutate-and-across-with-str_replace">Use <code>mutate()</code> and <code>across()</code> with <code>str_replace()</code></h2>
 <p>I should note that the <code>_at</code> component of <code>dplyr</code> has now been considered “superseded”. Instead, the authors of <code>dplyr</code> recommend we use <code>dplyr::across()</code> to target our column(s) of interest. So we can write another version of the above:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1">renamed_data_across <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1">renamed_data_across <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span></span>
 <span id="cb8-2">  data <span class="sc" style="color: #5E5E5E;
@@ -161,7 +161,7 @@ background-color: null;
 font-style: inherit;">" 003"</span>, <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">""</span>))</span>
-<span id="cb8-4">renamed_data_across</span></code></pre></div>
+<span id="cb8-4">renamed_data_across</span></code></pre></div></div>
 </div>
 <pre><code># A tibble: 100 x 5
    subject   treatment      var1   var2   var3
@@ -183,7 +183,7 @@ font-style: inherit;">""</span>))</span>
 <h2 class="anchored" data-anchor-id="data">Data</h2>
 <p>Here’s the code that was used to create <code>data</code>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1">strings_subs   <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1">strings_subs   <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -272,7 +272,7 @@ font-style: inherit;">100</span>, <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span>, <span class="dv" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">1</span>))</span></code></pre></div>
+font-style: inherit;">1</span>))</span></code></pre></div></div>
 </div>
 <p>That’s all!</p>
 <p>🐢</p>
@@ -360,7 +360,7 @@ font-style: inherit;">1</span>))</span></code></pre></div>
 <p>To cut down on time, I will only take samples at particular sample sizes, based on the sample sizes which seemed interesting (to me!) in the previous post.</p>
 <p>I’ll keep this code tucked away so we can move quickly. Click the text below to see all the code if you’d like.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">mean <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">mean <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
 background-color: null;
@@ -394,11 +394,11 @@ background-color: null;
 font-style: inherit;"># verify that we get the same variance as last time</span></span>
 <span id="cb1-9"><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">var</span>(pop)</span></code></pre></div>
+font-style: inherit;">var</span>(pop)</span></code></pre></div></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 393.3836</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># pick specific Ns this time</span></span>
 <span id="cb3-2">Ns <span class="ot" style="color: #003B4F;
@@ -734,7 +734,7 @@ font-style: inherit;">3</span>, <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">box.lty=</span><span class="dv" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">0</span>)</span></code></pre></div>
+font-style: inherit;">0</span>)</span></code></pre></div></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -742,7 +742,7 @@ font-style: inherit;">0</span>)</span></code></pre></div>
 </figure>
 </div>
 </div>
-<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">plot</span>(</span>
 <span id="cb4-2">  <span class="fu" style="color: #4758AB;
@@ -945,7 +945,7 @@ font-style: inherit;">3</span>, <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">box.lty=</span><span class="dv" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">0</span>)</span></code></pre></div>
+font-style: inherit;">0</span>)</span></code></pre></div></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -962,7 +962,7 @@ font-style: inherit;">0</span>)</span></code></pre></div>
 <h2 class="anchored" data-anchor-id="distributions-of-sample-variance-at-each-sample-size">Distributions of sample variance at each sample size</h2>
 <p>We’ll now take a look at how the distributions of sample variance at each sample size (i.e.&nbsp;each vertical strip) vary.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># First load | install&amp;load packages we'll need</span></span>
 <span id="cb5-2">packages <span class="ot" style="color: #003B4F;
@@ -1026,7 +1026,7 @@ background-color: null;
 font-style: inherit;">TRUE</span>)</span>
 <span id="cb5-11">    }</span>
 <span id="cb5-12">  }</span>
-<span id="cb5-13">)</span></code></pre></div>
+<span id="cb5-13">)</span></code></pre></div></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 The downloaded binary packages are in
@@ -1035,7 +1035,7 @@ The downloaded binary packages are in
 The downloaded binary packages are in
     /var/folders/8k/s3cltr015b37qj74wmpvcgmc0000gn/T//Rtmpka5HEp/downloaded_packages</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Re-organize our data in tidy format</span></span>
 <span id="cb7-2">df <span class="ot" style="color: #003B4F;
@@ -1181,7 +1181,7 @@ font-style: inherit;">+</span></span>
 <span id="cb7-26">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">theme_ridges</span>()</span>
-<span id="cb7-27">p</span></code></pre></div>
+<span id="cb7-27">p</span></code></pre></div></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -1189,7 +1189,7 @@ font-style: inherit;">theme_ridges</span>()</span>
 </figure>
 </div>
 </div>
-<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1">medianz<span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1">medianz<span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -1357,7 +1357,7 @@ background-color: null;
 font-style: inherit;">box.lty =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">0</span></span>
-<span id="cb8-35">)</span></code></pre></div>
+<span id="cb8-35">)</span></code></pre></div></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -1371,7 +1371,7 @@ font-style: inherit;">0</span></span>
 <p>So at small sample sizes, the means of sample variance are close to but overshoop our population variance, whereas the medians sharply underestimate population variance.</p>
 <p>But at sample sizes over 45, means and medians of sample variance are nearly identical to the true population variance.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># not added</span></span>
 <span id="cb9-2">EnvStats<span class="sc" style="color: #5E5E5E;
@@ -1431,7 +1431,7 @@ background-color: null;
 font-style: inherit;">add =</span> <span class="cn" style="color: #8f5902;
 background-color: null;
 font-style: inherit;">TRUE</span>)</span>
-<span id="cb9-9">}</span></code></pre></div>
+<span id="cb9-9">}</span></code></pre></div></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -1474,7 +1474,7 @@ font-style: inherit;">TRUE</span>)</span>
 <p>Sample variance generally gives an unbiased estimate of the true population variance, but that does not mean it is a reliable estimate of population variance. Here, I show that sample variance itself has high variance at low sample sizes.</p>
 <p>First, we’ll create a normally-distributed parent population with a known mean, variance, and sample size. This represents a natural population of something we’d like to study but for sake of time, money, or feasibility, we cannot measure everything. Our goal is to figure out how reliable smaller samples are with respect to estimates of variance. We’ll take increasingly larger samples from this population and see how sample variance fares.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">mean <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">mean <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
 background-color: null;
@@ -1525,11 +1525,11 @@ background-color: null;
 font-style: inherit;"># from a normal distribution</span></span>
 <span id="cb1-14"><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">var</span>(pop)</span></code></pre></div>
+font-style: inherit;">var</span>(pop)</span></code></pre></div></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 393.3836</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Now create a sequence from 1 to popsize</span></span>
 <span id="cb3-2"><span class="co" style="color: #5E5E5E;
@@ -1589,14 +1589,14 @@ background-color: null;
 font-style: inherit;">/</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">length</span>(x)</span>
-<span id="cb3-14">}</span></code></pre></div>
+<span id="cb3-14">}</span></code></pre></div></div>
 </div>
 <section id="how-does-sample-variance-behave" class="level2">
 <h2 class="anchored" data-anchor-id="how-does-sample-variance-behave">How does sample variance ‘behave’?</h2>
 <p>Using our sequence of increasing sample size (<code>Ns</code>), we’ll now create a matrix of variances. Each row number will correspond to its sample size. E.g. all values in row [50,] are variances from random samples of n = 50 taken from the parent population. Therefore, samples in row [1000,] should be identical and equal to the parent population’s variance, since we are drawing all 1000 samples from the parent population.</p>
 <p>This process is repeated 1000 (<code>reps</code>) times for each sample size.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># This may take some time.</span></span>
 <span id="cb4-2">mymat <span class="ot" style="color: #003B4F;
@@ -1678,11 +1678,11 @@ font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span>, ] <span class="ot" style="color: #003B4F;
 background-color: null;
-font-style: inherit;">-&gt;</span> varmat </span></code></pre></div>
+font-style: inherit;">-&gt;</span> varmat </span></code></pre></div></div>
 </div>
 <p>It’s always good to visualize data. We’ll first plot these raw estimates of variance.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Sample size will be on the x-axis</span></span>
 <span id="cb5-2"><span class="co" style="color: #5E5E5E;
@@ -1913,7 +1913,7 @@ font-style: inherit;">3</span>, <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">box.lty=</span><span class="dv" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">0</span>)</span></code></pre></div>
+font-style: inherit;">0</span>)</span></code></pre></div></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -1925,7 +1925,7 @@ font-style: inherit;">0</span>)</span></code></pre></div>
 <p>Pretty crazy! The variation in sample variance is tremendous at small sample sizes. But the mean of this variation (orange) is basically identical to the true population variance (blue).</p>
 <p>Let’s figure out at what point the variance of sample variances seem to become reliable. Since we know this happens at small sample sizes, we’ll just plot cases where sample size varies from 1 to 100 to get a more refined view of the data.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Create a function to calculate the variances of sampled </span></span>
 <span id="cb6-2"><span class="co" style="color: #5E5E5E;
@@ -2029,7 +2029,7 @@ background-color: null;
 font-style: inherit;">bty =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"n"</span></span>
-<span id="cb6-20">)</span></code></pre></div>
+<span id="cb6-20">)</span></code></pre></div></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -2041,11 +2041,11 @@ font-style: inherit;">"n"</span></span>
 <p>This trend reminds me of what we see in scree plots when conducting PCA or in elbow plots when trying to determine the optimal number of clusters. The difficulty in applying those methods is that there isn’t an underlying covariance structure here (at least one that I can think of) that we’d be able to tease apart.</p>
 <p>Fortunately, there is a package called <code>changepoint</code> that finds “changepoints” in series of data (based on shifts in either values or variance). Let’s implement the <code>changepoint::cpt.var()</code> function to identify a potential point where sample variances seem to stabilize.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">install.packages</span>(<span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"changepoint"</span>)</span></code></pre></div>
+font-style: inherit;">"changepoint"</span>)</span></code></pre></div></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>The following package(s) will be installed:
 - changepoint [2.2.4]
@@ -2055,9 +2055,9 @@ These packages will be installed into "~/Library/CloudStorage/OneDrive-UBC/githu
 - Installing changepoint ...                    OK [linked from cache]
 Successfully installed 1 package in 3.5 milliseconds.</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">library</span>(changepoint)</span></code></pre></div>
+font-style: inherit;">library</span>(changepoint)</span></code></pre></div></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Loading required package: zoo</code></pre>
 </div>
@@ -2074,7 +2074,7 @@ Attaching package: 'zoo'</code></pre>
 <pre><code>Successfully loaded changepoint package version 2.2.4
  See NEWS for details of changes.</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb14" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Plot again</span></span>
 <span id="cb14-2"><span class="fu" style="color: #4758AB;
@@ -2228,7 +2228,7 @@ font-style: inherit;">1</span>],</span>
 <span id="cb14-20">        <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"samples"</span>)</span>
-<span id="cb14-21">)</span></code></pre></div>
+<span id="cb14-21">)</span></code></pre></div></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -2244,7 +2244,7 @@ font-style: inherit;">"samples"</span>)</span>
 <p>At what point is sample size large enough to trust its estimation of the true variance? Let’s first see if it depends on the parent population’s actual variance.</p>
 <p>We’ll create a few other examples and see if we can find common patterns. We’ll fix population means at 0, population sizes to be 1000 but vary standard deviations (and therefore variance) widely.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1">mean <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1">mean <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
 background-color: null;
@@ -2576,7 +2576,7 @@ background-color: null;
 font-style: inherit;">1</span>], params[i, <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2</span>])</span>
-<span id="cb15-62">}</span></code></pre></div>
+<span id="cb15-62">}</span></code></pre></div></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 1</code></pre>
 </div>
@@ -2616,7 +2616,7 @@ font-style: inherit;">2</span>])</span>
 <h2 class="anchored" data-anchor-id="does-population-size-matter">Does population size matter?</h2>
 <p>One more thing I’d like to determine is if our results so far stem from fixing the population size at 1000. So, we’ll repeat this but instead of varying standard deviation, we’ll vary population size.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1">mean <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1">mean <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
 background-color: null;
@@ -2704,7 +2704,7 @@ background-color: null;
 font-style: inherit;">1</span>], params[i, <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2</span>])</span>
-<span id="cb24-17">}</span></code></pre></div>
+<span id="cb24-17">}</span></code></pre></div></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 1</code></pre>
 </div>
@@ -2739,7 +2739,7 @@ font-style: inherit;">2</span>])</span>
 </div>
 <p>So it seems that as true population size increases, so too does the location of the changepoint. Let’s plot this more explicitly:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb33" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1">pops <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1">pops <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -2827,7 +2827,7 @@ background-color: null;
 font-style: inherit;">bty =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"n"</span></span>
-<span id="cb33-13">)</span></code></pre></div>
+<span id="cb33-13">)</span></code></pre></div></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -2877,7 +2877,7 @@ font-style: inherit;">"n"</span></span>
 <p>I’ll use “Example 2” from the <a href="https://www.rdocumentation.org/packages/MCMCglmm/versions/2.26/topics/MCMCglmm">MCMCglmm() function help</a>. You can skip ahead to the next section if instead you’d like to tailor this to your own data &amp; analysis.</p>
 <p>First load (or install&amp;load) the <code>MCMCglmm</code> and <code>parallel</code> packages:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="do" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="do" style="color: #5E5E5E;
 background-color: null;
 font-style: italic;">## If a package is installed, it will be loaded. If any </span></span>
 <span id="cb1-2"><span class="do" style="color: #5E5E5E;
@@ -2943,11 +2943,11 @@ background-color: null;
 font-style: inherit;">TRUE</span>)</span>
 <span id="cb1-15">    }</span>
 <span id="cb1-16">  }</span>
-<span id="cb1-17">)</span></code></pre></div>
+<span id="cb1-17">)</span></code></pre></div></div>
 </div>
 <p>With the packages loaded, we’ll prep our data set. Lifting this directly from the <code>MCMCglmm()</code> help page:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">data</span>(bird.families)</span>
 <span id="cb2-2">phylo.effect <span class="ot" style="color: #003B4F;
@@ -3092,7 +3092,7 @@ font-style: inherit;">1</span></span>
 <span id="cb2-25">)</span>
 <span id="cb2-26"><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">summary</span>(model2)</span></code></pre></div>
+font-style: inherit;">summary</span>(model2)</span></code></pre></div></div>
 </div>
 <pre><code> Iterations = 301:1300
  Thinning interval  = 1
@@ -3118,7 +3118,7 @@ font-style: inherit;">summary</span>(model2)</span></code></pre></div>
 <p>Whenever conducting MCMC-based analyses, it’s advisable to conduct multiple runs (different chains) and then assess convergence. I’ll leave the convergence assessments for another day (but here’s <a href="https://stats.stackexchange.com/questions/507/what-is-the-best-method-for-checking-convergence-in-mcmc">a good StackExchange post</a>). For now we’ll just conduct 10 runs of this model, each using <code>nitt = 100000</code>, using parallel processing.</p>
 <p><em><strong>PLEASE NOTE</strong>: I am setting this up to use only 80% of your machine’s total logical processors. You can certainly harness all of your CPUs if you’d like, although I advise against doing so if any of your MCMC runs take more than a few minutes. It also doesn’t make sense to set the number of logical processors to be greater than the number of runs (chains), but more on that later. Anyway, treat your silicon well!</em></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># use detectCores() by itself if you want all CPUs</span></span>
 <span id="cb4-2">setCores <span class="ot" style="color: #003B4F;
@@ -3276,7 +3276,7 @@ background-color: null;
 font-style: inherit;"># the parallel cluster</span></span>
 <span id="cb4-40"><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">stopCluster</span>(cl)</span></code></pre></div>
+font-style: inherit;">stopCluster</span>(cl)</span></code></pre></div></div>
 </div>
 <p>The <code>model2_10runs</code> object is a list that contains each of the 10 mcmc models. You can perform all the usual summarization, plotting…etc, but just be sure to specify models within the list, e.g.: <code>summary(model2_10runs[[3]])</code> to summarize the third model out of the 10</p>
 <pre><code> Iterations = 10001:99991
@@ -3339,7 +3339,7 @@ units    0.4437 0.0001843    1.224    181.1
 <section id="load-install-load-packages" class="level2">
 <h2 class="anchored" data-anchor-id="load-install-load-packages">Load | install &amp; load packages</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="do" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="do" style="color: #5E5E5E;
 background-color: null;
 font-style: italic;">## If a package is installed, it will be loaded. If any </span></span>
 <span id="cb1-2"><span class="do" style="color: #5E5E5E;
@@ -3405,7 +3405,7 @@ background-color: null;
 font-style: inherit;">TRUE</span>)</span>
 <span id="cb1-15">    }</span>
 <span id="cb1-16">  }</span>
-<span id="cb1-17">)</span></code></pre></div>
+<span id="cb1-17">)</span></code></pre></div></div>
 </div>
 <p>The logic of the <code>package.check()</code> function basically goes:</p>
 <ul>
@@ -3415,9 +3415,9 @@ font-style: inherit;">TRUE</span>)</span>
 </ul>
 <p>You can then use <code>search()</code> to determine whether all the packages have loaded.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">search</span>()</span></code></pre></div>
+font-style: inherit;">search</span>()</span></code></pre></div></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> [1] ".GlobalEnv"        "package:nlme"      "package:MASS"     
  [4] "package:stats"     "package:graphics"  "package:grDevices"
@@ -3464,7 +3464,7 @@ font-style: inherit;">search</span>()</span></code></pre></div>
 <section id="find-the-.renviron-file" class="level2">
 <h2 class="anchored" data-anchor-id="find-the-.renviron-file">Find the <code>.Renviron</code> file</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">user_renviron <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">user_renviron <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> </span>
 <span id="cb1-2">  <span class="fu" style="color: #4758AB;
@@ -3495,7 +3495,7 @@ background-color: null;
 font-style: inherit;">file.create</span>(user_renviron)</span>
 <span id="cb1-7"><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">file.edit</span>(user_renviron) </span></code></pre></div>
+font-style: inherit;">file.edit</span>(user_renviron) </span></code></pre></div></div>
 </div>
 <p>If <code>file.edit(user_renviron)</code> fails to work, just open the file itself (located wherever <code>user_renviron</code> is pointing) with a text editor.</p>
 </section>
@@ -3503,11 +3503,11 @@ font-style: inherit;">file.edit</span>(user_renviron) </span></code></pre></div>
 <h2 class="anchored" data-anchor-id="edit-max-dlls">Edit max DLLs</h2>
 <p>Once you have the file open, edit or add the following line, save, and restart R:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">R_MAX_NUM_DLLS<span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">R_MAX_NUM_DLLS<span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">500</span></span></code></pre></div>
+font-style: inherit;">500</span></span></code></pre></div></div>
 </div>
 <p>🐢</p>
 

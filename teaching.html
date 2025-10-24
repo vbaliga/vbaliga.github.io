@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -33,14 +33,15 @@ ul.task-list li input[type="checkbox"] {
 <link href=".//images/vb32.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-6c1d4747946d1be0d0588e27238c39f9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-4c7b890cc350be7067044af900615741.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-e881cc2d1997ac2e89d9ab71084109d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-89b9b9beeabce221c8433124c1add020.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -91,6 +92,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">vbaliga.github.io</span>
     </a>
@@ -141,7 +144,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#upcoming-courses" id="toc-upcoming-courses" class="nav-link active" data-scroll-target="#upcoming-courses">Upcoming courses</a></li>
+  <li><a href="#upcoming-courses" id="toc-upcoming-courses" class="nav-link active" data-scroll-target="#upcoming-courses">Upcoming courses</a>
+  <ul class="collapse">
+  <li><a href="#w2" id="toc-w2" class="nav-link" data-scroll-target="#w2">2025W2</a></li>
+  </ul></li>
   <li><a href="#courses-taught" id="toc-courses-taught" class="nav-link" data-scroll-target="#courses-taught">Courses taught</a></li>
   </ul>
 </nav>
@@ -178,30 +184,28 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="indent-block">
-<p>All courses taught at UBC unless otherwise noted. Content for each course is within the specific Canvas site for each term (accessible to enrolled students and teaching team only), but syllabi are available via the links below.</p>
+<p>All courses taught at UBC Vancouver unless otherwise noted. Content for each course is within the specific Canvas site for each term (accessible to enrolled students and teaching team only), but syllabi are available via links below.</p>
 </div>
 <hr>
 <section id="upcoming-courses" class="level2">
 <h2 class="anchored" data-anchor-id="upcoming-courses">Upcoming courses</h2>
-<div class="indent-block">
-<section id="w2" class="level3">
+<section id="w2" class="level3 indent-block">
 <h3 class="anchored" data-anchor-id="w2">2025W2</h3>
 <ul>
-<li><a href="https://biologyprogram-2023.sites.olt.ubc.ca/files/2019/08/Syllabus_BIOL300_2019.pdf">BIOL 300</a>: Fundamentals of Biostatistics, Sections 201 and 202 (jointly with Darren Irwin)</li>
+<li><a href="files/Syllabus_BIOL300_2025.pdf">BIOL 300</a>: Fundamentals of Biostatistics, Sections 201 and 202</li>
 </ul>
 </section>
-<section id="w1" class="level3">
-<h3 class="anchored" data-anchor-id="w1">2025W1</h3>
-<ul>
-<li><a href="https://biologyprogram-2023.sites.olt.ubc.ca/files/2019/08/Syllabus_BIOL300_2019.pdf">BIOL 300</a>: Fundamentals of Biostatistics, Section 101 (jointly with Kaitlyn Gaynor)</li>
-</ul>
-</section>
-</div>
 <hr>
 </section>
 <section id="courses-taught" class="level2">
 <h2 class="anchored" data-anchor-id="courses-taught">Courses taught</h2>
 <div class="indent-block">
+<section id="w1" class="level3">
+<h3 class="anchored" data-anchor-id="w1">2025W1</h3>
+<ul>
+<li><a href="files/Syllabus_BIOL300_2025.pdf">BIOL 300</a>: Fundamentals of Biostatistics, Section 101 (jointly with Kaitlyn Gaynor)</li>
+</ul>
+</section>
 <section id="s2" class="level3">
 <h3 class="anchored" data-anchor-id="s2">2025S2</h3>
 <ul>
@@ -278,13 +282,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

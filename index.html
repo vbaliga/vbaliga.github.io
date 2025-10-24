@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -33,14 +33,15 @@ ul.task-list li input[type="checkbox"] {
 <link href=".//images/vb32.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-6c1d4747946d1be0d0588e27238c39f9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-4c7b890cc350be7067044af900615741.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-e881cc2d1997ac2e89d9ab71084109d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-89b9b9beeabce221c8433124c1add020.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -92,6 +93,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">vbaliga.github.io</span>
     </a>
@@ -199,8 +202,8 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/Vikram_Baliga.png" class="img-fluid" style="float:left;" data-fig-cap="Photo taken by <a href='https://zoology.ubc.ca/person/sylvia-heredia'>Sylvia Heredia</a>" alt="Vikram B. Baliga" width="256"></p>
 <section id="welcome" class="level3">
 <h3 class="anchored" data-anchor-id="welcome">Welcome</h3>
-<p>I teach courses on biostatistics and data science <a href="https://www.zoology.ubc.ca/person/vikram-baliga">at UBC</a>. I regularly instruct or coordinate <a href="https://biologyprogram-2023.sites.olt.ubc.ca/files/2019/08/Syllabus_BIOL300_2019.pdf">BIOL 300</a>: Fundamentals of Biostatistics. Future efforts may relate to <a href="https://ubc-dsci.github.io/dsci-100-student/">DSCI 100</a> or courses that blend biology, statistics, and data science.</p>
-<p>Previously, I was a scientist (also at UBC) who used motion capture and virtual reality to investigate flight control in birds. Data from studies of behavior and neuroscience often require semantic validation and dealing with noise. Making sense of information in these contexts made me appreciate the importance of sanity checks and the design of effective visualizations.</p>
+<p>I teach courses on biostatistics and data science <a href="https://www.zoology.ubc.ca/person/vikram-baliga">at UBC</a>. I regularly instruct or coordinate <a href="files/Syllabus_BIOL300_2025.pdf">BIOL 300</a>: Fundamentals of Biostatistics. Future efforts may relate to <a href="https://ubc-dsci.github.io/dsci-100-student/">DSCI 100</a> or courses that blend biology, statistics, and data science.</p>
+<p>Previously, I was a scientist (also at UBC) who used motion capture and virtual reality to investigate flight control in birds. Data from studies of behavior and neuroscience often require semantic validation and dealing with noise. Making sense of information in these contexts made me appreciate the importance of statistical thinking, sanity checks, and effective visualizations.</p>
 
 
 </section>
@@ -257,13 +260,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
