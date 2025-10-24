@@ -4,9 +4,9 @@ editor: visual
 ---
 
 ::: indent-block
-All courses taught at UBC unless otherwise noted. Content for each course is
-within the specific Canvas site for each term (accessible to enrolled students
-and teaching team only), but syllabi are available via the links below.
+All courses taught at UBC Vancouver unless otherwise noted. Content for each
+course is within the specific Canvas site for each term (accessible to enrolled
+students and teaching team only), but syllabi are available via links below.
 :::
 
 --------------------------------------------------------------------------------
@@ -16,16 +16,8 @@ and teaching team only), but syllabi are available via the links below.
 ::: indent-block
 ### 2025W2
 
--   [BIOL
-    300](https://biologyprogram-2023.sites.olt.ubc.ca/files/2019/08/Syllabus_BIOL300_2019.pdf):
-    Fundamentals of Biostatistics, Sections 201 and 202 (jointly with Darren
-    Irwin)
-
-### 2025W1
-
--   [BIOL
-    300](https://biologyprogram-2023.sites.olt.ubc.ca/files/2019/08/Syllabus_BIOL300_2019.pdf):
-    Fundamentals of Biostatistics, Section 101 (jointly with Kaitlyn Gaynor)
+-   [BIOL 300](files/Syllabus_BIOL300_2025.pdf): Fundamentals of Biostatistics,
+    Sections 201 and 202
 :::
 
 --------------------------------------------------------------------------------
@@ -33,6 +25,11 @@ and teaching team only), but syllabi are available via the links below.
 ## Courses taught
 
 ::: indent-block
+### 2025W1
+
+-   [BIOL 300](files/Syllabus_BIOL300_2025.pdf): Fundamentals of Biostatistics,
+    Section 101 (jointly with Kaitlyn Gaynor)
+
 ### 2025S2
 
 -   [BIOL
