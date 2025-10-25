@@ -30,8 +30,7 @@ fig-cap="Photo taken by <a href='https://zoology.ubc.ca/person/sylvia-heredia'>S
 
 ### Welcome
 
-I teach courses on biostatistics and data science [at
-UBC](https://www.zoology.ubc.ca/person/vikram-baliga). I regularly instruct or
+I teach biostatistics and data science at UBC. I regularly instruct or
 coordinate [BIOL 300](files/Syllabus_BIOL300_2025.pdf): Fundamentals of
 Biostatistics. Future efforts may relate to [DSCI
 100](https://ubc-dsci.github.io/dsci-100-student/) or courses that blend
