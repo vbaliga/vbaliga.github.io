@@ -88,14 +88,14 @@
     "href": "teaching.html",
     "title": "Teaching",
     "section": "",
-    "text": "All courses taught at UBC Vancouver unless otherwise noted. Content for each course is within the specific Canvas site for each term (accessible to enrolled students and teaching team only), but syllabi are available via links below."
+    "text": "All courses taught at UBC Vancouver unless otherwise noted. Content for each course is in the specific Canvas site for each term (accessible to enrolled students and teaching team only), but general syllabi are available via links below."
   },
   {
-    "objectID": "teaching.html#upcoming-courses",
-    "href": "teaching.html#upcoming-courses",
+    "objectID": "teaching.html#current-or-upcoming-courses",
+    "href": "teaching.html#current-or-upcoming-courses",
     "title": "Teaching",
-    "section": "Upcoming courses",
-    "text": "Upcoming courses\n\n2025W2\n\nBIOL 300: Fundamentals of Biostatistics, Sections 201 and 202"
+    "section": "Current or upcoming courses",
+    "text": "Current or upcoming courses\n\n2025W2\n\nBIOL 300: Fundamentals of Biostatistics, Sections 201 and 202"
   },
   {
     "objectID": "teaching.html#courses-taught",
@@ -130,7 +130,7 @@
     "href": "index.html",
     "title": "Vikram B. Baliga",
     "section": "",
-    "text": "Dept. page\n   UBC Zoology\n   Email\n   @vbaliga\n\n\n\n\n   Google Scholar\n   ORCID\n   ResearchGate\n   Publons\n\n\n\n\n\nWelcome\nI teach biostatistics and data science at UBC. I regularly instruct or coordinate BIOL 300: Fundamentals of Biostatistics. Future efforts may relate to DSCI 100 or courses that blend biology, statistics, and data science.\nPreviously, I was a scientist (also at UBC) who used motion capture and virtual reality to investigate flight control in birds. Data from studies of behavior and neuroscience often require semantic validation and dealing with noise. Making sense of information in these contexts made me appreciate the importance of statistical thinking, sanity checks, and effective visualizations."
+    "text": "Dept. page\n   UBC Zoology\n   Email\n   @vbaliga\n\n\n\n\n   Google Scholar\n   ORCID\n   ResearchGate\n   Publons\n\n\n\n\n\nWelcome\nI teach biostatistics and data science at UBC. I regularly instruct or coordinate BIOL 300: Fundamentals of Biostatistics. Future efforts may relate to DSCI 100 or courses that blend biology, statistics, and data science.\nPreviously, I was a scientist (also at UBC) who used motion capture and virtual reality to investigate flight control strategies in birds. Data from studies of neuroscience and behavior often require semantic validation and dealing with lots of noise. Making sense of information in these contexts made me appreciate the importance of statistical thinking, sanity checks, and effective visualizations."
   },
   {
     "objectID": "data-software-code.html",
