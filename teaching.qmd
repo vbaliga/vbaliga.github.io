@@ -5,13 +5,14 @@ editor: visual
 
 ::: indent-block
 All courses taught at UBC Vancouver unless otherwise noted. Content for each
-course is within the specific Canvas site for each term (accessible to enrolled
-students and teaching team only), but syllabi are available via links below.
+course is in the specific Canvas site for each term (accessible to enrolled
+students and teaching team only), but general syllabi are available via links
+below.
 :::
 
 --------------------------------------------------------------------------------
 
-## Upcoming courses
+## Current or upcoming courses
 
 ::: indent-block
 ### 2025W2
