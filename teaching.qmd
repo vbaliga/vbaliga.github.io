@@ -6,7 +6,7 @@ editor: visual
 ::: indent-block
 All courses taught at UBC Vancouver unless otherwise noted. Content for each
 course is in the specific Canvas site for each term (accessible to enrolled
-students and teaching team only), but general syllabi are available via links
+students and teaching team only), but generic syllabi are available via links
 below.
 :::
 
@@ -14,41 +14,32 @@ below.
 
 ## Current or upcoming courses
 
-::: indent-block
-### 2025W2
+:::: indent-block
+### 2026/27 Academic year
 
--   [BIOL 300](files/Syllabus_BIOL300_2025.pdf): Fundamentals of Biostatistics,
-    Sections 201 and 202
+::: indent-block
+#### BIOL 300: Fundamentals of Biostatistics
+
+-   2026/27 S2, Section 951, [Coordinator]{.role-coordinator}
+    ([Instructor]{.role-instructor}: Mike Whitlock)
+-   2026/27 W1, Section TBD, [Coordinator]{.role-coordinator}
+    ([Instructor]{.role-instructor}: Kaitlyn Gaynor)
+-   2026/27 W2, Sections TBD and TBD, [Instructor]{.role-instructor}
 :::
+::::
 
 --------------------------------------------------------------------------------
 
 ## Courses taught
 
 ::: indent-block
-### 2025W1
-
--   [BIOL 300](files/Syllabus_BIOL300_2025.pdf): Fundamentals of Biostatistics,
-    Section 101 (jointly with Kaitlyn Gaynor)
-
-### 2025S2
-
--   [BIOL
-    300](https://biologyprogram-2023.sites.olt.ubc.ca/files/2019/08/Syllabus_BIOL300_2019.pdf):
-    Fundamentals of Biostatistics, Section 951 (Coordinator role; Instructor:
-    Mike Whitlock)
-
-### 2024W1
-
--   [BIOL
-    300](https://biologyprogram-2023.sites.olt.ubc.ca/files/2019/08/Syllabus_BIOL300_2019.pdf):
-    Fundamentals of Biostatistics, Section 101
-
-### 2019W1
-
--   [SCIE
-    300](https://vancouver.calendar.ubc.ca/course-descriptions/courses/sciev-300):
-    Communicating Science, Section 111
+| Term | Course | Section(s) | Role | Notes |
+|----|----|----|----|----|
+| 2025/26 W2 | [BIOL 300](files/Syllabus_BIOL300.pdf) | 201, 202 | [Instructor]{.role-instructor} |  |
+| 2025/26 W1 | [BIOL 300](files/Syllabus_BIOL300.pdf) | 101 | [Instructor]{.role-instructor} | Jointly with Kaitlyn Gaynor |
+| 2025/26 S2 | [BIOL 300](files/Syllabus_BIOL300.pdf) | 951 | [Coordinator]{.role-coordinator} | Instructor: Mike Whitlock |
+| 2024/25 W1 | [BIOL 300](files/Syllabus_BIOL300_2019.pdf) | 101 | [Instructor]{.role-instructor} |  |
+| 2019/20 W1 | [SCIE 300](files/Syllabus_SCIE300_2019W1.pdf) | 111 | [Instructor]{.role-instructor} |  |
 :::
 
 --------------------------------------------------------------------------------

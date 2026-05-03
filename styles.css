@@ -12,3 +12,59 @@
   margin-left: 0;
   */
 }
+
+.role-instructor {
+  font-weight: 500;
+}
+
+.role-coordinator {
+  font-variant: small-caps;
+  color: #6c757d; /* subtle grey */
+  letter-spacing: 0.5px;
+}
+
+
+/* Make teaching table look tighter and more CV-like */
+table {
+  font-size: 0.95em;
+  border-collapse: collapse;
+}
+
+/* Header */
+table thead th {
+  text-align: left;
+  border-bottom: 2px solid #444;
+  padding: 6px 10px;
+}
+
+/* Body cells */
+table tbody td {
+  padding: 6px 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Reduce visual clutter */
+table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Align columns more intentionally + subtle emphasis on Term */
+table td:nth-child(1),  /* Term */
+table td:nth-child(3),  /* Sections */
+table td:nth-child(4) { /* Role */
+  white-space: nowrap;
+}
+
+table td:nth-child(1) {
+  font-weight: 500; /* Slight emphasis on Term */
+}
+
+/* Optional: tighten link appearance */
+table a {
+  text-decoration: none;
+}
+
+table a:hover {
+  text-decoration: underline;
+}
