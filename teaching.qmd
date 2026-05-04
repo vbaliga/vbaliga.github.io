@@ -15,13 +15,16 @@ below.
 ## Current or upcoming courses
 
 :::: indent-block
-### 2026/27 Academic year
+### BIOL 300: Fundamentals of Biostatistics
 
 ::: indent-block
-#### BIOL 300: Fundamentals of Biostatistics
+#### 2025/26 Academic year
 
--   2026/27 S2, Section 951, [Coordinator]{.role-coordinator}
+-   2026 S2, Section 951, [Coordinator]{.role-coordinator}
     ([Instructor]{.role-instructor}: Mike Whitlock)
+
+#### 2026/27 Academic year
+
 -   2026/27 W1, Section TBD, [Coordinator]{.role-coordinator}
     ([Instructor]{.role-instructor}: Kaitlyn Gaynor)
 -   2026/27 W2, Sections TBD and TBD, [Instructor]{.role-instructor}
@@ -33,13 +36,13 @@ below.
 ## Courses taught
 
 ::: indent-block
-| Term | Course | Section(s) | Role | Notes |
-|----|----|----|----|----|
-| 2025/26 W2 | [BIOL 300](files/Syllabus_BIOL300.pdf) | 201, 202 | [Instructor]{.role-instructor} |  |
-| 2025/26 W1 | [BIOL 300](files/Syllabus_BIOL300.pdf) | 101 | [Instructor]{.role-instructor} | Jointly with Kaitlyn Gaynor |
-| 2025/26 S2 | [BIOL 300](files/Syllabus_BIOL300.pdf) | 951 | [Coordinator]{.role-coordinator} | Instructor: Mike Whitlock |
-| 2024/25 W1 | [BIOL 300](files/Syllabus_BIOL300_2019.pdf) | 101 | [Instructor]{.role-instructor} |  |
-| 2019/20 W1 | [SCIE 300](files/Syllabus_SCIE300_2019W1.pdf) | 111 | [Instructor]{.role-instructor} |  |
+| Academic year | Term | Course | Section(s) | Role | Notes |
+|----|----|----|----|----|----|
+| 2025/26 | 2025W2 | [BIOL 300](files/Syllabus_BIOL300.pdf) | 201, 202 | [Instructor]{.role-instructor} |  |
+| 2025/26 | 2025W1 | [BIOL 300](files/Syllabus_BIOL300.pdf) | 101 | [Instructor]{.role-instructor} | Jointly with Kaitlyn Gaynor |
+| 2024/25 | 2025S2 | [BIOL 300](files/Syllabus_BIOL300.pdf) | 951 | [Coordinator]{.role-coordinator} | Instructor: Mike Whitlock |
+| 2024/25 | 2024W1 | [BIOL 300](files/Syllabus_BIOL300_2019.pdf) | 101 | [Instructor]{.role-instructor} |  |
+| 2019/20 | 2019W1 | [SCIE 300](files/Syllabus_SCIE300_2019W1.pdf) | 111 | [Instructor]{.role-instructor} |  |
 :::
 
 --------------------------------------------------------------------------------
