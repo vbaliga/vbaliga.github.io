@@ -219,6 +219,14 @@ pre.text, pre.sourceCode, .cell-output pre {
   font-size: 0.775em;
 }
 
+// Keep inline code readable on normal pages
+code:not(pre code) {
+  background-color: transparent !important;
+  color: inherit !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
 // Slight bottom margin to output
 .cell-output {
   margin: 0 0 1em;
@@ -315,3 +323,4 @@ p {
   font-size: 1.1rem;
   color: #333;
 }
+
