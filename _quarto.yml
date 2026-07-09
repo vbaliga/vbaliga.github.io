@@ -42,7 +42,7 @@ website:
     type: overlay
   page-footer:
     left: |
-      Content {{< fa brands creative-commons >}} {{< var site.copyright_year >}} by [{{< var author.name_no_title >}}](mailto:{{< var author.email >}}). All images by V.B.B. unless otherwise noted. <br>
+      Content {{< fa brands creative-commons >}} {{< var site.copyright_year >}} by [{{< var author.name_no_title >}}](mailto:{{< var author.email >}}). All images by VBB unless otherwise noted. <br>
       All content licensed under a {{< fa brands creative-commons >}}
       {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-nc >}}
       [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license. Source code on [github](https://github.com/vbaliga/vbaliga.github.io).
@@ -67,5 +67,4 @@ format:
     include-before-body: 
       - file: ga4_tag.html
     grid:
-      body-width: 1000px   # pick any pixel value you like (default is 800px)
-      # sidebar-width, margin-width, gutter-width keep their defaults
+      body-width: 1000px   
