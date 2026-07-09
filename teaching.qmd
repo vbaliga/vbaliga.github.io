@@ -20,14 +20,14 @@ below.
 ::: indent-block
 #### 2025/26 Academic year
 
--   2026 S2, Section 951, [Coordinator]{.role-coordinator}
-    ([Instructor]{.role-instructor}: Mike Whitlock)
+- 2026 S2, Section 951, [Coordinator]{.role-coordinator}
+  ([Instructor]{.role-instructor}: Mike Whitlock)
 
 #### 2026/27 Academic year
 
--   2026/27 W1, Section TBD, [Coordinator]{.role-coordinator}
-    ([Instructor]{.role-instructor}: Kaitlyn Gaynor)
--   2026/27 W2, Sections TBD and TBD, [Instructor]{.role-instructor}
+- 2026/27 W1, Section 101, [Coordinator]{.role-coordinator}
+  ([Instructor]{.role-instructor}: Kaitlyn Gaynor)
+- 2026/27 W2, Sections 201 and 202, [Instructor]{.role-instructor}
 :::
 ::::
 

@@ -6,6 +6,10 @@ editor: visual
 ## Peer-reviewed journal articles
 
 ::: indent-block
+Wong JCM, **Baliga VB**, and Harvey CA. *Accepted*. Comparative Biologists and
+Aerospace Engineers: Important allies to explore the secrets of natural flight.
+*Integrative and Comparative Biology.*
+
 Altshuler DL, **Baliga VB**, Lapsansky AB, Lee P, Press ER, and Theriault JS.
 2025. [Understanding mechanisms of avian flight by integrating observations with
 tests of competing hypotheses](https://doi.org/10.1242/jeb.247992). *Journal of
