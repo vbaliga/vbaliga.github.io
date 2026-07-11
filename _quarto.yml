@@ -33,10 +33,6 @@ website:
         href: data-software-code.qmd        
       - text: "Publications"
         href: publications.qmd
-      - text: "Press"
-        href: press.qmd
-      - text: "Tidbits"
-        href: blog.qmd
   search:
     location: navbar
     type: overlay

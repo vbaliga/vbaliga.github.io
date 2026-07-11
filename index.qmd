@@ -6,27 +6,25 @@ editor: source
 
 ::::: {.grid .course-details .course-details-smaller}
 ::: {.g-col-6 .g-col-md-3}
--   {{< fa solid user >}}   [Dept.
-    page](https://www.zoology.ubc.ca/person/vikram-baliga)
--   {{< fa university >}}   [UBC Zoology](https://zoology.ubc.ca/)
--   {{< fa envelope >}}   [Email](mailto:vikram.baliga@ubc.ca)
--   {{< fa brands github >}}   [\@vbaliga](https://github.com/vbaliga)
+- {{< fa solid user >}}   [Dept.
+  page](https://www.zoology.ubc.ca/person/vikram-baliga)
+- {{< fa university >}}   [UBC Zoology](https://zoology.ubc.ca/)
+- {{< fa envelope >}}   [Email](mailto:vikram.baliga@ubc.ca)
+- {{< fa brands github >}}   [\@vbaliga](https://github.com/vbaliga)
 :::
 
 ::: {.g-col-6 .g-col-md-3}
--   {{< fa book >}}   [Google
-    Scholar](https://scholar.google.com/citations?user=sXz0JqQAAAAJ&hl=en)
--   {{< fa fingerprint >}}   [ORCID](http://orcid.org/0000-0002-9367-8974)
--   {{< fa brands researchgate >}}  
-    [ResearchGate](https://www.researchgate.net/profile/Vikram_Baliga)
--   {{< fa solid copy >}}  
-    [Publons](http://www.researcherid.com/rid/H-1546-2013)
+- {{< fa book >}}   [Google
+  Scholar](https://scholar.google.com/citations?user=sXz0JqQAAAAJ&hl=en)
+- {{< fa fingerprint >}}   [ORCID](http://orcid.org/0000-0002-9367-8974)
+- {{< fa brands researchgate >}}  
+  [ResearchGate](https://www.researchgate.net/profile/Vikram_Baliga)
+- {{< fa solid copy >}}   [Publons](http://www.researcherid.com/rid/H-1546-2013)
 :::
 :::::
 
 ![](images/Vikram_Baliga.png){fig-alt="Vikram B. Baliga" style="float:left;"
-width="256"
-fig-cap="Photo taken by <a href='https://zoology.ubc.ca/person/sylvia-heredia'>Sylvia Heredia</a>"}
+width="256" fig-cap="Photo taken by Sylvia Heredia"}
 
 ### Welcome
 

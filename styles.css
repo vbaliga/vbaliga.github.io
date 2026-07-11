@@ -20,11 +20,10 @@
 .role-coordinator {
   font-variant: small-caps;
   color: #6c757d; /* subtle grey */
-  letter-spacing: 0.5px;
+  /* letter-spacing: 0.5px;
 }
 
 
-/* Make teaching table look tighter and more CV-like */
 table {
   font-size: 0.95em;
   border-collapse: collapse;

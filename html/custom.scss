@@ -38,7 +38,7 @@ $dark:          $gray-800 !default;
 $font-family-sans-serif:      'Helvetica Neue', Helvetica, Arial, sans-serif !default;
 $font-family-serif:           'Lato', sans-serif !default;  /* Not actually a serif font but whatever */
 
-$font-size-base:              1.1rem !default;
+$font-size-base:              1rem !default;
 $headings-font-weight:        700 !default;
 
 $h1-font-size: $font-size-base * 2.45;
@@ -198,9 +198,9 @@ main {
 #TOC {
   padding-bottom: 0.1em;
   padding-top: 0.1em;
-  padding-left: 0.5em;
+  padding-left: 0.75em;
   padding-right: 0.5em;
-  background-color: lighten($blue, 60%);
+  background-color: #eeeeee;
 }
 
 #toc-title {
