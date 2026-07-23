@@ -55,10 +55,6 @@ table td:nth-child(4) { /* Role */
   white-space: nowrap;
 }
 
-table td:nth-child(1) {
-  font-weight: 500; /* Slight emphasis on Term */
-}
-
 /* Optional: tighten link appearance */
 table a {
   text-decoration: none;
