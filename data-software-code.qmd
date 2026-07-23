@@ -15,7 +15,7 @@ Listed from newest to oldest original release date.
 ::: indent-block
 *statsapps* includes interactive apps to help you build intuition about
 various topics in data science and statistics. It is a work in progress
-and (for the moment) only available on GitHub.
+and available on CRAN and GitHub.
 :::
 ::::
 
