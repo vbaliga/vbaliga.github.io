@@ -3,26 +3,47 @@ title: "Data, software & code"
 editor:
   markdown:
     wrap: 72
+language:
+  listing-page-order-by: "Sort by"
 listing:
-  id: r-packages
-  contents: r-packages.yml
-  type: table
-  fields: [title, purpose, links, year]
-  field-display-names:
-    title: "Package"
-    purpose: "Purpose"
-    links: "Links"
-    year: "Year"
-  field-types:
-    year: number
-  field-links: [title]
-  sort:
-    - "year desc"
-    - "title asc"
-  sort-ui: [title, year]
-  filter-ui: false
-  table-striped: false
-  table-hover: true
+  # R packages
+  - id: r-packages
+    contents: r-packages.yml
+    type: table
+    fields: [title, purpose, links, year]
+    field-display-names:
+      title: "Package"
+      purpose: "Purpose"
+      links: "Links"
+      year: "Year"
+    field-types:
+      year: number
+    field-links: [title]
+    sort:
+      - "year desc"
+      - "title asc"
+    sort-ui: [title, year]
+    filter-ui: false
+    table-striped: false
+    table-hover: false
+  # Data & code from pubs
+  - id: publication-repositories
+    contents: publication-repositories.yml
+    type: table
+    fields: [repository, article, year]
+    field-display-names:
+      repository: "Repository"
+      article: "Article"
+      year: "Year"
+    field-types:
+      year: number
+    sort:
+      - "year desc"
+      - "article asc"
+    sort-ui: [article, year]
+    filter-ui: false
+    table-striped: false
+    table-hover: false
 ---
 
 ::: indent-block
@@ -59,6 +80,8 @@ at UBC. Learning objectives include:
 - Constructing multi-panel, publication-quality figures using code.
 :::
 
+<br>
+
 ------------------------------------------------------------------------
 
 ## Data & code from pubs
@@ -67,79 +90,7 @@ Some of these repositories contain phylogenies that we've inferred, but
 see the [Phylogenetic trees](data-software-code.qmd#phylogenetic-trees)
 section below for straightforward access to MCC & ML trees.
 
-::: indent-block
-- [figshare repository](https://doi.org/10.6084/m9.figshare.26107999)
-  for: Dash S, Baliga VB, Lapsansky AB, Wylie DR, and
-  Altshuler DL. 2024. Encoding of global visual motion in the avian
-  pretectum shifts from a bias for temporal-to-nasal selectivity to
-  omnidirectional excitation across speeds. *eNeuro*.
-
-- [figshare repository](https://doi.org/10.6084/m9.figshare.23535717)
-  for: Baliga VB, Dakin R, Wylie DR, and Altshuler DL. 2024.
-  Hummingbirds use distinct control strategies for forward and hovering
-  flight. *Proceedings of the Royal Society B: Biological Sciences*.
-
-- [figshare repository](https://doi.org/10.6084/m9.figshare.19425737)
-  for: Smyth G, Baliga VB, Gaede AH, Wylie DR, and Altshuler DL. 2022.
-  Specializations in optic flow encodingin the pretectum of hummingbirds
-  and zebra finches. *Current Biology*.
-
-- [figshare
-  repository](https://figshare.com/collections/Supplement_to_Inertia_links_avian_morphology_to_flight_manoeuvrability/5503989)
-  for: Harvey, CA, Baliga VB, Wong JCM, Altshuler DL, and Inman
-  DJ. 2022. Birds can transition between stable and unstable states via
-  wing morphing. *Nature*. (repository arranged & maintained by
-  [Christina
-  Harvey](https://figshare.com/authors/Christina_Harvey/4766004))
-
-- [figshare
-  repository](https://rs.figshare.com/collections/Supplementary_material_from_Gull-inspired_joint-driven_wing_morphing_allows_adaptive_longitudinal_flight_control_/5438933)
-  for: Harvey C, Baliga VB, Goates CD, Hunsaker D, and Inman DJ. 2021.
-  Gull-inspired joint-driven wing morphing allows adaptive longitudinal
-  flight control. *Journal of the Royal Society Interface*. (repository
-  arranged & maintained by [Christina
-  Harvey](https://figshare.com/authors/Christina_Harvey/4766004))
-
-- [figshare
-  repository](https://rs.figshare.com/collections/Supplementary_material_from_Phase_transformation-driven_artificial_muscle_mimics_the_multi-functionality_of_avian_wing_muscle_/5675606)
-  for: Leal PBC, Cabral-Seanez M, Baliga VB, Altshuler DL, and Hartl
-  DJ. 2021. Phase transformation-driven artificial muscle mimics the
-  multifunctionality of avian wing muscle. *Journal of the Royal Society
-  Interface*. (repository arranged & maintained by [Pedro
-  Leal](https://rs.figshare.com/authors/_/11598656))
-
-- [figshare
-  repository](https://figshare.com/articles/dataset/Data_and_code_for_Flight_muscle_power_increases_with_strain_amplitude_and_decreases_with_cycle_frequency_in_zebra_finches_Taeniopygia_guttata_/12520733)
-  for: Bahlman JW, Baliga VB, and Altshuler DL. 2020. Flight muscle
-  power increases with strain amplitude and decreases with cycle
-  frequency in zebra finches (Taeniopygia guttata). *Journal of
-  Experimental Biology*.
-
-- [figshare repository](https://doi.org/10.6084/m9.figshare.8856161)
-  for: Baliga VB, Szabo I, and Altshuler DL. 2019. Range of motion in
-  the avian wing is strongly associated with flight behavior and body
-  mass. *Science Advances.*
-
-- [github
-  repository](https://github.com/christiandamsgaard/Evolution-of-air-breathing)
-  for: Damsgaard C, Baliga VB, Bates E, Burggren W, McKenzie DJ, Taylor
-  E, and Wright PA. 2019. Evolutionary and Cardio-Respiratory Physiology
-  of Air-breathing and Amphibious Fishes. *Acta Physiologica.*
-  (repository arranged & maintained by [Christian
-  Damsgaard](https://github.com/christiandamsgaard))
-
-- [figshare repository](https://doi.org/10.6084/m9.figshare.7658597)
-  for: Baliga VB and Mehta RS. 2019. Morphology, ecology, and
-  biogeography of independent origins of cleaning behavior around the
-  world. *Integrative and Comparative Biology.*
-
-- [figshare
-  repository](https://doi.org/10.6084/m9.figshare.c.3977505.v1) for:
-  Harvey C, Baliga VB, Lavoie P, and Altshuler DL. 2019. Wing morphing
-  allows gulls to modulate static pitch stability during gliding.
-  *Journal of the Royal Society Interface*. (repository arranged &
-  maintained by [Christina
-  Harvey](https://figshare.com/authors/Christina_Harvey/4766004))
+::: {#publication-repositories}
 :::
 
 ------------------------------------------------------------------------

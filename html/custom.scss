@@ -329,13 +329,77 @@ p {
   font-size: 1rem;
 }
 
-#r-packages table thead th {
-  font-size: 1.05rem;
-  font-weight: 600;
-}
-
 #r-packages table th,
 #r-packages table td {
   padding-top: 0.55rem;
   padding-bottom: 0.55rem;
+}
+
+
+/* Data and code from publications table */
+#data-code-from-pubs .quarto-listing-table {
+  width: 100%;
+  table-layout: auto;
+}
+
+/* All table cells */
+#data-code-from-pubs .quarto-listing-table th,
+#data-code-from-pubs .quarto-listing-table td {
+  padding: 0.55rem 0.65rem;
+  vertical-align: top;
+  font-size: 1rem;
+}
+
+/* Repository column */
+#data-code-from-pubs .quarto-listing-table th:nth-child(1),
+#data-code-from-pubs .quarto-listing-table td:nth-child(1) {
+  width: 8rem;
+  white-space: nowrap;
+}
+
+/* Article column */
+#data-code-from-pubs .quarto-listing-table th:nth-child(2),
+#data-code-from-pubs .quarto-listing-table td:nth-child(2) {
+  width: auto;
+  white-space: normal;
+}
+
+/* Year column */
+#data-code-from-pubs .quarto-listing-table th:nth-child(3),
+#data-code-from-pubs .quarto-listing-table td:nth-child(3) {
+  width: 4rem;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Keep the publication listing compact and left-aligned */
+#data-code-from-pubs .quarto-listing {
+  width: 100%;
+  max-width: 52rem;
+  margin-right: auto;
+}
+
+/* Let the table fill the constrained listing width */
+#data-code-from-pubs .quarto-listing-table {
+  width: 100%;
+}
+
+/* Make all column headings consistent across both listing tables */
+#r-packages .quarto-listing-table thead th,
+#data-code-from-pubs .quarto-listing-table thead th {
+  font-family: inherit;
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  line-height: 1.2;
+}
+
+/* Quarto gives sortable headings their own nested controls */
+#r-packages .quarto-listing-table thead th :is(a, button, span, div),
+#data-code-from-pubs .quarto-listing-table thead th :is(a, button, span, div) {
+  font-family: inherit;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit;
+  color: inherit;
+  text-decoration: none;
 }
