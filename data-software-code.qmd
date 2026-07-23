@@ -57,8 +57,10 @@ more details.
 
 ## R packages
 
+:::: indent-block
 ::: {#r-packages}
 :::
+::::
 
 ------------------------------------------------------------------------
 
@@ -90,8 +92,10 @@ Some of these repositories contain phylogenies that we've inferred, but
 see the [Phylogenetic trees](data-software-code.qmd#phylogenetic-trees)
 section below for straightforward access to MCC & ML trees.
 
+:::: indent-block
 ::: {#publication-repositories}
 :::
+::::
 
 ------------------------------------------------------------------------
 
@@ -101,7 +105,7 @@ I am generally happy to share trees from posterior distributions ---
 just shoot me an email.
 
 ::: indent-block
-### Birds (Aves)
+#### Birds (Aves)
 
 - 222 taxa across Aves + outgroup; from Baliga et al. 2019 (*Science
   Advances*):
@@ -110,21 +114,21 @@ just shoot me an email.
   - Maximum likelihood tree
     ([download](https://vikram-baliga.squarespace.com/s/Baliga-etal-Science-Advances_222s_Avian_MLtree.tre))
 
-### Gobies (Gobiidae)
+#### Gobies (Gobiidae)
 
 - 54 species of Western Atlantic gobies + outgroup; from Baliga and
   Mehta 2019 (*Integrative and Comparative Biology*):
   - Bayesian MCC tree
     ([download](https://vikram-baliga.squarespace.com/s/Gobiidae_MCC.tre))
 
-### Marine angelfishes (Pomacanthidae)
+#### Marine angelfishes (Pomacanthidae)
 
 - 72 species of marine angelfishes + outgroup; from Baliga and Mehta
   2019 (*Integrative and Comparative Biology*):
   - Bayesian MCC tree
     ([download](https://vikram-baliga.squarespace.com/s/Pomacanthidae_MCC.tre))
 
-### Wrasses & parrotfishes (Labridae)
+#### Wrasses & parrotfishes (Labridae)
 
 - 344 species of wrasses + parrotfishes + outgroup; from Baliga and Law
   2016 (*Molecular Phylogenetics and Evolution*):

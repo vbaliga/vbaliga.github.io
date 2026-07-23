@@ -6,7 +6,7 @@ editor: visual
 ## Peer-reviewed journal articles
 
 ::: indent-block
-Wong JCM, **Baliga VB**, and Harvey CA. *Accepted*. Comparative Biologists and
+Wong JCM, **Baliga VB**, and Harvey C. *Accepted*. Comparative Biologists and
 Aerospace Engineers: Important allies to explore the secrets of natural flight.
 *Integrative and Comparative Biology.*
 
@@ -38,7 +38,7 @@ zebra finches](https://doi.org/10.1016/j.cub.2022.04.076). *Current Biology.*
 32, 1-8. doi:10.1016/j.cub.2022.04.076*\
     \** Equal contribution
 
-Harvey CA, **Baliga VB**, Wong JCM, Altshuler DL, and Inman DJ. 2022. [Birds can
+Harvey C, **Baliga VB**, Wong JCM, Altshuler DL, and Inman DJ. 2022. [Birds can
 transition between stable and unstable states via wing
 morphing](https://doi.org/10.1038/s41586-022-04477-8). *Nature.* 603, 648--653.
 doi:10.1038/s41586-022-04477-8
@@ -182,7 +182,7 @@ Available at the [SCWIBLES Modules
 page](http://scwibles.ucsc.edu/SCWIBLESModules.html).
 
 ::: indent-block
-**Baliga VB**, and Yew B. 2014. Demystifying Dimensions: A mini-lesson on
+**Baliga VB** and Yew B. 2014. Demystifying Dimensions: A mini-lesson on
 dimensional analysis. Product of GK-12 SCWIBLES, NSF DGE-0947923\
 \
 **Baliga VB**, Yew B, Herradora R, Callahan W. 2014. A Fact of Matter: Exploring
@@ -192,10 +192,10 @@ de Nesnera K, **Baliga VB**, et al. 2014. Presentation Skills: A video designed
 for science fair participants in high school. Product of GK--12 SCWIBLES, NSF
 DGE-0947923
 
-**Baliga VB**, and Baumgart S. 2014. A Matter of Human Proportions: Are you
+**Baliga VB** and Baumgart S. 2014. A Matter of Human Proportions: Are you
 Vitruvian? Product of GK-12 SCWIBLES, NSF DGE-0947923
 
-**Baliga VB**, and Baumgart S. 2013. Hold Your Breath: What triggers the dive
+**Baliga VB** and Baumgart S. 2013. Hold Your Breath: What triggers the dive
 response in mammals? Product of GK-12 SCWIBLES, NSF DGE-0947923
 :::
 
