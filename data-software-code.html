@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-9de9f6925d305bcf5b7eb9351f368d06.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b0169b3f740a6b2ae9fcdd2b45a0856e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-af9d31125cdb2540116b3659b4f43b31.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -91,6 +91,34 @@ ul.task-list li input[type="checkbox"] {
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-r-packages'] = new List('listing-r-packages', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-publication-repositories .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-repository','listing-article','listing-year',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-year-sort'] }],
+      
+      searchColumns: ["listing-repository","listing-article","listing-year"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-publication-repositories'] = new List('listing-publication-repositories', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -246,8 +274,8 @@ window.Quarto = {
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-r-packages-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-r-packages'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
+    <select id="listing-r-packages-sort" class="form-select" aria-label="Sort by" onchange="window['quarto-listings']['listing-r-packages'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Sort by</option>
       <option value="index" data-direction="asc">Default</option>
       <option value="listing-title-sort" data-direction="asc">
         Package
@@ -261,7 +289,7 @@ window.Quarto = {
     </select>
   </div>
 </div>
-<table class="quarto-listing-table table table-hover">
+<table class="quarto-listing-table table">
 <thead>
 <tr>
 
@@ -285,8 +313,7 @@ Links
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-year-sort="2026" data-listing-title-sort="statsapps" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
+<tr data-index="0" data-listing-year-sort="2026" data-listing-title-sort="statsapps">
 <td>
 <a href="https://vbaliga.github.io/statsapps/" class="title listing-title">statsapps</a>
 </td>
@@ -302,8 +329,7 @@ Links
 
 </tr>
 
-<tr data-index="1" data-listing-year-sort="2021" data-listing-title-sort="AvInertia" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
+<tr data-index="1" data-listing-year-sort="2021" data-listing-title-sort="AvInertia">
 <td>
 <a href="https://cran.r-project.org/package=AvInertia" class="title listing-title">AvInertia</a>
 </td>
@@ -319,8 +345,7 @@ Links
 
 </tr>
 
-<tr data-index="2" data-listing-year-sort="2021" data-listing-title-sort="gaussplotR" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
+<tr data-index="2" data-listing-year-sort="2021" data-listing-title-sort="gaussplotR">
 <td>
 <a href="https://vbaliga.github.io/gaussplotR/" class="title listing-title">gaussplotR</a>
 </td>
@@ -336,8 +361,7 @@ Links
 
 </tr>
 
-<tr data-index="3" data-listing-year-sort="2021" data-listing-title-sort="pathviewr" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
+<tr data-index="3" data-listing-year-sort="2021" data-listing-title-sort="pathviewr">
 <td>
 <a href="https://docs.ropensci.org/pathviewr/" class="title listing-title">pathviewr</a>
 </td>
@@ -353,8 +377,7 @@ Links
 
 </tr>
 
-<tr data-index="4" data-listing-year-sort="2020" data-listing-title-sort="genbank_downloadR" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
+<tr data-index="4" data-listing-year-sort="2020" data-listing-title-sort="genbank_downloadR">
 <td>
 <a href="https://github.com/vbaliga/genbank_downloadR" class="title listing-title">genbank_downloadR</a>
 </td>
@@ -370,8 +393,7 @@ Links
 
 </tr>
 
-<tr data-index="5" data-listing-year-sort="2019" data-listing-title-sort="workloopR" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
+<tr data-index="5" data-listing-year-sort="2019" data-listing-title-sort="workloopR">
 <td>
 <a href="https://docs.ropensci.org/workloopR/" class="title listing-title">workloopR</a>
 </td>
@@ -405,25 +427,197 @@ Links
 <li><p>Constructing multi-panel, publication-quality figures using code.</p></li>
 </ul>
 </section>
+<p><br></p>
 <hr>
 </section>
 <section id="data-code-from-pubs" class="level2">
 <h2 class="anchored" data-anchor-id="data-code-from-pubs">Data &amp; code from pubs</h2>
 <p>Some of these repositories contain phylogenies that we’ve inferred, but see the <a href="./data-software-code.html#phylogenetic-trees">Phylogenetic trees</a> section below for straightforward access to MCC &amp; ML trees.</p>
-<div class="indent-block">
-<ul>
-<li><p><a href="https://doi.org/10.6084/m9.figshare.26107999">figshare repository</a> for: Dash S, Baliga VB, Lapsansky AB, Wylie DR, and Altshuler DL. 2024. Encoding of global visual motion in the avian pretectum shifts from a bias for temporal-to-nasal selectivity to omnidirectional excitation across speeds. <em>eNeuro</em>.</p></li>
-<li><p><a href="https://doi.org/10.6084/m9.figshare.23535717">figshare repository</a> for: Baliga VB, Dakin R, Wylie DR, and Altshuler DL. 2024. Hummingbirds use distinct control strategies for forward and hovering flight. <em>Proceedings of the Royal Society B: Biological Sciences</em>.</p></li>
-<li><p><a href="https://doi.org/10.6084/m9.figshare.19425737">figshare repository</a> for: Smyth G, Baliga VB, Gaede AH, Wylie DR, and Altshuler DL. 2022. Specializations in optic flow encodingin the pretectum of hummingbirds and zebra finches. <em>Current Biology</em>.</p></li>
-<li><p><a href="https://figshare.com/collections/Supplement_to_Inertia_links_avian_morphology_to_flight_manoeuvrability/5503989">figshare repository</a> for: Harvey, CA, Baliga VB, Wong JCM, Altshuler DL, and Inman DJ. 2022. Birds can transition between stable and unstable states via wing morphing. <em>Nature</em>. (repository arranged &amp; maintained by <a href="https://figshare.com/authors/Christina_Harvey/4766004">Christina Harvey</a>)</p></li>
-<li><p><a href="https://rs.figshare.com/collections/Supplementary_material_from_Gull-inspired_joint-driven_wing_morphing_allows_adaptive_longitudinal_flight_control_/5438933">figshare repository</a> for: Harvey C, Baliga VB, Goates CD, Hunsaker D, and Inman DJ. 2021. Gull-inspired joint-driven wing morphing allows adaptive longitudinal flight control. <em>Journal of the Royal Society Interface</em>. (repository arranged &amp; maintained by <a href="https://figshare.com/authors/Christina_Harvey/4766004">Christina Harvey</a>)</p></li>
-<li><p><a href="https://rs.figshare.com/collections/Supplementary_material_from_Phase_transformation-driven_artificial_muscle_mimics_the_multi-functionality_of_avian_wing_muscle_/5675606">figshare repository</a> for: Leal PBC, Cabral-Seanez M, Baliga VB, Altshuler DL, and Hartl DJ. 2021. Phase transformation-driven artificial muscle mimics the multifunctionality of avian wing muscle. <em>Journal of the Royal Society Interface</em>. (repository arranged &amp; maintained by <a href="https://rs.figshare.com/authors/_/11598656">Pedro Leal</a>)</p></li>
-<li><p><a href="https://figshare.com/articles/dataset/Data_and_code_for_Flight_muscle_power_increases_with_strain_amplitude_and_decreases_with_cycle_frequency_in_zebra_finches_Taeniopygia_guttata_/12520733">figshare repository</a> for: Bahlman JW, Baliga VB, and Altshuler DL. 2020. Flight muscle power increases with strain amplitude and decreases with cycle frequency in zebra finches (Taeniopygia guttata). <em>Journal of Experimental Biology</em>.</p></li>
-<li><p><a href="https://doi.org/10.6084/m9.figshare.8856161">figshare repository</a> for: Baliga VB, Szabo I, and Altshuler DL. 2019. Range of motion in the avian wing is strongly associated with flight behavior and body mass. <em>Science Advances.</em></p></li>
-<li><p><a href="https://github.com/christiandamsgaard/Evolution-of-air-breathing">github repository</a> for: Damsgaard C, Baliga VB, Bates E, Burggren W, McKenzie DJ, Taylor E, and Wright PA. 2019. Evolutionary and Cardio-Respiratory Physiology of Air-breathing and Amphibious Fishes. <em>Acta Physiologica.</em> (repository arranged &amp; maintained by <a href="https://github.com/christiandamsgaard">Christian Damsgaard</a>)</p></li>
-<li><p><a href="https://doi.org/10.6084/m9.figshare.7658597">figshare repository</a> for: Baliga VB and Mehta RS. 2019. Morphology, ecology, and biogeography of independent origins of cleaning behavior around the world. <em>Integrative and Comparative Biology.</em></p></li>
-<li><p><a href="https://doi.org/10.6084/m9.figshare.c.3977505.v1">figshare repository</a> for: Harvey C, Baliga VB, Lavoie P, and Altshuler DL. 2019. Wing morphing allows gulls to modulate static pitch stability during gliding. <em>Journal of the Royal Society Interface</em>. (repository arranged &amp; maintained by <a href="https://figshare.com/authors/Christina_Harvey/4766004">Christina Harvey</a>)</p></li>
-</ul>
+<div id="listing-publication-repositories" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-publication-repositories-sort" class="form-select" aria-label="Sort by" onchange="window['quarto-listings']['listing-publication-repositories'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Sort by</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-article" data-direction="asc">
+        Article
+      </option>
+      <option value="listing-year-sort" data-direction="asc">
+        Year (Low to High)
+      </option>
+      <option value="listing-year-sort" data-direction="desc">
+        Year (High to Low)
+      </option>
+    </select>
+  </div>
+</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+
+<th>
+Repository
+</th>
+
+<th>
+<a class="sort" data-sort="listing-article" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Article</a>
+</th>
+
+<th>
+<a class="sort" data-sort="listing-year-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Year</a>
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-listing-year-sort="2024">
+<td>
+<span class="listing-repository"><a href="https://doi.org/10.6084/m9.figshare.23535717">Figshare</a></span>
+</td>
+<td>
+<span class="listing-article">Baliga VB, Dakin R, Wylie DR, and Altshuler DL.<br> <em>Proceedings of the Royal Society B: Biological Sciences</em> · <a href="https://doi.org/10.1098/rspb.2023.2155">Article</a></span>
+</td>
+<td>
+<span class="listing-year">2024</span>
+</td>
+
+</tr>
+
+<tr data-index="1" data-listing-year-sort="2024">
+<td>
+<span class="listing-repository"><a href="https://doi.org/10.6084/m9.figshare.26107999">Figshare</a></span>
+</td>
+<td>
+<span class="listing-article">Dash S, Baliga VB, Lapsansky AB, Wylie DR, and Altshuler DL.<br> <em>eNeuro</em> · <a href="https://doi.org/10.1523/ENEURO.0301-24.2024">Article</a></span>
+</td>
+<td>
+<span class="listing-year">2024</span>
+</td>
+
+</tr>
+
+<tr data-index="2" data-listing-year-sort="2022">
+<td>
+<span class="listing-repository"><a href="https://figshare.com/collections/Supplement_to_Inertia_links_avian_morphology_to_flight_manoeuvrability/5503989">Figshare</a></span>
+</td>
+<td>
+<span class="listing-article">Harvey, CA, Baliga VB, Wong JCM, Altshuler DL, and Inman DJ.<br> <em>Nature</em> · <a href="https://doi.org/10.1038/s41586-022-04477-8">Article</a></span>
+</td>
+<td>
+<span class="listing-year">2022</span>
+</td>
+
+</tr>
+
+<tr data-index="3" data-listing-year-sort="2022">
+<td>
+<span class="listing-repository"><a href="https://doi.org/10.6084/m9.figshare.19425737">Figshare</a></span>
+</td>
+<td>
+<span class="listing-article">Smyth G, Baliga VB, Gaede AH, Wylie DR, and Altshuler DL.<br> <em>Current Biology</em> · <a href="https://doi.org/10.1016/j.cub.2022.04.076">Article</a></span>
+</td>
+<td>
+<span class="listing-year">2022</span>
+</td>
+
+</tr>
+
+<tr data-index="4" data-listing-year-sort="2021">
+<td>
+<span class="listing-repository"><a href="https://rs.figshare.com/collections/Supplementary_material_from_Gull-inspired_joint-driven_wing_morphing_allows_adaptive_longitudinal_flight_control_/5438933">Figshare</a></span>
+</td>
+<td>
+<span class="listing-article">Harvey C, Baliga VB, Goates CD, Hunsaker D, and Inman DJ.<br> <em>Journal of the Royal Society Interface</em> · <a href="https://doi.org/10.1098/rsif.2021.0132">Article</a></span>
+</td>
+<td>
+<span class="listing-year">2021</span>
+</td>
+
+</tr>
+
+<tr data-index="5" data-listing-year-sort="2021">
+<td>
+<span class="listing-repository"><a href="https://rs.figshare.com/collections/Supplementary_material_from_Phase_transformation-driven_artificial_muscle_mimics_the_multi-functionality_of_avian_wing_muscle_/5675606">Figshare</a></span>
+</td>
+<td>
+<span class="listing-article">Leal PBC, Cabral-Seanez M, Baliga VB, Altshuler DL, and Hartl DJ.<br> <em>Journal of the Royal Society Interface</em> · <a href="https://doi.org/10.1098/rsif.2020.1042">Article</a></span>
+</td>
+<td>
+<span class="listing-year">2021</span>
+</td>
+
+</tr>
+
+<tr data-index="6" data-listing-year-sort="2020">
+<td>
+<span class="listing-repository"><a href="https://figshare.com/articles/dataset/Data_and_code_for_Flight_muscle_power_increases_with_strain_amplitude_and_decreases_with_cycle_frequency_in_zebra_finches_Taeniopygia_guttata_/12520733">Figshare</a></span>
+</td>
+<td>
+<span class="listing-article">Bahlman JW, Baliga VB, and Altshuler DL.<br> <em>Journal of Experimental Biology</em> · <a href="https://doi.org/10.1242/jeb.225839">Article</a></span>
+</td>
+<td>
+<span class="listing-year">2020</span>
+</td>
+
+</tr>
+
+<tr data-index="7" data-listing-year-sort="2019">
+<td>
+<span class="listing-repository"><a href="https://doi.org/10.6084/m9.figshare.7658597">Figshare</a></span>
+</td>
+<td>
+<span class="listing-article">Baliga VB and Mehta RS.<br> <em>Integrative and Comparative Biology</em> · <a href="https://doi.org/10.1093/icb/icz030">Article</a></span>
+</td>
+<td>
+<span class="listing-year">2019</span>
+</td>
+
+</tr>
+
+<tr data-index="8" data-listing-year-sort="2019">
+<td>
+<span class="listing-repository"><a href="https://doi.org/10.6084/m9.figshare.8856161">Figshare</a></span>
+</td>
+<td>
+<span class="listing-article">Baliga VB, Szabo I, and Altshuler DL.<br> <em>Science Advances</em> · <a href="https://doi.org/10.1126/sciadv.aaw6670">Article</a></span>
+</td>
+<td>
+<span class="listing-year">2019</span>
+</td>
+
+</tr>
+
+<tr data-index="9" data-listing-year-sort="2019">
+<td>
+<span class="listing-repository"><a href="https://github.com/christiandamsgaard/Evolution-of-air-breathing">GitHub</a></span>
+</td>
+<td>
+<span class="listing-article">Damsgaard C, Baliga VB, Bates E, Burggren W, McKenzie DJ, Taylor E, and Wright PA.<br> <em>Acta Physiologica</em> · <a href="https://doi.org/10.1111/apha.13406">Article</a></span>
+</td>
+<td>
+<span class="listing-year">2019</span>
+</td>
+
+</tr>
+
+<tr data-index="10" data-listing-year-sort="2019">
+<td>
+<span class="listing-repository"><a href="https://doi.org/10.6084/m9.figshare.c.3977505.v1">Figshare</a></span>
+</td>
+<td>
+<span class="listing-article">Harvey C, Baliga VB, Lavoie P, and Altshuler DL.<br> <em>Journal of the Royal Society Interface</em> · <a href="https://doi.org/10.1098/rsif.2018.0641">Article</a></span>
+</td>
+<td>
+<span class="listing-year">2019</span>
+</td>
+
+</tr>
+
+</tbody>
+</table>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 <hr>
 </section>
