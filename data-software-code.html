@@ -34,6 +34,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href=".//images/vb32.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -43,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-9de9f6925d305bcf5b7eb9351f368d06.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-30211e671e380ef1b10324c510fb9770.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-b0169b3f740a6b2ae9fcdd2b45a0856e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -72,11 +74,69 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-r-packages .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-purpose','listing-links','listing-year',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] },{ data: ['listing-year-sort'] }],
+      
+      searchColumns: ["listing-title","listing-purpose","listing-links","listing-year"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-r-packages'] = new List('listing-r-packages', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <meta name="google-site-verification" content="sd2EIIUXN6XunYAgTo3nG_aSpeflVbvxVXI2q8KlKzU">
 <style>
   body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 </style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Data, software &amp; code – vbaliga.github.io">
@@ -175,45 +235,162 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="indent-block">
+<p>Many of these were written collaboratively; see individual links for more details.</p>
+</div>
+<p><br></p>
+<hr>
 <section id="r-packages" class="level2">
 <h2 class="anchored" data-anchor-id="r-packages">R packages</h2>
-<p>Listed from newest to oldest original release date.</p>
-<section id="statsapps-interactive-shiny-apps-to-learn-statistics-intuitively" class="level4 indent-block">
-<h4 class="anchored" data-anchor-id="statsapps-interactive-shiny-apps-to-learn-statistics-intuitively"><a href="https://vbaliga.github.io/statsapps/index.html">statsapps</a>: Interactive Shiny apps to learn statistics intuitively</h4>
-<div class="indent-block">
-<p><em>statsapps</em> includes interactive apps to help you build intuition about various topics in data science and statistics. It is a work in progress and available on CRAN and GitHub.</p>
+<div id="listing-r-packages" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-r-packages-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-r-packages'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-title-sort" data-direction="asc">
+        Package
+      </option>
+      <option value="listing-year-sort" data-direction="asc">
+        Year (Low to High)
+      </option>
+      <option value="listing-year-sort" data-direction="desc">
+        Year (High to Low)
+      </option>
+    </select>
+  </div>
 </div>
-</section>
-<section id="avinertia-calculate-the-inertial-properties-of-a-flying-bird" class="level4 indent-block">
-<h4 class="anchored" data-anchor-id="avinertia-calculate-the-inertial-properties-of-a-flying-bird"><a href="https://cran.r-project.org/web/packages/AvInertia/index.html">avinertia</a>: Calculate the inertial properties of a flying bird</h4>
-<div class="indent-block">
-<p><em>avinertia</em> provides tools to compute the center of gravity and moment of inertia tensor of any flying bird. Accompanying paper (<a href="https://doi.org/10.1038/s41586-022-04477-8">Harvey et al., 2022</a>) in <em>Nature</em>.</p>
+<table class="quarto-listing-table table table-hover">
+<thead>
+<tr>
+
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Package</a>
+</th>
+
+<th>
+Purpose
+</th>
+
+<th>
+Links
+</th>
+
+<th>
+<a class="sort" data-sort="listing-year-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Year</a>
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-listing-year-sort="2026" data-listing-title-sort="statsapps" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="https://vbaliga.github.io/statsapps/" class="title listing-title">statsapps</a>
+</td>
+<td>
+<span class="listing-purpose">Interactive Shiny apps for building statistical intuition.</span>
+</td>
+<td>
+<span class="listing-links"><a href="https://cran.r-project.org/package=statsapps">CRAN</a> · <a href="https://github.com/vbaliga/statsapps">GitHub</a></span>
+</td>
+<td>
+<span class="listing-year">2026</span>
+</td>
+
+</tr>
+
+<tr data-index="1" data-listing-year-sort="2021" data-listing-title-sort="AvInertia" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="https://cran.r-project.org/package=AvInertia" class="title listing-title">AvInertia</a>
+</td>
+<td>
+<span class="listing-purpose">Calculate center of gravity and moment of inertia tensor of a flying bird.</span>
+</td>
+<td>
+<span class="listing-links"><a href="https://cran.r-project.org/package=AvInertia">CRAN</a> · <a href="https://github.com/charvey23/AvInertia">GitHub</a> · <a href="https://doi.org/10.1038/s41586-022-04477-8">Paper</a></span>
+</td>
+<td>
+<span class="listing-year">2021</span>
+</td>
+
+</tr>
+
+<tr data-index="2" data-listing-year-sort="2021" data-listing-title-sort="gaussplotR" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="https://vbaliga.github.io/gaussplotR/" class="title listing-title">gaussplotR</a>
+</td>
+<td>
+<span class="listing-purpose">Fit, predict, and visualize two-dimensional Gaussian functions.</span>
+</td>
+<td>
+<span class="listing-links"><a href="https://cran.r-project.org/package=gaussplotR">CRAN</a> · <a href="https://github.com/vbaliga/gaussplotR">GitHub</a> · <a href="https://doi.org/10.21105/joss.03074">Paper</a></span>
+</td>
+<td>
+<span class="listing-year">2021</span>
+</td>
+
+</tr>
+
+<tr data-index="3" data-listing-year-sort="2021" data-listing-title-sort="pathviewr" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="https://docs.ropensci.org/pathviewr/" class="title listing-title">pathviewr</a>
+</td>
+<td>
+<span class="listing-purpose">Import, clean, and visualize animal movement data from Flydra or Motive.</span>
+</td>
+<td>
+<span class="listing-links"><a href="https://cran.r-project.org/package=pathviewr">CRAN</a> · <a href="https://github.com/ropensci/pathviewr">GitHub</a></span>
+</td>
+<td>
+<span class="listing-year">2021</span>
+</td>
+
+</tr>
+
+<tr data-index="4" data-listing-year-sort="2020" data-listing-title-sort="genbank_downloadR" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="https://github.com/vbaliga/genbank_downloadR" class="title listing-title">genbank_downloadR</a>
+</td>
+<td>
+<span class="listing-purpose">Batch download DNA or protein sequences from GenBank.</span>
+</td>
+<td>
+<span class="listing-links"><a href="https://doi.org/10.6084/m9.figshare.12980189">Figshare</a> · <a href="https://github.com/vbaliga/genbank_downloadR">GitHub</a></span>
+</td>
+<td>
+<span class="listing-year">2020</span>
+</td>
+
+</tr>
+
+<tr data-index="5" data-listing-year-sort="2019" data-listing-title-sort="workloopR" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="https://docs.ropensci.org/workloopR/" class="title listing-title">workloopR</a>
+</td>
+<td>
+<span class="listing-purpose">Import, transform, and analyze muscle physiology experiments.</span>
+</td>
+<td>
+<span class="listing-links"><a href="https://cran.r-project.org/package=workloopR">CRAN</a> · <a href="https://github.com/ropensci/workloopR">GitHub</a> · <a href="https://doi.org/10.21105/joss.01856">Paper</a></span>
+</td>
+<td>
+<span class="listing-year">2019</span>
+</td>
+
+</tr>
+
+</tbody>
+</table>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
-</section>
-<section id="pathviewr-tools-to-import-clean-and-visualize-animal-movement-data-in-r" class="level4 indent-block">
-<h4 class="anchored" data-anchor-id="pathviewr-tools-to-import-clean-and-visualize-animal-movement-data-in-r"><a href="https://github.com/ropensci/pathviewr">pathviewr</a>: Tools to import, clean, and visualize animal movement data in R</h4>
-<div class="indent-block">
-<p><em>pathviewr</em> offers tools to import, clean, and visualize movement data, particularly from motion capture systems such from <a href="https://optitrack.com/products/motive/">Optitrack’s Motive</a>, the <a href="https://github.com/strawlab/flydra">Straw Lab’s Flydra</a>, or from other sources. Part of the rOpenSci project (GitHub: <a href="https://github.com/ropensci/pathviewr">ropensci/pathviewr</a>).</p>
-</div>
-</section>
-<section id="gaussplotr-fit-predict-and-plot-2d-gaussians-in-r" class="level4 indent-block">
-<h4 class="anchored" data-anchor-id="gaussplotr-fit-predict-and-plot-2d-gaussians-in-r"><a href="https://github.com/vbaliga/gaussplotR">gaussplotR</a>: Fit, predict, and plot 2D Gaussians in R</h4>
-<div class="indent-block">
-<p><em>gaussplotR</em> provides functions to fit two-dimensional Gaussian functions, predict values from such functions, and produce plots of predicted data. Accompanying paper (<a href="https://doi.org/10.21105/joss.03074">Baliga, 2021</a>) in the <em>Journal of Open Source Software</em>.</p>
-</div>
-</section>
-<section id="workloopr-analysis-of-work-loops-and-muscle-physiology-experiments" class="level4 indent-block">
-<h4 class="anchored" data-anchor-id="workloopr-analysis-of-work-loops-and-muscle-physiology-experiments"><a href="https://github.com/ropensci/workloopR">workloopR</a>: Analysis of work loops and muscle physiology experiments</h4>
-<div class="indent-block">
-<p><em>workloopR</em> (“work looper”) provides functions for the import, transformation, and analysis of muscle physiology experiments in R. Accompanying paper (<a href="https://doi.org/10.21105/joss.01856">Baliga and Senthivasan, 2019</a>) in the <em>Journal of Open Source Software</em>. Part of the <a href="https://ropensci.org/">rOpenSci</a> project (GitHub: <a href="https://github.com/ropensci/workloopR">ropensci/workloopR</a>).</p>
-</div>
-</section>
-<section id="genbank_downloadr-batch-downloading-of-dna-or-protein-sequences-from-genbank" class="level4 indent-block">
-<h4 class="anchored" data-anchor-id="genbank_downloadr-batch-downloading-of-dna-or-protein-sequences-from-genbank"><a href="https://github.com/vbaliga/genbank_downloadR">genbank_downloadR</a>: Batch downloading of DNA or protein sequences from GenBank</h4>
-<div class="indent-block">
-<p>Written as a standalone R script rather than as a full-blown package. Stable releases also <a href="https://doi.org/10.6084/m9.figshare.12980189">available on Figshare</a>.</p>
-</div>
-</section>
 <hr>
 </section>
 <section id="tutorials" class="level2">
@@ -294,6 +471,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </div>
 <hr>
+
 
 
 </section>
