@@ -324,3 +324,18 @@ p {
   color: #333;
 }
 
+/* R packages table */
+#r-packages table {
+  font-size: 1rem;
+}
+
+#r-packages table thead th {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+#r-packages table th,
+#r-packages table td {
+  padding-top: 0.55rem;
+  padding-bottom: 0.55rem;
+}

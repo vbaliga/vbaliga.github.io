@@ -1,0 +1,50 @@
+- title: statsapps
+  path: https://vbaliga.github.io/statsapps/
+  purpose: Interactive Shiny apps for building statistical intuition.
+  links: >-
+    [CRAN](https://cran.r-project.org/package=statsapps) ·
+    [GitHub](https://github.com/vbaliga/statsapps)
+  year: 2026
+
+- title: AvInertia
+  path: https://cran.r-project.org/package=AvInertia
+  purpose: Calculate center of gravity and moment of inertia tensor of a flying bird.
+  links: >-
+    [CRAN](https://cran.r-project.org/package=AvInertia) ·
+    [GitHub](https://github.com/charvey23/AvInertia) ·
+    [Paper](https://doi.org/10.1038/s41586-022-04477-8)
+  year: 2021
+
+- title: pathviewr
+  path: https://docs.ropensci.org/pathviewr/
+  purpose: Import, clean, and visualize animal movement data from Flydra or Motive.
+  links: >-
+    [CRAN](https://cran.r-project.org/package=pathviewr) ·
+    [GitHub](https://github.com/ropensci/pathviewr)
+  year: 2021
+
+- title: gaussplotR
+  path: https://vbaliga.github.io/gaussplotR/
+  purpose: Fit, predict, and visualize two-dimensional Gaussian functions.
+  links: >-
+    [CRAN](https://cran.r-project.org/package=gaussplotR) ·
+    [GitHub](https://github.com/vbaliga/gaussplotR) ·
+    [Paper](https://doi.org/10.21105/joss.03074)
+  year: 2021
+
+- title: genbank_downloadR
+  path: https://github.com/vbaliga/genbank_downloadR
+  purpose: Batch download DNA or protein sequences from GenBank.
+  links: >-
+    [Figshare](https://doi.org/10.6084/m9.figshare.12980189) ·
+    [GitHub](https://github.com/vbaliga/genbank_downloadR)
+  year: 2020
+  
+- title: workloopR
+  path: https://docs.ropensci.org/workloopR/
+  purpose: Import, transform, and analyze muscle physiology experiments.
+  links: >-
+    [CRAN](https://cran.r-project.org/package=workloopR) ·
+    [GitHub](https://github.com/ropensci/workloopR) ·
+    [Paper](https://doi.org/10.21105/joss.01856)
+  year: 2019

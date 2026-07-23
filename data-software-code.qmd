@@ -1,81 +1,43 @@
 ---
 title: "Data, software & code"
-editor: 
-  markdown: 
+editor:
+  markdown:
     wrap: 72
+listing:
+  id: r-packages
+  contents: r-packages.yml
+  type: table
+  fields: [title, purpose, links, year]
+  field-display-names:
+    title: "Package"
+    purpose: "Purpose"
+    links: "Links"
+    year: "Year"
+  field-types:
+    year: number
+  field-links: [title]
+  sort:
+    - "year desc"
+    - "title asc"
+  sort-ui: [title, year]
+  filter-ui: false
+  table-striped: false
+  table-hover: true
 ---
+
+::: indent-block
+Many of these were written collaboratively; see individual links for
+more details.
+:::
+
+<br>
+
+------------------------------------------------------------------------
 
 ## R packages
 
-Listed from newest to oldest original release date.
-
-:::: indent-block
-#### [statsapps](https://vbaliga.github.io/statsapps/index.html): Interactive Shiny apps to learn statistics intuitively
-
-::: indent-block
-*statsapps* includes interactive apps to help you build intuition about
-various topics in data science and statistics. It is a work in progress
-and available on CRAN and GitHub.
+::: {#r-packages}
 :::
-::::
-
-:::: indent-block
-#### [avinertia](https://cran.r-project.org/web/packages/AvInertia/index.html): Calculate the inertial properties of a flying bird
-
-::: indent-block
-*avinertia* provides tools to compute the center of gravity and moment
-of inertia tensor of any flying bird. Accompanying paper ([Harvey et
-al., 2022](https://doi.org/10.1038/s41586-022-04477-8)) in *Nature*.
-:::
-::::
-
-:::: indent-block
-#### [pathviewr](https://github.com/ropensci/pathviewr): Tools to import, clean, and visualize animal movement data in R
-
-::: indent-block
-*pathviewr* offers tools to import, clean, and visualize movement data,
-particularly from motion capture systems such from [Optitrack's
-Motive](https://optitrack.com/products/motive/), the [Straw Lab's
-Flydra](https://github.com/strawlab/flydra), or from other sources. Part
-of the rOpenSci project (GitHub:
-[ropensci/pathviewr](https://github.com/ropensci/pathviewr)).
-:::
-::::
-
-:::: indent-block
-#### [gaussplotR](https://github.com/vbaliga/gaussplotR): Fit, predict, and plot 2D Gaussians in R
-
-::: indent-block
-*gaussplotR* provides functions to fit two-dimensional Gaussian
-functions, predict values from such functions, and produce plots of
-predicted data. Accompanying paper ([Baliga,
-2021](https://doi.org/10.21105/joss.03074)) in the *Journal of Open
-Source Software*.
-:::
-::::
-
-:::: indent-block
-#### [workloopR](https://github.com/ropensci/workloopR): Analysis of work loops and muscle physiology experiments
-
-::: indent-block
-*workloopR* ("work looper") provides functions for the import,
-transformation, and analysis of muscle physiology experiments in R.
-Accompanying paper ([Baliga and Senthivasan,
-2019](https://doi.org/10.21105/joss.01856)) in the *Journal of Open
-Source Software*. Part of the [rOpenSci](https://ropensci.org/) project
-(GitHub: [ropensci/workloopR](https://github.com/ropensci/workloopR)).
-:::
-::::
-
-:::: indent-block
-#### [genbank_downloadR](https://github.com/vbaliga/genbank_downloadR): Batch downloading of DNA or protein sequences from GenBank
-
-::: indent-block
-Written as a standalone R script rather than as a full-blown package.
-Stable releases also [available on
-Figshare](https://doi.org/10.6084/m9.figshare.12980189).
-:::
-::::
 
 ------------------------------------------------------------------------
 
