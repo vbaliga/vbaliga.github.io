@@ -6,20 +6,21 @@ editor: source
 
 ::::: {.grid .course-details .course-details-smaller}
 ::: {.g-col-6 .g-col-md-3}
-- {{< fa solid user >}}   [Dept.
-  page](https://www.zoology.ubc.ca/person/vikram-baliga)
-- {{< fa university >}}   [UBC Zoology](https://zoology.ubc.ca/)
-- {{< fa envelope >}}   [Email](mailto:vikram.baliga@ubc.ca)
-- {{< fa brands github >}}   [\@vbaliga](https://github.com/vbaliga)
+- {{< fa solid user >}} [Faculty
+  profile](https://www.zoology.ubc.ca/person/vikram-baliga)
+- {{< fa university >}} [UBC Zoology](https://zoology.ubc.ca/)
+- {{< fa envelope >}} [Email](mailto:vikram.baliga@ubc.ca)
+- {{< fa brands github >}} [\@vbaliga](https://github.com/vbaliga)
 :::
 
 ::: {.g-col-6 .g-col-md-3}
-- {{< fa book >}}   [Google
+- {{< fa book >}} [Google
   Scholar](https://scholar.google.com/citations?user=sXz0JqQAAAAJ&hl=en)
-- {{< fa fingerprint >}}   [ORCID](http://orcid.org/0000-0002-9367-8974)
-- {{< fa brands researchgate >}}  
+- {{< fa fingerprint >}} [ORCID](http://orcid.org/0000-0002-9367-8974)
+- {{< fa brands researchgate >}}
   [ResearchGate](https://www.researchgate.net/profile/Vikram_Baliga)
-- {{< fa solid copy >}}   [Publons](http://www.researcherid.com/rid/H-1546-2013)
+- {{< fa solid copy >}} [Web of
+  Science](https://www.webofscience.com/wos/author/record/H-1546-2013)
 :::
 :::::
 
@@ -31,12 +32,12 @@ width="256" fig-cap="Photo taken by Sylvia Heredia"}
 I teach biostatistics and data science for the [Biology
 Program](https://www.biology.ubc.ca/) at UBC. I regularly instruct or coordinate
 [BIOL 300](files/Syllabus_BIOL300.pdf): Fundamentals of Biostatistics. Future
-efforts may relate to [DSCI 100](https://ubc-dsci.github.io/dsci-100-student/)
-or courses that blend biology, statistics, and data science.
+teaching may include [DSCI 100](https://ubc-dsci.github.io/dsci-100-student/) or
+courses that blend biology, statistics, and data science.
 
 Previously, I was a scientist (also at UBC) who used motion capture and virtual
-reality to investigate flight control strategies in birds. Data from studies of
-neuroscience and behavior often require semantic validation and dealing with
-lots of noise. Making sense of information in these contexts made me appreciate
-the importance of statistical thinking, sanity checks, and effective
-visualizations.
+reality to investigate flight control strategies in birds. Working with data
+from studies of neuroscience and behavior often requires determining what each
+measurement actually captures and distinguishing meaningful patterns from noise.
+Making sense of information in these contexts made me appreciate the importance
+of statistical thinking, sanity checks, and effective visualizations.

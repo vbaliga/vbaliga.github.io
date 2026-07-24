@@ -452,3 +452,23 @@ p {
   width: 100%;
   white-space: normal;
 }
+
+
+/* Homepage profile links */
+.course-details-smaller ul {
+  padding-left: 0;
+  text-indent: 0;
+}
+
+.course-details-smaller li {
+  display: grid;
+  grid-template-columns: 1.2rem minmax(0, 1fr);
+  column-gap: 0.45rem;
+  align-items: baseline;
+}
+
+.course-details-smaller li > i {
+  width: 1.2rem;
+  text-align: center;
+  justify-self: center;
+}
