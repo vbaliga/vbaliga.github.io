@@ -2,6 +2,7 @@
 title: "Vikram B. Baliga"
 subtitle: "Assistant Professor of Teaching, University of British Columbia"
 editor: source
+toc: false
 ---
 
 ::::: {.grid .course-details .course-details-smaller}
