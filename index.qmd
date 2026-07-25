@@ -26,7 +26,9 @@ toc: false
 :::::
 
 ![](images/Vikram_Baliga.png){fig-alt="Vikram B. Baliga" style="float:left;"
-width="256" fig-cap="Photo taken by Sylvia Heredia"}
+width="300" fig-cap="Photo taken by Sylvia Heredia"}
+
+### Welcome
 
 I teach biostatistics and data science for the [Biology
 Program](https://www.biology.ubc.ca/) at UBC. I regularly instruct or coordinate
