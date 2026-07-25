@@ -1,6 +1,7 @@
 ---
 title: "Teaching"
 editor: visual
+description-meta: "Teaching resources, current courses, and a brief teaching history for Vikram B. Baliga at UBC."
 ---
 
 ::: indent-block

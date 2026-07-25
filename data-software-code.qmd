@@ -1,5 +1,6 @@
 ---
 title: "Data, software & code"
+description-meta: "R packages, research data, code repositories, and phylogenetic trees developed by Vikram B. Baliga and collaborators."
 editor:
   markdown:
     wrap: 72

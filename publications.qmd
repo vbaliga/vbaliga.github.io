@@ -1,7 +1,13 @@
 ---
 title: "Publications"
 editor: visual
+description-meta: "Peer-reviewed articles, software publications, conference papers, and teaching modules by Vikram B. Baliga and collaborators."
 ---
+
+Also on: [Google
+Scholar](https://scholar.google.com/citations?user=sXz0JqQAAAAJ&hl=en) ·
+[ORCID](http://orcid.org/0000-0002-9367-8974) ·
+[ResearchGate](https://www.researchgate.net/profile/Vikram_Baliga)
 
 ## Peer-reviewed journal articles
 
@@ -180,14 +186,15 @@ Aeronautics and Astronautics Scitech 2019 Forum (AIAA 2019-0853). Held January
 ## Inquiry-based teaching modules
 
 Available at the [SCWIBLES Modules
-page](http://scwibles.ucsc.edu/SCWIBLESModules.html).
+page](https://scwibles.ucsc.edu/learning-modules/).
 
 ::: indent-block
 **Baliga VB** and Yew B. 2014. Demystifying Dimensions: A mini-lesson on
 dimensional analysis. Product of GK-12 SCWIBLES, NSF DGE-0947923\
 \
-**Baliga VB**, Yew B, Herradora R, Callahan W. 2014. A Fact of Matter: Exploring
-trends across the Periodic Table. Product of GK-12 SCWIBLES, NSF DGE-0947923
+**Baliga VB**, Yew B, Herradora R, and Callahan W. 2014. A Fact of Matter:
+Exploring trends across the Periodic Table. Product of GK-12 SCWIBLES, NSF
+DGE-0947923
 
 de Nesnera K, **Baliga VB**, et al. 2014. Presentation Skills: A video designed
 for science fair participants in high school. Product of GK--12 SCWIBLES, NSF

@@ -3,6 +3,16 @@ title: "Vikram B. Baliga"
 subtitle: "Assistant Professor of Teaching, University of British Columbia"
 editor: source
 toc: false
+
+image: images/Vikram_Baliga.png
+description-meta: "Vikram B. Baliga, Assistant Professor of Teaching at the University of British Columbia."
+
+open-graph:
+  description: "Vikram B. Baliga, Assistant Professor of Teaching at the University of British Columbia."
+
+twitter-card:
+  card-style: summary
+  description: "Vikram B. Baliga, Assistant Professor of Teaching at the University of British Columbia."
 ---
 
 ::::: {.grid .course-details .course-details-smaller}
@@ -38,10 +48,11 @@ courses that blend biology, statistics, and data science.
 
 Previously, I was a scientist (also at UBC) who used motion capture and virtual
 reality to investigate flight control strategies in birds. Working with data
-from studies of neuroscience and behavior requires verifying what each
-measurement actually captures and distinguishing meaningful patterns vs. noise.
+from studies of neuroscience and behavior requires carefully verifying what each
+measurement really captures and determining whether apparent patterns are
+meaningful or merely noise.
 
 Making sense of information in these contexts made me appreciate the importance
 of statistical thinking, sanity checks, and effective visualizations. That
-perspective shapes both my teaching and my interest in helping others reason
-through analyses.
+perspective shapes both my teaching and my enthusiasm for working with people to
+reason through analyses.

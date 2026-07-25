@@ -38,7 +38,7 @@ website:
     type: overlay
   page-footer:
     left: |
-      Content {{< fa brands creative-commons >}} {{< var site.copyright_year >}} by [{{< var author.name_no_title >}}](mailto:{{< var author.email >}}). All images by VBB unless otherwise noted. <br>
+      Content {{< fa brands creative-commons >}} 2022–<span class="current-year"></span> by [{{< var author.name_no_title >}}](mailto:{{< var author.email >}}). All images by VBB unless otherwise noted. <br>
       All content licensed under a {{< fa brands creative-commons >}}
       {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-nc >}}
       [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license. Source code on [github](https://github.com/vbaliga/vbaliga.github.io).
