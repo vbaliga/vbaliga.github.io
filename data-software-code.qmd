@@ -47,8 +47,12 @@ listing:
 ---
 
 ::: indent-block
-Many of these were written collaboratively; see individual links for
-more details.
+This page brings together packages & data that were developed primarily
+in the course of research. Teaching-focused tools and course resources
+are on the [Teaching](teaching.html) page.
+
+Many items were developed collaboratively; see individual links for
+details.
 :::
 
 <br>
@@ -61,28 +65,6 @@ more details.
 ::: {#r-packages}
 :::
 ::::
-
-------------------------------------------------------------------------
-
-## Tutorials
-
-::: indent-block
-#### [Multi-panel plots with R](https://flightlab.github.io/MultiPanelPlotsWithR)
-
-Developed for BIOL 548L (Visual and Oral Presentations), graduate course
-at UBC. Learning objectives include:
-
-- Determining how to import & wrangle data from diverse sources.
-
-- Using the grammar of graphics to construct plots in `ggplot2`.
-
-- Planning a sequence of plots that support a declarative statement of a
-  result.
-
-- Constructing multi-panel, publication-quality figures using code.
-:::
-
-<br>
 
 ------------------------------------------------------------------------
 

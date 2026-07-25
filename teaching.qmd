@@ -4,10 +4,35 @@ editor: visual
 ---
 
 ::: indent-block
-All courses taught at UBC Vancouver unless otherwise noted. Content for each
-course is in the specific Canvas site for each term (accessible to enrolled
-students and teaching team only), but generic syllabi are available via links
-below.
+This page includes select resources for students and a brief history of my
+teaching. All courses taught at UBC Vancouver unless otherwise noted.
+:::
+
+<br>
+
+--------------------------------------------------------------------------------
+
+## Teaching resources
+
+::: indent-block
+### [BIOL 300 Practice Hub](https://vbaliga.github.io/BIOL300-practicehub/)
+
+Practice problems, worked solutions, and interactive tools for students in BIOL
+300. Includes R coding exercises, test-selection flowchart, interactive formula
+sheet, and guidance on statistical pitfalls.
+
+### [statsapps](https://vbaliga.github.io/statsapps/)
+
+An R package with interactive Shiny apps, designed to build intuition for
+statistical concepts. Install from
+[CRAN](https://cran.r-project.org/package=statsapps) via:
+`install.packages("statsapps")`
+
+### [Multi-panel plots with R](https://flightlab.github.io/MultiPanelPlotsWithR)
+
+Planning and constructing multi-panel, publication-quality figures using R. Uses
+`ggplot2` to construct individual plots and `cowplot` to arrange them. Developed
+for BIOL 548L (Visual and Oral Presentations), a graduate course at UBC.
 :::
 
 <br>
