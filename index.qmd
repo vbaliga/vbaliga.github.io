@@ -28,8 +28,6 @@ toc: false
 ![](images/Vikram_Baliga.png){fig-alt="Vikram B. Baliga" style="float:left;"
 width="256" fig-cap="Photo taken by Sylvia Heredia"}
 
-### Welcome
-
 I teach biostatistics and data science for the [Biology
 Program](https://www.biology.ubc.ca/) at UBC. I regularly instruct or coordinate
 [BIOL 300](files/Syllabus_BIOL300.pdf): Fundamentals of Biostatistics. Future
@@ -38,7 +36,10 @@ courses that blend biology, statistics, and data science.
 
 Previously, I was a scientist (also at UBC) who used motion capture and virtual
 reality to investigate flight control strategies in birds. Working with data
-from studies of neuroscience and behavior often requires determining what each
-measurement actually captures and distinguishing meaningful patterns from noise.
+from studies of neuroscience and behavior requires verifying what each
+measurement actually captures and distinguishing meaningful patterns vs. noise.
+
 Making sense of information in these contexts made me appreciate the importance
-of statistical thinking, sanity checks, and effective visualizations.
+of statistical thinking, sanity checks, and effective visualizations. That
+perspective shapes both my teaching and my interest in helping others reason
+through analyses.
