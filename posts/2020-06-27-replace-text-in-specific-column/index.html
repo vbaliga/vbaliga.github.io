@@ -113,6 +113,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 <meta name="google-site-verification" content="sd2EIIUXN6XunYAgTo3nG_aSpeflVbvxVXI2q8KlKzU">
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".current-year").forEach(function (element) {
+      element.textContent = new Date().getFullYear();
+    });
+  });
+</script>
 <style>
   body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 </style>
@@ -767,7 +775,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Content <i class="fa-brands fa-creative-commons" aria-hidden="true"></i> 2022-2026 by <a href="mailto:vikram.baliga@ubc.ca">Vikram B. Baliga</a>. All images by VBB unless otherwise noted. <br> All content licensed under a <i class="fa-brands fa-creative-commons" aria-hidden="true"></i> <i class="fa-brands fa-creative-commons-by" aria-hidden="true"></i> <i class="fa-brands fa-creative-commons-nc" aria-hidden="true"></i> <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a> license. Source code on <a href="https://github.com/vbaliga/vbaliga.github.io">github</a>.</p>
+<p>Content <i class="fa-brands fa-creative-commons" aria-hidden="true"></i> 2022–<span class="current-year"></span> by <a href="mailto:vikram.baliga@ubc.ca">Vikram B. Baliga</a>. All images by VBB unless otherwise noted. <br> All content licensed under a <i class="fa-brands fa-creative-commons" aria-hidden="true"></i> <i class="fa-brands fa-creative-commons-by" aria-hidden="true"></i> <i class="fa-brands fa-creative-commons-nc" aria-hidden="true"></i> <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a> license. Source code on <a href="https://github.com/vbaliga/vbaliga.github.io">github</a>.</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
