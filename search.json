@@ -102,7 +102,7 @@
     "href": "teaching.html#teaching-resources",
     "title": "Teaching",
     "section": "Teaching resources",
-    "text": "Teaching resources\n\n\nBIOL 300 Practice Hub\nPractice problems, worked solutions, and interactive tools for students in BIOL 300. Includes R coding exercises, test-selection flowchart, interactive formula sheet, and guidance on statistical pitfalls.\n\n\nstatsapps\nAn R package with interactive Shiny apps, designed to build intuition for statistical concepts. Install from CRAN via: install.packages(\"statsapps\")\n\n\nMulti-panel plots with R\nPlanning and constructing multi-panel, publication-quality figures using R. Uses ggplot2 to construct individual plots and cowplot to arrange them. Developed for BIOL 548L (Visual and Oral Presentations), a graduate course at UBC."
+    "text": "Teaching resources\n\n\nBIOL 300 Practice Hub\nPractice problems, worked solutions, and interactive tools for students in BIOL 300. Includes R coding exercises, test-selection flowchart, interactive formula sheet, and guidance on statistical pitfalls. Written with Daniel Sobat.\n\n\nstatsapps\nAn R package with interactive Shiny apps, designed to build intuition for statistical concepts. Install from CRAN via: install.packages(\"statsapps\")\n\n\nMulti-panel plots with R\nPlanning and constructing multi-panel, publication-quality figures using R. Uses ggplot2 to construct individual plots and cowplot to arrange them. Developed for BIOL 548L (Visual and Oral Presentations), a graduate course at UBC. Written with Shree Senthivasan and Andrea Gaede."
   },
   {
     "objectID": "teaching.html#current-or-upcoming-courses",
