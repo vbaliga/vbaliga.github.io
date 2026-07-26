@@ -20,7 +20,7 @@ teaching. All courses taught at UBC Vancouver unless otherwise noted.
 
 Practice problems, worked solutions, and interactive tools for students in BIOL
 300. Includes R coding exercises, test-selection flowchart, interactive formula
-sheet, and guidance on statistical pitfalls.
+sheet, and guidance on statistical pitfalls. Written with Daniel Sobat.
 
 ### [statsapps](https://vbaliga.github.io/statsapps/)
 
@@ -33,7 +33,8 @@ statistical concepts. Install from
 
 Planning and constructing multi-panel, publication-quality figures using R. Uses
 `ggplot2` to construct individual plots and `cowplot` to arrange them. Developed
-for BIOL 548L (Visual and Oral Presentations), a graduate course at UBC.
+for BIOL 548L (Visual and Oral Presentations), a graduate course at UBC. Written
+with Shree Senthivasan and Andrea Gaede.
 :::
 
 <br>
