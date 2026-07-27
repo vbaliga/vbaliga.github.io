@@ -46,13 +46,12 @@ Program](https://www.biology.ubc.ca/) at UBC. I regularly instruct or coordinate
 teaching may include [DSCI 100](https://ubc-dsci.github.io/dsci-100-student/) or
 courses that blend biology, statistics, and data science.
 
-Previously, I was a scientist (also at UBC) who used motion capture and virtual
-reality to investigate flight control strategies in birds. Working with data
-from studies of neuroscience and behavior requires carefully verifying what each
-measurement really captures and determining whether apparent patterns are
-meaningful or merely noise.
+I have also used motion capture and virtual reality to investigate flight
+control strategies in birds. Working with data from studies of neuroscience and
+behavior requires carefully verifying what each measurement captures and
+determining whether patterns are meaningful or just noise.
 
 Making sense of information in these contexts made me appreciate the importance
 of statistical thinking, sanity checks, and effective visualizations. That
-perspective shapes both my teaching and my enthusiasm for working with people to
-reason through analyses.
+perspective shapes both my teaching and my enthusiasm for working with people on
+analyses.
