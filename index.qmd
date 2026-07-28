@@ -51,7 +51,7 @@ control strategies in birds. Working with data from studies of neuroscience and
 behavior requires carefully verifying what each measurement captures and
 determining whether patterns are meaningful or just noise.
 
-Making sense of information in these contexts made me appreciate the importance
+Making sense of information in these contexts makes me appreciate the importance
 of statistical thinking, sanity checks, and effective visualizations. That
 perspective shapes both my teaching and my enthusiasm for working with people on
 analyses.
