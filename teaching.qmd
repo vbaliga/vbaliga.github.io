@@ -5,8 +5,8 @@ description-meta: "Teaching resources, current courses, and a brief teaching his
 ---
 
 ::: indent-block
-This page includes select resources for students and a brief history of my
-teaching. All courses taught at UBC Vancouver unless otherwise noted.
+This page shows a brief history of my teaching at UBC Vancouver. Deeper history
+at other institutions won't be shown here.
 :::
 
 <br>

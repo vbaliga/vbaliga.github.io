@@ -48,9 +48,9 @@ listing:
 ---
 
 ::: indent-block
-This page brings together packages & data that were developed primarily
-in the course of research. Teaching-focused tools and course resources
-are on the [Teaching](teaching.html) page.
+Packages & data below were developed primarily in the course of
+research. Teaching-focused tools and course resources are on the
+[Teaching](teaching.html) page.
 
 Many items were developed collaboratively; see individual links for
 details.
